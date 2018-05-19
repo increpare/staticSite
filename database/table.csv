@@ -1,0 +1,198 @@
+TITLE;DATE;ICON;CAPTION;DESC;HTML;MAC;WIN;LINUX;SRC;SRC-DESC;FLASH;ZIP
+MathCIV;2004/05/13;;;"Freeciv never seemed mathematically accurate enough for me .. i mean it’s all well and good to just discover gravity and have newton’s workshop, but to do gravity you really do need to have a basic knowledge of synthetic infinitesimal geometry, and to know that you have to know geometry … but on the other hand you should have the opportunity to learn functional analysis and algebra and category theory as your civilisation progresses. You can also not just specify to build a university in your city, but you can also specify what departments you want to build :)<p>
+So I took freeciv and added those features to the game :)<p>
+MathCIV, as I call it (there’s not much too it really … though it does have a brothel :) ) lurks in the computers section. it’s not terribly well documented, especially re. installation, but if you’ve installed any other mods it shouldn’t be very hard at all to install. If you are having trouble installing it just give me a buzz.<p>
+I hope i included all the files (my freeciv directories are a bit of a mess *heh*).<p>
+Please though, give it a try and tell me what you think!";;;;;;;;http://www.increpare.com/files/mathciv.zip
+Trinity MUD;2005/10/03;;;Here‘s a MUD set in Trinity College that I wrote in freepascal.  (Norgg did a more up to date build that builds with more modern versions of freepascal here - http://norgg.org/files/increparemud.zip - thanks, Norgg!);;;;;http://www.increpare.com/files/mud.pas;Pascal;;
+lightcone: prototype 1;2008/10/05;lightconetitle.jpg;"and here we have the lovely lovely title screen
+";"I always have wanted to program some sort of game using special relativity, but haven't quite figured out a good way to do it yet.  However, I did think, just recently, 'gosh, I should be able to do something with lightcones' though.  So, in this simple concept game light has a finite speed, which basically means that when you see things far away from you, you're not seeing them as they are now, but rather as they were some time in the past.
+<p>
+I decided on simple laser weapons (which travel at the speed of light), which means that you won't ever see the ones that hit you until it's too late  :D
+<p>
+Oh, I made it a split-screen two-player game so that you can see for yourself how the two players can see things totally differently.  (but, maybe the screens are on the wrong sides...I'll fix that in the next version  :-X )
+<p>
+<img src=""http://i272.photobucket.com/albums/jj200/increpatio/Picture9.png"" alt =""""/>
+<p>
+I've not actually tried playing it with anyone yet± I assume that the gameplay potential in its current form is rather minimal, but I think it's still a little bit fun, and I might work more on it in the future.
+<p>
+And, I have two separate versions (both with sources: the mac ones should compile on linux machines as well...).
+<p>
+Controls:
+<p>
+Player 1: Cursor Keys and Spacebar
+Player 2: W S A D and F
+<p>
+<hr />
+<p>
+there is some additional discussion of this over at the </a><a href=""http://forums.tigsource.com/index.php?topic=1642"">original tigsource thread</a>.";;;http://ded.increpare.com/~locus/lightconewin.zip;http://ded.increpare.com/~locus/lightconemac.zip;http://ded.increpare.com/~locus/lightconewin.zip;C++;;
+lightcone: prototype 2;"2008/10/09
+";lightconehs.gif;hopefully this won't be my last toying about with Graphics.Rendering.OpenGL;"I decided to try doing a one-player prototype of this game, and to do it in haskell this time as an exercise instead of C++. It’s a much more bare-bones things, but might be of interest to some people (requires OpenGL and GLUT to be installed).<p>
+In this demo, you are a red or blue block, the enemies are red blocks, moving in various patterns. When you overlap with an enemy block, your colour changes.<p>
+I’m not bothering with a binary distribution, but I’ve thrown up the source.";;;;;http://ded.increpare.com/~locus/lightconehs.zip;Haskell;;
+Lady Boy Love Collection;2008/10/27;lblcshot.png;garnered a whole 22 votes in the end,;"This was my entry to the tigsource <a href=""http://tigsource.com/features/demakes/"">Bootleg Demakes compo</a>.  It features a number of esoteric references, but still might be appreciable by people from elsewhere.   It contains four games, in fact, <em>Lady Million</em> <em>Bio-Collect</em> (aka '<em>Specimen collect</em>'), <em>Zeppelin</em>, and <em>Sick Panda</em>.
+
+The original thread for it on tigsource is <a href=""http://forums.tigsource.com/index.php?topic=2404.msg60100#msg60100"">here</a>.
+
+<p><img src=""https://ded.increpare.com/~locus/lbl.JPG"" width=400px alt=""front cover""/></p>
+<p><img src=""https://ded.increpare.com/~locus/boxback-2.JPG"" width=400px alt=""back cover"" /></p>
+
+<p><span style=""text-decoration: underline±""><strong>Controls</strong></span><br />
+up/down/left/right - movement<br />
+shift/space -  action buttons in various games<br />
+z - pause/inventory screen in Lady Million<br />
+r - reset game</p>
+
+<p>CREDITS:</p>
+
+<p>programming, graphics, music by increpare, of forums.tigsource.com</p>
+
+<p>other people: many forum peeps for reporting various bugs/glitches and, quite importantly, UltraJMan for the title ""Lady Boy Love Collection"".  Big thanks to you all!</p>";;http://ded.increpare.com/~locus/lblcmac.zip;http://ded.increpare.com/~locus/lblcwin.zip;;http://ded.increpare.com/~locus/lblcsrc.zip;C++;;
+Portile;2008/11/01;portile.gif;aaaaaaaaaaaaaahshark?;"Original tigsource thread <a href=""http://forums.tigsource.com/index.php?topic=2161.0"">here</a>.
+
+Portile is a 2d, tile-based take on <a href=""http://www.nuclearmonkeysoftware.com/downloads.html"">narbacular drop</a> (more than portal, because I've not played portal, and from what I understand momentum plays a big part in portal, and it doesn't play any part in this).
+
+<p><img src=""http://i272.photobucket.com/albums/jj200/increpatio/p1.gif"" alt=""p1.gif"" /></p>
+
+<p><img src=""http://i272.photobucket.com/albums/jj200/increpatio/p2.gif"" alt=""p2.gif"" /></p>
+
+<p><img src=""http://i272.photobucket.com/albums/jj200/increpatio/p3.gif"" alt=""p3.gif"" /></p>
+
+<p>Controls are LEFT/RIGHT to move, wsad to fire red portal, and shift+wsad to fire blue portal (sorry about the keys dvoraks).  E closes all open portals.  Most of the stuff one should probably be able to figure out.</p>
+
+<p>(*source code included only in windows file)</p>
+
+<p>New features in v0.3:<br />
+New Name.<br />
+Slowed down gameplay speed.<br />
+Hipparchean Dynamics.<br />
+Sound effects.</p>";;http://ded.increpare.com/~locus/portilemac.zip;http://ded.increpare.com/~locus/Portile.zip;;http://ded.increpare.com/~locus/Portile.zip;C++;;
+Endless Cavern;2008/11/15;;;"<img src=""http://i272.photobucket.com/albums/jj200/increpatio/endlesscavern.png""/>
+
+<blockquote><em>Strange well in Arkham country—water gives out (or was never struck —hole kept tightly covered by a stone ever since dug)—no bottom—shunned and feared—what lay beneath (either unholy temple or other very ancient thing, or great cave-world).</em></blockquote>
+
+An entry for the <a href=""http://forums.tigsource.com/index.php?topic=3286.0"">TIGsource Commonplace Book competition</a>.
+
+The source is, on the whole, a bit gross, owing partly to my inability to wrap the fmod library properly.  If there's any interest <em>at all</em>, I can easily make an easy-to-compile soundless and generally tidied-up version of the game available.
+
+<b>CONTROLS:</b>
+
+space - to progress through title menus
+left/right - to move left/right
+up/down - to turn off/on 'thrust'
+
+<b>PREMISE:</b>
+
+Procedurally-generated tessellated-cavern flying game of sorts.
+
+<b>SCREENSHOTS:</b>
+
+<img src=""http://i272.photobucket.com/albums/jj200/increpatio/Picture54.png""/>";;http://ded.increpare.com/~locus/endlesscavernmac.zip;http://ded.increpare.com/~locus/endlesscavernwin.zip;;http://ded.increpare.com/~locus/endlesscavernsrc.zip;Haskell;;
+Defect;2008/11/29;defect.png;<i>“Here we have fetter’d and manacled Time, who wou’d otherwise slay the Gods.”</i>;"My second entry to the <a href="""">tigsource Commonplace Book competitions</a>.
+
+<strong>controls:</strong>
+left/right/space
+
+Much love to <a href=""http://distractionware.com/blog/"">terry</a> for doing the windows build.  I'm away from my desktop at the moment, and washaving library difficulties (blech) on my windows partition :/";;http://ded.increpare.com/~locus/defectmac.zip;http://ded.increpare.com/~locus/defectwin.zip;;http://ded.increpare.com/~locus/defectsrc.zip;C++;;
+Hassle;2008/12/01;hassle.png;Oh yes, there be much terror in this game.;"<blockquote>&quot±Strange man in shadowy quarter of ancient city possesses something of immemorial archaic horror.&quot±</blockquote>
+
+This constitutes my <em>third</em> entry to the <a href=""http://forums.tigsource.com/index.php?topic=3286.0"">TIGsource Commonplace Book Competition</a>.
+
+<br /><br />It's a work produced by myself the STUPENDOUS <a href=""http://forums.tigsource.com/index.php?action=profile±u=991"">mightypea</a> at <a href=""http://forums.tigsource.com/index.php?topic=3593.0"">tigjam</a>, finished recently on a bustrip from Dublin to Galway.&nbsp± Owing to music-related HASSLE, there&#039±s none (there are sound effects though.&nbsp± Music may be added later).&nbsp± I hope the silence will intensify the abject horror of this work.<br /><br />enjoy...&nbsp±";;http://ded.increpare.com/~locus/hasslemac.zip;http://ded.increpare.com/~locus/hasslewin.zip;;http://ded.increpare.com/~locus/hasslesrc.zip;C++;;
+Unattended Luggage;2008/12/07;u_a.png;twas tremendous fun to put together, fo sure.;"A little late, but <a href=""http://forums.tigsource.com/index.php?topic=3581.0"">here's</a> a link to a thread about <em>Unattended Luggage</em>, a game made with <a href=""http://www.distractionware.com/"">Terry</a> and <a href=""http://forums.tigsource.com/index.php?action=profile±u=2443"">Alteisentier</a>, while waiting about in Dublin airport.";;;http://ded.increpare.com/~locus/unattended%20luggage.zip;;http://ded.increpare.com/~locus/unattended%20luggage.zip;GameMaker;;
+Rara Racer;2008/12/08;rara.png;I regret not having a simultaneous osx build, but time constraints did not allow for such indulgences ...;"Ah, it was work, but it&#8217±s more or less done: my entry for <a href=""http://www.ludumdare.com/compo/"">Ludum Dare 13</a>.<p>
+<p>Used Allegro/C/The GIMP/FMod Ex/a microphone/audacity/Milkytracker/Dev-CPP.  Used two samples from soundsnap.com.</p>";;http://ded.increpare.com/~locus/rararacermac.zip;http://ded.increpare.com/~locus/rararacer.zip;;http://ded.increpare.com/~locus/rararacersrc.zip;C++;;
+Defez;2008/12/15;;;"Fascinated by the efforts of Terry, in his game <a href=""http://distractionware.com/blog/?p=254"">
+squish</a>, a retro demake of <a href=""http://www.gamespot.com/psp/action/crush/"">crush</a>, as well as <a href=""http://www.kokoromi.org/"">fez</a>, I started off on a small series of studies on 1/2-dimensional variations of the mechanic common to those games.  I have four done so far± I tend to put one out whenever I'm having a particularly idle evening.   The control system in them is a bit deficient, and the graphics are very basic: the point was to explore the mechanic rather than produce something polished.<p>
+
+<img src=""http://i272.photobucket.com/albums/jj200/increpatio/Picture58.png"" alt=""defez1"" /><p>
+
+The basic prototype, blocks prohibit movement when squished.
+<p>
+(<a href=""http://forums.tigsource.com/index.php?topic=2992.0"">tigsource thread </a>)
+";;http://ded.increpare.com/~locus/defez_mac.zip;http://ded.increpare.com/~locus/defez_win.zip;;http://ded.increpare.com/~locus/defez_win.zip;C++;;
+Defez 2: Refez;2008/12/15;;;"<img src=""http://ded.increpare.com/~locus/defez2.png"" alt=""defez1"" />
+<p>
+Based on Defez, but with blocks that have 'insets'.  This broadens the mechanic somewhat, but was still ultimately limited (though less limited than the first...).  Made a level editor for this one as well, which helped with design a lot.
+<p>
+(<a href=""http://forums.tigsource.com/index.php?topic=3036.0"">tigsource thread </a>)
+";;http://ded.increpare.com/~locus/defez2_mac.zip;http://ded.increpare.com/~locus/defez2_win.zip;;http://ded.increpare.com/~locus/defez2_win.zip;C++;;
+Defez 3: Mortar;2008/12/15;;;"<img src=""http://i272.photobucket.com/albums/jj200/increpatio/defez3.gif"" alt=""defez1"" />
+
+A different approach, more open but local: squishes down things either side of one of horizontal/vertical you are on.
+
+(<a href=""http://forums.tigsource.com/index.php?topic=3150.0"">tigsource thread </a>)
+";;http://ded.increpare.com/~locus/defez3mac.zip;http://ded.increpare.com/~locus/defez3win.zip;;http://ded.increpare.com/~locus/defez3win.zip;C++;;
+Defez 4: Das Kapital;2008/12/15;;;"<img src=""http://i272.photobucket.com/albums/jj200/increpatio/Picture140.png"" alt=""defez1"" />
+
+An observer-dependent one: squishes from either the top/bottom/left/right of the screen.  More limited in many ways, but would be simpler for people to grasp I think (could be implemented as a rotation, like in crush).
+
+(<a href=""http://forums.tigsource.com/index.php?topic=3805.0"">tigsource thread </a>)
+
+ I have a list of about five other mechanics that're awaiting implementation, but I seem to have lost some interest in pursuing this much further <em>for the moment</em>.";;http://ded.increpare.com/~locus/defez4mac.zip;http://ded.increpare.com/~locus/defez4win.zip;;http://ded.increpare.com/~locus/defez4src.zip;C++;;
+lacrimosa;2008/12/30;lacr.png;not exactly <i>happy</i> with it, but I doubt that I will loose any sleep over putting it out in the wild either.;A short game made to take my mind off debugging troubles with a slightly larger game.  Sort of 'concept', sort of 'hmm'.;;http://ded.increpare.com/~locus/lacrmac.zip;http://ded.increpare.com/~locus/lacrwin.zip;;http://ded.increpare.com/~locus/lacrsrc.zip;C++;;
+The Hero Saved Me;2009/01/01;herosaved.png;Rough around the edges, but it be okay for What It Is, I think.;"An effort for the <a href=""http://www.thepoppenkast.com/forum/index.php?topic=1004.0"">thepoppenkast.com</a> 3-hour cities comp.";;http://ded.increpare.com/~locus/The_Hero_Saved_Me_Mac.zip;http://ded.increpare.com/~locus/The_Hero_Saved_Me_Win.zip;;http://ded.increpare.com/~locus/The_Hero_Saved_Me_Src.zip;C++;;
+Infidelidad;2009/01/07;infidelidad.png;I am reasonably happy with this, short as it is.  My first foray into '3D', so...;"An entry for the <a href=""http://www.adva.com.ar/foro/index.php?board=33.0"" target=""_blank"">codear single boss competition</a> that&#039±s currently running.
+
+[Linux build by Spartan requires separate installation of SDL and fmodex libraries]
+
+Translation provided by <a href=""http://www.agj.cl/"">agj</a>.<br /><br />Controls:<br />up/down/left/right/space (wife)<br />w/s/a/d (lover)<br /><br />";;http://ded.increpare.com/~locus/infidelidadmac.zip;http://ded.increpare.com/~locus/infidelidadwin.zip;http://ded.increpare.com/~locus/infidelidadlinux.tar.bz2.tar;http://ded.increpare.com/~locus/infidelidadsrc.zip;C++;;
+Burn;2009/01/11;burn.png;The title, and the compo themes might provide <i>clues</i>.  This is a <i>puzzle</i>.;"An entry for the <a href=""http://www.ludumdare.com/compo/category/minild/minild-6-minild-2/""LD 6 minicomp</a>, which had the overall theme Monochrome.  Subthemes were picked from a list, I chose 'colour.
+
+It's also my first game in flash :)
+
+By way of explanation, I should say this is very much a conscious <a href=""http://www.towlr.com/"">towlr</a>-genre game.";;;http://ded.increpare.com/~locus/burnwin.zip;;http://ded.increpare.com/~locus/burnsrc.zip;Flash;http://www.increpare.com/burn;
+Kristallnacht;2009/01/19;kristall.png;Screenshot is of older version.  This version has no numbers, promise.;"Whipped the source out earlier this weekend, finished it.
+
+<a href=""http://increpare.bandcamp.com/album/kristallnacht"">soundtrack</a>
+
+edit: I updated this, to add dialog boxes proper instead of having messages overwrite the tooltips.
+editedit: another update± in game restart, title screen proper± made it more gui-driven
+";;http://ded.increpare.com/~locus/kristallnacht_mac.zip;http://ded.increpare.com/~locus/kristallnacht_win.zip;;http://ded.increpare.com/~locus/kristallnacht_src.zip;C++;;
+The Lua Puppet;2009/01/26;luapuppet.png;deeply sorry about the lackof mac/binary versions, really;"Spent the weekend fidgeting about with Lua on my bus trip to/from galway over the weekend (and an hour or two in between).  Made a small game inspired by Quinn Dunki's recent effort, <a href=""http://www.quinndunki.com/gate/"">gate</a>.  It's lua-themed, instead of circuit-themed, though.  And very short.
+
+<b>And windows/linux only.</b>  To play the windows version, you'll need to download <a href=„http://www.lua.org/"">lua</a>.";;;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;Lua;;
+Transplatform;2009/01/30;transplatform.png;I did not have the motivation to polish it up± it be pretty shit as games go, and I wanted to move on to something more interesting.;"As part of my continuing efforts to learn AS3, I made a platform game.  It's <em>rather</em> rough around the edges.
+
+edit: doubled player speed.  more playable now.  still not great as a game, though.  may polish it more on and off over the next while.";;;;;;;http://www.kongregate.com/games/increpare/transplatform;
+The Black Yeti;2009/02/09;yetiicon.png;It was a nice break from the main project I'm working on, which should be finished within the next fortnight.;"A simple puzzle game, for the mini ludum dare 7, which had the theme <a href=""http://www.ludumdare.com/compo/2009/02/06/theme-cryptozoology/"">cryptozoology</a>. ";;;;;http://ded.increpare.com/~locus/blackyeti_src.zip;Flash;http://www.kongregate.com/games/increpare/the-black-yeti;
+Kiss Me;2009/02/16;twosprites.png;All of the sexually explicit content sort of mysteriously never materialized over the course of the game development.;"Kiss me is my (slightly late) entry to the unofficial <a href=""http://forums.tigsource.com/index.php?topic=4608.0"">Valentine's Day Love Letter Competition</a> on TIGsource.  It's a two-player game.
+
+<strong>Controls</strong>
+awd &lt± - player 1
+left/up/right &lt± - player 2
+";;http://ded.increpare.com/~locus/kissmemac.zip;http://ded.increpare.com/~locus/kissmewin.zip;;http://ded.increpare.com/~locus/kissmesrc.zip;C++;;
+Opera Omnia;2009/02/21;operaomnia.png;a Complicated Interface Game± play at your peril.;"A small/medium-sized though still rather experimental effort.
+
+<a href=""http://increpare.bandcamp.com/album/opera-omnia"">soundtrack</a>
+
+Update:
+
+Tommo Zhou, of <a href=""http://www.indie-g.com"">indie-g</a>, has made a chinese translation of the game into blitzmax.  It can be downloaded from <a href=""http://www.indie-g.com/wp/?p=366"">this page</a> on his site.  I'm hosting copies here as well:
+
+<a href=""http://ded.increpare.com/~locus/operaomniachinese_win.zip"">Windows (Chinese)</a> (4.4MB)
+<a href=""http://ded.increpare.com/~locus/operaomniachinese_src.zip"">Source (Chinese)</a> (14KB)
+
+I did not oversee the translation± the work should be taken on its own merit.
+
+<del datetime=""2009-02-23T02:37:47+00:00"">
+Technically, this is, like, a pre-release± I anticipate I might change a couple of interface things over the next couple of days, but the game itself is done.
+EDIT: finished version up, along with source</del>
+EDIT: Okay, that wasn't finished.  In fact, it was a bit broken.  <em>Now</em> it's finished.
+EDIT: now XP64-compatible.
+EDIT: new version released...some slight polishing done...
+EDIT(24 mar): new version released (1.25)± fixed level 18 bug (I hope), and some other small issues ";;http://ded.increpare.com/~locus/operaomniamac.zip;http://ded.increpare.com/~locus/operaomniawin.zip;;http://ded.increpare.com/~locus/operaomniasrc.zip;C++;;
+Signifier;2009/02/27;iconsign.png;A necessary release of the stipple-ache that someone else's work induced in me.;"A short concept-game I did over the past two days.
+
+(edit: bug rendered it unfinishable± should be fixed now)
+(EDIT: BSOD error some vista users experienced should be fixed now)";;http://ded.increpare.com/~locus/signifiermac.zip;http://ded.increpare.com/~locus/signifierwin.zip;;http://ded.increpare.com/~locus/signifiersrc.zip;C++;;
+Mirror Stage;2009/03/01;mstitle.png;In which I break my rule of thumb not to post more than once about any game.;"The '2 or 3 day' wait until I got this finished is over.  It should work with XP 64 now.  A small amount of new content has been added (most notably another custom chapter by <a href=""http://www.distractionware.com/"">Terry</a>), and the editor has been tarted up a certain amount.
+
+I hope nothing in particular is broke in this build, but if you come across any crashes/&c., I would appreciate very much being told.
+
+<a href=""http://increpare.bandcamp.com/album/mirror-stage"">soundtrack</a>
+
+The source I must apologise for in advance± it's quite rotten in its organisation.
+
+edit: if you have problem running this on windows 7, try running it in XP SP3 Compatibility Mode.";;http://ded.increpare.com/~locus/mirror_stage_mac.zip;http://ded.increpare.com/~locus/mirror_stage_win.zip;;http://ded.increpare.com/~locus/mirror_stage_src.zip;C++;;
+Adventures in a Foreign Land;2009/03/02;aiafl.png;this constitutes my swing at the rpgdx.net 48 hour rpg competition.;;;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_mac.zip;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_win.zip;;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_src.zip;C++;;
