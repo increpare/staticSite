@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>increpare games</title>
+
+    <style>
+html, body {
+  text-align: center;
+}
+
+table{
+  display: inline;
+}
+
+td {
+  width:120px;
+  vertical-align: top;
+}
+
+.ico {
+  width:100px;
+  height:100px;
+  border-radius: 25%;
+  box-shadow: 0 0 0 1px black;
+}
+
+td {
+  padding:10px;
+  padding-bottom: 20px;
+}
+
+hr {
+  left:-30px;
+  right:-30px;
+  border-top: 1px solid black;
+}
+
+#footer{
+  text-align: center;
+}
+  </style>
+  </head>
+
+  <body>
+ 
+ <h1>increpare games</h1>
+
+      <hr>
+      <div id="footer"> 
+        <a href="https://twitter.com/increpare">twitter</a> | <a href="http://github.com/increpare">github</a> | <a href="https://www.patreon.com/increpare">patreon</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=flickgame&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a> | <a href="privacy.html">privacy policy</a> 
+      </div>
+      <hr>
+ <p>
+  <table>
+      ${doGrid()}
+  </table>
+  </div>
+  </body>
+</html>

@@ -4,16 +4,19 @@ var fs = require('fs')
 
 // STEP 1 : generate folders
 
-var exec = require('child_process').exec
-exec("rm -rf myblog/_posts/*.md")
+var exec = require('child_process').execSync
+exec("rm -rf output")
+exec("mkdir output")
+exec("mkdir output/game")
+exec("mkdir output/icos")
+exec("cp templates/privacy.html output/privacy.html")
 
 // STEP 2 : read in CSV
-
 
 function removeOuterQuotes(s){
 	s=s.trim();
 	if (s[0]==='"' && s[s.length-1]==='"') {
-		s = s.substring(1, s.length-2);
+		s = s.substring(1, s.length-1);
 		s = s.replace(/""/g,'"');
 	}
 	return s;
@@ -28,16 +31,30 @@ function htmlToMarkdown(s_html){
 
 var content = fs.readFileSync('database/table.csv','utf8')
 
+var postTemplate = '`'+fs.readFileSync('templates/post.txt')+'`';
+var indexTemplate = '`'+fs.readFileSync('templates/index.txt')+'`';
 var rows =  content.split("\r")
 
 var table = rows.map( r => r.split(";").map( s => s.trim().replace(/±/gi,';')).map( s => removeOuterQuotes(s) )  )
 
+table.shift();
+
 // STEP 3 : generate sub files
-for (var i=1;i<table.length;i++){
+for (var i=0;i<table.length;i++){
 	var r = table[i]
 	var title = r[0]
-	var date = r[1].replace(/"/gi,'-').replace(/\//gi,'-').trim()
+
+	var niceDate=r[1]
+	r[1] = r[1].replace(/"/gi,'-').replace(/\//gi,'-').trim()
+	var date = r[1]
+
 	var icon = r[2]
+
+	if (icon==""){
+		icon = "commutative.jpg"
+		r[2] = icon
+	}
+
 	var caption = r[3]
 	var desc = r[4]
 	var html = r[5]
@@ -49,38 +66,15 @@ for (var i=1;i<table.length;i++){
 	var flash = r[11]
 	var zip = r[12]
 
-	var categories = [];
-	if (html!=""){
-		categories.push('HTML')
-	}
-	if (win!=""){
-		categories.push('Windows')
-	}
-	if (mac!=""){
-		categories.push('macOS')
-	}
-	if (linux!=""){
-		categories.push('Linux')
-	}
-	if (zip!=""){
-		categories.push('Zip')
-	}
-	if (flash!=""){
-		categories.push('Flash')
-	}
-	if (src!=""){
-		categories.push('Source')
-	}
-	if (src_desc!=""){
-		categories+=`"${src_desc}" `
-	}
-	categories = categories.trim()
+	var datesplit = date.split('-')
+	var datenum = parseInt(datesplit[0])*10000+parseInt(datesplit[1])*100+parseInt(datesplit[2]);
+	r.push(datenum);
 
 	bodyMarkdown = htmlToMarkdown(desc)
 
 	captionMarkdown = htmlToMarkdown(caption)
 
-	var linkList = function(pre,post){
+	var linkList = function(pre,presrc,post){
 		var result="";
 		if (html!=""){
 			result += `${pre} <a href="${html}">Play Now</a> (HTML5) ${post} \n`
@@ -98,34 +92,64 @@ for (var i=1;i<table.length;i++){
 			result += `${pre} <a href="${zip}">Download Zip file</a> ${post} \n`
 		}
 		if (flash!=""){
-			result += `${pre} <a href="${flash}">Play Now</a> (Flash) ${post} \n`
+			result += `${pre} <a href="${flash}">Play Now</a> ${post} (Flash) \n`
 		}
 		if (src!=""){
-			result += `${pre} <a href="${source}">Download Source Code</a> (${src_desc}) ${post} \n`
+			result += `${presrc} <a href="${src}">Download Source Code</a> ${post} (${src_desc}) \n`
 		}
+		return result;
 	}
-
-		var page = `---
-	}
-	layout: post
-	title: "${title}"
-	categories: ${categories}
-	win: "${win}"
-	mac: "${mac}"
-	linux: "${linux}"
-	flash: "${flash}"
-	zip: "${zip}"
-	src: "${src}"
-	icon: "${icon}"
-	caption: "${captionMarkdown}"
-	---
-	${bodyMarkdown}
-		`
 
 	var safeName = title.replace(/[ ]/g,'-').replace(/[^a-zA-Z0-9-_\.]/g,'')
-	var pageName = date+"-"+safeName+".md";
-	
-	fs.writeFile("myblog/_posts/"+pageName,page);
+	var pageName = date+"-"+safeName+".html";
+	r.push(pageName)
+
+	var page=eval(postTemplate);
+	fs.writeFile("output/game/"+pageName,page);
 
 }
 
+
+/* make index */
+
+function sortByDate(a,b){
+  if( a[13] > b[13]){
+      return -1;
+  }else if( a[13] < b[13] ){
+      return 1;
+  }
+  return 0;
+}
+
+table.sort(sortByDate)
+
+function doGrid(){
+	var s = ""
+
+	for (var i=0;i<table.length;i++){
+		var r = table[i];
+
+		var title = r[0]
+		var date = r[1]
+		var icon = r[2]
+
+
+		var pageName = r[14]
+
+		if (i%6===0){
+			s+="\t<tr>\n"
+		}
+
+		s+=`\t\t<td><a href="game/${pageName}"><img class="ico" src="icos/${icon}"><br>${title}</a>`
+
+		s+="\n"
+
+
+		exec(`cp icos/icos/${icon} output/icos/${icon}`)
+
+	}
+	return s;
+}
+
+var page=eval(indexTemplate)
+fs.writeFile("output/index.html",page)
