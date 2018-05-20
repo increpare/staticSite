@@ -5,6 +5,7 @@ var fs = require('fs')
 // STEP 1 : generate folders
 
 var exec = require('child_process').execSync
+var execAsync = require('child_process').exec
 exec("rm -rf output")
 exec("mkdir output")
 exec("mkdir output/game")
@@ -50,11 +51,6 @@ for (var i=0;i<table.length;i++){
 
 	var icon = r[2]
 
-	if (icon==""){
-		icon = "commutative.jpg"
-		r[2] = icon
-	}
-
 	var caption = r[3]
 	var desc = r[4]
 	var html = r[5]
@@ -69,6 +65,17 @@ for (var i=0;i<table.length;i++){
 	var datesplit = date.split('-')
 	var datenum = parseInt(datesplit[0])*10000+parseInt(datesplit[1])*100+parseInt(datesplit[2]);
 	r.push(datenum);
+
+	var safeName = title.replace(/[ ]/g,'-').replace(/[^a-zA-Z0-9-_\.]/g,'')
+	var pageName = date+"-"+safeName+".html";
+
+
+	if (icon==""){
+		var iconName = date+"-"+safeName+".png";
+		execAsync(`./generateicon.js ${safeName} output/icos/${iconName}`)
+		r[2] = iconName
+		icon = iconName
+	}
 
 	bodyMarkdown = htmlToMarkdown(desc)
 
@@ -100,8 +107,7 @@ for (var i=0;i<table.length;i++){
 		return result;
 	}
 
-	var safeName = title.replace(/[ ]/g,'-').replace(/[^a-zA-Z0-9-_\.]/g,'')
-	var pageName = date+"-"+safeName+".html";
+
 	r.push(pageName)
 
 	var page=eval(postTemplate);
@@ -144,8 +150,7 @@ function doGrid(){
 
 		s+="\n"
 
-
-		exec(`cp icos/icos/${icon} output/icos/${icon}`)
+		execAsync(`cp icos/${icon} output/icos/${icon}`)
 
 	}
 	return s;
