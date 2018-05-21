@@ -158,7 +158,7 @@ editedit: another update± in game restart, title screen proper± made it more g
 ";;http://ded.increpare.com/~locus/kristallnacht_mac.zip;http://ded.increpare.com/~locus/kristallnacht_win.zip;;http://ded.increpare.com/~locus/kristallnacht_src.zip;C++;;;
 The Lua Puppet;2009/01/26;luapuppet.png;deeply sorry about the lackof mac/binary versions, really;"Spent the weekend fidgeting about with Lua on my bus trip to/from galway over the weekend (and an hour or two in between).  Made a small game inspired by Quinn Dunki's recent effort, <a href=""http://www.quinndunki.com/gate/"">gate</a>.  It's lua-themed, instead of circuit-themed, though.  And very short.
 <p>
-<b>And windows/linux only.</b>  To play the windows version, you'll need to download <a href=„http://www.lua.org/"">lua</a>.";;;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;Lua;;;
+<b>And windows/linux only.</b>  To play the windows version, you'll need to download <a href=""http://www.lua.org/"">lua</a>.";;;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;http://ded.increpare.com/~locus/TheLuaPuppet.zip;Lua;;;
 Transplatform;2009/01/30;transplatform.png;I did not have the motivation to polish it up± it be pretty shit as games go, and I wanted to move on to something more interesting.;"As part of my continuing efforts to learn AS3, I made a platform game.  It's <em>rather</em> rough around the edges.
 <p>
 edit: doubled player speed.  more playable now.  still not great as a game, though.  may polish it more on and off over the next while.";;;;;;;http://www.kongregate.com/games/increpare/transplatform;;
