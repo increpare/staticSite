@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="alternate" type="application/rss+xml" href="https://www.increpare.com/feed.rss" title="increpare.com RSS feed" />
-
-
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
     <title>increpare games</title>
 
     <style>
@@ -14,12 +12,7 @@ html, body {
   text-align: center;
 }
 
-table{
-  display: inline;
-}
-
 td {
-  width:120px;
   vertical-align: top;
 }
 
@@ -31,16 +24,8 @@ img {
         -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
-.ico {
-  width:100px;
-  height:100px;
-  border-radius: 25%;
-  box-shadow: 0 0 0 1px black;
-}
-
 td {
-  padding:10px;
-  padding-bottom: 20px;
+  width:100%;
 }
 
 hr {
@@ -49,7 +34,108 @@ hr {
   border-top: 1px solid black;
 }
 
+.header {
+  height:20px;
+  margin: 0;
+  padding:0;
+}
 #footer{
+  text-align: center;
+  font-size: 120%;
+}
+
+
+.card {
+  text-align: center;
+  display: inline-block;
+  width:290px;
+  /*outline: 1px solid black;*/
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px black;
+  padding-top:20px;
+  margin-top:10px;
+  padding-bottom:25px;
+  margin-bottom:10px;
+  padding-left:0;
+  margin-left:10px;
+  padding-right:0;
+  margin-right:10px;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 150%;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+color:gray;
+padding-bottom: 3px;
+}
+
+
+.thumb {
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.leftcol {
+  width:300px;
+}
+
+.container {
+margin: 8px;
+  position: relative;
+  width: 50px;
+  height:50px;
+  display: inline-block;
+}
+
+.icon {
+  display: inline;
+  height: auto;
+  width:50px;
+  height:50px;
+  opacity:0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+}
+
+.container:hover .icon {
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
   </style>
@@ -59,15 +145,10 @@ hr {
  
  <h1>increpare games</h1>
 
-      <hr>
-      <div id="footer"> 
-        <a href="https://twitter.com/increpare">twitter</a> | <a href="http://github.com/increpare">github</a> | <a href="https://www.patreon.com/increpare">patreon</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=flickgame&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a> | <a href="privacy.html">privacy policy</a> 
-      </div>
-      <hr>
- <p>
-  <table>
-      ${doGrid()}
-  </table>
+  <div id="footer"> 
+    <a href="https://twitter.com/increpare">twitter</a>&emsp13;|&emsp13;<a href="http://github.com/increpare">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=increpare&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a> 
   </div>
+  <p>
+  ${doGrid()}
   </body>
 </html>
