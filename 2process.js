@@ -165,9 +165,12 @@ function doGrid(){
 		var niceDate = r[16]
 
 		var cardTemplate = `<div class="card">
+		<a href="game/${pageName}">
+        <img class="thumb" width="250px" height="250px" src="icos/${icon}">
         <div class="date">${niceDate}</div >
-        <a href="game/${pageName}"><div class="gamename">${title}</div>
-        <img class="thumb" width="250px" height="250px" src="icos/${icon}"></p>`;
+        <div class="gamename">${title}</div>
+        </a>
+        `;
 
         if (html!=""){
         	cardTemplate += `

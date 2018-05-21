@@ -9,7 +9,6 @@
     <style>
 html, body {
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 td {
@@ -52,9 +51,9 @@ hr {
   /*outline: 1px solid black;*/
   border-radius: 5px;
   box-shadow: 0 0 0 1px black;
-  padding-top:10px;
+  padding-top:20px;
   margin-top:10px;
-  padding-bottom:35px;
+  padding-bottom:25px;
   margin-bottom:10px;
   padding-left:0;
   margin-left:10px;
@@ -62,6 +61,13 @@ hr {
   margin-right:10px;
 }
 
+.card a{
+  text-decoration: none;
+}
+
+.card a .gamename {
+  text-decoration: underline;
+}
 .gamename {
   padding-left: 10px;
   padding-right: 10px;
@@ -74,7 +80,9 @@ hr {
 
 .date {
 color:gray;
+padding-bottom: 3px;
 }
+
 
 .thumb {
   margin-bottom: 5px;
