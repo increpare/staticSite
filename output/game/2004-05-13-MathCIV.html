@@ -14,9 +14,22 @@
 html {
     display: table;
     margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   padding-top: 20px;
     display: table-cell;
     vertical-align: top;
@@ -80,18 +93,19 @@ hr {
 }
 
 img{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
+  border: 1px solid black;
 }
   </style>
   </head>
 
   <body>
-    <a href="../index.html">&lt;&lt; back to increpare.com &lt;&lt;</a>
+    <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">2009/01/07</span>
     <div class="card">
     <div class="docenter">
-    	<img src="../icos/2004-05-13-MathCIV.png">
+    	<img width="250px" height="250px" src="../icos/2004-05-13-MathCIV.png">
      	<h1>MathCIV</h1>
       	<div id="quote"></div>
       	<div id="description">Freeciv never seemed mathematically accurate enough for me .. i mean it’s all well and good to just discover gravity and have newton’s workshop, but to do gravity you really do need to have a basic knowledge of synthetic infinitesimal geometry, and to know that you have to know geometry … but on the other hand you should have the opportunity to learn functional analysis and algebra and category theory as your civilisation progresses. You can also not just specify to build a university in your city, but you can also specify what departments you want to build :)<p>

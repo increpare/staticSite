@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>increpare games</title>
+
+    <style>
+html, body {
+  text-align: center;
+}
+
+td {
+  vertical-align: top;
+}
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+td {
+  width:100%;
+}
+
+hr {
+  left:-30px;
+  right:-30px;
+  border-top: 1px solid black;
+}
+
+.header {
+  height:20px;
+  margin: 0;
+  padding:0;
+}
+#footer{
+  text-align: center;
+  font-size: 120%;
+}
+
+
+.card {
+  text-align: center;
+  display: inline-block;
+  width:150px;
+  height:250px;
+  /*outline: 1px solid black;*/
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px black;
+  padding-top:10px;
+  margin-top:10px;
+  padding-bottom:20px;
+  margin-bottom:10px;
+  padding-left:10px;
+  margin-left:10px;
+  padding-right:10px;
+  margin-right:10px;
+}
+
+.gamename {
+  /*font-size: 150%;*/
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+color:gray;
+}
+
+.thumb {
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.leftcol {
+  width:300px;
+}
+
+.container {
+  margin: 0px;
+  position: relative;
+  width: 30px;
+  height:30px;
+  display: inline-block;
+}
+
+.icon {
+  display: inline;
+  height: auto;
+  width:30px;
+  height:30px;
+  opacity:0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+}
+
+.container:hover .icon {
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  </style>
+  </head>
+
+  <body>
+ 
+ <h1>increpare games</h1>
+
+  <div id="footer"> 
+    <a href="https://twitter.com/increpare">twitter</a>&emsp13;|&emsp13;<a href="http://github.com/increpare">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=increpare&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a> 
+  </div>
+  <p>
+  ${doGrid()}
+  </body>
+</html>

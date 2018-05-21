@@ -14,9 +14,22 @@
 html {
     display: table;
     margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   padding-top: 20px;
     display: table-cell;
     vertical-align: top;
@@ -80,18 +93,19 @@ hr {
 }
 
 img{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
+  border: 1px solid black;
 }
   </style>
   </head>
 
   <body>
-    <a href="../index.html">&lt;&lt; back to increpare.com &lt;&lt;</a>
+    <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">2009/01/07</span>
     <div class="card">
     <div class="docenter">
-    	<img src="../icos/burn.png">
+    	<img width="250px" height="250px" src="../icos/burn.png">
      	<h1>Burn</h1>
       	<div id="quote">The title, and the compo themes might provide <i>clues</i>.  This is a <i>puzzle</i>.</div>
       	<div id="description">An entry for the <a href="http://www.ludumdare.com/compo/category/minild/minild-6-minild-2/">LD 6 minicomp</a>, which had the overall theme Monochrome.  Subthemes were picked from a list, I chose 'colour.

@@ -14,9 +14,22 @@
 html {
     display: table;
     margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   padding-top: 20px;
     display: table-cell;
     vertical-align: top;
@@ -80,18 +93,19 @@ hr {
 }
 
 img{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
+  border: 1px solid black;
 }
   </style>
   </head>
 
   <body>
-    <a href="../index.html">&lt;&lt; back to increpare.com &lt;&lt;</a>
+    <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">2009/01/07</span>
     <div class="card">
     <div class="docenter">
-    	<img src="../icos/herosaved.png">
+    	<img width="250px" height="250px" src="../icos/herosaved.png">
      	<h1>The Hero Saved Me</h1>
       	<div id="quote">Rough around the edges, but it be okay for What It Is, I think.</div>
       	<div id="description">An effort for the <a href="http://www.thepoppenkast.com/forum/index.php?topic=1004.0">thepoppenkast.com</a> 3-hour cities comp.</div>

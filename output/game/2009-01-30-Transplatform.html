@@ -14,9 +14,22 @@
 html {
     display: table;
     margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   padding-top: 20px;
     display: table-cell;
     vertical-align: top;
@@ -80,18 +93,19 @@ hr {
 }
 
 img{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
+  border: 1px solid black;
 }
   </style>
   </head>
 
   <body>
-    <a href="../index.html">&lt;&lt; back to increpare.com &lt;&lt;</a>
+    <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">2009/01/07</span>
     <div class="card">
     <div class="docenter">
-    	<img src="../icos/transplatform.png">
+    	<img width="250px" height="250px" src="../icos/transplatform.png">
      	<h1>Transplatform</h1>
       	<div id="quote">I did not have the motivation to polish it up; it be pretty shit as games go, and I wanted to move on to something more interesting.</div>
       	<div id="description">As part of my continuing efforts to learn AS3, I made a platform game.  It's <em>rather</em> rough around the edges.

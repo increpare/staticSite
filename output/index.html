@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="">
     <meta name="author" content="">
     <title>increpare games</title>
@@ -9,27 +9,23 @@
     <style>
 html, body {
   text-align: center;
-}
-
-table{
-  display: inline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 td {
-  width:120px;
   vertical-align: top;
 }
 
-.ico {
-  width:100px;
-  height:100px;
-  border-radius: 25%;
-  box-shadow: 0 0 0 1px black;
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 td {
-  padding:10px;
-  padding-bottom: 20px;
+  width:100%;
 }
 
 hr {
@@ -38,7 +34,99 @@ hr {
   border-top: 1px solid black;
 }
 
+.header {
+  height:20px;
+  margin: 0;
+  padding:0;
+}
 #footer{
+  text-align: center;
+  font-size: 120%;
+}
+
+
+.card {
+  text-align: center;
+  display: inline-block;
+  width:290px;
+  /*outline: 1px solid black;*/
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px black;
+  padding-top:10px;
+  margin-top:10px;
+  padding-bottom:35px;
+  margin-bottom:10px;
+  padding-left:0;
+  margin-left:10px;
+  padding-right:0;
+  margin-right:10px;
+}
+
+.gamename {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 150%;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+color:gray;
+}
+
+.thumb {
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.leftcol {
+  width:300px;
+}
+
+.container {
+margin: 8px;
+  position: relative;
+  width: 50px;
+  height:50px;
+  display: inline-block;
+}
+
+.icon {
+  display: inline;
+  height: auto;
+  width:50px;
+  height:50px;
+  opacity:0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+}
+
+.container:hover .icon {
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
   </style>
@@ -48,48 +136,694 @@ hr {
  
  <h1>increpare games</h1>
 
-      <hr>
-      <div id="footer"> 
-        <a href="https://twitter.com/increpare">twitter</a> | <a href="http://github.com/increpare">github</a> | <a href="https://www.patreon.com/increpare">patreon</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=flickgame&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a> | <a href="privacy.html">privacy policy</a> 
-      </div>
-      <hr>
- <p>
-  <table>
-      	<tr>
-		<td><a href="game/2009-03-02-Adventures-in-a-Foreign-Land.html"><img class="ico" src="icos/aiafl.png"><br>Adventures in a Foreign Land</a>
-		<td><a href="game/2009-03-01-Mirror-Stage.html"><img class="ico" src="icos/mstitle.png"><br>Mirror Stage</a>
-		<td><a href="game/2009-02-27-Signifier.html"><img class="ico" src="icos/iconsign.png"><br>Signifier</a>
-		<td><a href="game/2009-02-21-Opera-Omnia.html"><img class="ico" src="icos/operaomnia.png"><br>Opera Omnia</a>
-		<td><a href="game/2009-02-16-Kiss-Me.html"><img class="ico" src="icos/twosprites.png"><br>Kiss Me</a>
-		<td><a href="game/2009-02-09-The-Black-Yeti.html"><img class="ico" src="icos/yetiicon.png"><br>The Black Yeti</a>
-	<tr>
-		<td><a href="game/2009-01-30-Transplatform.html"><img class="ico" src="icos/transplatform.png"><br>Transplatform</a>
-		<td><a href="game/2009-01-26-The-Lua-Puppet.html"><img class="ico" src="icos/luapuppet.png"><br>The Lua Puppet</a>
-		<td><a href="game/2009-01-19-Kristallnacht.html"><img class="ico" src="icos/kristall.png"><br>Kristallnacht</a>
-		<td><a href="game/2009-01-11-Burn.html"><img class="ico" src="icos/burn.png"><br>Burn</a>
-		<td><a href="game/2009-01-07-Infidelidad.html"><img class="ico" src="icos/infidelidad.png"><br>Infidelidad</a>
-		<td><a href="game/2009-01-01-The-Hero-Saved-Me.html"><img class="ico" src="icos/herosaved.png"><br>The Hero Saved Me</a>
-	<tr>
-		<td><a href="game/2008-12-30-lacrimosa.html"><img class="ico" src="icos/lacr.png"><br>lacrimosa</a>
-		<td><a href="game/2008-12-18-Defez-4-Das-Kapital.html"><img class="ico" src="icos/2008-12-18-Defez-4-Das-Kapital.png"><br>Defez 4: Das Kapital</a>
-		<td><a href="game/2008-12-17-Defez-3-Mortar.html"><img class="ico" src="icos/2008-12-17-Defez-3-Mortar.png"><br>Defez 3: Mortar</a>
-		<td><a href="game/2008-12-16-Defez-2-Refez.html"><img class="ico" src="icos/2008-12-16-Defez-2-Refez.png"><br>Defez 2: Refez</a>
-		<td><a href="game/2008-12-15-Defez.html"><img class="ico" src="icos/2008-12-15-Defez.png"><br>Defez</a>
-		<td><a href="game/2008-12-08-Rara-Racer.html"><img class="ico" src="icos/rara.png"><br>Rara Racer</a>
-	<tr>
-		<td><a href="game/2008-12-07-Unattended-Luggage.html"><img class="ico" src="icos/u_a.png"><br>Unattended Luggage</a>
-		<td><a href="game/2008-12-01-Hassle.html"><img class="ico" src="icos/hassle.png"><br>Hassle</a>
-		<td><a href="game/2008-11-29-Defect.html"><img class="ico" src="icos/defect.png"><br>Defect</a>
-		<td><a href="game/2008-11-15-Endless-Cavern.html"><img class="ico" src="icos/2008-11-15-Endless-Cavern.png"><br>Endless Cavern</a>
-		<td><a href="game/2008-11-01-Portile.html"><img class="ico" src="icos/portile.gif"><br>Portile</a>
-		<td><a href="game/2008-10-27-Lady-Boy-Love-Collection.html"><img class="ico" src="icos/lblcshot.png"><br>Lady Boy Love Collection</a>
-	<tr>
-		<td><a href="game/2008-10-09-lightcone-prototype-2.html"><img class="ico" src="icos/lightconehs.gif"><br>lightcone: prototype 2</a>
-		<td><a href="game/2008-10-05-lightcone-prototype-1.html"><img class="ico" src="icos/lightconetitle.jpg"><br>lightcone: prototype 1</a>
-		<td><a href="game/2005-10-03-Trinity-MUD.html"><img class="ico" src="icos/2005-10-03-Trinity-MUD.png"><br>Trinity MUD</a>
-		<td><a href="game/2004-05-13-MathCIV.html"><img class="ico" src="icos/2004-05-13-MathCIV.png"><br>MathCIV</a>
-
-  </table>
+  <div id="footer"> 
+    <a href="https://twitter.com/increpare">twitter</a>&emsp13;|&emsp13;<a href="http://github.com/increpare">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=increpare&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a> 
   </div>
+  <p>
+  </div><div class="card">
+        <div class="date">2009/03/02</div >
+        <a href="game/2009-03-02-Adventures-in-a-Foreign-Land.html"><div class="gamename">Adventures in a Foreign Land</div>
+        <img class="thumb" width="250px" height="250px" src="icos/aiafl.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/adventures_in_a_foreign_land_win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/adventures_in_a_foreign_land_mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/adventures_in_a_foreign_land_src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/03/01</div >
+        <a href="game/2009-03-01-Mirror-Stage.html"><div class="gamename">Mirror Stage</div>
+        <img class="thumb" width="250px" height="250px" src="icos/mstitle.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/mirror_stage_win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/mirror_stage_mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/mirror_stage_src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/02/27</div >
+        <a href="game/2009-02-27-Signifier.html"><div class="gamename">Signifier</div>
+        <img class="thumb" width="250px" height="250px" src="icos/iconsign.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/signifierwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/signifiermac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/signifiersrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/02/21</div >
+        <a href="game/2009-02-21-Opera-Omnia.html"><div class="gamename">Opera Omnia</div>
+        <img class="thumb" width="250px" height="250px" src="icos/operaomnia.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/operaomniawin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/operaomniamac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/operaomniasrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/02/16</div >
+        <a href="game/2009-02-16-Kiss-Me.html"><div class="gamename">Kiss Me</div>
+        <img class="thumb" width="250px" height="250px" src="icos/twosprites.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kissmewin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kissmemac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kissmesrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/02/09</div >
+        <a href="game/2009-02-09-The-Black-Yeti.html"><div class="gamename">The Black Yeti</div>
+        <img class="thumb" width="250px" height="250px" src="icos/yetiicon.png"></p>
+		          <div class="container">
+		            <a href="http://www.kongregate.com/games/increpare/the-black-yeti"  title="Play Online Now (Flash)" alt="Play Online Now (Flash)">
+		              <img width="50px" height="50px" class="icon" src="symbols/flash.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">FLASH</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/blackyeti_src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Flash)" alt="Download Source Code (Flash)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/30</div >
+        <a href="game/2009-01-30-Transplatform.html"><div class="gamename">Transplatform</div>
+        <img class="thumb" width="250px" height="250px" src="icos/transplatform.png"></p>
+		          <div class="container">
+		            <a href="http://www.kongregate.com/games/increpare/transplatform"  title="Play Online Now (Flash)" alt="Play Online Now (Flash)">
+		              <img width="50px" height="50px" class="icon" src="symbols/flash.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">FLASH</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/26</div >
+        <a href="game/2009-01-26-The-Lua-Puppet.html"><div class="gamename">The Lua Puppet</div>
+        <img class="thumb" width="250px" height="250px" src="icos/luapuppet.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/TheLuaPuppet.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/TheLuaPuppet.zip" title="Download for Linux" alt="Download for Linux" >
+		              <img width="50px" height="50px" class="icon" src="symbols/linux.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">LINUX</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/TheLuaPuppet.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Lua)" alt="Download Source Code (Lua)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/19</div >
+        <a href="game/2009-01-19-Kristallnacht.html"><div class="gamename">Kristallnacht</div>
+        <img class="thumb" width="250px" height="250px" src="icos/kristall.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kristallnacht_win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kristallnacht_mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/kristallnacht_src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/11</div >
+        <a href="game/2009-01-11-Burn.html"><div class="gamename">Burn</div>
+        <img class="thumb" width="250px" height="250px" src="icos/burn.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/burnwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://www.increpare.com/burn"  title="Play Online Now (Flash)" alt="Play Online Now (Flash)">
+		              <img width="50px" height="50px" class="icon" src="symbols/flash.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">FLASH</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/burnsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Flash)" alt="Download Source Code (Flash)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/07</div >
+        <a href="game/2009-01-07-Infidelidad.html"><div class="gamename">Infidelidad</div>
+        <img class="thumb" width="250px" height="250px" src="icos/infidelidad.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/infidelidadwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/infidelidadmac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/infidelidadlinux.tar.bz2.tar" title="Download for Linux" alt="Download for Linux" >
+		              <img width="50px" height="50px" class="icon" src="symbols/linux.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">LINUX</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/infidelidadsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2009/01/01</div >
+        <a href="game/2009-01-01-The-Hero-Saved-Me.html"><div class="gamename">The Hero Saved Me</div>
+        <img class="thumb" width="250px" height="250px" src="icos/herosaved.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/The_Hero_Saved_Me_Win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/The_Hero_Saved_Me_Mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/The_Hero_Saved_Me_Src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/30</div >
+        <a href="game/2008-12-30-lacrimosa.html"><div class="gamename">lacrimosa</div>
+        <img class="thumb" width="250px" height="250px" src="icos/lacr.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lacrwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lacrmac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lacrsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/18</div >
+        <a href="game/2008-12-18-Defez-4-Das-Kapital.html"><div class="gamename">Defez 4: Das Kapital</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2008-12-18-Defez-4-Das-Kapital.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez4win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez4mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez4src.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/17</div >
+        <a href="game/2008-12-17-Defez-3-Mortar.html"><div class="gamename">Defez 3: Mortar</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2008-12-17-Defez-3-Mortar.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez3win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez3mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez3win.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/16</div >
+        <a href="game/2008-12-16-Defez-2-Refez.html"><div class="gamename">Defez 2: Refez</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2008-12-16-Defez-2-Refez.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez2_win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez2_mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez2_win.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/15</div >
+        <a href="game/2008-12-15-Defez.html"><div class="gamename">Defez</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2008-12-15-Defez.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez_win.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez_mac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defez_win.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/08</div >
+        <a href="game/2008-12-08-Rara-Racer.html"><div class="gamename">Rara Racer</div>
+        <img class="thumb" width="250px" height="250px" src="icos/rara.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/rararacer.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/rararacermac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/rararacersrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/07</div >
+        <a href="game/2008-12-07-Unattended-Luggage.html"><div class="gamename">Unattended Luggage</div>
+        <img class="thumb" width="250px" height="250px" src="icos/u_a.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/unattended%20luggage.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/unattended%20luggage.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (GameMaker)" alt="Download Source Code (GameMaker)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/12/01</div >
+        <a href="game/2008-12-01-Hassle.html"><div class="gamename">Hassle</div>
+        <img class="thumb" width="250px" height="250px" src="icos/hassle.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/hasslewin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/hasslemac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/hasslesrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/11/29</div >
+        <a href="game/2008-11-29-Defect.html"><div class="gamename">Defect</div>
+        <img class="thumb" width="250px" height="250px" src="icos/defect.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defectwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defectmac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/defectsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/11/15</div >
+        <a href="game/2008-11-15-Endless-Cavern.html"><div class="gamename">Endless Cavern</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2008-11-15-Endless-Cavern.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/endlesscavernwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/endlesscavernmac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/endlesscavernsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Haskell)" alt="Download Source Code (Haskell)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/11/01</div >
+        <a href="game/2008-11-01-Portile.html"><div class="gamename">Portile</div>
+        <img class="thumb" width="250px" height="250px" src="icos/portile.gif"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/Portile.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/portilemac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/Portile.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/10/27</div >
+        <a href="game/2008-10-27-Lady-Boy-Love-Collection.html"><div class="gamename">Lady Boy Love Collection</div>
+        <img class="thumb" width="250px" height="250px" src="icos/lblcshot.png"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lblcwin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lblcmac.zip" title="Download for macOS" alt="Download for macOS" >
+		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">MAC</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lblcsrc.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/10/09</div >
+        <a href="game/2008-10-09-lightcone-prototype-2.html"><div class="gamename">lightcone: prototype 2</div>
+        <img class="thumb" width="250px" height="250px" src="icos/lightconehs.gif"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lightconehs.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Haskell)" alt="Download Source Code (Haskell)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2008/10/05</div >
+        <a href="game/2008-10-05-lightcone-prototype-1.html"><div class="gamename">lightcone: prototype 1</div>
+        <img class="thumb" width="250px" height="250px" src="icos/lightconetitle.jpg"></p>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lightconewin.zip" title="Download for Windows" alt="Download for Windows" >
+		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">WIN</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lightconemac.zip" title="Download for Linux" alt="Download for Linux" >
+		              <img width="50px" height="50px" class="icon" src="symbols/linux.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">LINUX</div>
+		              </div>
+		            </a>
+		          </div>
+		          <div class="container">
+		            <a href="http://ded.increpare.com/~locus/lightconewin.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (C++)" alt="Download Source Code (C++)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2005/10/03</div >
+        <a href="game/2005-10-03-Trinity-MUD.html"><div class="gamename">Trinity MUD</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2005-10-03-Trinity-MUD.png"></p>
+		          <div class="container">
+		            <a href="http://www.increpare.com/files/mud.pas">
+		              <img width="50px" height="50px" class="icon" title="Download Source Code (Pascal)" alt="Download Source Code (Pascal)" src="symbols/source.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">SOURCE</div>
+		              </div>
+		            </a>
+		          </div></div><div class="card">
+        <div class="date">2004/05/13</div >
+        <a href="game/2004-05-13-MathCIV.html"><div class="gamename">MathCIV</div>
+        <img class="thumb" width="250px" height="250px" src="icos/2004-05-13-MathCIV.png"></p>
+		          <div class="container">
+		            <a href="http://www.increpare.com/files/mathciv.zip">
+		              <img width="50px" height="50px" class="icon" title="Download Zip File" alt="Download Zip File" src="symbols/zip.svg" width="50px" height="50px">        
+		              <div class="overlay">
+		                <div class="text">ZIP</div>
+		              </div>
+		            </a>
+		          </div>
   </body>
 </html>

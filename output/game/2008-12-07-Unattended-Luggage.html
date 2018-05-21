@@ -14,9 +14,22 @@
 html {
     display: table;
     margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+img {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   padding-top: 20px;
     display: table-cell;
     vertical-align: top;
@@ -80,18 +93,19 @@ hr {
 }
 
 img{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
+  border: 1px solid black;
 }
   </style>
   </head>
 
   <body>
-    <a href="../index.html">&lt;&lt; back to increpare.com &lt;&lt;</a>
+    <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">2009/01/07</span>
     <div class="card">
     <div class="docenter">
-    	<img src="../icos/u_a.png">
+    	<img width="250px" height="250px" src="../icos/u_a.png">
      	<h1>Unattended Luggage</h1>
       	<div id="quote">twas tremendous fun to put together, fo sure.</div>
       	<div id="description">A little late, but <a href="http://forums.tigsource.com/index.php?topic=3581.0">here's</a> a link to a thread about <em>Unattended Luggage</em>, a game made with <a href="http://www.distractionware.com/">Terry</a> and <a href="http://forums.tigsource.com/index.php?action=profile;u=2443">Alteisentier</a>, while waiting about in Dublin airport.</div>

@@ -19,35 +19,6 @@ function randomColor() {
 var w = 250
 var h = 250
 
-var compositiontypes = [
-	"source-over",
-	// "source-in",
-	// "source-out",
-	// "source-atop",
-	// "destination-over",
-	// "destination-in",
-	// "destination-out",
-	// "destination-atop",
-	"lighter",
-	// "copy",
-	// "xor",
-	"multiply",
-	"screen",
-	"overlay",
-	"darken",
-	"lighten",
-	"color-dodge",
-	"color-burn",
-	"hard-light",
-	"soft-light",
-	"difference",
-	"exclusion",
-	"hue",
-	"saturation",
-	"color",
-	"luminosity"
-];
-
 var fs = require("fs");
 var Canvas = require("canvas");
 
@@ -76,11 +47,8 @@ for (var i=0;i<max;i++){
 		y2=t
 	}
 
-	//g.globalCompositeOperation = compositiontypes[rand(compositiontypes.length)]
-	//g.globalCompositeOperation = "xor"
 	g.fillStyle = randomColor();
 	g.fillRect(x1, y1, x2-x1, y2-y1);
-
 }
 
 var buf = canvas.toBuffer();
