@@ -175,7 +175,7 @@ function doGrid(){
 
 		var cardTemplate = `<div class="card">
 		<a href="game/${pageName}">
-        <img class="thumb" width="250px" height="250px" src="icos/${icon}">
+        <img class="thumb" alt="" width="250" height="250" src="icos/${icon}">
         <div class="date">${niceDate}</div >
         <div class="gamename">${title}</div>
         </a>
@@ -184,8 +184,8 @@ function doGrid(){
         if (html!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${html}" title="Play Now (HTML5)" alt="Play Now (HTML5)" >
-		              <img width="50px" height="50px" class="icon" src="symbols/html5.svg" width="50px" height="50px">        
+		            <a href="${html}" title="Play Now (HTML5)" >
+		              <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="symbols/html5.svg" >        
 		              <div class="overlay">
 		                <div class="text">HTML5</div>
 		              </div>
@@ -196,8 +196,8 @@ function doGrid(){
         if (win!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${win}" title="Download for Windows" alt="Download for Windows" >
-		              <img width="50px" height="50px" class="icon" src="symbols/windows.svg" width="50px" height="50px">        
+		            <a href="${win}" title="Download for Windows" >
+		              <img alt="Download for Windows" width="50" height="50" class="icon" src="symbols/windows.svg">        
 		              <div class="overlay">
 		                <div class="text">WIN</div>
 		              </div>
@@ -209,8 +209,8 @@ function doGrid(){
         if (mac!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${mac}" title="Download for macOS" alt="Download for macOS" >
-		              <img width="50px" height="50px" class="icon" src="symbols/apple.svg" width="50px" height="50px">        
+		            <a href="${mac}" title="Download for macOS" >
+		              <img alt="Download for macOS" width="50" height="50" class="icon" src="symbols/apple.svg">        
 		              <div class="overlay">
 		                <div class="text">MAC</div>
 		              </div>
@@ -222,8 +222,8 @@ function doGrid(){
         if (linux!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${linux}" title="Download for Linux" alt="Download for Linux" >
-		              <img width="50px" height="50px" class="icon" src="symbols/linux.svg" width="50px" height="50px">        
+		            <a href="${linux}" title="Download for Linux" >
+		              <img alt="Download for Linux" width="50" height="50" class="icon" src="symbols/linux.svg">        
 		              <div class="overlay">
 		                <div class="text">LINUX</div>
 		              </div>
@@ -234,8 +234,8 @@ function doGrid(){
         if (flash!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${flash}"  title="Play Online Now (Flash)" alt="Play Online Now (Flash)">
-		              <img width="50px" height="50px" class="icon" src="symbols/flash.svg" width="50px" height="50px">        
+		            <a href="${flash}"  title="Play Online Now (Flash)" >
+		              <img alt="Play Online Now (Flash)" width="50" height="50" class="icon" src="symbols/flash.svg">        
 		              <div class="overlay">
 		                <div class="text">FLASH</div>
 		              </div>
@@ -246,8 +246,8 @@ function doGrid(){
         if (zip!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${zip}">
-		              <img width="50px" height="50px" class="icon" title="Download Zip File" alt="Download Zip File" src="symbols/zip.svg" width="50px" height="50px">        
+		            <a href="${zip}" title="Download Zip File" >
+		              <img alt="Download Zip File"  width="50" height="50" class="icon"  src="symbols/zip.svg">        
 		              <div class="overlay">
 		                <div class="text">ZIP</div>
 		              </div>
@@ -258,8 +258,8 @@ function doGrid(){
         if (unity!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${unity}">
-		              <img width="50px" height="50px" class="icon" title="Play Online Now (Unity Web Player)" alt="Play Online Now (Unity Web Player)" src="symbols/unity.svg" width="50px" height="50px">        
+		            <a href="${unity}" title="Play Online Now (Unity Web Player)">
+		              <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="symbols/unity.svg" >        
 		              <div class="overlay">
 		                <div class="text">UNITY</div>
 		              </div>
@@ -270,8 +270,8 @@ function doGrid(){
         if (src!=""){
         	cardTemplate += `
 		          <div class="container">
-		            <a href="${src}">
-		              <img width="50px" height="50px" class="icon" title="Download Source Code (${src_desc})" alt="Download Source Code (${src_desc})" src="symbols/source.svg" width="50px" height="50px">        
+		            <a href="${src}" title="Download Source Code (${src_desc})">
+		              <img width="50" height="50" class="icon" alt="Download Source Code (${src_desc})" src="symbols/source.svg">        
 		              <div class="overlay">
 		                <div class="text">SOURCE</div>
 		              </div>
@@ -279,7 +279,7 @@ function doGrid(){
 		          </div>`
       	}
 
-      	s+="</div>"
+      	cardTemplate+="</div>"
 		s+=cardTemplate;		
 	}
 	return s;
