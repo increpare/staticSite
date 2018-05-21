@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="https://www.increpare.com/feed.rss" />
     <title>increpare games</title>
 
     <style>
