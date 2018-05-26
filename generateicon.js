@@ -52,4 +52,6 @@ for (var i=0;i<max;i++){
 }
 
 var buf = canvas.toBuffer();
-fs.writeFile(outputPath, buf);
+fs.writeFile(outputPath, buf,function(err) {
+        if(err) return console.log(err);
+    });

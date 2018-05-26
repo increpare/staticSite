@@ -56,6 +56,7 @@ exec("rm -rf output")
 exec("mkdir output")
 exec("mkdir output/game")
 exec("mkdir output/icos")
+execAsync("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv")
 execAsync("cp templates/privacy.html output/privacy.html")
 execAsync("cp -r symbols output/symbols")
 
@@ -130,6 +131,7 @@ for (var i=0;i<table.length;i++){
 
 
 	if (icon==""){
+
 		icon = date+"-"+safeName+".png";
 		execAsync(`./generateicon.js ${safeName} output/icos/${icon}`)
 		r[2] = icon
@@ -178,7 +180,9 @@ for (var i=0;i<table.length;i++){
 	var page=eval(postTemplate)
 	//var pageMinified=minify(page,minifyOptions)
 
-	fs.writeFile("output/game/"+pageName,page)
+	fs.writeFile("output/game/"+pageName,page, function(err) {
+        if(err) return console.log(err);
+    })
 }
 
 
@@ -227,7 +231,9 @@ function doGrid(){
 			<div class="gamename">${title}</div>
 		</a>`;
 
+		var someico=false;
         if (html!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${html}" title="Play Now (HTML5)" >
@@ -240,6 +246,7 @@ function doGrid(){
       	}
 
         if (win!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${win}" title="Download for Windows" >
@@ -253,6 +260,7 @@ function doGrid(){
 
 
         if (mac!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${mac}" title="Download for macOS" >
@@ -266,6 +274,7 @@ function doGrid(){
 
 
         if (linux!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${linux}" title="Download for Linux" >
@@ -278,6 +287,7 @@ function doGrid(){
       	}
 
         if (flash!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${flash}"  title="Play Online Now (Flash)" >
@@ -290,6 +300,7 @@ function doGrid(){
       	}
 
         if (zip!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${zip}" title="Download Zip File" >
@@ -302,6 +313,7 @@ function doGrid(){
       	}
 
         if (unity!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${unity}" title="Play Online Now (Unity Web Player)">
@@ -314,6 +326,7 @@ function doGrid(){
       	}
 
         if (src!=""){
+        	someico=true;
         	cardTemplate += `
     	<div class="container">
             <a href="${src}" title="Download Source Code (${src_desc})">
@@ -325,6 +338,14 @@ function doGrid(){
     	</div>`
       	}
 
+      	if (someico===false){
+
+        	cardTemplate += `
+    	<div class="container">
+            	<img width="50" height="50" class="icon" alt="" src="symbols/blank.svg">        
+
+    	</div>`
+      	}
       	cardTemplate+=`
   	</div>`
 		s+=cardTemplate;		
@@ -333,9 +354,12 @@ function doGrid(){
 }
 
 var page=eval(indexTemplate)
-var pageMinified = minify(page,minifyOptions)
+//var pageMinified = minify(page,minifyOptions)
+var pageMinified = page;
 
-fs.writeFile("output/index.html",pageMinified)
+fs.writeFile("output/index.html",pageMinified, function(err) {
+        if(err) return console.log(err);
+    })
 
 
 var feedOptions = {
@@ -391,5 +415,7 @@ for (var i=0;i<Math.min(20,table.length);i++){
 
 	var xml = feed.xml();
 
-	fs.writeFile("output/feed.rss",xml);
+	fs.writeFile("output/feed.rss",xml, function(err) {
+        if(err) return console.log(err);
+    });
 }
