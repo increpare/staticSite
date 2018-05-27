@@ -96,7 +96,7 @@ img{
 
   <body>
     <a href="../index.html">&lt;&lt; back to increpare.com </a>
-    <span id="date">2009/01/07</span>
+    <span id="date">${date}</span>
     <div class="card">
     <div class="docenter">
     	<img alt="" width="250" height="250" src="../icos/${icon}">

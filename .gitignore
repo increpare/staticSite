@@ -6,3 +6,9 @@ oldsite/www.increpare.com
 */*.html.gz
 */*/*.html.gz
 */*/*/*.html.gz
+
+*.gz
+
+*.gz
+
+*.gz

@@ -389,8 +389,7 @@ for (var i=0;i<Math.min(20,table.length);i++){
 	var year = splitDate[0];
 	var month = splitDate[1];
 	var day = splitDate[2];
-	var date = new Date(year,month,date)
-
+	var date = new Date(year,month,day)
 	r[17]=date;
 
 	var itemOptions = {
@@ -405,5 +404,14 @@ for (var i=0;i<Math.min(20,table.length);i++){
 }
 
 for (var y=2008;y<2019;y++){
-	
+	console.log(y);
+	var entries = table.filter( row =>{ console.log(row[17]);return row[17].getFullYear()==y});
+
+	var count_html = entries.filter( row => row[5]!="" ).length;
+	var count_mac = entries.filter( row => row[6]!="" ).length;
+	var count_windows = entries.filter( row => row[7]!="" ).length;
+	var count_linux = entries.filter( row => row[8]!="" ).length;
+	var count_flash = entries.filter( row => row[11]!="" ).length;
+
+	console.log(y,entries.length,count_html,count_mac,count_windows,count_linux,count_flash)
 }
