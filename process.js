@@ -3,6 +3,7 @@
 var fs = require('fs')
 var path = require('path')
 var RSS = require('rss')
+var striptags = require('striptags');
 
 var minify = require('html-minifier').minify;
 var minifyOptions =  {
@@ -391,7 +392,27 @@ var feedOptions = {
 	language: 'en'
 };
 
-var feed = new RSS(feedOptions);
+var date_now = new Date().toUTCString();
+
+var feed_str = `<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <language>en</language>
+  <title>increpare games</title>
+  <link>https://www.increpare.com</link>
+  <description>Games and other things made by increpare.</description>
+  <copyright>2018 Stephen Lavelle</copyright>
+  <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
+  <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
+  <pubDate>${date_now}</pubDate>
+  <lastBuildDate>${date_now}</lastBuildDate>
+  <category>games</category>
+  <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
+  <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
+`
+
 
 for (var i=0;i<Math.min(20,table.length);i++){
 	var r = table[i];
@@ -418,22 +439,35 @@ for (var i=0;i<Math.min(20,table.length);i++){
 	var year = splitDate[0];
 	var month = splitDate[1];
 	var day = splitDate[2];
-	var date = new Date(year,month,day)
+	var date = new Date(year,month-1,day)
 
 	var itemOptions = {
 		title:title,
 		author:'analytic@gmail.com (Stephen Lavelle)',
-		description:caption,
+		description:striptags(caption),
 		url:`https://www.increpare.com/games/${pageName}`,
 		date:date.toUTCString()		
 	}
 
-	feed.item(itemOptions)
+	feed_str+=`
+  <item>
+    <title>${itemOptions.title}</title>
+    <pubDate>${itemOptions.date}</pubDate>
+    <link>${itemOptions.url}</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>${itemOptions.description}</description>
+    <guid isPermaLink="true">${itemOptions.url}</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>`
 
-	var xml = feed.xml()
-
-	fs.writeFile("output/feed.rss",xml, function(err) {
-        if(err) return console.log(err);
-    });
 }
 
+feed_str+=	`
+</channel>
+
+</rss>`
+
+
+fs.writeFile('output/feed.rss',feed_str, function(err) {
+        if(err) return console.log(err);
+    })
