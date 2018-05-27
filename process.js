@@ -418,7 +418,7 @@ for (var i=0;i<Math.min(20,table.length);i++){
 	var year = splitDate[0];
 	var month = splitDate[1];
 	var day = splitDate[2];
-	var date = new Date(year,month,date)
+	var date = new Date(year,month,day)
 
 	var itemOptions = {
 		title:title,
@@ -426,9 +426,10 @@ for (var i=0;i<Math.min(20,table.length);i++){
 		url:`https://www.increpare.com/games/${pageName}`,
 		date:date.toUTCString()		
 	}
-	feed.item(itemOptions);
+	console.log(itemOptions)
+	feed.item(itemOptions)
 
-	var xml = feed.xml();
+	var xml = feed.xml()
 
 	fs.writeFile("output/feed.rss",xml, function(err) {
         if(err) return console.log(err);

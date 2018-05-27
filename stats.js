@@ -348,23 +348,8 @@ var pageMinified = page;
 
 
 
-var feedOptions = {
-	title:"increpare games",
-	description:"a feed of games and other things made by increpare",
-	feed_url:"https://www.increpare.com/feed.rss",
-	site_url:"https://www.increpare.com",
-	image_url:"https://www.increpare.com/favicon.png",
-	author:"Stephen Lavelle",
-	categories: ['games','increpare','indie games','open source'],
-	webMaster:"Stephen Lavelle",
-	copyright:"2018 Stephen Lavelle",
-	managingEditor:"Stephen Lavelle",
-	language: 'en'
-};
 
-var feed = new RSS(feedOptions);
-
-for (var i=0;i<Math.min(20,table.length);i++){
+for (var i=0;i<table.length;i++){
 	var r = table[i];
 
 	var title = r[0]
@@ -392,26 +377,16 @@ for (var i=0;i<Math.min(20,table.length);i++){
 	var date = new Date(year,month,day)
 	r[17]=date;
 
-	var itemOptions = {
-		title:title,
-		description:caption,
-		url:`https://www.increpare.com/games/${pageName}`,
-		date:date.toUTCString()		
-	}
-	feed.item(itemOptions);
-
-	var xml = feed.xml();
 }
 
 for (var y=2008;y<2019;y++){
-	console.log(y);
-	var entries = table.filter( row =>{ console.log(row[17]);return row[17].getFullYear()==y});
-
-	var count_html = entries.filter( row => row[5]!="" ).length;
-	var count_mac = entries.filter( row => row[6]!="" ).length;
-	var count_windows = entries.filter( row => row[7]!="" ).length;
-	var count_linux = entries.filter( row => row[8]!="" ).length;
-	var count_flash = entries.filter( row => row[11]!="" ).length;
+	var entries = table.filter( row => row[17].getFullYear()==y );
+	var total = entries.length;
+	var count_html = entries.filter( row => row[5]!="" ).length/total;
+	var count_mac = entries.filter( row => row[6]!="" ).length/total;
+	var count_windows = entries.filter( row => row[7]!="" ).length/total;
+	var count_linux = entries.filter( row => row[8]!="" ).length/total;
+	var count_flash = entries.filter( row => row[11]!="" ).length/total;
 
 	console.log(y,entries.length,count_html,count_mac,count_windows,count_linux,count_flash)
 }
