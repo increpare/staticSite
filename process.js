@@ -50,15 +50,26 @@ useShortDoctype:true,
 
 // STEP 1 : generate folders
 
+function gzipFile(path){
+	execAsync(`gzip -cf  --best ${path} > ${path}.gz`)
+}
 var exec = require('child_process').execSync
 var execAsync = require('child_process').exec
 exec("rm -rf output")
 exec("mkdir output")
 exec("mkdir output/game")
 exec("mkdir output/icos")
-execAsync("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv")
-execAsync("cp templates/privacy.html output/privacy.html")
-execAsync("cp -r symbols output/symbols")
+// execAsync("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv")
+
+exec("cp templates/privacy.html output/privacy.html")
+gzipFile("output/privacy.html")
+
+exec("cp -r symbols output/symbols")
+execAsync("cp templates/.htaccess_images output/icos/.htaccess")
+execAsync("cp templates/.htaccess_images output/symbols/.htaccess")
+execAsync("cp templates/.htaccess_root output/.htaccess")
+
+
 
 // STEP 2 : read in CSV
 
@@ -147,7 +158,7 @@ for (var i=0;i<table.length;i++){
 	var linkList = function(pre,presrc,post){
 		var result="";
 		if (html!=""){
-			result += `${pre} <a href="${html}">Play Now</a> (HTML5) ${post} \n`
+			result += `${pre} <a href="${html}">Play Now</a> ${post} (HTML5) \n`
 		}
 		if (win!=""){
 			result += `${pre} <a href="${win}">Download for Windows</a> ${post} \n`
@@ -178,10 +189,13 @@ for (var i=0;i<table.length;i++){
 	r.push(niceDate)//[16]
 
 	var page=eval(postTemplate)
-	//var pageMinified=minify(page,minifyOptions)
+	console.log(title)
+	var pageMinified=minify(page,minifyOptions)
 
-	fs.writeFile("output/game/"+pageName,page, function(err) {
+	let fpath = "output/game/"+pageName;
+	fs.writeFile(fpath,pageMinified, function(err) {
         if(err) return console.log(err);
+        gzipFile( fpath )
     })
 }
 
@@ -354,11 +368,12 @@ function doGrid(){
 }
 
 var page=eval(indexTemplate)
-//var pageMinified = minify(page,minifyOptions)
-var pageMinified = page;
+var pageMinified = minify(page,minifyOptions)
 
 fs.writeFile("output/index.html",pageMinified, function(err) {
         if(err) return console.log(err);
+        gzipFile("output/index.html")
+
     })
 
 
@@ -419,3 +434,4 @@ for (var i=0;i<Math.min(20,table.length);i++){
         if(err) return console.log(err);
     });
 }
+

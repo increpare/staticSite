@@ -26,7 +26,7 @@ Player 2: W S A D and F
 <hr />
 <p>
 there is some additional discussion of this over at the </a><a href=""http://forums.tigsource.com/index.php?topic=1642"">original tigsource thread</a>.";;;http://ded.increpare.com/~locus/lightconewin.zip;http://ded.increpare.com/~locus/lightconemac.zip;http://ded.increpare.com/~locus/lightconewin.zip;C++;;;
-lightcone: prototype 2;2008/10/09;lightconehs.gif;hopefully this won't be my last toying about with Graphics.Rendering.OpenGL;"I decided to try doing a one-player prototype of this game, and to do it in haskell this time as an exercise instead of C++. It’s a much more bare-bones things, but might be of interest to some people (requires OpenGL and GLUT to be installed).<p>
+lightcone: prototype 2;2008/10/09;lightconehs.png;hopefully this won't be my last toying about with Graphics.Rendering.OpenGL;"I decided to try doing a one-player prototype of this game, and to do it in haskell this time as an exercise instead of C++. It’s a much more bare-bones things, but might be of interest to some people (requires OpenGL and GLUT to be installed).<p>
 In this demo, you are a red or blue block, the enemies are red blocks, moving in various patterns. When you overlap with an enemy block, your colour changes.<p>
 I’m not bothering with a binary distribution, but I’ve thrown up the source.";;;;;http://ded.increpare.com/~locus/lightconehs.zip;Haskell;;;
 Lady Boy Love Collection;2008/10/27;lblcshot.png;garnered a whole 22 votes in the end,;"This was my entry to the tigsource <a href=""http://tigsource.com/features/demakes/"">Bootleg Demakes compo</a>.  It features a number of esoteric references, but still might be appreciable by people from elsewhere.   It contains four games, in fact, <em>Lady Million</em> <em>Bio-Collect</em> (aka '<em>Specimen collect</em>'), <em>Zeppelin</em>, and <em>Sick Panda</em>.
@@ -48,7 +48,7 @@ r - reset game</p>
 <p>programming, graphics, music by increpare, of forums.tigsource.com</p>
 
 <p>other people: many forum peeps for reporting various bugs/glitches and, quite importantly, UltraJMan for the title ""Lady Boy Love Collection"".  Big thanks to you all!</p>";;http://ded.increpare.com/~locus/lblcmac.zip;http://ded.increpare.com/~locus/lblcwin.zip;;http://ded.increpare.com/~locus/lblcsrc.zip;C++;;;
-Portile;2008/11/01;portile.gif;aaaaaaaaaaaaaahshark?;"Original tigsource thread <a href=""http://forums.tigsource.com/index.php?topic=2161.0"">here</a>.
+Portile;2008/11/01;portile.png;aaaaaaaaaaaaaahshark?;"Original tigsource thread <a href=""http://forums.tigsource.com/index.php?topic=2161.0"">here</a>.
 <p>
 
 Portile is a 2d, tile-based take on <a href=""http://www.nuclearmonkeysoftware.com/downloads.html"">narbacular drop</a> (more than portal, because I've not played portal, and from what I understand momentum plays a big part in portal, and it doesn't play any part in this).
@@ -207,11 +207,11 @@ The source I must apologise for in advance± it's quite rotten in its organisati
 
 edit: if you have problem running this on windows 7, try running it in XP SP3 Compatibility Mode.";;http://ded.increpare.com/~locus/mirror_stage_mac.zip;http://ded.increpare.com/~locus/mirror_stage_win.zip;;http://ded.increpare.com/~locus/mirror_stage_src.zip;C++;;;
 Adventures in a Foreign Land;2009/03/02;aiafl.png;this constitutes my swing at the rpgdx.net 48 hour rpg competition.;;;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_mac.zip;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_win.zip;;http://ded.increpare.com/~locus/adventures_in_a_foreign_land_src.zip;C++;;;
-triptych;2009/04/04;triptych.gif;trying to build up momentum...;"
+triptych;2009/04/04;triptych.png;trying to build up momentum...;"
 <p>I made a small game today at the <a href=""http://www.dundeejam.com/"">dundee game jam</a>.
 
 				";;http://ded.increpare.com/~locus/triptychmac.zip;http://ded.increpare.com/~locus/triptychwin.zip;;http://ded.increpare.com/~locus/triptychsrc.zip;C++;;;
-Judith;2009/04/13;judith_2.gif;I'm rather relieved to be finished with this.;"
+Judith;2009/04/13;judith_2.png;I'm rather relieved to be finished with this.;"
 <p>I finished a project with <a href=""http://www.distractionware.com"">Terry</a> tonight. </p>
 <p>Note : does not work on OSX Lion right now.  I expect I’ll get around to fixing it some day.</p>
 
@@ -220,7 +220,7 @@ Empire The Wall;2009/04/20;empirewall.png;i spent most of the weekend trying to 
 <p><a href=""http://www.ludumdare.com/compo/"">Ludum Dare</a> was fun last weekend.  My entry ended up being shit, though, being mainly jammed into the last few hours of sunday evening.</p>
 
 				";;http://ded.increpare.com/~locus/empirethewallmac.zip;http://ded.increpare.com/~locus/empirethewallwin.zip;;http://ded.increpare.com/~locus/empirethewallsrc.zip;C++;;;
-untigrand;2009/04/26;blahcontent.gif;the amount of time/effort that went into the making of this might surprise you [it certainly amuses me]...;"
+untigrand;2009/04/26;blahcontent.png;the amount of time/effort that went into the making of this might surprise you [it certainly amuses me]...;"
 <p>i finished a short experiment there.</p>
 <p>controls are:<br>
 up/down/left right: alter parameters<br>
@@ -229,7 +229,7 @@ space: select things at menu<br>
 esc: go back to previous screen</p>
 
 				";;http://ded.increpare.com/~locus/untigrandmac.zip;http://ded.increpare.com/~locus/untigrandwin.zip;;http://ded.increpare.com/~locus/untigrandsrc.zip;C++;;;
-Almudy Park;2009/05/05;almudy.GIF;There are five endings.;"
+Almudy Park;2009/05/05;almudy.png;There are five endings.;"
 <p>A short game.</p>
 
 <p>Controls:<br>
@@ -237,14 +237,14 @@ up/down/left/right/space</p>
 <p>[Edit: newer version uploaded, with larger font]</p>
 
 				";;http://ded.increpare.com/~locus/almudy_park_mac.zip;http://ded.increpare.com/~locus/almudy_park_win.zip;;http://ded.increpare.com/~locus/almudy_park_src.zip;C++;;;
-Pietà;2009/05/11;piconsshot.gif;A short game;"
+Pietà;2009/05/11;piconsshot.png;A short game;"
 <p>made a short game over the weekend.</p>
 <p>controls:<br>
 space</p>
 <p>[edit: OSX version fixed, and small restart bug fixed w/ windows version]</p>
 
 				";;http://ded.increpare.com/~locus/pieta_mac.zip;http://ded.increpare.com/~locus/pieta_win.zip;;http://ded.increpare.com/~locus/pieta_src.zip;C++;;;
-Striptease;2009/05/20;title.GIF;ps. It's linear;"
+Striptease;2009/05/20;title.png;ps. It's linear;"
 <p>Controls</p>
 <p>Cursor keys + s + d (+ space for menus/dialogue)</p>
 <p>(ps. it’s completely linear)</p>
@@ -257,21 +257,21 @@ TICKR;2009/05/24;tickpic.png;for the latest mini ld;"
 <p>EDIT: oops had a major bug that made it weirdly easy.  Fix’d.</p>
 
 				";;http://ded.increpare.com/~locus/TICKRmac.zip;http://ded.increpare.com/~locus/TICKRwin.zip;;http://ded.increpare.com/~locus/TICKRsrc.zip;C++;;;
-Trigger;2009/06/17;triggersmall.gif;something to pass the time...;"
+Trigger;2009/06/17;triggersmall.png;something to pass the time...;"
 <p>A shooter</p>
 <p>[<del datetime=""2009-06-17T19:19:46+00:00"">edit: oops, screwed up first upload…brb!</del> (fixed, i hope…) ]</p>
 
 				";;http://ded.increpare.com/~locus/triggermac.zip;http://ded.increpare.com/~locus/triggerwin.zip;;http://ded.increpare.com/~locus/triggersrc.zip;C++;;;
-Punch or Kiss;2009/06/21;snap.gif;It's thoroughly horrid in many respects.;"
+Punch or Kiss;2009/06/21;snap.png;It's thoroughly horrid in many respects.;"
 <p>I gave myself half an hour to try something for <a href=""http://www.glorioustrainwrecks.com/node/336"">Klick of the Month Klub #24</a>.</p>
 <p>It didn’t quite work out, but here it is anyway:</p>
 
 
 				";;http://ded.increpare.com/~locus/punchorkissmac.zip;http://ded.increpare.com/~locus/punchorkisswin.zip;http://ded.increpare.com/~locus/punchorkiss_linux.tar.bz2;http://ded.increpare.com/~locus/punchorkisswin.zip;Ren'Py;;;
-tinnitus;2009/07/08;tinnitus.gif;not happy with it. whatever.;"<p>made a short game this evening</p>
+tinnitus;2009/07/08;tinnitus.png;not happy with it. whatever.;"<p>made a short game this evening</p>
 
 				";;http://ded.increpare.com/~locus/tinnitusmac.zip;http://ded.increpare.com/~locus/tinnituswin.zip;;http://ded.increpare.com/~locus/tinnitussrc.zip;C++;;;
-Beth;2009/07/15;beth.gif;Misogyny mk 2 :/;"
+Beth;2009/07/15;beth.png;Misogyny mk 2 :/;"
 <p>A quite late entry for mini ludum dare 10 (theme being domestic violence)</p>
 				";;http://ded.increpare.com/~locus/bethmac.zip;http://ded.increpare.com/~locus/bethwin.zip;;http://ded.increpare.com/~locus/bethsrc.zip;C++;;;
 concord;2009/07/28;concordshot.png;a small entry for the sandbox-themed minild. ;"
@@ -301,24 +301,24 @@ Peristalsis;2009/08/04;4lnmv4.png;a 3-hour thingy;"
 <p>edit: ah, it seems to work if you drag the .love file onto the application icon, though it doesn’t <em>quite</em> work properly fullscreen for me ).</p>
 
 				";;;http://ded.increpare.com/~locus/peristalsis.zip;;http://ded.increpare.com/~locus/peristalsis.love;Love;;;
-Goal Game;2009/08/05;ber7.gif;spent time thinking about this, but it didn't quite come out;;;http://ded.increpare.com/~locus/goalgame_mac.zip;http://ded.increpare.com/~locus/goalgame_win.zip;;http://ded.increpare.com/~locus/goalgame_src.zip;C++;;;
-Adventure Game;2009/08/05;ber2.gif;something sincere...;;;http://ded.increpare.com/~locus/adventuregame_mac.zip;"""http://ded.increpare.com/~locus/adventuregame_win.zip";;http://ded.increpare.com/~locus/adventuregame_src.zip;C++;;;
-Chaos Pendulum;2009/08/05;ber4.gif;also is manageable with one player;"
+Goal Game;2009/08/05;ber7.png;spent time thinking about this, but it didn't quite come out;;;http://ded.increpare.com/~locus/goalgame_mac.zip;http://ded.increpare.com/~locus/goalgame_win.zip;;http://ded.increpare.com/~locus/goalgame_src.zip;C++;;;
+Adventure Game;2009/08/05;ber2.png;something sincere...;;;http://ded.increpare.com/~locus/adventuregame_mac.zip;http://ded.increpare.com/~locus/adventuregame_win.zip;;http://ded.increpare.com/~locus/adventuregame_src.zip;C++;;;
+Chaos Pendulum;2009/08/05;ber4.png;also is manageable with one player;"
 <p>A 2-player game, in collaboration with <a href=""http://forums.tigsource.com/index.php?action=profile±u=1856"">Pishtaco</a>.
 
 				";;http://ded.increpare.com/~locus/chaospendulum_mac.zip;http://ded.increpare.com/~locus/chaospendulum_win.zip;;http://ded.increpare.com/~locus/chaospendulum_src.zip;C++;;;
-Cruelty;2009/08/05;ber5.gif;rough around the edges...;"
+Cruelty;2009/08/05;ber5.png;rough around the edges...;"
 
 				";;http://ded.increpare.com/~locus/cruelty_mac.zip;http://ded.increpare.com/~locus/cruelty_win.zip;;http://ded.increpare.com/~locus/cruelty_src.zip;C++;;;
-fly;2009/08/05;ber6.gif;hmm...;;;http://ded.increpare.com/~locus/fly_mac.zip;http://ded.increpare.com/~locus/fly_win.zip;;http://ded.increpare.com/~locus/fly_src.zip;C++;;;
-Nanny Zero;2009/08/05;ber8.gif;reality tv...;"
+fly;2009/08/05;ber6.png;hmm...;;;http://ded.increpare.com/~locus/fly_mac.zip;http://ded.increpare.com/~locus/fly_win.zip;;http://ded.increpare.com/~locus/fly_src.zip;C++;;;
+Nanny Zero;2009/08/05;ber8.png;reality tv...;"
 <p>Collaboration with <a href=""http://www.distractionware.com/"">terry</a></p>
 
 
 				";;http://ded.increpare.com/~locus/nannyzero_mac.zip;http://ded.increpare.com/~locus/nannyzero_win.zip;;http://ded.increpare.com/~locus/nannyzero_src.zip;C++;;;
-Oh shit, the camera man ist arrived;2009/08/05;ber3.gif;a teasing;;;http://ded.increpare.com/~locus/camera_mac.zip;http://ded.increpare.com/~locus/camera_win.zip;;http://ded.increpare.com/~locus/camera_src.zip;C++;;;
-Tuba Mirum;2009/08/05;ber1.gif;an experiment;;;http://ded.increpare.com/~locus/tubamirum_mac.zip;http://ded.increpare.com/~locus/tubamirum_win.zip;;http://ded.increpare.com/~locus/tubamirum_src.zip;C++;;;
-Deterministica;2009/08/06;determin.gif;an amusing enterprise to be involved in;<p>A game whose creation I was somewhat involved with.</p>;;;;;;;http://www.kongregate.com/games/TerryCavanagh_B/deterministica;;
+Oh shit, the camera man ist arrived;2009/08/05;ber3.png;a teasing;;;http://ded.increpare.com/~locus/camera_mac.zip;http://ded.increpare.com/~locus/camera_win.zip;;http://ded.increpare.com/~locus/camera_src.zip;C++;;;
+Tuba Mirum;2009/08/05;ber1.png;an experiment;;;http://ded.increpare.com/~locus/tubamirum_mac.zip;http://ded.increpare.com/~locus/tubamirum_win.zip;;http://ded.increpare.com/~locus/tubamirum_src.zip;C++;;;
+Deterministica;2009/08/06;determin.png;an amusing enterprise to be involved in;<p>A game whose creation I was somewhat involved with.</p>;;;;;;;http://www.kongregate.com/games/TerryCavanagh_B/deterministica;;
 Mr Bayes;2009/09/26;mrbayes.png;An exercise in delicious repetition.;"
 <p>This is not a game.</p>
 <p>As an effort to stave off madness and superstition, it constitutes a rather simple widget which enables one to estimate, by naive application of <a href=""http://en.wikipedia.org/wiki/Bayesian_inference"">Bayesian inference</a>, how likely it is that event X <em>causes</em> is the cause of an effect Y, given that you had some initial estimates, and are able to test it.</p>
@@ -371,7 +371,7 @@ Forest;2009/12/14;forestpng.png;"For <a href=""http://www.ludumdare.com/compo/ld
 
 				";;http://ded.increpare.com/~locus/forestmac.zip;http://ded.increpare.com/~locus/forestwin.zip;;http://ded.increpare.com/~locus/forestsrc.zip;C++;;;
 Impotence;2009/12/20;gradsmallimp.png;"for <a href=""http://www.glorioustrainwrecks.com/node/419"">kotm</a>. gradients courtesy of <a href=""http://www.foddy.net/tools.html"">foddy</a>'s gradient tool";;;http://ded.increpare.com/~locus/Impotence-mac.zip;http://ded.increpare.com/~locus/Impotence-win32.zip;http://ded.increpare.com/~locus/Impotence-linux-x86.tar.bz2;http://ded.increpare.com/~locus/Impotence-win32.zip;Ren'Py;;;
-Frig;2009/12/30;frigimg.png;happpppy;;;;;;"href=""http://ded.increpare.com/~locus/frig_src.zip";Flash;http://ded.increpare.com/~locus/Frig/;;
+Frig;2009/12/30;frigimg.png;happpppy;;;;;;http://ded.increpare.com/~locus/frig_src.zip;Flash;http://ded.increpare.com/~locus/Frig/;;
 Grave;2010/01/07;gravepic.png;spottty;;;;;;http://ded.increpare.com/~locus/grave_src.zip;Flash;http://ded.increpare.com/~locus/Grave;;
 Math Land;2010/01/09;mathland.png;I've wanted to make this game for a long time;;;;;;http://ded.increpare.com/~locus/MathLand.zip;Flash;http://ded.increpare.com/~locus/MathLand/;;
 Aesop;2010/01/14;aesopimg.png;ho humm;;;;;;http://ded.increpare.com/~locus/aesopsrc.zip;Flash;http://ded.increpare.com/~locus/Aesop;;
@@ -414,7 +414,7 @@ Crush Fetish Trilogy: Part 2;2010/02/27;crushfoot.png;it's still going on as I p
 <p>Made with <a href=""http://www.distractionware.com/"">terry</a> for the kotm <a href=""http://www.glorioustrainwrecks.com/node/437"">pirate kart</a>.</p>
 
 				";;;;;;;http://ded.increpare.com/~locus/crush/index2.html;;
-Crush Fetish Trilogy: part 3;2010/02/27;crushfoot.png;it's still going on as I post this - consider contributing to the cause!;"
+Crush Fetish Trilogy: Part 3;2010/02/27;crushfoot.png;it's still going on as I post this - consider contributing to the cause!;"
 <p><a href=""http://ded.increpare.com/~locus/crush/index.html"">Crush Fetish 1</a> (html/flash)<br>
 <a href=""http://ded.increpare.com/~locus/crush/index2.html"">Crush Fetish 2</a> (html/flash)<br>
 <a href=""http://ded.increpare.com/~locus/crush/index3.html"">Crush Fetish 3</a> (html/flash)</p>
@@ -467,504 +467,203 @@ Bababada[…];2010/06/19;bababada.png;Theme was Finnegans Wake.;"
 Snowdrift;2010/07/05;snowdriftpng.png;qaz wsx edc rfv tgb yhn ujm ik, ol. p±/;;;http://ded.increpare.com/~locus/snowdrift_osx.zip;http://ded.increpare.com/~locus/snowdrift_win.zip;;http://ded.increpare.com/~locus/snowdrift_src.zip;Unity;;;http://ded.increpare.com/~locus/snowdrift/
 whale of noise;2010/07/05;whale.png;"for <a href=""http://forums.tigsource.com/index.php?board=42.0"">this</a> effort on tigsource.";;;;;;http://ded.increpare.com/~locus/whaleofnoise_src.zip;Flash;http://ded.increpare.com/~locus/whaleofnoise/;;
 Via Dolorosa;2010/07/19;dolorosa.png;"Used dess's <a href=""http://www.auntiepixelante.com/?p=480"">star perv</a> font.  Thank you, dess!";;;http://ded.increpare.com/~locus/viadolorosa_mac.zip;http://ded.increpare.com/~locus/viadolorosa_win.zip;;http://ded.increpare.com/~locus/viadolorosa_src.zip;Unity;;;http://ded.increpare.com/~locus/ViaDolorosa
-Ndueiwd;2010/07/20;ndueiwd.png;ritually re-enacted Ndueiwd;"
-<p><a href=""http://ded.increpare.com/~locus/ndueiwd/"">play online now</a> (html/flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/ndueiwd_src.zip"">download source code</a> (as3/flixel/flash builder project)</p>
-
-				";;;;;;;;;
-The Clotted Island;2010/07/31;clottedislandpic.png;Let me know if this doesn't work...;"
-<p><a href=""http://ded.increpare.com/~locus/theclottedisland"">Play Online Now</a> (Unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/theclottedisland_mac.zip"">mac standalone</a> (10.4+ universal)<br>
-<a href=""http://ded.increpare.com/~locus/theclottedisland_win.zip"">windows standalone</a><br>
-<a href=""http://ded.increpare.com/~locus/theclottedisland_src.zip"">unity source</a></p>
-<p>Thanks to <a href=""http://distractionware.com/"">Terry</a>, <a href=""http://ian.janasnyder.com/"">Ian Snyder</a>, <a href=""http://sites.google.com/site/smestorp/smestorparena"">Brog</a>,  <a href=""http://studioeres.com"">Rinkuhero</a> for comments/suggestions.</p>
+Ndueiwd;2010/07/20;ndueiwd.png;ritually re-enacted Ndueiwd;;;;;;http://ded.increpare.com/~locus/ndueiwd_src.zip;Flash;http://ded.increpare.com/~locus/ndueiwd/;;
+The Clotted Island;2010/07/31;clottedislandpic.png;Let me know if this doesn't work...;"<p>Thanks to <a href=""http://distractionware.com/"">Terry</a>, <a href=""http://ian.janasnyder.com/"">Ian Snyder</a>, <a href=""http://sites.google.com/site/smestorp/smestorparena"">Brog</a>,  <a href=""http://studioeres.com"">Rinkuhero</a> for comments/suggestions.</p>
 <p>If you are experiencing some control lag/strangeness, then I recommend you try running the standalone version from your system in fullscreen mode.</p>
 <p>Edit: changed one of the puzzles – <a href=""http://twitter.com/perrinashcroft"">Perrin</a> and <a href=""http://www.draknek.org/"">Draknek</a> alerted me to the fact that there was some very misleading stuff going on with one of the rooms.  The change makes one of the puzzles worse, but overall will work out okay I hope : /</p>
 <p>Edit: There were some collision bugs reported as well with people getting stuck in walls – that should also be fixed now.</p>
 <p>Edit: some more physics bugs fixed with pushing stuff around.</p>
 
-				";;;;;;;;;
-Epicurus;2010/08/14;epicurus.png;bigjammm;"
-<p><a href=""http://ded.increpare.com/~locus/epicurus/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/epicurus_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/theclottedisland_mac.zip;http://ded.increpare.com/~locus/theclottedisland_win.zip;;http://ded.increpare.com/~locus/theclottedisland_src.zip;Unity;;;http://ded.increpare.com/~locus/theclottedisland
+Epicurus;2010/08/14;epicurus.png;bigjammm;;;;;;http://ded.increpare.com/~locus/epicurus_src.zip;Flash;http://ded.increpare.com/~locus/epicurus/;;
 Lion Love;2010/08/14;oberholz.png;Arrows to move. Space to charge.  Top score is a hundred and something, I think.;"
 <p>A collaboration with kinten, of <a href=""http://www.oxeyegames.com/"">Oxeye game studio</a>.</p>
-<p><a href=""http://ded.increpare.com/~locus/lion_love/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/lion_love_src.zip"">download source code</a> (flixel/flash builder)</p>
 
-				";;;;;;;;;
+
+				";;;;;http://ded.increpare.com/~locus/lion_love_src.zip;Flash;http://ded.increpare.com/~locus/lion_love/;;
 Serenade;2010/08/14;serenader.png;a game set in oberholz.  thanks to pishtaco for the music suggestion.;"
-<p>A collaboration with kinten, of <a href=""http://www.oxeyegames.com/"">Oxeye game studio</a>.</p>
-<p><a href=""http://ded.increpare.com/~locus/serenade/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/serenade_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+<p>A collaboration with kinten, of <a href=""http://www.oxeyegames.com/"">Oxeye game studio</a>.";;;;;http://ded.increpare.com/~locus/serenade_src.zip;Flash;http://ded.increpare.com/~locus/serenade/;;
 The Rose Garden;2010/08/14;rosegarden.png;"Made at the tail end of <a href=""http://forums.tigsource.com/index.php?topic=14227.30"">bigjam</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/rosegarden/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/rosegarden_src.zip"">download source code</a> (flash builder/flixel)</p>
 <p><a href=""http://increpare.bandcamp.com/album/the-rose-garden"">soundtrack</a></p>
 
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/rosegarden_src.zip;Flash;http://ded.increpare.com/~locus/rosegarden/;;
 Fierljeppen;2010/08/15;fierljeppen.png;bigjam bigjam bigjam;"
 <p>A collaboration with esq(uar)</p>
-<p><a href=""http://ded.increpare.com/~locus/fierljeppen/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/fierljeppen_src.zip"">download source code</a> (flixel/flash builder)</p>
 
-				";;;;;;;;;
+
+				";;;;;http://ded.increpare.com/~locus/fierljeppen_src.zip;Flash;ttp://ded.increpare.com/~locus/fierljeppen/;;
 Fish Fry;2010/08/15;fishfry.png;Fishie fishie;"
 <p>Collboration with <a href=""http://db.tigsource.com/developers/pishtaco"">pistacho</a>. A 2-player game.</p>
-<p><a href=""http://ded.increpare.com/~locus/fishfry/"">play online now</a> (Unity)<br>
-<a href=""http://ded.increpare.com/~locus/fishfry_win.zip"">windows standalone</a><br>
-<a href=""http://ded.increpare.com/~locus/fishfry_mac.zip"">OSX standalone</a><br>
-<a href=""http://ded.increpare.com/~locus/fishfry_src.zip"">source code</a></p>
 
-				";;;;;;;;;
-The Conspiracy of Tzetek;2010/08/22;conspiracytzet.png;Hackerr;"
-<p><a href=""http://ded.increpare.com/~locus/conspiracy/"">play online now</a> (html/flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/conspiracy_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/fishfry_mac.zip;http://ded.increpare.com/~locus/fishfry_win.zip;;http://ded.increpare.com/~locus/fishfry_src.zip;Unity;;;http://ded.increpare.com/~locus/fishfry/
+The Conspiracy of Tzetek;2010/08/22;conspiracytzet.png;Hackerr;;;;;;http://ded.increpare.com/~locus/conspiracy_src.zip;Flash;http://ded.increpare.com/~locus/conspiracy/;;
 Increpare Arcade;2010/09/01;compilationgame.png;game game game game game game game game game game;"
 <p>epilepsy warning –</p>
-<p><a href=""http://ded.increpare.com/~locus/Compilation/"">Play online now</a> (Unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/compilation_mac.zip"">OSX 10.5+</a><br>
-<a href=""http://ded.increpare.com/~locus/compilation_win.zip"">Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/compilation_src.zip"">Source</a></p>
-
-				";;;;;;;;;
-cascode;2010/09/15;cascode.png;What did the blind woman say to the arrangement?;"
-<p><a href=""http://ded.increpare.com/~locus/cascode"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/cascode_src.zip"">download source code</a> (as3/flixel)</p>
-
-				";;;;;;;;;
-Box;2010/10/07;boxico.png;"Was made at the <a href=""http://www.cambridgeindies.co.uk/"">cambridge friendship club</a>.  Thanks to brog for some chat about this.";"
-<p><a href=""http://ded.increpare.com/~locus/box/"">play online now</a> (html/flash)<br>
-<a href=""http://ded.increpare.com/~locus/box_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-Dirty Little Slut;2010/10/13;slutico.png;bwop;"
-<p><a href=""http://ded.increpare.com/~locus/dirty_little_slut"">play online now</a> (html/javascript)</p>
-
-				";;;;;;;;;
-Primitive Pattern;2010/10/17;primitive_pattern.png;A treatise on Hegelian semiotics and invariant theory.;"
-<p><a href=""http://ded.increpare.com/~locus/primitive_pattern"">Play online now</a> (flash/html)</p>
-<p><a href=""http://ded.increpare.com/~locus/primitive_pattern.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/compilation_mac.zip;http://ded.increpare.com/~locus/compilation_win.zip;;http://ded.increpare.com/~locus/compilation_src.zip;Unity;;;http://ded.increpare.com/~locus/Compilation/
+cascode;2010/09/15;cascode.png;What did the blind woman say to the arrangement?;;;;;;http://ded.increpare.com/~locus/cascode_src.zip;Flash;http://ded.increpare.com/~locus/cascode;;
+Box;2010/10/07;boxico.png;"Was made at the <a href=""http://www.cambridgeindies.co.uk/"">cambridge friendship club</a>.  Thanks to brog for some chat about this.";;;;;;http://ded.increpare.com/~locus/box_src.zip;Flash;http://ded.increpare.com/~locus/box/;;
+Dirty Little Slut;2010/10/13;slutico.png;bwop;;http://ded.increpare.com/~locus/dirty_little_slut;;;;;;;;
+Primitive Pattern;2010/10/17;primitive_pattern.png;A treatise on Hegelian semiotics and invariant theory.;;;;;;http://ded.increpare.com/~locus/primitive_pattern.zip;Flash;http://ded.increpare.com/~locus/primitive_pattern;;
 Treatise;2010/11/02;treatiseico.png;"alalalalalala
-image based upon a suggestion by <a href=""http://mightyvision.blogspot.com/"">brog</a>";"
-<p><a href=""http://ded.increpare.com/~locus/treatise"">play online now</a> (flash)<br>
-<a href=""http://ded.increpare.com/~locus/treatise.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+image based upon a suggestion by <a href=""http://mightyvision.blogspot.com/"">brog</a>";;;;;;http://ded.increpare.com/~locus/treatise.zip;Flash;http://ded.increpare.com/~locus/treatise;;
 I miss you;2010/11/03;imissyou.png;miss;"
-<p><a href=""http://ded.increpare.com/~locus/imissyou"">play online now</a><br>
-<a href=""http://ded.increpare.com/~locus/imissyou.zip"">download client source code</a></p>
 <p>The server code is possibly something that’ll be shared amongst several games in future, so I’m keeping it all on github <a href=""https://github.com/increpare/terminal1"">here</a> (done in python w/ twisted).</p>
 <p>I’d appreciate if you could let me know what bugs you encounter/random suggestions, because I want to work on this framework a little more and do more projects with it.</p>
 
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/imissyou.zip;Flash;http://ded.increpare.com/~locus/imissyou;;
 Sunlight;2010/11/07;sunlightico.png;"day and night - for the <a href=""http://experimentalgameplay.com/blog/2010/11/night-and-day-for-november/"">experimental gameplay project</a>";"
-<p><a href=""http://ded.increpare.com/~locus/sunlight"">play online now</a> (unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/sunlight_win.zip"">download for windows</a>(35MB)<br>
-<a href=""http://ded.increpare.com/~locus/sunlight_mac.zip"">download for osx</a> (39MB)</p>
-<p><a href=""http://ded.increpare.com/~locus/sunlight_src.zip"">unity 3 source code</a> (78MB)</p>
 <p>control: arrow keys only to move</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/sunlight_mac.zip;http://ded.increpare.com/~locus/sunlight_win.zip;;http://ded.increpare.com/~locus/sunlight_src.zip;Unity;;;http://ded.increpare.com/~locus/sunlight
 pautomata;2010/11/09;pautomata.png;hemm;"
 <p>automata-based paint program</p>
-<p><a href=""http://ded.increpare.com/~locus/pautomatacol2"">use online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/pautomata_src.zip"">download source code</a> (flixel/flash builder)</p>
+
 <p>edit: added colour version, at <a href=""http://www.foddy.net"">foddy</a>‘s request</p>
 
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/pautomata_src.zip;Flash;http://ded.increpare.com/~locus/pautomatacol2;;
 Ditheroid;2010/11/10;ditheroid.png;voop;"
-<p>Another quick paint prog – uses ordered dithering</p>
-<p><a href=""http://ded.increpare.com/~locus/ditheroid"">use online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/ditheroid.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+<p>Another quick paint prog – uses ordered dithering</p>";;;;;http://ded.increpare.com/~locus/ditheroid.zip;Flash;http://ded.increpare.com/~locus/ditheroid;;
 powahpaint;2010/11/10;powahpaint.png;:);"
-<p>and another one</p>
-<p><a href=""http://ded.increpare.com/~locus/powahpaint"">use online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/powahpaint.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+<p>and another one (=quick paint prog)</p>";;;;;http://ded.increpare.com/~locus/powahpaint.zip;Flash;http://ded.increpare.com/~locus/powahpaint;;
 Activate the Three Artefacts and then Leave;2010/11/15;activatethethreeartefactsandthenleave.png;"thanks to <a href=""http://starfruitgames.com/"">dock</a> for doing the build :)";"
 <p>Warning, this game might be a little hardware intensive – it will look different depending on whether or not your computer has sufficiently sophisticated shader support (if the game is in an outlined style, then it’s displaying on the high-end mode).</p>
 <p>controls are mouse + wsad/arrow keys + esc to quit.</p>
-<p><a href=""http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_win.zip"">Windows</a> (8MB)<br>
-<a href=""http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_mac.zip"">OSX 10.5+</a> (13MB)</p>
-<p><a href=""http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_src.zip"">download source code</a> (unity 3 pro)</p>
+
+
 <p><strong>edited: uploaded version which fixed graphical + mouse inversion glitches on high quality modes, sorted out control issues, and added mouse sensitivity increase/decrease buttons ([ and ]), and includes a powerpc build for osx</strong></p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_mac.zip;http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_win.zip;;http://ded.increpare.com/~locus/activatethethreeartefactsandthenleave_src.zip;Unity 3 Pro;;;
 Snip;2010/11/17;snipshot.png;I MADE A GAME TODAY;"
 <p>This requires shader model 2 support pretty much.  Controls are wsad+mouse.</p>
-<p><a href=""http://ded.increpare.com/~locus/snip"">play online now</a> (unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/snip_mac.zip"">download for mac</a> (osx 10.5+)<br>
-<a href=""http://ded.increpare.com/~locus/snip_win.zip"">download for win</a> </p>
-<p><a href=""http://ded.increpare.com/~locus/snip_src.zip"">unity 3 source code</a> </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/snip_mac.zip;http://ded.increpare.com/~locus/snip_win.zip;;http://ded.increpare.com/~locus/snip_src.zip;Unity 3;;;http://ded.increpare.com/~locus/snip
 rush to find;2010/11/21;rushtofindshot.png;"for <a href=""http://www.glorioustrainwrecks.com/comment/reply/1486#comment-form"">kotm #41</a>";"
 <p><a href=""http://ded.increpare.com/~locus/rushtofind"">play online now</a> (unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/rushtofind_win.zip"">download for windows</a><br>
-<a href=""http://ded.increpare.com/~locus/rushtofind_mac.zip"">download for mac</a><br>
-<a href=""http://ded.increpare.com/~locus/rushtofind.zip"">download source code</a> (unity 3 indie)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/rushtofind_mac.zip;http://ded.increpare.com/~locus/rushtofind_win.zip;;http://ded.increpare.com/~locus/rushtofind.zip;Unity 3 Indie;;;
 Cities of Day and Night;2010/11/26;citiesofdayandnight_shot.png;"For <a href=""http://experimentalgameplay.com/blog/2010/11/night-and-day-for-november/#comments"">EGP</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/cities_of_day_and_night_win.zip"">Download for Windows</a> (31MB)<br>
-<a href=""http://ded.increpare.com/~locus/cities_of_day_and_night_mac.zip"">Download for OSX</a> (37MB)</p>
-<p><a href=""http://ded.increpare.com/~locus/cities_of_day_and_night_src.zip"">Download Source Code</a> (Unity 3)</p>
 <p>edit: uploaded a newer version, fixing some graphical and sound glitches, as well as a bug with one of the puzzles (that would render it either trivially solvable, or unsolvable if you went to night and back).</p>
 <p>edit: uploaded a newer version still, fixing a couple of game logic bugs.</p>
 <p>[ thanks to perrin, mcc, alex, and rico for testing : ) ]</p>
 
-				";;;;;;;;;
-Kettle;2010/11/28;kettle_sshot.png;"A (late) birthday present for one of the Andys at <a href=""http://www.terrorbullgames.co.uk"">Terrorbull Games</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/kettle"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/kettle.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-Snowman’s Day Out;2010/12/06;snowman_img.png;"Made for the <a href=""http://everybodydrawgamejam.eventbrite.com/"">Everybody draw</a> jam :)";"
-<p><a href=""http://ded.increpare.com/~locus/Snowman_win.zip"">Download for Windows</a> (20MB)<br>
-<a href=""http://ded.increpare.com/~locus/Snowman_mac.zip"">Download for Mac OSX 10.5+</a> (25MB)</p>
-<p><a href=""http://ded.increpare.com/~locus/Snowman_src.zip"">Download Unity 3 Source code</a> (65MB)</p>
-
-				";;;;;;;;;
-Detective Clean;2010/12/19;detectiveclean.png;"for <a href=""http://www.glorioustrainwrecks.com/node/44"">kotm</a>";"
-<p><a href=""http://ded.increpare.com/~locus/Detective_Clean"">play online now</a> (html/javascript)<br>
-<a href=""http://ded.increpare.com/~locus/Detective_Clean/Detective Clean"">Download source code</a> (twine)</p>
-
-				";;;;;;;;;
-Mother Robot;2010/12/20;motherrobot.png;"for <a href=""http://ludumdare.com/compo"">ludum dare</a>, with some minor inspiration from <a href=""http://jonathanwhiting.com/"">jonathan whiting</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/mother_robot"">play online now</a> (html/flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/mother_robot_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/cities_of_day_and_night_mac.zip;http://ded.increpare.com/~locus/cities_of_day_and_night_win.zip;;http://ded.increpare.com/~locus/cities_of_day_and_night_src.zip;Unity 3;;;
+Kettle;2010/11/28;kettle_sshot.png;"A (late) birthday present for one of the Andys at <a href=""http://www.terrorbullgames.co.uk"">Terrorbull Games</a>.";;;;;;http://ded.increpare.com/~locus/kettle.zip;Flash;http://ded.increpare.com/~locus/kettle;;
+Snowman’s Day Out;2010/12/06;snowman_img.png;"Made for the <a href=""http://everybodydrawgamejam.eventbrite.com/"">Everybody draw</a> jam :)";;;http://ded.increpare.com/~locus/Snowman_mac.zip;http://ded.increpare.com/~locus/Snowman_win.zip;;http://ded.increpare.com/~locus/Snowman_src.zip;Unity 3;;;
+Detective Clean;2010/12/19;detectiveclean.png;"for <a href=""http://www.glorioustrainwrecks.com/node/44"">kotm</a>";;http://ded.increpare.com/~locus/Detective_Clean;;;;http://ded.increpare.com/~locus/Detective_Clean/;Twine;;;
+Mother Robot;2010/12/20;motherrobot.png;"for <a href=""http://ludumdare.com/compo"">ludum dare</a>, with some minor inspiration from <a href=""http://jonathanwhiting.com/"">jonathan whiting</a>.";;;;;;http://ded.increpare.com/~locus/mother_robot_src.zip;Flash;http://ded.increpare.com/~locus/mother_robot;;
 Tyndall;2010/12/22;tyndallpic.png;aroio;"
-<p><a href=""http://ded.increpare.com/~locus/Tyndall"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Tyndall.zip"">download source code</a> (flixel/flash builder)</p>
 <p><del datetime=""2010-12-22T11:39:28+00:00"">edit: I’d hold off playing this for now, the lovely zara notified me of some bugs :(</del></p>
 <p>bugs fixed, to my knowledge.  thanks for letting me know, zara</p>
 
-				";;;;;;;;;
-Octat;2011/01/01;octat_ico.png;"for an impromptu end of year games jam with <a href=""http://www.minecraft.net/"">notch</a>, <a href=""http://www.blog.radiator.debacle.us/"">radiator</a>, <a href=""http://www.vectorstorm.org/"">mewse</a>, amongst others.  Best new years I've ever had!";"
-<p><a href=""http://ded.increpare.com/~locus/octat"">play now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/octat_src.zip"">download source code</a> (flixel / flash builder)</p>
-
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/Tyndall.zip;Flash;http://ded.increpare.com/~locus/Tyndall;;
+Octat;2011/01/01;octat_ico.png;"for an impromptu end of year games jam with <a href=""http://www.minecraft.net/"">notch</a>, <a href=""http://www.blog.radiator.debacle.us/"">radiator</a>, <a href=""http://www.vectorstorm.org/"">mewse</a>, amongst others.  Best new years I've ever had!";;;;;;http://ded.increpare.com/~locus/octat_src.zip;Flash;http://ded.increpare.com/~locus/octat;;
 typesphere;2011/01/16;wordgame_ico.png;"<a href=""http://www.glorioustrainwrecks.com/node/1562"">kotm game</a>";"
-<p><a href=""http://ded.increpare.com/~locus/typesphere"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/typesphere_src.zip"">download source code</a> (flash builder/flixel)</p>
 <p>edit: uploaded newer version with different letter distribution, and some other tweaks.  Hm.</p>
 
-				";;;;;;;;;
-Catalan;2011/01/20;catalan_ico.png;Thanks to ... oh, too many people for comments, esp nyarla/barrett_forrd, dock, terry, mjau. Others as well.;"
-<p><a href=""http://ded.increpare.com/~locus/catalan"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/catalan_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/typesphere_src.zip;Flash;http://ded.increpare.com/~locus/typesphere;;
+Catalan;2011/01/20;catalan_ico.png;Thanks to ... oh, too many people for comments, esp nyarla/barrett_forrd, dock, terry, mjau. Others as well.;;;;;;http://ded.increpare.com/~locus/catalan_src.zip;Flash;http://ded.increpare.com/~locus/catalan;;
 american dream;2011/02/10;american_dream_ico.png;"from <a href=""http://forums.tigsource.com/index.php?topic=16153.0"">tigjam uk 4</a>";"
 <p>A collaboration with <a href=""http://www.distractionware.com"">terry</a>, <a href=""http://www.superflatgames.com"">jasper</a> and <a href=""http://terrorbullgames.com/"">tom</a>.</p>
-<p><a href=""http://ded.increpare.com/~locus/american_dream/"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/american_dream_src.zip"">download source code</a> (flash builder / terry’s framework)</p>
 
-				";;;;;;;;;
-A history of Democratic Process in Eire;2011/02/20;history_of_democracy.png;"<a href=""http://www.glorioustrainwrecks.com/node/1602"">for kotm</a>";"
-<p><a href=""http://ded.increpare.com/~locus/history_of_democracy/"">play online now</a> (flash)<br>
-<a href=""http://ded.increpare.com/~locus/history_of_democracy_in_ireland.zip"">download source code</a> (flixel/ flash builder)</p>
 
-				";;;;;;;;;
+				";;;;;ttp://ded.increpare.com/~locus/american_dream_src.zip;Flash;http://ded.increpare.com/~locus/american_dream/;;
+A history of Democratic Process in Eire;2011/02/20;history_of_democracy.png;"<a href=""http://www.glorioustrainwrecks.com/node/1602"">for kotm</a>";;;;;;http://ded.increpare.com/~locus/history_of_democracy_in_ireland.zip;Flash;http://ded.increpare.com/~locus/history_of_democracy/;;
 Bfxr;2011/02/24;sfxrimg.png;"Give all of your love to <a href=""http://www.drpetter.se/project_sfxr.html"">drpetter</a> and <a href=""http://www.superflashbros.net/as3sfxr/"">Tom Vian</a>";"
 <p>I started tinkering with <a href=""http://www.superflashbros.net/as3sfxr/"">as3sfxr</a> on the basis of a small chat with Nyarla.  I put in some stuff, released what I had, and asked people for suggestions.  People had lots of suggestions, and I worked on expanding it a little more.  The changes are done now.  I gave it a new title to celebrate.</p>
-<p><a href=""http://www.bfxr.net/"">Bfxr</a></p>
+
 <p>(the older version can be found <a href=""http://ded.increpare.com/~locus/as3sfxr-b/"">here</a>, in case anyone absolutely needs it, but it’s unsupported )</p>
 
-				";;;;;;;;;
-NAWNCO;2011/04/10;nawnco.png;"For the <a href=""http://environmentalgamejam.eventbrite.com/"">a games jam</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/nawnco"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/nawnco_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Block Push Championship;2011/05/01;stepdykeshot.png;"for <a href=""http://ludumdare.com/compo/"">ludum dare</a>";"
-<p><a href=""http://ded.increpare.com/~locus/block_push_championship/"">play online now</a> (flash)<br>
-<a href=""http://ded.increpare.com/~locus/block_push_championship.zip"">Download Source Code</a> (flixel / flash develop)</p>
-
-				";;;;;;;;;
-SO&lt±O0^^;2011/05/12;soo0icon.png;"Thanks to <a href=""http://www.sophiehoulden.com/"">sophie</a> for a helpful suggestion.";"
-<p><a href=""http://ded.increpare.com/~locus/SOO0"">play online now</a> (flash)<br>
-<a href=""http://ded.increpare.com/~locus/SOO0_src.zip"">download source code</a> (flixel/as3)</p>
-
-				";;;;;;;;;
+				";;;;;https://github.com/increpare/bfxr;Flash;http://www.bfxr.net/;;
+NAWNCO;2011/04/10;nawnco.png;"For the <a href=""http://environmentalgamejam.eventbrite.com/"">a games jam</a>.";;;;;;http://ded.increpare.com/~locus/nawnco_src.zip;Flash;http://ded.increpare.com/~locus/nawnco;;
+Block Push Championship;2011/05/01;stepdykeshot.png;"for <a href=""http://ludumdare.com/compo/"">ludum dare</a>";;;;;;http://ded.increpare.com/~locus/block_push_championship.zip;Flash;http://ded.increpare.com/~locus/block_push_championship/;;
+SO&lt±O0^^;2011/05/12;soo0icon.png;"Thanks to <a href=""http://www.sophiehoulden.com/"">sophie</a> for a helpful suggestion.";;;;;;http://ded.increpare.com/~locus/SOO0_src.zip;Flash;http://ded.increpare.com/~locus/SOO0;;
 In A Single Breath;2011/06/12;singlebreath.png;"At a <a href=""http://london.hackspace.org.uk/"">london hackspace</a> jam. ";"
 <p>Wasn’t able to exorcise all the collision glitches, but they shouldn’t screw things up too much…</p>
-<p><a href=""http://ded.increpare.com/~locus/singlebreath/web"">play online now</a> (unity webplayer)</p>
-<p><a href=""http://ded.increpare.com/~locus/singlebreath/InASingleBreath_win.zip"">download for windows</a><br>
-<a href=""http://ded.increpare.com/~locus/singlebreath/InASingleBreath_mac.zip"">download for mac</a><br>
-<a href=""http://ded.increpare.com/~locus/singlebreath/InASingleBreath_src.zip"">source code</a> (unity 3.3)</p>
 
-				";;;;;;;;;
-untris;2011/07/16;untris_ico.png;"Hurrah for <a href=""http://forums.tigsource.com/index.php?topic=19929.0"">TIGJAM UK 5</a>, following a conversation with <a href=""http://twitter.com/v21"">v21</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/untris"">play online now</a> (flash)<br>
-<a href=""http://ded.increpare.com/~locus/untris_src.zip"">source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/singlebreath/InASingleBreath_mac.zip;http://ded.increpare.com/~locus/singlebreath/InASingleBreath_win.zip;;http://ded.increpare.com/~locus/singlebreath/InASingleBreath_src.zip;Unity 3.3;;;http://ded.increpare.com/~locus/singlebreath/web
+untris;2011/07/16;untris_ico.png;"Hurrah for <a href=""http://forums.tigsource.com/index.php?topic=19929.0"">TIGJAM UK 5</a>, following a conversation with <a href=""http://twitter.com/v21"">v21</a>.";;;;;;http://ded.increpare.com/~locus/untris_src.zip;Flash;http://ded.increpare.com/~locus/untris;;
 line bender;2011/07/17;linebender_ico.png;more tigjam;"
-<p><a href=""http://ded.increpare.com/~locus/linebender"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/linebender_src.zip"">download source code</a> (as3/flixel)</p>
 <p>edit: fixed some minor problems with the collectable collision pixel-perfectness</p>
 
-				";;;;;;;;;
-Bastard;2011/07/18;catbastard_ico.png;easy;"
-<p><a href=""http://ded.increpare.com/~locus/tguk5/catbastard"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/tguk5/catbastard_src.zip"">download source</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-kompression;2011/07/18;kompression_ico.png;sum men eh;"
-<p><a href=""http://ded.increpare.com/~locus/tguk5/kompression"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/tguk5/kompression_src.zip"">download source</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-salome;2011/07/18;salome_ico.png;woll;"
-<p><a href=""http://ded.increpare.com/~locus/tguk5/salome/salome_win.zip"">windows</a><br>
-<a href=""http://ded.increpare.com/~locus/tguk5/salome/salome_mac.zip"">mac</a><br>
-<a href=""http://ded.increpare.com/~locus/tguk5/salome/salome_src.zip"">source code</a> (unity 3)</p>
-
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/linebender_src.zip;Flash;http://ded.increpare.com/~locus/linebender;;
+Bastard;2011/07/18;catbastard_ico.png;easy;;;;;;http://ded.increpare.com/~locus/tguk5/catbastard_src.zip;Flash;http://ded.increpare.com/~locus/tguk5/catbastard;;
+kompression;2011/07/18;kompression_ico.png;sum men eh;;;;;;http://ded.increpare.com/~locus/tguk5/kompression_src.zip;Flash;http://ded.increpare.com/~locus/tguk5/kompression;;
+salome;2011/07/18;salome_ico.png;woll;;;http://ded.increpare.com/~locus/tguk5/salome/salome_mac.zip;http://ded.increpare.com/~locus/tguk5/salome/salome_win.zip;;http://ded.increpare.com/~locus/tguk5/salome/salome_src.zip;Unity 3;;;
 sliff;2011/07/18;sliff_ico.png;"the story was to have a seagull bite off a finger at ten stages and at the end to have the climber get to a dead end with one finger + lose all hope, and the bird to eat it, and the man to fall to his doom, but the bird to have a change of heart and regurgitate a ten-fingered claw and to dive down and pull the nofingered climber to safety but there was only one stage so bye bye story.
 
 (sounds + ambience courtesy of <a href=""http://freesound.org/"">freesound.org</a> )";"
-<p><a href=""http://ded.increpare.com/~locus/tguk5/sliff/sliff_win.zip"">windows</a><br>
-<a href=""http://ded.increpare.com/~locus/tguk5/sliff/sliff_mac.zip"">mac</a><br>
-<a href=""http://ded.increpare.com/~locus/tguk5/sliff/silff_src.zip"">source</a> (unity 3)</p>
 <p>controls: wsad + mouse</p>
 <p><del datetime=""2011-07-18T21:38:55+00:00"">some people are getting weird upside-downness/mouse-inversion problems.  Looking into it this evening. [ If you are getting it, try decreasing the quality to something at or below good – that should solve it ]</del> should be fixed now – thanks bezzy : )</p>
 
-				";;;;;;;;;
-Travelling;2011/07/18;travelling_ico.png;nonsense;"
-<p><a href=""http://ded.increpare.com/~locus/tguk5/travelling"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/tguk5/travelling_src.zip"">download source code</a> (flixel/flash builder)</p>
+				";;http://ded.increpare.com/~locus/tguk5/sliff/sliff_mac.zip;http://ded.increpare.com/~locus/tguk5/sliff/sliff_win.zip;;http://ded.increpare.com/~locus/tguk5/sliff/silff_src.zip;Unity 3;;;
+Travelling;2011/07/18;travelling_ico.png;nonsense;;;;;;http://ded.increpare.com/~locus/tguk5/travelling_src.zip;Flash;http://ded.increpare.com/~locus/tguk5/travelling;;
+English Country Tune;2011/11/26;ect.png;I hope you enjoy it.;"<a href=""http://www.englishcountrytune.com/"">www.englishcountrytune.com</a><p>a commercial game for PC, Mac, iPad, and iPhone.  There’s a demo available for the desktop versions.  </p>
 
-				";;;;;;;;;
-English Country Tune;2011/11/26;ect.png;I hope you enjoy it.;"
-<p><a href=""http://www.englishcountrytune.com/"">English Country Tune</a>, a commercial game for PC, Mac, iPad, and iPhone.  There’s a demo available for the desktop versions.  </p>
-
-				";;;;;;;;;
-Pirouette;2011/12/11;pirouette.png;not a book.;"
-<p><a href=""http://ded.increpare.com/~locus/pirouette"">play online now</a> (flash)<br>
-<a href=""http://itunes.apple.com/us/app/pirouette/id486442292?ls=1&amp±mt=8"">play on iPad</a> (app store link – free)</p>
-<p><a href=""http://ded.increpare.com/~locus/pirouette_src.zip"">download source code</a>(flixel / flash builder)</p>
+				";;http://www.englishcountrytune.com/;http://www.englishcountrytune.com/;http://www.englishcountrytune.com/;;;;;
+Pirouette;2011/12/11;pirouette.png;not a book.;"<a href=""http://itunes.apple.com/us/app/pirouette/id486442292?ls=1&amp±mt=8"">play on iPad</a> (app store link – free)</p>
 <p>a collaboration with <a href=""http://www.starfruitgames.com"">dock</a>.</p>
 
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/pirouette_src.zip;Flash;http://ded.increpare.com/~locus/pirouette;;
 Oíche Mhaith;2011/12/17;oichemhaith.png;eeha why;"
-<p><a href=""http://ded.increpare.com/~locus/oiche_mhaith"">play online now</a> (flash)</p>
 <p>A collaboration with <a href=""http://www.distractionware.com"">terry cavanagh</a>.</p>
 
-				";;;;;;;;;
-Puppy Shelter;2011/12/19;puppyshelter.png;miao;"
-<p><a href=""http://ded.increpare.com/~locus/puppy_shelter"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/puppy_shelter_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
+				";;;;;;;http://ded.increpare.com/~locus/oiche_mhaith;;
+Puppy Shelter;2011/12/19;puppyshelter.png;miao;;;;;;http://ded.increpare.com/~locus/puppy_shelter_src.zip;Flash;http://ded.increpare.com/~locus/puppy_shelter;;
 Microtone;2011/12/30;microtone_game.png;I spent Christmas with an old acquaintance.;"
-<p><a href=""http://ded.increpare.com/~locus/Microtone"">play online now</a> (flash 11)</p>
-<p><a href=""http://ded.increpare.com/~locus/microtone_win.zip"">download for windows</a><br>
-<a href=""http://ded.increpare.com/~locus/microtone_osx.zip"">download for mac</a> </p>
-<p><a href=""http://itunes.apple.com/us/app/microtone/id492074045?ls=1&amp±mt=8"">iPad/iPhone app store links</a> (free)</p>
-<p><a href=""http://ded.increpare.com/~locus/microtone_src.zip"">download source</a> (unity 3.5 beta)</p>
-
-				";;;;;;;;;
-Negative Shape;2012/02/21;ss2.png;PORTAL;"
-<p><a href=""http://ded.increpare.com/~locus/Negative_Shape"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Negative_Shape_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Promises;2012/02/21;ss6.png;9i9i9i9i9i99i9;"
-<p><a href=""http://ded.increpare.com/~locus/Promises"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Promises_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Recross;2012/02/21;ss4.png;wectangles and mumbers;"
-<p><a href=""http://ded.increpare.com/~locus/Recross"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Recross_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Spiders and Cubes;2012/02/21;ss3.png;It's a wonder anyone can tell one thing from another thing.;"
-<p><a href=""http://ded.increpare.com/~locus/Spiders_And_Cubes_Unity"">play online now</a> (unity webplayer)</p>
-<p><a href=""http://ded.increpare.com/~locus/Spiders_And_Cubes_Flash"">play online now</a> (flash, but a bit buggy)</p>
-<p><a href=""http://ded.increpare.com/~locus/Spiders_And_Cubes_Win.zip"">windows executable</a></p>
-<p><a href=""http://ded.increpare.com/~locus/Spiders_And_Cubes_Mac.zip"">Mac executable</a></p>
-<p><a href=""http://ded.increpare.com/~locus/Spiders_And_Cubes_src.zip"">download source code</a> (unity 3.5)</p>
-
-				";;;;;;;;;
-The Good Sister;2012/02/21;ss1.png;overvaluation;"
-<p><a href=""http://ded.increpare.com/~locus/TheGoodSister"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/TheGoodSister_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Woodrow Wilson;2012/02/21;ss5.png;ideology;"
-<p><a href=""http://ded.increpare.com/~locus/woodrow_wilson"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Woodrow_Wilson_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-3nake;2012/02/25;3nake.jpg;"<a href=""http://www.piratekart.com"">piratekart</a>";"
-<p><a href=""http://ded.increpare.com/~locus/3nake"">play now</a> (unity player)<br>
-<a href=""http://ded.increpare.com/~locus/3nake_win.zip"">download windows executable</a><br>
-<a href=""http://ded.increpare.com/~locus/3nake_mac.zip"">download mac executable</a></p>
-<p><a href=""http://ded.increpare.com/~locus/3nake_src.zip"">download unity 3.5 source</a></p>
-
-				";;;;;;;;;
-Can You Jump It 3D;2012/02/25;canyoujumpit3d.png;shameless rippaggges;"
-<p><a href=""http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D/"">play online now</a> (unity player)</p>
-<p><a href=""http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Win.zip"">Download Windows Executable</a><br>
-<a href=""http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Mac.zip"">Download Mac Executable</a><br>
-<a href=""http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Source.zip"">Download Source Code</a> (unity 3.5)</p>
-
-				";;;;;;;;;
-Clicktagon;2012/02/25;clicktagon.png;long live the longtagon;"
-<p><a href=""http://ded.increpare.com/~locus/Clicktagon/"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/clicktagon_mac.zip"">download mac version</a><br>
-<a href=""http://ded.increpare.com/~locus/clicktagon_win.zip"">download windows version</a><br>
-<a href=""http://ded.increpare.com/~locus/clicktagon_src.zip"">download source</a> (unity 3.5)</p>
-
-				";;;;;;;;;
-RAPIDFIE;2012/02/25;rapidfie.png;a cat a hat abatoir;"
-<p><a href=""http://ded.increpare.com/~locus/RAPIDFIE"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/RAPIDFIE_SRC.zip"">download flash source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-ONE LAP CHALLANGE;2012/02/26;onetrackracer.png;collision crappiness blech;"
-<p><a href=""http://ded.increpare.com/~locus/OneLapChallange"">play now</a> (unity webplayer)</p>
-<p><a href=""http://ded.increpare.com/~locus/OneLapChallange_win.zip"">download windows version</a><br>
-<a href=""http://ded.increpare.com/~locus/OneLapChallange_mac.zip"">download mac version</a></p>
-<p><a href=""http://ded.increpare.com/~locus/OneLapChallange_src.zip"">download source code</a></p>
-
-				";;;;;;;;;
-Coca T;2012/04/09;cocat_shot.png;"<a href=""http://www.lexaloffle.com/neko.htm"">lexaloffle</a> tribute";"
-<p><a href=""http://ded.increpare.com/~locus/Coca_T"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/Coca_T_src.zip"">Download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-Crab Planet;2012/04/09;crabplanet.png;"A <a href=""http://mightyvision.blogspot.co.uk/2012/03/7drl-zaga-33.html"">broglike</a>";"
-<p><a href=""http://ded.increpare.com/~locus/CrabPlanet"">Play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/CrabPlanet_src.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
+<p><a href=""http://itunes.apple.com/us/app/microtone/id492074045?ls=1&amp±mt=8"">iPad/iPhone app store links</a> (free)</p>				";;http://ded.increpare.com/~locus/microtone_osx.zip;http://ded.increpare.com/~locus/microtone_win.zip;;http://ded.increpare.com/~locus/microtone_src.zip;Unity 3.5 beta;http://ded.increpare.com/~locus/Microtone;;
+Negative Shape;2012/02/21;ss2.png;PORTAL;;;;;;http://ded.increpare.com/~locus/Negative_Shape_src.zip;Flash;http://ded.increpare.com/~locus/Negative_Shape;;
+Promises;2012/02/21;ss6.png;9i9i9i9i9i99i9;;;;;;http://ded.increpare.com/~locus/Promises_src.zip;Flash;http://ded.increpare.com/~locus/Promises;;
+Recross;2012/02/21;ss4.png;wectangles and mumbers;;;;;;http://ded.increpare.com/~locus/Recross_src.zip;Flash;http://ded.increpare.com/~locus/Recross;;
+Spiders and Cubes;2012/02/21;ss3.png;It's a wonder anyone can tell one thing from another thing.;;;http://ded.increpare.com/~locus/Spiders_And_Cubes_Mac.zip;http://ded.increpare.com/~locus/Spiders_And_Cubes_Win.zip;;http://ded.increpare.com/~locus/Spiders_And_Cubes_src.zip;Unity 3.5;http://ded.increpare.com/~locus/Spiders_And_Cubes_Flash;;http://ded.increpare.com/~locus/Spiders_And_Cubes_Unity
+The Good Sister;2012/02/21;ss1.png;overvaluation;;;;;;http://ded.increpare.com/~locus/TheGoodSister_src.zip;Flash;http://ded.increpare.com/~locus/TheGoodSister;;
+Woodrow Wilson;2012/02/21;ss5.png;ideology;;;;;;http://ded.increpare.com/~locus/Woodrow_Wilson_src.zip;Flash;http://ded.increpare.com/~locus/woodrow_wilson;;
+3nake;2012/02/25;3nake.jpg;"<a href=""http://www.piratekart.com"">piratekart</a>";;;http://ded.increpare.com/~locus/3nake_mac.zip;http://ded.increpare.com/~locus/3nake_win.zip;;http://ded.increpare.com/~locus/3nake_src.zip;Unity 3.5;;;http://ded.increpare.com/~locus/3nake
+Can You Jump It 3D;2012/02/25;canyoujumpit3d.png;shameless rippaggges;;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Mac.zip;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Win.zip;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Source.zip;Unity 3.5;;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D/
+Clicktagon;2012/02/25;clicktagon.png;long live the longtagon;;;http://ded.increpare.com/~locus/clicktagon_mac.zip;http://ded.increpare.com/~locus/clicktagon_win.zip;;http://ded.increpare.com/~locus/clicktagon_src.zip;Unity 3.5;http://ded.increpare.com/~locus/Clicktagon/;;
+RAPIDFIE;2012/02/25;rapidfie.png;a cat a hat abatoir;;;;;;http://ded.increpare.com/~locus/RAPIDFIE_SRC.zip;Flash;http://ded.increpare.com/~locus/RAPIDFIE;;
+ONE LAP CHALLANGE;2012/02/26;onetrackracer.png;collision crappiness blech;;;http://ded.increpare.com/~locus/OneLapChallange_mac.zip;http://ded.increpare.com/~locus/OneLapChallange_win.zip;;http://ded.increpare.com/~locus/OneLapChallange_src.zip;Unity;;;http://ded.increpare.com/~locus/OneLapChallange
+Coca T;2012/04/09;cocat_shot.png;"<a href=""http://www.lexaloffle.com/neko.htm"">lexaloffle</a> tribute";;;;;;http://ded.increpare.com/~locus/Coca_T_src.zip;Flash;http://ded.increpare.com/~locus/Coca_T;;
+Crab Planet;2012/04/09;crabplanet.png;"A <a href=""http://mightyvision.blogspot.co.uk/2012/03/7drl-zaga-33.html"">broglike</a>";;;;;;http://ded.increpare.com/~locus/CrabPlanet_src.zip;Flash;http://ded.increpare.com/~locus/CrabPlanet;;
 MMMMMM;2012/04/14;mmmmmm123.png;Open for feedback, eh.;"
-<p><a href=""http://ded.increpare.com/~locus/MMMMMM"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/MMMMMM_src.zip"">download source code</a> (flash builder/flixel)</p>
 <p>[ there’s a game of the same name by a one Perrin Ashcroft <a href=""http://www.lockeddoorpuzzle.com/site/works/jams"" title=""here"">here</a> ]</p>
 
-				";;;;;;;;;
+				";;;;;http://ded.increpare.com/~locus/MMMMMM_src.zip;Flash;http://ded.increpare.com/~locus/MMMMMM;;
 Puzzles;2012/06/22;puzzle_pic.png;puzzzzle;"
-<p><a href=""http://ded.increpare.com/~locus/puzzles"">play online now</a> (Unity)</p>
-<p><a href=""http://ded.increpare.com/~locus/puzzles_win.zip"">download for windows</a><br>
-<a href=""http://ded.increpare.com/~locus/puzzles_mac.zip"">download for mac osx</a></p>
-<p><a href=""http://ded.increpare.com/~locus/puzzles_src.zip"">download Unity 3.5 source code</a></p>
+<p><a href="""">download Unity 3.5 source code</a></p>
 <p>edit : updated it to fix the pink/blank/stuck at title screen problem that people were having.</p>
 
-				";;;;;;;;;
-Two Levels;2012/07/23;twolevels.png;bip;"
-<p><a href=""http://ded.increpare.com/~locus/TwoLevels/"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/TwoLevels.zip"">download source code</a> (flash builder/flixel)</p>
-
-				";;;;;;;;;
-Sickness;2012/10/12;sickgame.png;twn;"
-<p><a href=""http://ded.increpare.com/~locus/sickness"">play online now</a> (HTML)</p>
-<p><a href=""http://ded.increpare.com/~locus/sickness/sickness.tws"">Download source code</a> (twine)</p>
-
-				";;;;;;;;;
-Slave Of God;2012/12/30;slaveofgod.png;"Why yes I am fond of <a href=""http://www.freeindiegam.es/2012/03/tape-dream-gargonherd/"">mistress gargonherd</a>.";"
-<p><a href=""http://ded.increpare.com/~locus/slaveofgod_win.zip"">download for windows</a><br>
-<a href=""http://ded.increpare.com/~locus/slaveofgod_osx.zip"">download for mac osx</a> </p>
-<p>(wsad + mouse, space to jump)<br>
-(flashing lights/seizure warning)</p>
-<p><a href=""http://ded.increpare.com/~locus/slaveofgod_src.zip"">download source code</a> (unity 3.5 pro)</p>
-
-				";;;;;;;;;
-Ollam House;2013/01/07;ollam.png;bounce bounce;"
-<p><a href=""http://ded.increpare.com/~locus/ollam_house_win.zip"">Download for Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/ollam_house_mac.zip"">Download for Mac OS X</a></p>
-<p><a href=""http://ded.increpare.com/~locus/ollam_house_src.zip"">Download Source Code</a> (Unity 3.5)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/puzzles_mac.zip;http://ded.increpare.com/~locus/puzzles_win.zip;;http://ded.increpare.com/~locus/puzzles_src.zip;Unity 3.5;;;http://ded.increpare.com/~locus/puzzles
+Two Levels;2012/07/23;twolevels.png;bip;;;;;;http://ded.increpare.com/~locus/TwoLevels.zip;Flash;http://ded.increpare.com/~locus/TwoLevels/;;
+Sickness;2012/10/12;sickgame.png;twn;;http://ded.increpare.com/~locus/sickness;;;;http://ded.increpare.com/~locus/sickness/sickness.tws;Twine;;;
+Slave Of God;2012/12/30;slaveofgod.png;"Why yes I am fond of <a href=""http://www.freeindiegam.es/2012/03/tape-dream-gargonherd/"">mistress gargonherd</a>.";;;http://ded.increpare.com/~locus/slaveofgod_osx.zip;http://ded.increpare.com/~locus/slaveofgod_win.zip;;http://ded.increpare.com/~locus/slaveofgod_src.zip;Unity 3.5 Pro;;;
+Ollam House;2013/01/07;ollam.png;bounce bounce;;;http://ded.increpare.com/~locus/ollam_house_mac.zip;http://ded.increpare.com/~locus/ollam_house_win.zip;;http://ded.increpare.com/~locus/ollam_house_src.zip;Unity 3.5;;;
 Sleeping Scared;2013/01/20;sleepingscared.png;thrap thrap thrap;"
-<p><a href=""http://ded.increpare.com/~locus/SleepingScared_Win.zip"">Download for Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/SleepingScared_osx.zip"">Download for Mac/OSX</a></p>
-<p><a href=""http://ded.increpare.com/~locus/SleepingScared_src.zip"">Download source code</a> (Unity 3.5)</p>
 <p>controls : arrows to move, space to jump</p>
 <p>(and, if you really must, I to toggle invert mouse)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/SleepingScared_osx.zip;http://ded.increpare.com/~locus/SleepingScared_Win.zip;;http://ded.increpare.com/~locus/SleepingScared_src.zip;Unity 3.5;;;
 To my first born son;2013/01/21;lettertoson.png;on;"
-<p><a href=""http://ded.increpare.com/~locus/To my first born son (win).zip"">Download for Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/To my first born son (mac).zip"">Download for Mac OSX</a></p>
-<p><a href=""http://ded.increpare.com/~locus/firstborn_src.zip"">Download Source Code</a> (Unity 3.5)</p>
 <p>controls : wsad/arrow keys to move, mouse to look, space to jump, (i to toggle invert mouse, if you must)</p>
 
-				";;;;;;;;;
-Songs of Travel;2013/01/27;dreamoftravel.png;"""I knew thee strong and quiet like the hills""";"
-<p><a href=""http://ded.increpare.com/~locus/SongsOfTravel"">play online now</a> (flash)</p>
-<p><a href=""http://ded.increpare.com/~locus/SongsOfTravel_src.zip"">download source code</a> (flixel/flash builder)</p>
-
-				";;;;;;;;;
-Untitled;2013/06/29;untitled_game.png;swivel;"
-<p><a href=""http://ded.increpare.com/~locus/Untitled/Win.zip"">Download for Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/Untitled/Mac.zip"">Download for OSX</a></p>
-<p>(warning, contains flashing colours)</p>
-<p><a href=""http://ded.increpare.com/~locus/Untitled/untitled_src.zip"">Download Source Code</a> (Unity 4.1 source code)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/To my first born son (mac).zip;http://ded.increpare.com/~locus/To my first born son (win).zip;;http://ded.increpare.com/~locus/firstborn_src.zip;Unity 3.5;;;
+Songs of Travel;2013/01/27;dreamoftravel.png;"""I knew thee strong and quiet like the hills""";;;;;;http://ded.increpare.com/~locus/SongsOfTravel_src.zip;Flash;http://ded.increpare.com/~locus/SongsOfTravel;;
+Untitled;2013/06/29;untitled_game.png;swivel;;;http://ded.increpare.com/~locus/Untitled/Mac.zip;http://ded.increpare.com/~locus/Untitled/Win.zip;;http://ded.increpare.com/~locus/Untitled/untitled_src.zip;Unity 4.1;;;
 PuzzleScript;2013/10/06;puzzlescript.png;fa;"
 <p>a wee puzzle game engine</p>
-<p><a href=""http://www.puzzlescript.net"">use now</a> (HTML5)</p>
 
-				";;;;;;;;;
-Cooperacing;2013/12/16;cooperacing.png;beep beep;"
-<p><a href=""http://www.puzzlescript.net/play.html?p=b18b8bef3fb14cbc3599"">Play Now</a> (html5)</p>
-<p><a href=""http://www.puzzlescript.net/editor.html?hack=7982020"">Source Code</a> (puzzlescript)</p>
 
-				";;;;;;;;;
-Universal History of Light;2014/02/09;historyoflight.png;thanks to the people who helped me test ;"
-<p>[ <a href=""http://ded.increpare.com/~locus/UniversalHistoryWin.zip"">Download for windows</a> ]<br>
-[ <a href=""http://ded.increpare.com/~locus/UniversalHistoryMac.zip"">Download for mac</a> ]<br>
-[ <a href=""http://ded.increpare.com/~locus/UniversalHistoryLinux.zip"">Download for linux</a> ]</p>
-<p>[ <a href=""http://ded.increpare.com/~locus/UniversalHistorySrc.zip"">Download source code</a> (Unity 4.something) ]</p>
-
-				";;;;;;;;;
+				";http://www.puzzlescript.net;;;;https://github.com/increpare/puzzlescript;HTML5;;;
+Cooperacing;2013/12/16;cooperacing.png;beep beep;;http://www.puzzlescript.net/play.html?p=b18b8bef3fb14cbc3599;;;;http://www.puzzlescript.net/editor.html?hack=7982020;PuzzleScript;;;
+Universal History of Light;2014/02/09;historyoflight.png;thanks to the people who helped me test ;;;http://ded.increpare.com/~locus/UniversalHistoryMac.zip;http://ded.increpare.com/~locus/UniversalHistoryWin.zip;http://ded.increpare.com/~locus/UniversalHistoryLinux.zip;http://ded.increpare.com/~locus/UniversalHistorySrc.zip;Unity 4.something;;;
 LED Challenge;2014/04/17;ledgame.png;1.5 amps;"
-<p><a href=""http://www.puzzlescript.net/play.html?p=10946947"">Play Online Now</a> (HTML5)<br>
-<a href=""http://www.puzzlescript.net/editor.html?hack=10946947"">view Source Code</a> (PuzzleScript)</p>
+<p><a href="""">Play Online Now</a> (HTML5)<br>
+<a href="""">view Source Code</a> (PuzzleScript)</p>
 
-				";;;;;;;;;
-Robot Arm;2014/04/17;armgame.png;500mm;"
-<p><a href=""http://www.puzzlescript.net/play.html?p=10947157"">Play Online</a> (html5)</p>
-<p><a href=""http://www.puzzlescript.net/editor.html?hack=10947157"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-The Transgression;2014/04/27;transgr.png;sorry!;"
-<p><a href=""http://ded.increpare.com/~locus/Forgiveness"">play now</a> (html)</p>
-
-				";;;;;;;;;
-The Serpent;2014/04/30;lips.png;lips.png;"
-<p><a href=""http://ded.increpare.com/~locus/Serpent_Win.zip"">Download for Windows</a><br>
-<a href=""http://ded.increpare.com/~locus/Serpent_Mac.zip"">Download for OSX</a><br>
-<a href=""http://ded.increpare.com/~locus/Serpent_Linux.zip"">Download for Linux</a></p>
-<p><a href=""http://ded.increpare.com/~locus/Serpent_src.zip"">Download Source Code</a> (unity3d)</p>
-
-				";;;;;;;;;
-Click click click;2014/10/06;ccc.jpg;"with thanks to <a href=""http://www.codeproject.com/Articles/6796/A-Generic-Reusable-Diff-Algorithm-in-C"">@aprenot</a>";"
-<p><a href=""http://ded.increpare.com/~locus/CCC/"">play online now</a> (html)<br>
-<a href=""http://ded.increpare.com/~locus/ClickClickClick_src.zip"">download source</a> (html/c#)</p>
-
-				";;;;;;;;;
+				";http://www.puzzlescript.net/play.html?p=10946947;;;;http://www.puzzlescript.net/editor.html?hack=10946947;PuzzleScript;;;
+Robot Arm;2014/04/17;armgame.png;500mm;;http://www.puzzlescript.net/play.html?p=10947157;;;;http://www.puzzlescript.net/editor.html?hack=10947157;PuzzleScript;;;
+The Transgression;2014/04/27;transgr.png;sorry!;;http://ded.increpare.com/~locus/Forgiveness;;;;;;;;
+The Serpent;2014/04/30;lips.png;lips.png;;;http://ded.increpare.com/~locus/Serpent_Mac.zip;http://ded.increpare.com/~locus/Serpent_Win.zip;http://ded.increpare.com/~locus/Serpent_Linux.zip;http://ded.increpare.com/~locus/Serpent_src.zip;Unity;;;
+Click click click;2014/10/06;ccc.jpg;"with thanks to <a href=""http://www.codeproject.com/Articles/6796/A-Generic-Reusable-Diff-Algorithm-in-C"">@aprenot</a>";;http://ded.increpare.com/~locus/CCC/;;;;http://ded.increpare.com/~locus/ClickClickClick_src.zip;C#;;;
 Let your mind fall to rest;2014/10/06;torest.png;-;"
 <p><a href=""http://ded.increpare.com/~locus/LYMFTR_win.zip"">download for windows 64 bit</a><br>
 <a href=""http://ded.increpare.com/~locus/LYMFTR_win32.zip"">download for windows 32 bit</a><br>
@@ -972,20 +671,17 @@ Let your mind fall to rest;2014/10/06;torest.png;-;"
 <a href=""http://ded.increpare.com/~locus/LYMFTR_linux.zip"">download for linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/LRMFTR_src.zip"">download source</a> (unity 4.5)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/LYMFTR_osx.zip;http://ded.increpare.com/~locus/LYMFTR_win.zip;http://ded.increpare.com/~locus/LYMFTR_linux.zip;http://ded.increpare.com/~locus/LRMFTR_src.zip;Unity 4.5;;;
 Gesture;2014/10/20;gesturesico.jpg;ber;"
 <p><a href=""http://ded.increpare.com/~locus/Gestures_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Gestures_win64.zip"">Download for Windows (64 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Gestures_osx.zip"">Download for OSX</a><br>
 <a href=""http://ded.increpare.com/~locus/Gestures_linux.zip"">Download for Linux</a></p>
-<p><a href=""http://ded.increpare.com/~locus/Gestures_linux.zip"">Download Source</a> (Unity 4.5) </p>
+<p><a href=""http://ded.increpare.com/~locus/Gestures_src.zip"">Download Source</a> (Unity 4.5) </p>
 
-				";;;;;;;;;
-In Heaven;2014/10/20;inheaven.jpg;"""That there are marriages in heaven cannot enter into the belief of those who think that man is a soul or spirit after death, and cherish an idea of the soul and spirit as of subtle ether or a breath of air.""
-- The Delights of Wisdom Pertaining to Conjugial Love after which follow the pleasures of insanity pertaining to promiscuous love, Emanuel Swedenborg";"
-<p><a href=""http://ded.increpare.com/~locus/InHeaven"">Play now</a> (HTML)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Gestures_osx.zip;http://ded.increpare.com/~locus/Gestures_win64.zip;http://ded.increpare.com/~locus/Gestures_linux.zip;http://ded.increpare.com/~locus/Gestures_src.zip;Unity 4.5;;;
+In Heaven;2014/10/20;inheaven.png;"""That there are marriages in heaven cannot enter into the belief of those who think that man is a soul or spirit after death, and cherish an idea of the soul and spirit as of subtle ether or a breath of air.""
+- The Delights of Wisdom Pertaining to Conjugial Love after which follow the pleasures of insanity pertaining to promiscuous love, Emanuel Swedenborg";;http://ded.increpare.com/~locus/InHeaven;;;;;;;;
 having said goodbye;2014/10/26;saidgoodbye.png;or even not;"
 <p><a href=""http://ded.increpare.com/~locus/Having Said Goodbye_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Having Said Goodbye_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -993,7 +689,7 @@ having said goodbye;2014/10/26;saidgoodbye.png;or even not;"
 <a href=""http://ded.increpare.com/~locus/Having Said Goodbye_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/Having Said Goodbye_src.zip"">Download Source</a> (Unity 4.5) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Having Said Goodbye_osx.zip;http://ded.increpare.com/~locus/Having Said Goodbye_win64.zip;http://ded.increpare.com/~locus/Having Said Goodbye_linux.zip;http://ded.increpare.com/~locus/Having Said Goodbye_src.zip;Unity 4.5;;;
 happy;2014/10/27;happymemories.png;memories;"
 <p><a href=""http://ded.increpare.com/~locus/HappyMemories_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/HappyMemories_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1001,7 +697,7 @@ happy;2014/10/27;happymemories.png;memories;"
 <a href=""http://ded.increpare.com/~locus/HappyMemories_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/HappyMemories_src.zip"">Download Source</a> (Unity 4.5) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/HappyMemories_osx.zip;http://ded.increpare.com/~locus/HappyMemories_win64.zip;http://ded.increpare.com/~locus/HappyMemories_linux.zip;http://ded.increpare.com/~locus/HappyMemories_src.zip;Unity 4.5;;;
 Vigil;2014/10/31;vigil.png;...;"
 <p><a href=""http://ded.increpare.com/~locus/Vigil_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Vigil_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1009,7 +705,7 @@ Vigil;2014/10/31;vigil.png;...;"
 <a href=""http://ded.increpare.com/~locus/Vigil_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/Vigil_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Vigil_osx.zip;http://ded.increpare.com/~locus/Vigil_win64.zip;http://ded.increpare.com/~locus/Vigil_linux.zip;http://ded.increpare.com/~locus/Vigil_src.zip;Unity 5 beta;;;
 wear & tear;2014/10/31;wearandtear.png;&;"
 <p><a href=""http://ded.increpare.com/~locus/WearAndTear_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/WearAndTear_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1017,7 +713,7 @@ wear & tear;2014/10/31;wearandtear.png;&;"
 <a href=""http://ded.increpare.com/~locus/WearAndTear_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/WearAndTear_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/WearAndTear_osx.zip;http://ded.increpare.com/~locus/WearAndTear_win64.zip;http://ded.increpare.com/~locus/WearAndTear_linux.zip;http://ded.increpare.com/~locus/WearAndTear_src.zip;Unity 5 beta;;;
 On Beauty;2014/11/02;onbeauty.png;orp;"
 <p><a href=""http://ded.increpare.com/~locus/OnBeauty_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/OnBeauty_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1025,7 +721,7 @@ On Beauty;2014/11/02;onbeauty.png;orp;"
 <a href=""http://ded.increpare.com/~locus/OnBeauty_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/OnBeauty_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/OnBeauty_osx.zip;http://ded.increpare.com/~locus/OnBeauty_win64.zip;http://ded.increpare.com/~locus/OnBeauty_linux.zip;http://ded.increpare.com/~locus/OnBeauty_src.zip;Unity 5 beta;;;
 On The Passage of Time;2014/11/03;passagetimeicon.png;arrow keys + space;"
 <p><a href=""http://ded.increpare.com/~locus/OnThePassageOfTime_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/OnThePassageOfTime_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1033,7 +729,7 @@ On The Passage of Time;2014/11/03;passagetimeicon.png;arrow keys + space;"
 <a href=""http://ded.increpare.com/~locus/OnThePassageOfTime_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/OnThePassageOfTime_src.zip"">Download Source</a> (Unity 4.5) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/OnThePassageOfTime_osx.zip;http://ded.increpare.com/~locus/OnThePassageOfTime_win64.zip;http://ded.increpare.com/~locus/OnThePassageOfTime_linux.zip;http://ded.increpare.com/~locus/OnThePassageOfTime_src.zip;Unity 4.5;;;
 Waking Up;2014/11/05;lilyicon.png;zzz;"
 <p><a href=""http://ded.increpare.com/~locus/WakingUp_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/WakingUp_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1041,7 +737,7 @@ Waking Up;2014/11/05;lilyicon.png;zzz;"
 <a href=""http://ded.increpare.com/~locus/WakingUp_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/WakingUp_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/WakingUp_osx.zip;http://ded.increpare.com/~locus/WakingUp_win64.zip;http://ded.increpare.com/~locus/WakingUp_linux.zip;http://ded.increpare.com/~locus/WakingUp_src.zip;Unity 5 beta;;;
 Away;2014/11/08;awayicon.png;the will to;"
 <p><a href=""http://ded.increpare.com/~locus/Away_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Away_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1049,7 +745,7 @@ Away;2014/11/08;awayicon.png;the will to;"
 <a href=""http://ded.increpare.com/~locus/Away_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/Away_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Away_osx.zip;http://ded.increpare.com/~locus/Away_win64.zip;http://ded.increpare.com/~locus/Away_linux.zip;http://ded.increpare.com/~locus/Away_src.zip;Unity 5 beta;;;
 The Shadow;2014/11/08;theshadowicon.png;in;"
 <p><a href=""http://ded.increpare.com/~locus/TheShadow_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/TheShadow_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1057,7 +753,7 @@ The Shadow;2014/11/08;theshadowicon.png;in;"
 <a href=""http://ded.increpare.com/~locus/TheShadow_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/TheShadow_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/TheShadow_osx.zip;http://ded.increpare.com/~locus/TheShadow_win64.zip;http://ded.increpare.com/~locus/TheShadow_linux.zip;http://ded.increpare.com/~locus/TheShadow_src.zip;Unity 5 beta;;;
 Cooking, for lovers;2014/11/09;cookingforlovers.png;touched;"
 <p><a href=""http://ded.increpare.com/~locus/CookingForLovers_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/CookingForLovers_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1065,11 +761,11 @@ Cooking, for lovers;2014/11/09;cookingforlovers.png;touched;"
 <a href=""http://ded.increpare.com/~locus/CookingForLovers_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/CookingForLovers_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/CookingForLovers_osx.zip;http://ded.increpare.com/~locus/CookingForLovers_win64.zip;http://ded.increpare.com/~locus/CookingForLovers_linux.zip;http://ded.increpare.com/~locus/CookingForLovers_src.zip;Unity 5 beta;;;
 Place and Time;2014/11/11;timeandplace.png;there;"
 <p><a href=""http://ded.increpare.com/~locus/TimeAndPlace.html"">Play Online</a> [html5]</p>
 
-				";;;;;;;;;
+				";http://ded.increpare.com/~locus/TimeAndPlace.html;;;;;;;;
 Problems and Solutions;2014/11/20;problemsandsolutions.png;Es ist möglich, ein Spiel in Berlin zu machen.;"
 <p><a href=""http://ded.increpare.com/~locus/ProblemsAndSolutions_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/ProblemsAndSolutions_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1077,7 +773,7 @@ Problems and Solutions;2014/11/20;problemsandsolutions.png;Es ist möglich, ein 
 <a href=""http://ded.increpare.com/~locus/ProblemsAndSolutions_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/ProblemsAndSolutions_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/ProblemsAndSolutions_osx.zip;http://ded.increpare.com/~locus/ProblemsAndSolutions_win64.zip;http://ded.increpare.com/~locus/ProblemsAndSolutions_linux.zip;http://ded.increpare.com/~locus/ProblemsAndSolutions_src.zip;Unity 5 beta;;;
 All that I have to give;2014/11/22;allthatihavetogive.png;Es ist möglich, Spiele in Berlin zu machen.;"
 <p><a href=""http://ded.increpare.com/~locus/AllThatIHaveToGive_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/AllThatIHaveToGive_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1086,7 +782,7 @@ All that I have to give;2014/11/22;allthatihavetogive.png;Es ist möglich, Spiel
 Ich<br>
 <a href=""http://ded.increpare.com/~locus/AllThatIHaveToGive_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/AllThatIHaveToGive_osx.zip;http://ded.increpare.com/~locus/AllThatIHaveToGive_win64.zip;http://ded.increpare.com/~locus/AllThatIHaveToGive_linux.zip;http://ded.increpare.com/~locus/AllThatIHaveToGive_src.zip;Unity 5 beta;;;
 So as to not disturb;2014/11/22;soasot.png;arrow keys;"
 <p><a href=""http://ded.increpare.com/~locus/SoAsToNotDisturb_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/SoAsToNotDisturb_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1094,63 +790,23 @@ So as to not disturb;2014/11/22;soasot.png;arrow keys;"
 <a href=""http://ded.increpare.com/~locus/SoAsToNotDisturb_linux.zip"">Download for Linux</a><br>
 <a href=""http://ded.increpare.com/~locus/SoAsToNotDisturb_src.zip"">Download Source</a> (Unity 5 beta) </p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/SoAsToNotDisturb_osx.zip;http://ded.increpare.com/~locus/SoAsToNotDisturb_win64.zip;http://ded.increpare.com/~locus/SoAsToNotDisturb_linux.zip;http://ded.increpare.com/~locus/SoAsToNotDisturb_src.zip;Unity 5 beta;;;
 Moving Stories;2014/12/31;movingstories.png;stories;"
 <p>A collaboration with <a href=""http://distractionware.com/blog/"">Terry</a>.</p>
-<p>[ <a href=""http://terrycavanaghgames.com/moving/"">Play Online (Flash)</a> ]<br>
-[ <a href=""http://www.terrycavanaghgames.com/moving/movingstories_src.zip"">Download Source</a> ]</p>
 
-				";;;;;;;;;
-Perfect Family;2015/04/26;perfectfamily.png;hurrah for creative commons;"
-<p><a href=""http://ded.increpare.com/~locus/PerfectFamily"">play online now</a> (html5)</p>
 
-				";;;;;;;;;
-flickgame;2015/05/03;flickgame.png;more's better;"
-<p><a href=""http://www.flickgame.org"">http://www.flickgame.org</a></p>
-<p><a href=""https://github.com/increpare/flickgame"">source code</a> (github)</p>
-
-				";;;;;;;;;
-tinychoice;2015/05/03;tinychoice.png;smetter bore;"
-<p><a href=""http://www.tinychoice.net"">http://www.tinychoice.net</a></p>
-<p><a href=""https://github.com/increpare/tinychoice"">source code</a> (github)</p>
-
-				";;;;;;;;;
-untitled flickgame 2;2015/05/03;untitled2.png;focus target;"
-<p> <a href=""http://flickgame.org/play.html?p=aee98b8949dd2c00d556"">play online now</a>  (HTML)</p>
-
-				";;;;;;;;;
-untitled flickgame;2015/05/03;untitled.png;gretting sumk;"
-<p> <a href=""http://www.flickgame.org/play.html?p=18b375321ac369969694"">play online now</a>  (HTML)</p>
-
-				";;;;;;;;;
-Dignity of manner;2015/05/05;savoureverymoment.png;sliiide;"
-<p><a href=""http://www.flickgame.org/play.html?p=4879118a55097f1deeff"">play online now</a> (HTML)</p>
-
-				";;;;;;;;;
-plingpling;2015/05/08;plingpling.png;pling;"
-<p><a href=""http://www.plingpling.org"">http://www.plingpling.org</a></p>
-<p><a href=""https://github.com/increpare/plingpling"">source code</a> (github)</p>
-
-				";;;;;;;;;
-body paint;2015/05/26;bodypaint_img.png;make beautiful art;"
-<p><a href=""http://ded.increpare.com/~locus/bodypaint"">play online now</a> (html5)<br>
-<a href=""http://ded.increpare.com/~locus/bodypaint_src.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
-hair game;2015/05/26;hairgame_img.png;pa;"
-<p><a href=""http://ded.increpare.com/~locus/hairgame"">play online now</a> (html5)<br>
-<a href=""http://ded.increpare.com/~locus/hairgame_src.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
-night;2015/05/26;night_img.png;ba;"
-<p><a href=""http://ded.increpare.com/~locus/night"">play online now</a> (html5)<br>
-<a href=""http://ded.increpare.com/~locus/night_src.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
-ticket game;2015/06/16;ticketgame.png;000000000;"
-<p><a href=""http://ded.increpare.com/~locus/ticketgame"">Play now</a> (html)</p>
-
-				";;;;;;;;;
+				";;;;;http://www.terrycavanaghgames.com/moving/movingstories_src.zip;Source;http://terrycavanaghgames.com/moving/;;
+Perfect Family;2015/04/26;perfectfamily.png;hurrah for creative commons;;http://ded.increpare.com/~locus/PerfectFamily;;;;;;;;
+flickgame;2015/05/03;flickgame.png;more's better;;http://www.flickgame.org;;;;https://github.com/increpare/flickgame;HTML5;;;
+tinychoice;2015/05/03;tinychoice.png;smetter bore;;http://www.tinychoice.net;;;;https://github.com/increpare/tinychoice;HTML5;;;
+untitled flickgame 2;2015/05/03;untitled2.png;focus target;;http://flickgame.org/play.html?p=aee98b8949dd2c00d556;;;;http://flickgame.org/play.html?p=aee98b8949dd2c00d556;flickgame;;;
+untitled flickgame;2015/05/03;untitled.png;gretting sumk;;http://www.flickgame.org/play.html?p=18b375321ac369969694;;;;http://www.flickgame.org/play.html?p=18b375321ac369969694;flickgame;;;
+Dignity of manner;2015/05/05;savoureverymoment.png;sliiide;;http://www.flickgame.org/play.html?p=4879118a55097f1deeff;;;;http://www.flickgame.org/play.html?p=4879118a55097f1deeff;flickgame;;;
+plingpling;2015/05/08;plingpling.png;pling;;http://www.plingpling.org;;;;https://github.com/increpare/plingpling;HTML5;;;
+body paint;2015/05/26;bodypaint_img.png;make beautiful art;;http://ded.increpare.com/~locus/bodypaint;;;;http://ded.increpare.com/~locus/bodypaint_src.zip;Haxe;;;
+hair game;2015/05/26;hairgame_img.png;pa;;http://ded.increpare.com/~locus/hairgame;;;;http://ded.increpare.com/~locus/hairgame_src.zip;Haxe;;;
+night;2015/05/26;night_img.png;ba;;http://ded.increpare.com/~locus/night;;;;http://ded.increpare.com/~locus/night_src.zip;Haxe;;;
+ticket game;2015/06/16;ticketgame.png;000000000;;http://ded.increpare.com/~locus/ticketgame;;;;;;;;
 Shower Game;2015/06/18;showergame.png;"thanks to <a href=""http://distractionware.com"">terry</a>, <a href=""http://www.ludomancy.com"">daniel</a>, and <a href=""http://www.draknek.org"">alan</a> for testing";"
 <p><a href=""http://ded.increpare.com/~locus/ShowerGame_win32_2.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/ShowerGame_win64_2.zip"">Download for Windows (64 bit)</a><br>
@@ -1158,12 +814,8 @@ Shower Game;2015/06/18;showergame.png;"thanks to <a href=""http://distractionwar
 <a href=""http://ded.increpare.com/~locus/ShowerGame_linux_2.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/ShowerGame_src_2.zip"">Download Source</a> (Unity 5.1)</p>
 
-				";;;;;;;;;
-Blackness and Stars;2015/06/20;glowstars.png;light on light;"
-<p><a href=""http://ded.increpare.com/~locus/blackness_and_stars/"">play online now</a> (HTML5)</p>
-<p><a href=""http://ded.increpare.com/~locus/Blackness_and_Stars_src.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/ShowerGame_osx.zip;http://ded.increpare.com/~locus/ShowerGame_win64_2.zip;http://ded.increpare.com/~locus/ShowerGame_linux_2.zip;http://ded.increpare.com/~locus/ShowerGame_src_2.zip;Unity 5.1;;;
+Blackness and Stars;2015/06/20;glowstars.png;light on light;;http://ded.increpare.com/~locus/blackness_and_stars;;;;http://ded.increpare.com/~locus/Blackness_and_Stars_src.zip;Haxe;;;
 Trip;2015/06/20;tripico.png;the path to;"
 <p><a href=""http://ded.increpare.com/~locus/Trip_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Trip_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1171,12 +823,8 @@ Trip;2015/06/20;tripico.png;the path to;"
 <a href=""http://ded.increpare.com/~locus/Trip_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/Trip_src.zip"">Download Source</a> (Unity 5.1)</p>
 
-				";;;;;;;;;
-Cookie Game;2015/06/21;cookiegame.png;nom;"
-<p><a href=""http://ded.increpare.com/~locus/cookiegame/"">play online now</a> (HTML5)</p>
-<p><a href=""http://ded.increpare.com/~locus/cookiegame_src.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Trip_osx.zip;http://ded.increpare.com/~locus/Trip_win64.zip;http://ded.increpare.com/~locus/Trip_linux.zip;http://ded.increpare.com/~locus/Trip_src.zip;Unity 5.1;;;
+Cookie Game;2015/06/21;cookiegame.png;nom;;http://ded.increpare.com/~locus/cookiegame/;;;;http://ded.increpare.com/~locus/cookiegame_src.zip;Haxe;;;
 Door Game;2015/06/22;doorgame.png;*** ***** ** ******;"
 <p><a href=""http://ded.increpare.com/~locus/DoorGame_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/DoorGame_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1184,12 +832,8 @@ Door Game;2015/06/22;doorgame.png;*** ***** ** ******;"
 <a href=""http://ded.increpare.com/~locus/DoorGame_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/DoorGame_src.zip"">Download Source</a> (Unity 5.1 – slow connection where I am right now – haven’t uploaded the source yet)</p>
 
-				";;;;;;;;;
-Carriage Game;2015/06/23;carriagegame.png;choo choo;"
-<p><a href=""http://ded.increpare.com/~locus/carriagegame/"">play online now</a> (HTML5)</p>
-<p><a href=""http://ded.increpare.com/~locus/carriagegame.zip"">download source code</a> (terrylib/haxe)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/DoorGame_osx.zip;http://ded.increpare.com/~locus/DoorGame_osx.zip;http://ded.increpare.com/~locus/DoorGame_linux.zip;http://ded.increpare.com/~locus/DoorGame_src.zip;Unity 5.1;;;
+Carriage Game;2015/06/23;carriagegame.png;choo choo;;http://ded.increpare.com/~locus/carriagegame/;;;;http://ded.increpare.com/~locus/carriagegame.zip;Haxe;;;
 Bedrooms;2015/07/01;bedrooms.png;7;"
 <p><a href=""http://ded.increpare.com/~locus/Bedrooms_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Bedrooms_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1197,12 +841,8 @@ Bedrooms;2015/07/01;bedrooms.png;7;"
 <a href=""http://ded.increpare.com/~locus/Bedrooms_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/Bedrooms_src.zip"">Download Source</a> (Unity 5.1 )</p>
 
-				";;;;;;;;;
-Forgetris;2015/08/22;forgetris.png;. ;"
-<p><a href=""http://ded.increpare.com/~locus/forgetris"">play now</a> (html5)</p>
-<p><a href=""http://ded.increpare.com/~locus/forgetris.zip"">download source code</a> (haxe/terrylib)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/Bedrooms_osx.zip;http://ded.increpare.com/~locus/Bedrooms_win64.zip;;http://ded.increpare.com/~locus/Bedrooms_src.zip;Unity 5.1;;;
+Forgetris;2015/08/22;forgetris.png;. ;;http://ded.increpare.com/~locus/forgetris;;;;http://ded.increpare.com/~locus/forgetris.zip;Haxe;;;
 Subway Adventure;2015/08/22;subwayadventure.png;"thanks to terry for adding some hacks to <a href=""http://boscaceoil.net"">Bosca Ceoil</a> for me :D";"
 <p><a href=""http://ded.increpare.com/~locus/subway%20adventure_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/subway%20adventure_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1210,11 +850,8 @@ Subway Adventure;2015/08/22;subwayadventure.png;"thanks to terry for adding some
 <a href=""http://ded.increpare.com/~locus/subway%20adventure_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/subway%20adventure_src.zip"">Download Source</a> (Unity 5.1 )</p>
 
-				";;;;;;;;;
-passive-aggressive vegetarian game;2015/08/23;vegetariangame.png;;"
-<p><a href=""http://www.flickgame.org/play.html?p=b63af0cce73df4aff173"">play online now</a> (html5/flickgame)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/subway%20adventure_osx.zip;http://ded.increpare.com/~locus/subway%20adventure_win64.zip;http://ded.increpare.com/~locus/subway%20adventure_linux.zip;http://ded.increpare.com/~locus/subway%20adventure_src.zip;Unity 5.1;;;
+passive-aggressive vegetarian game;2015/08/23;vegetariangame.png;;;http://www.flickgame.org/play.html?p=b63af0cce73df4aff173;;;;http://www.flickgame.org/play.html?p=b63af0cce73df4aff173;flickgame;;;
 shine bright a little longer;2015/08/23;shinebright.png;shine;"
 <p><a href=""http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1222,49 +859,18 @@ shine bright a little longer;2015/08/23;shinebright.png;shine;"
 <a href=""http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_src.zip"">Download Source</a> (Unity 5.1 )</p>
 
-				";;;;;;;;;
-one of the worst things I have done;2015/08/24;worstthings.png;hourglass with flowing sand;"
-<p><a href=""http://www.flickgame.org/play.html?p=08a6b192c67e4c46710f"">play online now</a> (HTML5/flickgame)</p>
+				";;http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_osx.zip;http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_win64.zip;http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_linux.zip;http://ded.increpare.com/~locus/shine%20bright%20a%20little%20longer_src.zip;Unity 5.1;;;
+one of the worst things I have done;2015/08/24;worstthings.png;hourglass with flowing sand;;http://www.flickgame.org/play.html?p=08a6b192c67e4c46710f;;;;http://www.flickgame.org/play.html?p=08a6b192c67e4c46710f;flickgame;;;
+clone avoid;2015/09/02;cloneavoid.png;bloop bloop;"<p>(notice: engine is in alpha, all crash feedback welcome – use the engine at your own risk. It’ll appear in a more documented/less broken form in the future, quite likely)</p>
 
-				";;;;;;;;;
-clone avoid;2015/09/02;cloneavoid.png;bloop bloop;"
-<p><a href=""http://ded.increpare.com/~locus/clone_avoid"">play online now</a> (HTML5)</p>
-<p>(notice: engine is in alpha, all crash feedback welcome – use the engine at your own risk. It’ll appear in a more documented/less broken form in the future, quite likely)</p>
-
-				";;;;;;;;;
-an hour outside of time;2015/10/22;outsideoftime.png;outsideoftime.png;"
-<p><a href=""http://ded.increpare.com/~locus/AnHourOutsideOfTime/"">play now</a> (html)</p>
-<p><a href=""https://github.com/increpare/AnHourOutsideOfTime"">source</a> (html/flickgame)</p>
-
-				";;;;;;;;;
-On learning that the night will soon be over;2015/10/22;hearingnews.png;aaah;"
-<p><a href=""http://ded.increpare.com/~locus/sunrise"">play online now</a></p>
-
-				";;;;;;;;;
-i love tomatoes;2015/10/23;tomatolover.png;do i?;"
-<p><a href=""http://ded.increpare.com/~locus/ilovetomatoes"">play online now</a> (html5)<br>
-<a href=""http://ded.increpare.com/~locus/tomato_src.zip"">download source code</a> (haxegon)</p>
-
-				";;;;;;;;;
-Who do you love?;2015/10/24;whodoyoulove.png;Who do you love?;"
-<p><a href=""http://ded.increpare.com/~locus/whodoyoulove"">play online now</a> (html5)</p>
-<p><a href=""https://github.com/increpare/whodoyoulove"">download source code</a> (haxegon)</p>
-
-				";;;;;;;;;
-untitled flickgame 3;2015/10/26;deserving.png;to;"
-<p><a href=""http://ded.increpare.com/~locus/untitledflickgame3.html"">play online now</a> (html)</p>
-
-				";;;;;;;;;
-vampire;2015/11/03;vampire.png;umpire;"
-<p><a href=""http://ded.increpare.com/~locus/vampire/"">play now</a> (html5)</p>
-<p><a href=""http://ded.increpare.com/~locus/vampire_src.zip"">download source code</a> (haxe/haxegon)</p>
-
-				";;;;;;;;;
-snortal;2015/11/04;snortal.png;"via a conversation with <a href=""http://www.twitter.com/danielben"">@danielben</a>. testing courtesy of <a href=""http://www.twitter.com/robin_b"">@robin_b</a>";"
-<p><a href=""http://www.puzzlescript.net/play.html?p=85124d44f37835d0bcbf"">play online now</a> (html)</p>
-<p><a href=""http://www.puzzlescript.net/editor.html?hack=85124d44f37835d0bcbf"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
+				";http://ded.increpare.com/~locus/clone_avoid;;;;;;;;
+an hour outside of time;2015/10/22;outsideoftime.png;outsideoftime.png;;http://ded.increpare.com/~locus/AnHourOutsideOfTime/;;;;https://github.com/increpare/AnHourOutsideOfTime;Haxe;;;
+On learning that the night will soon be over;2015/10/22;hearingnews.png;aaah;;http://ded.increpare.com/~locus/sunrise;;;;;;;;
+i love tomatoes;2015/10/23;tomatolover.png;do i?;;http://ded.increpare.com/~locus/ilovetomatoes;;;;http://ded.increpare.com/~locus/tomato_src.zip;Haxe;;;
+Who do you love?;2015/10/24;whodoyoulove.png;Who do you love?;;http://ded.increpare.com/~locus/whodoyoulove;;;;https://github.com/increpare/whodoyoulove;Haxe;;;
+untitled flickgame 3;2015/10/26;deserving.png;to;;http://ded.increpare.com/~locus/untitledflickgame3.html;;;;;;;;
+vampire;2015/11/03;vampire.png;umpire;;http://ded.increpare.com/~locus/vampire/;;;;http://ded.increpare.com/~locus/vampire_src.zip;Haxe;;;
+snortal;2015/11/04;snortal.png;"via a conversation with <a href=""http://www.twitter.com/danielben"">@danielben</a>. testing courtesy of <a href=""http://www.twitter.com/robin_b"">@robin_b</a>";;http://www.puzzlescript.net/play.html?p=85124d44f37835d0bcbf;;;;http://www.puzzlescript.net/editor.html?hack=85124d44f37835d0bcbf;PuzzleScript;;;
 2plus3;2015/11/05;2plus3.png;+;"
 <p><a href=""http://ded.increpare.com/~locus/2plus3_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/2plus3_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -1272,210 +878,63 @@ snortal;2015/11/04;snortal.png;"via a conversation with <a href=""http://www.twi
 <a href=""http://ded.increpare.com/~locus/2plus3_linux.zip"">Download for Linux</a></p>
 <p><a href=""http://ded.increpare.com/~locus/2plus3_src.zip"">Download Source</a> (Unity 5.2)</p>
 
-				";;;;;;;;;
-anesthesia;2015/11/13;anesthesia.png;ººº;"
-<p><a href=""http://ded.increpare.com/~locus/anesthesia"">play now</a> (html5)</p>
-<p><a href=""http://ded.increpare.com/~locus/anesthesia_src.zip"">download source code</a> (haxe/haxegon)</p>
-
-				";;;;;;;;;
-paaaaaarty;2015/11/19;paaarty.png;pa+rty;"
-<p><a href=""http://ded.increpare.com/~locus/paaaarty/"">play online now</a> (html5)</p>
-<p><a href=""http://ded.increpare.com/~locus/paaaarty_src.zip"">download source code</a> (haxegon/haxe)</p>
-
-				";;;;;;;;;
-what follows;2015/11/19;whatfollows.png;:;"
-<p><a href=""http://ded.increpare.com/~locus/whatfollows/"">play online now</a> (html)</p>
-
-				";;;;;;;;;
-you complete me;2015/12/23;youcompleteme.png;*;"
-<p><a href=""http://www.puzzlescript.net/play.html?p=caed4b1b41c6366464f7"">play online now</a> (html5)</p>
-<p><a href=""http://www.puzzlescript.net/editor.html?hack=caed4b1b41c6366464f7"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-writing;2016/01/03;writing.png;;"
-<p><a href=""https://ded.increpare.com/~locus/writing/"">play online now</a> (html5)<br>
-<a href=""https://github.com/increpare/writing-game"">source code</a> (haxe/haxegon)</p>
-
-				";;;;;;;;;
-routine;2016/01/04;routine.png;bring bring, bring bring;"
-<p><a href=""http://ded.increpare.com/~locus/routine"">play online</a> (html)</p>
-
-				";;;;;;;;;
-perfect club;2016/01/24;perfectclub.png;doop doop doop;"
-<p><a href=""http://ded.increpare.com/~locus/perfectclub"">play online now</a> (html5/haxegon)</p>
-<p><a href=""http://ded.increpare.com/~locus/dancegame_src.zip"">download source code</a> (html5/haxegon)</p>
-
-				";;;;;;;;;
-your name;2016/01/24;yourname.png;just pretend you're called bob;"
-<p><a href=""https://ded.increpare.com/~locus/yourname.html"">play online now</a> (html)</p>
-
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/2plus3_osx.zip;http://ded.increpare.com/~locus/2plus3_win64.zip;http://ded.increpare.com/~locus/2plus3_linux.zip;http://ded.increpare.com/~locus/2plus3_src.zip;Unity 5.2;;;
+anesthesia;2015/11/13;anesthesia.png;ººº;;http://ded.increpare.com/~locus/anesthesia;;;;http://ded.increpare.com/~locus/anesthesia_src.zip;Haxe;;;
+paaaaaarty;2015/11/19;paaarty.png;pa+rty;;http://ded.increpare.com/~locus/paaaarty/;;;;http://ded.increpare.com/~locus/paaaarty_src.zip;Haxe;;;
+what follows;2015/11/19;whatfollows.png;:;;http://ded.increpare.com/~locus/whatfollows/;;;;;;;;
+you complete me;2015/12/23;youcompleteme.png;*;;http://www.puzzlescript.net/play.html?p=caed4b1b41c6366464f7;;;;http://www.puzzlescript.net/editor.html?hack=caed4b1b41c6366464f7;PuzzleScript;;;
+writing;2016/01/03;writing.png;;;https://ded.increpare.com/~locus/writing/;;;;https://github.com/increpare/writing-game;Haxe;;;
+routine;2016/01/04;routine.png;bring bring, bring bring;;http://ded.increpare.com/~locus/routine;;;;;;;;
+perfect club;2016/01/24;perfectclub.png;doop doop doop;;http://ded.increpare.com/~locus/perfectclub;;;;http://ded.increpare.com/~locus/dancegame_src.zip;Haxe;;;
+your name;2016/01/24;yourname.png;just pretend you're called bob;;https://ded.increpare.com/~locus/yourname.html;;;;;;;;
 Stephen’s Sausage Roll;2016/04/18;increpareicon.png;Many years work...;"
 <p><a href=""http://www.stephenssausageroll.com"">website</a> (I get a 90% cut, includes drm-free version + steam key)<br>
 <a href=""http://store.steampowered.com/app/353540/"">buy on steam</a> (I get a 70% cut, includes steam key)<br>
 <a href=""https://www.humblebundle.com/store/stephens-sausage-roll"">humble store</a> (I get a  70% cut, includes drm-free version + steam key)</p>
 
-				";;;;;;;;;
-dream borer;2016/04/21;dreamborer.png;. ^ .;"
-<p><a href=""https://ded.increpare.com/~locus/dreamborer/"">play online now</a> (html5)</p>
-<p><a href=""https://ded.increpare.com/~locus/dreamborer/DreamBorer.zip"">download source code</a> (terrylib/haxegon)</p>
-
-				";;;;;;;;;
-geometry construction set;2016/05/01;gcs.png;wxyz;"
-<p><a href=""http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f"">play now</a> (html5 / mouse)</p>
-
-				";;;;;;;;;
-Paint Anything;2016/05/01;paintperson.png;paint anything;"
-<p><a href=""http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a"">play online now</a> (html5 / mouse)</p>
-
-				";;;;;;;;;
-sleepy person;2016/05/01;sleepyperson.png;cruelty;"
-<p><a href=""http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb"">play now</a> ( html5 / mouse )</p>
-
-				";;;;;;;;;
-I Can Write;2016/05/03;icanwrite.png;baaaah;"
-<p><a href=""http://ded.increpare.com/~locus/icanwrite"">play online now</a> (html + keyboard)</p>
-
-				";;;;;;;;;
-Invariance;2016/06/22;invariance.png;tempora mutantur;"
-<p><a href=""http://ded.increpare.com/~locus/Invariance"">Play online now</a> (html5 w/ keyboard + mouse)</p>
-<p><a href=""http://ded.increpare.com/~locus/invariance.zip"">Download source code</a> (haxe/haxegon)</p>
-
-				";;;;;;;;;
+				";;http://www.stephenssausageroll.com;http://www.stephenssausageroll.com;http://www.stephenssausageroll.com;;;;;
+dream borer;2016/04/21;dreamborer.png;. ^ .;;https://ded.increpare.com/~locus/dreamborer/;;;;https://ded.increpare.com/~locus/dreamborer/DreamBorer.zip;Haxegon;;;
+geometry construction set;2016/05/01;gcs.png;wxyz;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;;;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;Flickgame;;;
+Paint Anything;2016/05/01;paintperson.png;paint anything;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;;;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;Flickgame;;;
+sleepy person;2016/05/01;sleepyperson.png;cruelty;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;;;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;Flickgame;;;
+I Can Write;2016/05/03;icanwrite.png;baaaah;;http://ded.increpare.com/~locus/icanwrite;;;;;;;;
+Invariance;2016/06/22;invariance.png;tempora mutantur;;http://ded.increpare.com/~locus/Invariance;;;;http://ded.increpare.com/~locus/invariance.zip;Haxe;;;
 Reminders;2016/08/03;reminder.png;sfss.png;"
 <p><a href=""https://ded.increpare.com/~locus/reminders/"">play online now</a> (html)</p>
 <p><a href=""https://ded.increpare.com/~locus/reminders.zip"">download source</a></p>
 
-				";;;;;;;;;
-Orthona;2016/11/26;orthona.png;a'a'a pip;"
-<p><a href=""http://www.orthona.net"">orthona.net</a></p>
-
-				";;;;;;;;;
-Flickuboy;2016/12/01;flickuboy.jpg;"<a href=""https://www.arduboy.com"">www.arduboy.com</a>";"
-<p><a href=""http://www.flickgame.org/flickuboy.html"">make games now</a> (html)</p>
-
-				";;;;;;;;;
+				";https://ded.increpare.com/~locus/reminders/;;;;https://ded.increpare.com/~locus/reminders.zip;;;;
+Orthona;2016/11/26;orthona.png;a'a'a pip;;http://www.orthona.net;;;;;;;;
+Flickuboy;2016/12/01;flickuboy.jpg;"<a href=""https://www.arduboy.com"">www.arduboy.com</a>";;http://www.flickgame.org/flickuboy.html;;;;;;;;
 The Word;2017/06/12;the_word.png;everyone likes a goodly collaboration;"
 <p><a href=""https://ded.increpare.com/~locus/the_word/"">play online now</a> (webgl)</p>
-<p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" <="""" a=""""> source code (unity 5.6)</a></p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" <="""" a="""">
-</a><p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" <="""" a="""">(Collaboration with the wonderful </a><a href=""http://www.flickgame.org/index.html?p=664a5a4a984e27ed1d433988fe30095a"">terry</a> )</p>
+<p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" > source code (unity 5.6)</a></p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" >
+</a><p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" >(Collaboration with the wonderful </a><a href=""http://www.flickgame.org/index.html?p=664a5a4a984e27ed1d433988fe30095a"">terry</a> )</p>
 
-				";;;;;;;;;
-To the couple two rows in front of us;2017/06/12;the_couple.png;foreground and background;"
-<p><a href=""https://ded.increpare.com/~locus/the_couple_two_rows_in_front_of_us.html"">play now</a> (html5/flickgame)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002"">flickgame.org link</a> (editable)</p>
-
-				";;;;;;;;;
-Waiting Game;2017/06/12;waiting_game.png;i should've dilated the time intervals a bit probably;"
-<p><a href=""http://ded.increpare.com/~locus/waiting_game.html"">play online now</a> (flickgame/html)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=664a5a4a984e27ed1d433988fe30095a"">flickgame.org link</a> (editable version)</p>
-
-				";;;;;;;;;
-Walking Home;2017/06/12;walking_home.png;walking_home.jpg;"
-<p><a href=""http://ded.increpare.com/~locus/walking_home.html"">play online now</a> (html5/flickgame)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002"">flickgame.org link</a> (for editing)</p>
-
-				";;;;;;;;;
-press space to select;2017/06/14;presspacetoselect.png;i don't know!;"
-<p><a href=""http://ded.increpare.com/~locus/arrowkeystoselectspacetoselect.html"">play online now</a> (html5/flickuboy)</p>
-<p><a href=""http://www.flickgame.org/flickuplay.html?p=933f5f79d5c9309917c15009a126aa53"">flickgame.org version</a> (editable)</p>
-
-				";;;;;;;;;
-Let’s go to the beach!;2017/06/19;thebeach.png;nasty!;"
-<p><a href=""https://ded.increpare.com/~locus/thebeach.html"">Play online now</a> (html5/flickgame)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=fae30becd8e1e3dcedf9c6db1fcecbe4"">flickgame.org version</a> (editable)</p>
-
-				";;;;;;;;;
-Questionnaire;2017/06/20;questionnaire.png;hmmm;"
-<p><a href=""http://ded.increpare.com/~locus/questionnaire.html"">play online now</a> (html)</p>
-<p><a href=""http://ded.increpare.com/~locus/questionnaire.tws"">twine 1 source code</a></p>
-
-				";;;;;;;;;
-The Londoner’s Calendar;2017/06/20;calendar.png;cyclic;"
-<p><a href=""http://ded.increpare.com/~locus/The_Londoners_Calendar.html"">play online now</a> (html5 / flickgame)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=1a6644489c353d3b44d8536a0703eb4a"">flickgame.org copy</a> (editable)</p>
-
-				";;;;;;;;;
-avocado;2017/06/22;3avocado.png;all art comes from autobiography.  nothing is more treacherous than an overripe black avocado.;"
-<p><a href=""http://ded.increpare.com/~locus/avocado.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=136433b9363b6d64edc041241ec1e45f"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-battlegrounds;2017/06/22;5battlegrounds.png;pew pew;"
-<p><a href=""http://ded.increpare.com/~locus/battlegrounds.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=d42340694dca3e3777a8ef7a77143d1f"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-body parts;2017/06/22;10bodyparts.png;head hand foot arm leg;"
-<p><a href=""http://ded.increpare.com/~locus/bodyparts.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=21ebee5e3b224165708b70d19c0dd11a"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-cheironomy;2017/06/22;6cheironomy.png;keeping time;"
-<p><a href=""http://ded.increpare.com/~locus/cheironomy.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=2bc4b199aff057c8dccfcaf38c547500"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-chinese calligraphy tutorial;2017/06/22;4chinesecalligraphy.png;INK STONE;"
-<p><a href=""http://ded.increpare.com/~locus/chinesecalligraphy.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=76f1e819ac580f85357746c922dad08a"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-cotton buds;2017/06/22;1cottonbuds.png;bilateral;"
-<p><a href=""http://ded.increpare.com/~locus/cottonbuds.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=a6281e2e7e019b3ad2d5b1e47b8a7a1b"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-counting;2017/06/22;15counting.png;delish;"
-<p><a href=""http://ded.increpare.com/~locus/counting.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=42e157b1f566abf41bc2e7d18cfb1a57"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-drumkit;2017/06/22;16drumkit.png;soundless bol;"
-<p><a href=""http://ded.increpare.com/~locus/drumkit.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=b9f5511730e1629a9e10dbadbafaeb1c"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-find the butthole;2017/06/22;11findthebutthole.png;some people are supernaturally talented at this;"
-<p><a href=""http://ded.increpare.com/~locus/findthebutthole.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=fec97f3aff7147eb384019439ed628a6"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-find your butthole;2017/06/22;12findyourbutthole.png;a rare proprioception;"
-<p><a href=""http://ded.increpare.com/~locus/findyourbutthole.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=5ca46924379814794f8cf32e36453229"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-getting dressed;2017/06/22;2gettingdressed.png;non-commutative actions required, but brain is still out of order;"
-<p><a href=""http://ded.increpare.com/~locus/gettingdressed.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=0dfc5ab46315146647c1aebcc545bd87"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-mango;2017/06/22;14mango.png;1 2 3;"
-<p><a href=""http://ded.increpare.com/~locus/mango.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=0977545ed619ba35059ed902a3300726"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-people what get naked easily;2017/06/22;8peoplewhatgetnakedeasily.png;you know who you are;"
-<p><a href=""http://ded.increpare.com/~locus/peoplewhatgetnakedeasily.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=ffcecae6adb4753fef0a8a36346cb26b"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-physio;2017/06/22;9physio.png;45 second holds! 45 SECONDS;"
-<p><a href=""http://ded.increpare.com/~locus/physio.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=82b15fb90846d2f003be7cb948629d55"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-squirrel;2017/06/22;7squirrel.png;so that's where it goes!;"
-<p><a href=""http://ded.increpare.com/~locus/squirrel.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=4d2df7cf3b8d2989a6f4da67bbdbb970"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
-summer garden;2017/06/22;13summergarden.png;every night for several months;"
-<p><a href=""http://ded.increpare.com/~locus/summergarden.html"">play online now</a> (html5)</p>
-<p><a href=""http://www.flickgame.org/play.html?p=432e888ac85e8d65cd04c5b88ca463ab"">version on flickgame.org</a> (editable)</p>
-
-				";;;;;;;;;
+				";https://ded.increpare.com/~locus/the_word/;;;;http://ded.increpare.com/~locus/theword_src.zip;Haxe;;;
+To the couple two rows in front of us;2017/06/12;the_couple.png;foreground and background;;https://ded.increpare.com/~locus/the_couple_two_rows_in_front_of_us.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;Flickgame;;;
+Waiting Game;2017/06/12;waiting_game.png;i should've dilated the time intervals a bit probably;;http://ded.increpare.com/~locus/waiting_game.html;;;;http://www.flickgame.org/play.html?p=664a5a4a984e27ed1d433988fe30095a;Flickgame;;;
+Walking Home;2017/06/12;walking_home.png;walking_home.jpg;;http://ded.increpare.com/~locus/walking_home.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;Flickgame;;;
+press space to select;2017/06/14;presspacetoselect.png;i don't know!;;http://ded.increpare.com/~locus/arrowkeystoselectspacetoselect.html;;;;http://www.flickgame.org/flickuplay.html?p=933f5f79d5c9309917c15009a126aa53;Flickgame;;;
+Let’s go to the beach!;2017/06/19;thebeach.png;nasty!;;https://ded.increpare.com/~locus/thebeach.html;;;;http://www.flickgame.org/play.html?p=fae30becd8e1e3dcedf9c6db1fcecbe4;Flickgame;;;
+Questionnaire;2017/06/20;questionnaire.png;hmmm;;http://ded.increpare.com/~locus/questionnaire.html;;;;http://ded.increpare.com/~locus/questionnaire.tws;Twine;;;
+The Londoner’s Calendar;2017/06/20;calendar.png;cyclic;;http://ded.increpare.com/~locus/The_Londoners_Calendar.html;;;;http://www.flickgame.org/play.html?p=1a6644489c353d3b44d8536a0703eb4a;Flickgame;;;
+avocado;2017/06/22;3avocado.png;all art comes from autobiography.  nothing is more treacherous than an overripe black avocado.;;http://ded.increpare.com/~locus/avocado.html;;;;http://www.flickgame.org/play.html?p=136433b9363b6d64edc041241ec1e45f;Flickgame;;;
+battlegrounds;2017/06/22;5battlegrounds.png;pew pew;;http://ded.increpare.com/~locus/battlegrounds.html;;;;http://www.flickgame.org/play.html?p=d42340694dca3e3777a8ef7a77143d1f;Flickgame;;;
+body parts;2017/06/22;10bodyparts.png;head hand foot arm leg;;http://ded.increpare.com/~locus/bodyparts.html;;;;http://www.flickgame.org/play.html?p=21ebee5e3b224165708b70d19c0dd11a;Flickgame;;;
+cheironomy;2017/06/22;6cheironomy.png;keeping time;;http://ded.increpare.com/~locus/cheironomy.html;;;;http://www.flickgame.org/play.html?p=2bc4b199aff057c8dccfcaf38c547500;Flickgame;;;
+chinese calligraphy tutorial;2017/06/22;4chinesecalligraphy.png;INK STONE;;http://ded.increpare.com/~locus/chinesecalligraphy.html;;;;http://www.flickgame.org/play.html?p=76f1e819ac580f85357746c922dad08a;Flickgame;;;
+cotton buds;2017/06/22;1cottonbuds.png;bilateral;;http://ded.increpare.com/~locus/cottonbuds.html;;;;http://www.flickgame.org/play.html?p=a6281e2e7e019b3ad2d5b1e47b8a7a1b;Flickgame;;;
+counting;2017/06/22;15counting.png;delish;;http://ded.increpare.com/~locus/counting.html;;;;http://www.flickgame.org/play.html?p=42e157b1f566abf41bc2e7d18cfb1a57;Flickgame;;;
+drumkit;2017/06/22;16drumkit.png;soundless bol;;http://ded.increpare.com/~locus/drumkit.html;;;;http://www.flickgame.org/play.html?p=b9f5511730e1629a9e10dbadbafaeb1c;Flickgame;;;
+find the butthole;2017/06/22;11findthebutthole.png;some people are supernaturally talented at this;;http://ded.increpare.com/~locus/findthebutthole.html;;;;http://www.flickgame.org/play.html?p=fec97f3aff7147eb384019439ed628a6;Flickgame;;;
+find your butthole;2017/06/22;12findyourbutthole.png;a rare proprioception;;http://ded.increpare.com/~locus/findyourbutthole.html;;;;http://www.flickgame.org/play.html?p=5ca46924379814794f8cf32e36453229;Flickgame;;;
+getting dressed;2017/06/22;2gettingdressed.png;non-commutative actions required, but brain is still out of order;;http://ded.increpare.com/~locus/gettingdressed.html;;;;http://www.flickgame.org/play.html?p=0dfc5ab46315146647c1aebcc545bd87;Flickgame;;;
+mango;2017/06/22;14mango.png;1 2 3;;http://ded.increpare.com/~locus/mango.html;;;;http://www.flickgame.org/play.html?p=0977545ed619ba35059ed902a3300726;Flickgame;;;
+people what get naked easily;2017/06/22;8peoplewhatgetnakedeasily.png;you know who you are;;http://ded.increpare.com/~locus/peoplewhatgetnakedeasily.html;;;;http://www.flickgame.org/play.html?p=ffcecae6adb4753fef0a8a36346cb26b;Flickgame;;;
+physio;2017/06/22;9physio.png;45 second holds! 45 SECONDS;;http://ded.increpare.com/~locus/physio.html;;;;http://www.flickgame.org/play.html?p=82b15fb90846d2f003be7cb948629d55;Flickgame;;;
+squirrel;2017/06/22;7squirrel.png;so that's where it goes!;;http://ded.increpare.com/~locus/squirrel.html;;;;http://www.flickgame.org/play.html?p=4d2df7cf3b8d2989a6f4da67bbdbb970;Flickgame;;;
+summer garden;2017/06/22;13summergarden.png;every night for several months;;http://ded.increpare.com/~locus/summergarden.html;;;;http://www.flickgame.org/play.html?p=432e888ac85e8d65cd04c5b88ca463ab;Flickgame;;;
 a story about a cat;2017/07/31;catbutt.png;thanks to terry for testing and holly for half the story;"
 <p><a href=""http://ded.increpare.com/~locus/cat_story_win32.zip"">Download for Win 32</a><br>
 <a href=""http://ded.increpare.com/~locus/cat_story_win64.zip"">Download for Win 64</a><br>
@@ -1483,15 +942,15 @@ a story about a cat;2017/07/31;catbutt.png;thanks to terry for testing and holly
 <a href=""http://ded.increpare.com/~locus/cat_story_linux.tar.gz"">Download for Linux</a> </p>
 <p><a href=""http://ded.increpare.com/~locus/cat_story_src.zip"">Download Source Code</a> (Unity 2017.1)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/cat_story_osx.zip;http://ded.increpare.com/~locus/cat_story_win64.zip;http://ded.increpare.com/~locus/cat_story_linux.tar.gz;http://ded.increpare.com/~locus/cat_story_src.zip;Unity 2017.1;;;
 running memories;2017/08/23;running_memories.png;berlin london dundee  dublin ballina cambridge;"
 <p><a href=""http://ded.increpare.com/~locus/running_memories_win64.zip"">Download for Windows 64 bit</a><br>
 <a href=""http://ded.increpare.com/~locus/running_memories_win32.zip"">Download for Windows 32 bit</a><br>
 <a href=""http://ded.increpare.com/~locus/running_memories_osx.zip"">Download for Mac</a><br>
 <a href=""http://ded.increpare.com/~locus/running_memories_linux.tar.gz"">Download for Linux</a></p>
-<p><a href=""http://ded.increpare.com/~locus/running_memories_src.zip"">Download unity source code</a> (Unity V 2017.1p4)</p>
+<p><a href=""http://ded.increpare.com/~locus/running_memories_src.zip"">Download unity source code</a> (Unity 2017.1p4)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/running_memories_osx.zip;http://ded.increpare.com/~locus/running_memories_win64.zip;http://ded.increpare.com/~locus/running_memories_linux.tar.gz;http://ded.increpare.com/~locus/running_memories_src.zip;Unity 2017.1p4;;;
 worst guest;2017/09/01;worstguest.png;ufff;"
 <p><a href=""http://ded.increpare.com/~locus/worst_guest_win64.zip"">Download for Windows (64 bit)</a></p>
 <p><a href=""http://ded.increpare.com/~locus/worst_guest_win32.zip"">Download for Windows (32 bit)</a></p>
@@ -1499,7 +958,7 @@ worst guest;2017/09/01;worstguest.png;ufff;"
 <p><a href=""http://ded.increpare.com/~locus/worst_guest_linux.tar.gz"">Download for Linux (64 bit)</a></p>
 <p><a href=""http://ded.increpare.com/~locus/worst_guest_src.zip"">Download source code</a> (Unity 2017.1.p4)</p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/worst_guest_osx.zip;http://ded.increpare.com/~locus/worst_guest_win64.zip;http://ded.increpare.com/~locus/worst_guest_linux.tar.gz;http://ded.increpare.com/~locus/worst_guest_src.zip;Unity 2017.1p4;;;
 Quiet City;2017/11/10;quietcity.png;huff huff;"
 <p><a href=""http://ded.increpare.com/~locus/quietcity/quiet%20city_linux.zip"">Download for Linux</a><br>
 <a href=""http://ded.increpare.com/~locus/quietcity/quiet%20city_win64.zip"">Download for 64-bit windows</a><br>
@@ -1507,7 +966,7 @@ Quiet City;2017/11/10;quietcity.png;huff huff;"
 <a href=""http://ded.increpare.com/~locus/quietcity/quiet%20city_osx.zip"">Download for mac</a><br>
 <a href=""http://ded.increpare.com/~locus/quietcity/quiet%20city_src.zip"">Download unity source</a></p>
 
-				";;;;;;;;;
+				";;http://ded.increpare.com/~locus/quietcity/quiet%20city_osx.zip;http://ded.increpare.com/~locus/quietcity/quiet%20city_win64.zip;http://ded.increpare.com/~locus/quietcity/quiet%20city_linux.zip;http://ded.increpare.com/~locus/quietcity/quiet%20city_src.zip;Unity 2017;;;
 glances;2017/11/12;glances.png;"made at the lovely <a href=""http://www.berlinminijam.de"">berlin mini jam</a>";"
 <p><a href=""https://ded.increpare.com/~locus/glances"">play online now</a> (webGL + mouse + keyboard)</p>
 <p><a href=""https://ded.increpare.com/~locus/glances_win64.zip"">download for 64-bit windows</a><br>
@@ -1516,82 +975,27 @@ glances;2017/11/12;glances.png;"made at the lovely <a href=""http://www.berlinmi
 <a href=""https://ded.increpare.com/~locus/glances_linux.tar.gz"">download for linux</a></p>
 <p><a href=""https://ded.increpare.com/~locus/glances_src.tar.gz"">download source code</a> (unity 2017.2)</p>
 
-				";;;;;;;;;
-8 Happy Snakes;2017/12/03;happysnakes.png;nek nek nek;"
-<p><a href=""https://www.puzzlescript.net/play.html?p=dab71718821751f64cd4dc9c6374d7c1"">play online now</a> (html5)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=dab71718821751f64cd4dc9c6374d7c1"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-Hungry Kraken;2017/12/03;octothumb.png;nom nom nom;"
-<p><a href=""https://www.puzzlescript.net/play.html?p=108de5a6080a5f0fcf5a7d427da73641"">play online now</a> (puzzlescript)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=108de5a6080a5f0fcf5a7d427da73641""> source code</a></p>
-
-				";;;;;;;;;
-match three billiards;2018/01/02;matchthreebilliards.png;axis-aligned walls are in the game but do precisely nothing;"
-<p><a href=""https://www.puzzlescript.net/play.html?p=d728ee501c17bc9b5ffc0605b7c4182f"">play online now</a> (html5)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=d728ee501c17bc9b5ffc0605b7c4182f"">hack source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-newton;2018/01/02;newton.png;#insomniajam;"
-<p><a href=""https://www.puzzlescript.net/play.html?p=6ef7fd748452f35467a895bff518c83b"">play online now</a> (html5)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=6ef7fd748452f35467a895bff518c83b"">view/hack source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-unewton;2018/01/02;unewton.png;unewton;"
-<p><a href=""https://www.puzzlescript.net/play.html?p=39ddc6c874c3881f2662870a7980bf86"">play online now</a> (html5)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=39ddc6c874c3881f2662870a7980bf86"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
-tinybox;2018/01/12;tinybox.png;thanks to terry cavanagh for haxegon + bosca ceoil (this is a demake of that);"
-<p><a href=""http://www.tiny-box.net"">make music with tinybox online now</a></p>
-<p><a href=""https://github.com/increpare/tinybox"">source code</a> (haxegon)</p>
-
-				";;;;;;;;;
+				";https://ded.increpare.com/~locus/glances;https://ded.increpare.com/~locus/glances_osx.zip;https://ded.increpare.com/~locus/glances_win64.zip;https://ded.increpare.com/~locus/glances_linux.tar.gz;https://ded.increpare.com/~locus/glances_src.tar.gz;Unity 2017.2;;;
+8 Happy Snakes;2017/12/03;happysnakes.png;nek nek nek;;https://www.puzzlescript.net/play.html?p=dab71718821751f64cd4dc9c6374d7c1;;;;https://www.puzzlescript.net/editor.html?hack=dab71718821751f64cd4dc9c6374d7c1;PuzzleScript;;;
+Hungry Kraken;2017/12/03;octothumb.png;nom nom nom;;https://www.puzzlescript.net/play.html?p=108de5a6080a5f0fcf5a7d427da73641;;;;https://www.puzzlescript.net/editor.html?hack=108de5a6080a5f0fcf5a7d427da73641;PuzzleScript;;;
+match three billiards;2018/01/02;matchthreebilliards.png;axis-aligned walls are in the game but do precisely nothing;;https://www.puzzlescript.net/play.html?p=d728ee501c17bc9b5ffc0605b7c4182f;;;;https://www.puzzlescript.net/editor.html?hack=d728ee501c17bc9b5ffc0605b7c4182f;PuzzleScript;;;
+newton;2018/01/02;newton.png;#insomniajam;;https://www.puzzlescript.net/play.html?p=6ef7fd748452f35467a895bff518c83b;;;;https://www.puzzlescript.net/editor.html?hack=6ef7fd748452f35467a895bff518c83b;Newton;;;
+unewton;2018/01/02;unewton.png;unewton;;https://www.puzzlescript.net/play.html?p=39ddc6c874c3881f2662870a7980bf86;;;;https://www.puzzlescript.net/editor.html?hack=39ddc6c874c3881f2662870a7980bf86;Unewton;;;
+tinybox;2018/01/12;tinybox.png;thanks to terry cavanagh for haxegon + bosca ceoil (this is a demake of that);;http://www.tiny-box.net;;;;https://github.com/increpare/tinybox;Haxe;;;
 match two two by twos;2018/01/13;twbytwos.png;"abab
-cdcd";"
-<p><a href=""https://www.puzzlescript.net/play.html?p=1ab15caec306c212db29113253905874"">play online now</a> (html5)</p>
-<p><a href=""https://www.puzzlescript.net/editor.html?hack=1ab15caec306c212db29113253905874"">source code</a> (puzzlescript)</p>
-
-				";;;;;;;;;
+cdcd";;https://www.puzzlescript.net/play.html?p=1ab15caec306c212db29113253905874;;;;https://www.puzzlescript.net/editor.html?hack=1ab15caec306c212db29113253905874;PuzzleScript;;;
 superfluous letters;2018/01/14;superfluousletters.png;wot a happy misunderstanding;"
-<p>a collaboration with <a href=""https://twitter.com/noa_cubestudio"">noa hoffmann</a> based on <a href=""https://twitter.com/noa_cubestudio/status/952328608219099140"">a misunderstanding</a></p>
-<p><a href=""https://ded.increpare.com/~locus/superfluousletters/"">play online now</a> (html5)</p>
-<p><a href=""https://github.com/increpare/superfluousletters/tree/master"">source code</a> (haxegon)</p>
-
-				";;;;;;;;;
-dreamings;2018/02/06;nazca.png;zzzz;"
-<p><a href=""https://ded.increpare.com/~locus/dreamings"">play online now</a> (html5 – requires keyboard)</p>
-<p><a href=""http://ded.increpare.com/~locus/dreamings.zip"">download source code</a> (haxe/<a href=""http://www.haxegon.com"">haxegon</a>)</p>
-
-				";;;;;;;;;
-Gavel;2018/02/27;gavel.png;;"
-<p><a href=""https://ded.increpare.com/~locus/gavel/"">play online now</a> (html5)</p>
-
-				";;;;;;;;;
+<p>a collaboration with <a href=""https://twitter.com/noa_cubestudio"">noa hoffmann</a> based on <a href=""https://twitter.com/noa_cubestudio/status/952328608219099140"">a misunderstanding</a></p>";https://ded.increpare.com/~locus/superfluousletters/;;;;https://github.com/increpare/superfluousletters/;Haxe;;;
+dreamings;2018/02/06;nazca.png;zzzz;;https://ded.increpare.com/~locus/dreamings;;;;http://ded.increpare.com/~locus/dreamings.zip;Haxe;;;
+Gavel;2018/02/27;gavel.png;;;https://ded.increpare.com/~locus/gavel/;;;;https://ded.increpare.com/~locus/gavel/;Monogatari;;;
 Giraff;2018/02/27;giraff.png;"-
 |
 |
 |
-/\ /\";"
-<p><a href=""https://ded.increpare.com/~locus/giraff.html"">play online now</a> (html5)</p>
-<p><a href=""https://www.flickgame.org/index.html?p=21e1342bc4c77e6e4d6cb4d970711953"">source</a> (flickgame)</p>
-
-				";;;;;;;;;
-I am Me;2018/02/27;iamme.png;bzzz;"
-<p><a href=""http://ded.increpare.com/~locus/iamme.html"">play online now</a> (html5)</p>
-<p><a href=""https://www.flickgame.org/index.html?p=7d1f97807ca6304bdabec93dde6d7e6e"">source code</a> (flickgame)</p>
-
-				";;;;;;;;;
-10 Second Sprint;2018/03/10;lauf.png;ßßß;"
-<p><a href=""https://ded.increpare.com/~locus/10SekundenSprint/"">play online now</a> (html5/keyboard/mouse)</p>
-<p><a href=""https://github.com/increpare/lauf>source code</a> (haxegon)</p>				";;;;;;;;;
-Snow Game;2018/03/21;schneespiel.png;:snowflake:;"
-<p><a href=""https://ded.increpare.com/~locus/schneespiel/"">play online now</a> (html5/keyboard)</p>
-<p><a href=""https://github.com/increpare/SchneeSpiel"">source code</a> (haxegon/haxe)</p>
-
-				";;;;;;;;;
-5 Lap Challange;2018/04/29;5runden.png;vrum;"
-<p><a href=""https://ded.increpare.com/~locus/5runden/"">play online now</a> (html5 + keyboard)<br>
-<a href=""https://github.com/increpare/5-lap-challange"">source code</a> (haxe/haxegon)</p>
-
-				";;;;;;;;;
+/\ /\";;https://ded.increpare.com/~locus/giraff.html;;;;https://www.flickgame.org/index.html?p=21e1342bc4c77e6e4d6cb4d970711953;flickgame;;;
+I am Me;2018/02/27;iamme.png;bzzz;;http://ded.increpare.com/~locus/iamme.html;;;;https://www.flickgame.org/index.html?p=7d1f97807ca6304bdabec93dde6d7e6e;flickgame;;;
+10 Second Sprint;2018/03/10;lauf.png;ßßß;;https://ded.increpare.com/~locus/10SekundenSprint/;;;;https://github.com/increpare/lauf;Haxe;;;
+Snow Game;2018/03/21;schneespiel.png;:snowflake:;;https://ded.increpare.com/~locus/schneespiel/;;;;https://github.com/increpare/SchneeSpiel;Haxe;;;
+5 Lap Challange;2018/04/29;5runden.png;vrum;;https://ded.increpare.com/~locus/5runden/;;;;https://github.com/increpare/5-lap-challange;Haxe;;;
+Schwung;2018/05/26;Schwung.png;woop;;https://ded.increpare.com/~locus/Schwung/;;;;https://github.com/increpare/Schwung;Haxe;;;
+Garten der Medusen;2018/05/27;medusen.png;hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss;;https://www.puzzlescript.net/play.html?p=a4829564ab394e720a82cf25d6c9cd91;;;;https://www.puzzlescript.net/editor.html?hack=a4829564ab394e720a82cf25d6c9cd91;PuzzleScript;;;

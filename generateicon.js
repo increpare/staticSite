@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 var gen = require('random-seed')
+var exec = require('child_process').execSync
 
 var name = process.argv[2]
 var outputPath = process.argv[3]
@@ -52,6 +53,5 @@ for (var i=0;i<max;i++){
 }
 
 var buf = canvas.toBuffer();
-fs.writeFile(outputPath, buf,function(err) {
-        if(err) return console.log(err);
-    });
+fs.writeFileSync(outputPath, buf);
+exec(`pngquant --skip-if-larger --force --speed 1 --strip --ext .png ${outputPath}`)

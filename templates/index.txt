@@ -64,7 +64,7 @@
             text-decoration: none;
         }
         .card a .gamename {
-            /*text-decoration: underline;*/
+            text-decoration: underline;
         }
         .gamename {
             padding-left: 10px;
