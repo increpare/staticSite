@@ -5,7 +5,7 @@ MathCIV, as I call it (there’s not much too it really … though it does have 
 I hope i included all the files (my freeciv directories are a bit of a mess *heh*).<p>
 Please though, give it a try and tell me what you think!";;;;;;;;http://www.increpare.com/files/mathciv.zip;
 Trinity MUD;2005/10/03;;;Here‘s a MUD set in Trinity College that I wrote in freepascal.  (Norgg did a more up to date build that builds with more modern versions of freepascal here - http://norgg.org/files/increparemud.zip - thanks, Norgg!);;;;;http://www.increpare.com/files/mud.pas;Pascal;;;
-lightcone: prototype 1;2008/10/05;lightconetitle.jpg;"and here we have the lovely lovely title screen
+lightcone: prototype 1;2008/10/05;lightconetitle.png;"and here we have the lovely lovely title screen
 ";"I always have wanted to program some sort of game using special relativity, but haven't quite figured out a good way to do it yet.  However, I did think, just recently, 'gosh, I should be able to do something with lightcones' though.  So, in this simple concept game light has a finite speed, which basically means that when you see things far away from you, you're not seeing them as they are now, but rather as they were some time in the past.
 <p>
 I decided on simple laser weapons (which travel at the speed of light), which means that you won't ever see the ones that hit you until it's too late  :D
@@ -283,7 +283,7 @@ esc to go back a screen/quit</p>
 <p>EDIT: significantly updated version added.</p>
 
 				";;http://ded.increpare.com/~locus/concord_mac.zip;http://ded.increpare.com/~locus/concord_win.zip;;http://ded.increpare.com/~locus/concord_src.zip;C++;;;
-The Baron’s Volcano Party;2009/08/01;baron.jpg;3-hour thing;"
+The Baron’s Volcano Party;2009/08/01;baron.png;3-hour thing;"
 <p>Collaboration with Kekskiller, <a href=""http://www.distractionware.com"">Terry</a> and <a href=""http://forums.tigsource.com/index.php?action=profile±u=1856"">pishtaco</a></p>
 
 
@@ -614,10 +614,10 @@ Microtone;2011/12/30;microtone_game.png;I spent Christmas with an old acquaintan
 Negative Shape;2012/02/21;ss2.png;PORTAL;;;;;;http://ded.increpare.com/~locus/Negative_Shape_src.zip;Flash;http://ded.increpare.com/~locus/Negative_Shape;;
 Promises;2012/02/21;ss6.png;9i9i9i9i9i99i9;;;;;;http://ded.increpare.com/~locus/Promises_src.zip;Flash;http://ded.increpare.com/~locus/Promises;;
 Recross;2012/02/21;ss4.png;wectangles and mumbers;;;;;;http://ded.increpare.com/~locus/Recross_src.zip;Flash;http://ded.increpare.com/~locus/Recross;;
-Spiders and Cubes;2012/02/21;ss3.png;It's a wonder anyone can tell one thing from another thing.;;;http://ded.increpare.com/~locus/Spiders_And_Cubes_Mac.zip;http://ded.increpare.com/~locus/Spiders_And_Cubes_Win.zip;;http://ded.increpare.com/~locus/Spiders_And_Cubes_src.zip;Unity 3.5;http://ded.increpare.com/~locus/Spiders_And_Cubes_Flash;;http://ded.increpare.com/~locus/Spiders_And_Cubes_Unity
+Spiders and Cubes;2012/02/21;ss3.png;It's a wonder anyone can tell one thing from another thing.;;;http://ded.increpare.com/~locus/Spiders_And_Cubes_Mac.zip;http://ded.increpare.com/~locus/Spiders_And_Cubes_Win.zip;;http://ded.increpare.com/~locus/Spiders_And_Cubes_src.zip;Unity 3.5;http://ded.increpare.com/~locus/Spiders_And_Cubes_Flash;;
 The Good Sister;2012/02/21;ss1.png;overvaluation;;;;;;http://ded.increpare.com/~locus/TheGoodSister_src.zip;Flash;http://ded.increpare.com/~locus/TheGoodSister;;
 Woodrow Wilson;2012/02/21;ss5.png;ideology;;;;;;http://ded.increpare.com/~locus/Woodrow_Wilson_src.zip;Flash;http://ded.increpare.com/~locus/woodrow_wilson;;
-3nake;2012/02/25;3nake.jpg;"<a href=""http://www.piratekart.com"">piratekart</a>";;;http://ded.increpare.com/~locus/3nake_mac.zip;http://ded.increpare.com/~locus/3nake_win.zip;;http://ded.increpare.com/~locus/3nake_src.zip;Unity 3.5;;;http://ded.increpare.com/~locus/3nake
+3nake;2012/02/25;3nake.png;"<a href=""http://www.piratekart.com"">piratekart</a>";;;http://ded.increpare.com/~locus/3nake_mac.zip;http://ded.increpare.com/~locus/3nake_win.zip;;http://ded.increpare.com/~locus/3nake_src.zip;Unity 3.5;;;http://ded.increpare.com/~locus/3nake
 Can You Jump It 3D;2012/02/25;canyoujumpit3d.png;shameless rippaggges;;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Mac.zip;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Win.zip;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D%20Source.zip;Unity 3.5;;;http://ded.increpare.com/~locus/Can%20You%20Jump%20It%203D/
 Clicktagon;2012/02/25;clicktagon.png;long live the longtagon;;;http://ded.increpare.com/~locus/clicktagon_mac.zip;http://ded.increpare.com/~locus/clicktagon_win.zip;;http://ded.increpare.com/~locus/clicktagon_src.zip;Unity 3.5;http://ded.increpare.com/~locus/Clicktagon/;;
 RAPIDFIE;2012/02/25;rapidfie.png;a cat a hat abatoir;;;;;;http://ded.increpare.com/~locus/RAPIDFIE_SRC.zip;Flash;http://ded.increpare.com/~locus/RAPIDFIE;;
@@ -663,7 +663,7 @@ LED Challenge;2014/04/17;ledgame.png;1.5 amps;"
 Robot Arm;2014/04/17;armgame.png;500mm;;http://www.puzzlescript.net/play.html?p=10947157;;;;http://www.puzzlescript.net/editor.html?hack=10947157;PuzzleScript;;;
 The Transgression;2014/04/27;transgr.png;sorry!;;http://ded.increpare.com/~locus/Forgiveness;;;;;;;;
 The Serpent;2014/04/30;lips.png;lips.png;;;http://ded.increpare.com/~locus/Serpent_Mac.zip;http://ded.increpare.com/~locus/Serpent_Win.zip;http://ded.increpare.com/~locus/Serpent_Linux.zip;http://ded.increpare.com/~locus/Serpent_src.zip;Unity;;;
-Click click click;2014/10/06;ccc.jpg;"with thanks to <a href=""http://www.codeproject.com/Articles/6796/A-Generic-Reusable-Diff-Algorithm-in-C"">@aprenot</a>";;http://ded.increpare.com/~locus/CCC/;;;;http://ded.increpare.com/~locus/ClickClickClick_src.zip;C#;;;
+Click click click;2014/10/06;ccc.png;"with thanks to <a href=""http://www.codeproject.com/Articles/6796/A-Generic-Reusable-Diff-Algorithm-in-C"">@aprenot</a>";;http://ded.increpare.com/~locus/CCC/;;;;http://ded.increpare.com/~locus/ClickClickClick_src.zip;C#;;;
 Let your mind fall to rest;2014/10/06;torest.png;-;"
 <p><a href=""http://ded.increpare.com/~locus/LYMFTR_win.zip"">download for windows 64 bit</a><br>
 <a href=""http://ded.increpare.com/~locus/LYMFTR_win32.zip"">download for windows 32 bit</a><br>
@@ -672,7 +672,7 @@ Let your mind fall to rest;2014/10/06;torest.png;-;"
 <p><a href=""http://ded.increpare.com/~locus/LRMFTR_src.zip"">download source</a> (unity 4.5)</p>
 
 				";;http://ded.increpare.com/~locus/LYMFTR_osx.zip;http://ded.increpare.com/~locus/LYMFTR_win.zip;http://ded.increpare.com/~locus/LYMFTR_linux.zip;http://ded.increpare.com/~locus/LRMFTR_src.zip;Unity 4.5;;;
-Gesture;2014/10/20;gesturesico.jpg;ber;"
+Gesture;2014/10/20;gesturesico.png;ber;"
 <p><a href=""http://ded.increpare.com/~locus/Gestures_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Gestures_win64.zip"">Download for Windows (64 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Gestures_osx.zip"">Download for OSX</a><br>
@@ -905,11 +905,11 @@ Reminders;2016/08/03;reminder.png;sfss.png;"
 
 				";https://ded.increpare.com/~locus/reminders/;;;;https://ded.increpare.com/~locus/reminders.zip;;;;
 Orthona;2016/11/26;orthona.png;a'a'a pip;;http://www.orthona.net;;;;;;;;
-Flickuboy;2016/12/01;flickuboy.jpg;"<a href=""https://www.arduboy.com"">www.arduboy.com</a>";;http://www.flickgame.org/flickuboy.html;;;;;;;;
+Flickuboy;2016/12/01;flickuboy.png;"<a href=""https://www.arduboy.com"">www.arduboy.com</a>";;http://www.flickgame.org/flickuboy.html;;;;;;;;
 The Word;2017/06/12;the_word.png;everyone likes a goodly collaboration;"
 <p><a href=""https://ded.increpare.com/~locus/the_word/"">play online now</a> (webgl)</p>
 <p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" > source code (unity 5.6)</a></p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" >
-</a><p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" >(Collaboration with the wonderful </a><a href=""http://www.flickgame.org/index.html?p=664a5a4a984e27ed1d433988fe30095a"">terry</a> )</p>
+</a><p>(Collaboration with the wonderful </a><a href=""https://www.terrycavanaghgames.com"">terry</a> )</p>
 
 				";https://ded.increpare.com/~locus/the_word/;;;;http://ded.increpare.com/~locus/theword_src.zip;Haxe;;;
 To the couple two rows in front of us;2017/06/12;the_couple.png;foreground and background;;https://ded.increpare.com/~locus/the_couple_two_rows_in_front_of_us.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;Flickgame;;;
@@ -975,7 +975,7 @@ glances;2017/11/12;glances.png;"made at the lovely <a href=""http://www.berlinmi
 <a href=""https://ded.increpare.com/~locus/glances_linux.tar.gz"">download for linux</a></p>
 <p><a href=""https://ded.increpare.com/~locus/glances_src.tar.gz"">download source code</a> (unity 2017.2)</p>
 
-				";https://ded.increpare.com/~locus/glances;https://ded.increpare.com/~locus/glances_osx.zip;https://ded.increpare.com/~locus/glances_win64.zip;https://ded.increpare.com/~locus/glances_linux.tar.gz;https://ded.increpare.com/~locus/glances_src.tar.gz;Unity 2017.2;;;
+				";https://ded.increpare.com/~locus/glances;https://ded.increpare.com/~locus/glances_osx.zip;https://ded.increpare.com/~locus/glances_win64.zip;;https://ded.increpare.com/~locus/glances_src.tar.gz;Unity 2017.2;;;
 8 Happy Snakes;2017/12/03;happysnakes.png;nek nek nek;;https://www.puzzlescript.net/play.html?p=dab71718821751f64cd4dc9c6374d7c1;;;;https://www.puzzlescript.net/editor.html?hack=dab71718821751f64cd4dc9c6374d7c1;PuzzleScript;;;
 Hungry Kraken;2017/12/03;octothumb.png;nom nom nom;;https://www.puzzlescript.net/play.html?p=108de5a6080a5f0fcf5a7d427da73641;;;;https://www.puzzlescript.net/editor.html?hack=108de5a6080a5f0fcf5a7d427da73641;PuzzleScript;;;
 match three billiards;2018/01/02;matchthreebilliards.png;axis-aligned walls are in the game but do precisely nothing;;https://www.puzzlescript.net/play.html?p=d728ee501c17bc9b5ffc0605b7c4182f;;;;https://www.puzzlescript.net/editor.html?hack=d728ee501c17bc9b5ffc0605b7c4182f;PuzzleScript;;;

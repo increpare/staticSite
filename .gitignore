@@ -2,3 +2,7 @@
 icos/output2
 bin
 oldsite/www.increpare.com
+*.html.gz
+*/*.html.gz
+*/*/*.html.gz
+*/*/*/*.html.gz
