@@ -383,11 +383,11 @@ var feedOptions = {
 	feed_url:"https://www.increpare.com/feed.rss",
 	site_url:"https://www.increpare.com",
 	image_url:"https://www.increpare.com/favicon.png",
-	author:"Stephen Lavelle",
+	author:"analytic@gmail.com (Stephen Lavelle)",
 	categories: ['games','increpare','indie games','open source'],
-	webMaster:"Stephen Lavelle",
+	webMaster:"analytic@gmail.com (Stephen Lavelle)",
 	copyright:"2018 Stephen Lavelle",
-	managingEditor:"Stephen Lavelle",
+	managingEditor:"analytic@gmail.com (Stephen Lavelle)",
 	language: 'en'
 };
 
@@ -422,11 +422,12 @@ for (var i=0;i<Math.min(20,table.length);i++){
 
 	var itemOptions = {
 		title:title,
+		author:'analytic@gmail.com (Stephen Lavelle)',
 		description:caption,
 		url:`https://www.increpare.com/games/${pageName}`,
 		date:date.toUTCString()		
 	}
-	console.log(itemOptions)
+
 	feed.item(itemOptions)
 
 	var xml = feed.xml()
