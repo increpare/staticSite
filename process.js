@@ -60,7 +60,7 @@ exec("rm -rf output")
 exec("mkdir output")
 exec("mkdir output/game")
 exec("mkdir output/icos")
-// execAsync("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv")
+exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
 
 exec("cp templates/privacy.html output/privacy.html")
 gzipFile("output/privacy.html")
@@ -445,7 +445,7 @@ for (var i=0;i<Math.min(20,table.length);i++){
 		title:title,
 		author:'analytic@gmail.com (Stephen Lavelle)',
 		description:striptags(caption),
-		url:`https://www.increpare.com/games/${pageName}`,
+		url:`https://www.increpare.com/game/${pageName}`,
 		date:date.toUTCString()		
 	}
 

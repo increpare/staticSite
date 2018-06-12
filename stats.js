@@ -136,40 +136,10 @@ for (var i=0;i<table.length;i++){
 
 	captionMarkdown = htmlToMarkdown(caption)
 
-	var linkList = function(pre,presrc,post){
-		var result="";
-		if (html!=""){
-			result += `${pre} <a href="${html}">Play Now</a> ${post} (HTML5) \n`
-		}
-		if (win!=""){
-			result += `${pre} <a href="${win}">Download for Windows</a> ${post} \n`
-		}
-		if (mac!=""){
-			result += `${pre} <a href="${mac}">Download for macOS</a> ${post} \n`
-		}
-		if (linux!=""){
-			result += `${pre} <a href="${linux}">Download for Linux</a> ${post} \n`
-		}
-		if (zip!=""){
-			result += `${pre} <a href="${zip}">Download Zip file</a> ${post} \n`
-		}
-		if (flash!=""){
-			result += `${pre} <a href="${flash}">Play Now</a> ${post} (Flash) \n`
-		}
-		if (unity!=""){
-			result += `${pre} <a href="${unity}">Play Now</a> ${post} (Unity Web Player) \n`
-		}
-		if (src!=""){
-			result += `${presrc} <a href="${src}">Download Source Code</a> ${post} (${src_desc}) \n`
-		}
-		return result;
-	}
-
 
 	r.push(pageName)//[15]
 	r.push(niceDate)//[16]
 
-	var page=eval(postTemplate)
 	//var pageMinified=minify(page,minifyOptions)
 
 }
@@ -188,163 +158,6 @@ function sortByDate(a,b){
 
 table.sort(sortByDate)
 
-function doGrid(){
-	var s = ""
-
-	for (var i=0;i<table.length;i++){
-		var r = table[i];
-
-		var title = r[0]
-		var date = r[1]
-		var icon = r[2]
-		var caption = r[3]
-		var desc = r[4]
-		var html = r[5]
-		var mac = r[6]
-		var win = r[7]
-		var linux = r[8]
-		var src = r[9]
-		var src_desc = r[10]
-		var flash = r[11]
-		var zip = r[12]
-		var unity = r[13]
-		var datenum = r[14]
-		var pageName = r[15]
-		var niceDate = r[16]
-
-		var cardTemplate = `
-    <div class="card">
-		<a href="game/${pageName}">
-			<img class="thumb" alt="" width="250" height="250" src="icos/${icon}">
-			<div class="date">${niceDate}</div >
-			<div class="gamename">${title}</div>
-		</a>`;
-
-		var someico=false;
-        if (html!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${html}" title="Play Now (HTML5)" >
-            	<img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="symbols/html5.svg" >        
-            	<div class="overlay">
-                	<div class="text">HTML5</div>
-             	</div>
-            </a>
-        </div>`
-      	}
-
-        if (win!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${win}" title="Download for Windows" >
-              	<img alt="Download for Windows" width="50" height="50" class="icon" src="symbols/windows.svg">        
-              	<div class="overlay">
-                	<div class="text">WIN</div>
-              	</div>
-            </a>
-        </div>`
-      	}
-
-
-        if (mac!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${mac}" title="Download for macOS" >
-				<img alt="Download for macOS" width="50" height="50" class="icon" src="symbols/apple.svg">        
-				<div class="overlay">
-					<div class="text">MAC</div>
-				</div>
-            </a>
-		</div>`
-      	}
-
-
-        if (linux!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${linux}" title="Download for Linux" >
-			<img alt="Download for Linux" width="50" height="50" class="icon" src="symbols/linux.svg">        
-			<div class="overlay">
-				<div class="text">LINUX</div>
-			</div>
-            </a>
-		</div>`
-      	}
-
-        if (flash!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${flash}"  title="Play Online Now (Flash)" >
-				<img alt="Play Online Now (Flash)" width="50" height="50" class="icon" src="symbols/flash.svg">        
-				<div class="overlay">
-					<div class="text">FLASH</div>
-				</div>
-            </a>
-    	</div>`
-      	}
-
-        if (zip!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${zip}" title="Download Zip File" >
-				<img alt="Download Zip File"  width="50" height="50" class="icon"  src="symbols/zip.svg">        
-				<div class="overlay">
-					<div class="text">ZIP</div>
-				</div>
-            </a>
-    	</div>`
-      	}
-
-        if (unity!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${unity}" title="Play Online Now (Unity Web Player)">
-				<img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="symbols/unity.svg" >        
-				<div class="overlay">
-                	<div class="text">UNITY</div>
-				</div>
-            </a>
-    	</div>`
-      	}
-
-        if (src!=""){
-        	someico=true;
-        	cardTemplate += `
-    	<div class="container">
-            <a href="${src}" title="Download Source Code (${src_desc})">
-				<img width="50" height="50" class="icon" alt="Download Source Code (${src_desc})" src="symbols/source.svg">        
-				<div class="overlay">
-					<div class="text">SOURCE</div>
-				</div>
-            </a>
-    	</div>`
-      	}
-
-      	if (someico===false){
-
-        	cardTemplate += `
-    	<div class="container">
-            	<img width="50" height="50" class="icon" alt="" src="symbols/blank.svg">        
-
-    	</div>`
-      	}
-      	cardTemplate+=`
-  	</div>`
-		s+=cardTemplate;		
-	}
-	return s;
-}
-
-var page=eval(indexTemplate)
-//var pageMinified = minify(page,minifyOptions)
-var pageMinified = page;
 
 
 
@@ -374,13 +187,14 @@ for (var i=0;i<table.length;i++){
 	var year = splitDate[0];
 	var month = splitDate[1];
 	var day = splitDate[2];
-	var date = new Date(year,month,day)
+	var date = new Date(year,month-1,day)
 	r[17]=date;
 
 }
 
+
 for (var y=2008;y<2019;y++){
-	var entries = table.filter( row => row[17].getFullYear()==y );
+	var entries = table.filter( row => row[17].getFullYear()==y);
 	var total = entries.length;
 	var count_html = entries.filter( row => row[5]!="" ).length/total;
 	var count_mac = entries.filter( row => row[6]!="" ).length/total;
@@ -388,5 +202,23 @@ for (var y=2008;y<2019;y++){
 	var count_linux = entries.filter( row => row[8]!="" ).length/total;
 	var count_flash = entries.filter( row => row[11]!="" ).length/total;
 
-	console.log(y,entries.length,count_html,count_mac,count_windows,count_linux,count_flash)
+	console.log(`${y}\t${count_windows}\t${count_mac}\t${count_linux}\t${count_flash}\t${count_html}`)
 }
+
+// for (var y=2008;y<2019;y++){
+// 	for (var m=0;m<12;m+=3){
+// 		var entries = table.filter( row => row[17].getFullYear()==y && (row[17].getMonth()==m||row[17].getMonth()==m+1||row[17].getMonth()==m+2));
+// 		var total = entries.length;
+// 		var count_html = entries.filter( row => row[5]!="" ).length/total;
+// 		var count_mac = entries.filter( row => row[6]!="" ).length/total;
+// 		var count_windows = entries.filter( row => row[7]!="" ).length/total;
+// 		var count_linux = entries.filter( row => row[8]!="" ).length/total;
+// 		var count_flash = entries.filter( row => row[11]!="" ).length/total;
+
+// 		var yd="";
+// 		if (m==0){
+// 			yd=y;
+// 		}
+// 		console.log(`${yd}\t${entries.length}`)
+// 	}
+// }

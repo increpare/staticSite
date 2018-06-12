@@ -10,123 +10,120 @@
     <title>increpare games</title>
 
     <style>
-        html,
-        body {
-            text-align: center;
-            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; 
-        }
-        body {
-            background-color: #f5f5dc;
-            margin-top: 30px;
-            margin-bottom: 70px;
-            margin-left: auto;            
-            margin-right: auto;
-            padding-left: 50px;
-            padding-right: 50px;
-            max-width: 1400px;
-            text-align: center
-        }
-        td {
-            vertical-align: top;
-        }
-        td {
-            width: 100%;
-        }
-        hr {
-            left: -30px;
-            right: -30px;
-            border-top: 1px solid black;
-        }
-        #header {
-            padding-bottom: 20px;
-            text-align: center;
-            font-size: 120%;
-        }
-        .card {
-            background-color: white;
-            text-align: center;
-            display: inline-block;
-            width: 290px;
-            /*outline: 1px solid black;*/            
-            border-radius: 5px;
-            box-shadow: 0 0 0 1px black;
-            /*box-shadow: 1px 2px 10px 0px #0004;*/
-            padding-top: 20px;
-            margin-top: 10px;
-            padding-bottom: 25px;
-            margin-bottom: 10px;
-            padding-left: 0;
-            margin-left: 10px;
-            padding-right: 0;
-            margin-right: 10px;
-        }
-        .card a {
-            text-decoration: none;
-        }
-        .card a .gamename {
-            text-decoration: underline;
-        }
-        .gamename {
-            padding-left: 10px;
-            padding-right: 10px;
-            font-size: 150%;
-            padding-bottom: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .date {
-            color: #757575;
-            padding-bottom: 3px;
-        }
-        .thumb {
-            margin-bottom: 5px;
-            border: 1px solid black;
-        }
-        .leftcol {
-            width: 300px;
-        }
-        .container {
-            margin: 8px;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-        }
-        .icon {
-            display: inline;
-            width: 50px;
-            height: 50px;
-            opacity: 0.4;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
-            width: 50px;
-            opacity: 0;
-        }
-        .container:hover .icon {
-            opacity: 0.25;
-        }
-        .container:hover .overlay {
-            opacity: 1;
-        }
-        .text {
-            color: black;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
+body {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .card, body, html {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.card a {
+  text-decoration: none;
+}
+.card a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+.icon {
+  display: inline;
+  opacity: 0.4;
+}
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon {
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
     </style>
 </head>
 
@@ -137,7 +134,7 @@
     <div id="header">
         <a href="https://twitter.com/increpare">twitter</a>&emsp13;|&emsp13;<a href="http://github.com/increpare">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=increpare&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal donate</a>&emsp13;|&emsp13;
         <a
-        href="privacy.html">privacy policy</a>
+        href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
     </div>
   ${doGrid()}
 </body>
