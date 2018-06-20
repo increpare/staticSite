@@ -9,13 +9,22 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Wed, 20 Jun 2018 13:54:55 GMT</pubDate>
-  <lastBuildDate>Wed, 20 Jun 2018 13:54:55 GMT</lastBuildDate>
+  <pubDate>Wed, 20 Jun 2018 16:00:54 GMT</pubDate>
+  <lastBuildDate>Wed, 20 Jun 2018 16:00:54 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
 
+  <item>
+    <title>No heroes necessary</title>
+    <pubDate>Tue, 19 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/no-heroes-necessary.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/no-heroes-necessary.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
   <item>
     <title>A cliche before bedtime</title>
     <pubDate>Mon, 18 Jun 2018 22:00:00 GMT</pubDate>
@@ -185,15 +194,6 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/b-a-b-a.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Flag Quiz</title>
-    <pubDate>Sat, 16 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/flag-quiz.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/flag-quiz.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>

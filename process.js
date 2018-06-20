@@ -107,7 +107,7 @@ var pageNames=[];
 
 var tagList=[]
 
-var platformList = ["Flash","HTML","Linux","macOS","Windows","Other"]
+var platformList = ["flash","html","linux","macos","windows","other"]
 
 // STEP 3 : generate sub files
 for (var i=0;i<table.length;i++){
@@ -142,7 +142,7 @@ for (var i=0;i<table.length;i++){
 	r.push(datenum); [14]
 
 	var safeName = getSlug(title)
-	var pageName = safeName+".html";
+	var pageName = tag_to_urlsafe(safeName)+".html";
 
 	if (pageNames.indexOf(pageName)>=0){
 		var c = 2;	
@@ -244,7 +244,15 @@ Array.prototype.stableSort = function(cmp) {
 table.stableSort(sortByDate).reverse()
 
 function src_desc_to_tag(desc){
-	return getSlug(desc.split(" ")[0].toLowerCase());
+	return getSlug(desc.split(" ")[0].toLowerCase(),{
+	    custom: ['#']
+	});
+}
+
+function tag_to_urlsafe(desc){
+	return getSlug(desc.split(" ")[0].toLowerCase(),{
+	    custom: {'#':"sharp"}
+	});
 }
 
 var tagToFilter="";
@@ -302,10 +310,10 @@ function filterTable(table,plat,tag){
 		return cachedtables[key];
 	}
 
-	if (plat==="Platform"){
+	if (plat==="platform"){
 		plat="";
 	}
-	if (tag==="Engine"){
+	if (tag==="engine"){
 		tag="";
 	}
 	var filteredtable = table;
@@ -315,22 +323,22 @@ function filterTable(table,plat,tag){
 	if (plat!==""){
 		var filterIndex=0;
 		switch(plat){
-			case "Flash":
+			case "flash":
 				filterIndex=11;
 				break;
-			case "HTML":
+			case "html":
 				filterIndex=5;
 				break;
-			case "Linux":
+			case "linux":
 				filterIndex=8;
 				break;
-			case "macOS":
+			case "macos":
 				filterIndex=6;
 				break;
-			case "Windows":
+			case "windows":
 				filterIndex=7;
 				break;
-			case "Other":
+			case "other":
 				filterIndex=12;
 				break;
 		}
@@ -350,8 +358,8 @@ function doFilterLists(){
 
 	function getPath(plat,tag){
 		var currentlyIndex = platformToFilter==="" && tagToFilter===""
-		var targetIsIndex = (plat===""||plat==="Platform")&&(tag===""||tag==="Engine");
-
+		var targetIsIndex = (plat===""||plat==="platform")&&(tag===""||tag==="engine");
+		tag = tag_to_urlsafe(tag);
 		var prefix="";
 		if (currentlyIndex===targetIsIndex){
 
@@ -369,19 +377,19 @@ function doFilterLists(){
 		} else if (plat!==""){
 			fileName=plat
 			if (tag!==""){
-				fileName+="-"+tag;
+				fileName+="-"+tag_to_urlsafe(tag);
 			}
 		} else {//tag!==""
-			fileName=tag;
+			fileName=tag_to_urlsafe(tag);
 		}
 		fileName+=".html"
 
 		return prefix+fileName;
 	}
 
+
 	//1 platofrm list
 	result+=`<select onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
-
 
 	function sortByNumGames_platformVary(plat_a,plat_b){
 		var n_a = getGameCount(plat_a,tagToFilter);
@@ -400,7 +408,7 @@ function doFilterLists(){
 
 	var entryCount = getGameCount("",tagToFilter)
 	var path = getPath("",tagToFilter);
-	result += `<option value="${path}">Platform (${entryCount})</option>\n`
+	result += `<option value="${path}">platform (${entryCount})</option>\n`
 	for (plat of platformList) {
 		entryCount = getGameCount(plat,tagToFilter)
 		var sel = (plat===platformToFilter) ? "selected ='selected'":"";
@@ -429,7 +437,7 @@ function doFilterLists(){
 
 	var entryCount = getGameCount(platformToFilter,"")
 	var path = getPath(platformToFilter,"");
-	result += `<option value="${path}">Engine (${entryCount})</option>\n`
+	result += `<option value="${path}">engine (${entryCount})</option>\n`
 	for (tag of tagList) {
 		entryCount = getGameCount(platformToFilter,tag)
 		var sel = (tag===tagToFilter) ? "selected ='selected'":"";
@@ -573,7 +581,6 @@ function doGrid(){
 
         if (src!=""){
         	someico=true;
-        	tag = src_desc_to_tag(src_desc)
         	cardTemplate += `
     	<div class="container">
             <a href="${src}" title="Download Source Code">
@@ -603,28 +610,27 @@ function doGrid(){
 
 
 
-function generatePage(){
+function generatePage(plat,tag){
+	console.log("filtered page : "+tag+"\t"+plat)
 	var filteredPage=eval(indexTemplate)
 	var filteredPageMinified = minify(filteredPage,minifyOptions)
 
 	var pageName="";
-	pageName+=platformToFilter
-	if (tagToFilter!==""){
+	pageName+=plat
+	if (tag!==""){
 		if (pageName.length>0){
 			pageName+="-";
 		}
-		pageName+=tagToFilter;
+		pageName+= tag_to_urlsafe(tag);
 	}
 
 	var categoryPagePath = `output/categories/${pageName}.html`
-	function t(temp){
-	fs.writeFile(temp,filteredPageMinified, function(err) {
+	console.log(categoryPagePath);
+	fs.writeFile(categoryPagePath,filteredPageMinified, function(err) {
 	        if(err) return console.log(err);
-	        gzipFile(temp)
-	    })}
-	t(categoryPagePath)
+	        gzipFile(categoryPagePath)
+	    })
 
-	console.log("filtered page : "+tagToFilter+"\t"+platformToFilter)
 }
 
 var page=eval(indexTemplate)
@@ -637,24 +643,26 @@ fs.writeFile("output/index.html",pageMinified, function(err) {
 
     })
 
-for (tag of tagList){
+var tags = tagList.slice();
+var plats = platformList.slice();
+for (tag of tags){
 	tagToFilter = tag
 	platformToFilter="";
-	generatePage();
+	generatePage(platformToFilter,tagToFilter);
 }
 
-for (platform of platformList){
+for (platform of plats){
 	platformToFilter = platform
 	tagToFilter="";
-	generatePage();
+	generatePage(platformToFilter,tagToFilter);
 }
 
 
-for (tag of tagList){
+for (tag of tags){
 	tagToFilter = tag
-	for (platform of platformList){
+	for (platform of plats){
 		platformToFilter = platform
-		generatePage();
+		generatePage(platformToFilter,tagToFilter);
 	}
 }
 
