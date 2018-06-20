@@ -4,6 +4,8 @@ var fs = require('fs')
 var path = require('path')
 var RSS = require('rss')
 var striptags = require('striptags');
+var getSlug = require('speakingurl');
+var colorConvert = require('color-convert');
 
 var minify = require('html-minifier').minify;
 var minifyOptions =  {
@@ -60,6 +62,7 @@ exec("rm -rf output")
 exec("mkdir output")
 exec("mkdir output/game")
 exec("mkdir output/icos")
+exec("mkdir output/categories")
 exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
 
 exec("cp templates/privacy.html output/privacy.html")
@@ -102,6 +105,10 @@ table.shift();
 
 var pageNames=[];
 
+var tagList=[]
+
+var platformList = ["Flash","HTML","Linux","macOS","Windows","Other"]
+
 // STEP 3 : generate sub files
 for (var i=0;i<table.length;i++){
 	var r = table[i]
@@ -125,11 +132,16 @@ for (var i=0;i<table.length;i++){
 	var zip = r[12]
 	var unity = r[13]
 
+	var tag = src_desc_to_tag(src_desc);
+	if (tagList.indexOf(tag)===-1){
+		tagList.push(tag);
+	}
+
 	var datesplit = date.split('-')
 	var datenum = parseInt(datesplit[0])*10000+parseInt(datesplit[1])*100+parseInt(datesplit[2]);
 	r.push(datenum); [14]
 
-	var safeName = title.replace(/[ ]/g,'-').replace(/[^a-zA-Z0-9-_\.]/g,'')
+	var safeName = getSlug(title)
 	var pageName = safeName+".html";
 
 	if (pageNames.indexOf(pageName)>=0){
@@ -141,9 +153,7 @@ for (var i=0;i<table.length;i++){
 	}
 	pageNames.push(pageName);
 
-
 	if (icon==""){
-
 		icon = date+"-"+safeName+".png";
 		execAsync(`./generateicon.js ${safeName} output/icos/${icon}`)
 		r[2] = icon
@@ -180,7 +190,7 @@ for (var i=0;i<table.length;i++){
 			result += `${pre} <a href="${unity}">Play Now</a> ${post} (Unity Web Player) \n`
 		}
 		if (src!=""){
-			result += `${presrc} <a href="${src}">Download Source Code</a> ${post} (${src_desc}) \n`
+			result += `${presrc} <a href="${src}">Download Source Code</a> ${post} ( ${src_desc} )</a> \n`
 		}
 		return result;
 	}
@@ -205,20 +215,241 @@ for (var i=0;i<table.length;i++){
 
 function sortByDate(a,b){
   if( a[14] > b[14]){
-      return -1;
-  }else if( a[14] < b[14] ){
       return 1;
+  }else if( a[14] < b[14] ){
+      return -1;
   }
   return 0;
 }
 
-table.sort(sortByDate)
+Array.prototype.stableSort = function(cmp) {
+  cmp = !!cmp ? cmp : (a, b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  };
+  let stabilizedThis = this.map((el, index) => [el, index]);
+  let stableCmp = (a, b) => {
+    let order = cmp(a[0], b[0]);
+    if (order != 0) return order;
+    return a[1] - b[1];
+  }
+  stabilizedThis.sort(stableCmp);
+  for (let i=0; i<this.length; i++) {
+    this[i] = stabilizedThis[i][0];
+  }
+  return this;
+}
+
+table.stableSort(sortByDate).reverse()
+
+function src_desc_to_tag(desc){
+	return getSlug(desc.split(" ")[0].toLowerCase());
+}
+
+var tagToFilter="";
+var platformToFilter="";
+function doTitle(){
+	var title = "increpare games";
+	if (tagToFilter.length>0){
+		title = tagToFilter+" - "+title
+	}
+	return title;
+}
+
+function doHeading(){
+	if (tagToFilter!==""){
+		if (platformToFilter!==""){
+			return `<h1><a href="../index.html">increpare games</a> / ${platformToFilter} - ${tagToFilter}</h1>`;
+		} else {
+			return `<h1><a href="../index.html">increpare games</a> / ${tagToFilter}</h1>`;
+		}
+	} else if (platformToFilter!==""){
+		return `<h1><a href="../index.html">increpare games</a> / ${platformToFilter}</h1>`;		
+	} else {		
+		return `<h1>increpare games</h1>`;
+	}
+}
+
+function getPrefix(){
+	var prefix="";
+	if (tagToFilter!==""){
+		prefix="../"
+	}
+	if (platformToFilter!==""){
+		prefix="../"
+	}
+	return prefix;
+}
+
+
+var cachedgamecount = {};
+function getGameCount(plat,tag){
+	var key = plat+"_"+tag;
+	if (cachedgamecount.hasOwnProperty(key)){
+		return cachedgamecount[key];
+	}
+
+	var result = filterTable(table,plat,tag).length;
+	cachedgamecount[key]=result;
+	return result;
+}
+
+var cachedtables={};
+function filterTable(table,plat,tag){
+	var key = plat+"_"+tag;
+	if (cachedtables.hasOwnProperty(key)){
+		return cachedtables[key];
+	}
+
+	if (plat==="Platform"){
+		plat="";
+	}
+	if (tag==="Engine"){
+		tag="";
+	}
+	var filteredtable = table;
+	if (tag!==""){
+		filteredtable = filteredtable.filter( r => src_desc_to_tag(r[10])===tag)
+	}
+	if (plat!==""){
+		var filterIndex=0;
+		switch(plat){
+			case "Flash":
+				filterIndex=11;
+				break;
+			case "HTML":
+				filterIndex=5;
+				break;
+			case "Linux":
+				filterIndex=8;
+				break;
+			case "macOS":
+				filterIndex=6;
+				break;
+			case "Windows":
+				filterIndex=7;
+				break;
+			case "Other":
+				filterIndex=12;
+				break;
+		}
+		filteredtable = filteredtable.filter( r => r[filterIndex].trim()!=="")
+	}
+
+	cachedtables[key]=filteredtable;
+	return filteredtable;
+}
+
+function doFilterLists(){
+	var result="";
+
+	var s = ""
+	var prefix=getPrefix();
+	var indexpath = (platformToFilter.length>0 || tagToFilter.length>0)?"../index.html":"index.html"
+
+	function getPath(plat,tag){
+		var currentlyIndex = platformToFilter==="" && tagToFilter===""
+		var targetIsIndex = (plat===""||plat==="Platform")&&(tag===""||tag==="Engine");
+
+		var prefix="";
+		if (currentlyIndex===targetIsIndex){
+
+		} else if (currentlyIndex==true){
+			prefix="categories/"
+		} else {
+			prefix="../"
+		}
+
+
+		var fileName = "";
+
+		if (plat===""&&tag===""){
+			fileName="index"
+		} else if (plat!==""){
+			fileName=plat
+			if (tag!==""){
+				fileName+="-"+tag;
+			}
+		} else {//tag!==""
+			fileName=tag;
+		}
+		fileName+=".html"
+
+		return prefix+fileName;
+	}
+
+	//1 platofrm list
+	result+=`<select onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
+
+
+	function sortByNumGames_platformVary(plat_a,plat_b){
+		var n_a = getGameCount(plat_a,tagToFilter);
+		var n_b = getGameCount(plat_b,tagToFilter);
+
+	  if( n_a > n_b){
+	      return -1;
+	  }else if( n_a < n_b ){
+	      return 1;
+	  }
+	  return 0;
+	}
+
+	platformList.sort();
+	platformList.stableSort(sortByNumGames_platformVary);
+
+	var entryCount = getGameCount("",tagToFilter)
+	var path = getPath("",tagToFilter);
+	result += `<option value="${path}">Platform (${entryCount})</option>\n`
+	for (plat of platformList) {
+		entryCount = getGameCount(plat,tagToFilter)
+		var sel = (plat===platformToFilter) ? "selected ='selected'":"";
+		var disabled = entryCount===0?"disabled":""
+		result += `<option value="${getPath(plat,tagToFilter)}" ${sel} ${disabled}>${plat} (${entryCount})</option>\n`
+	}
+	result+=`</select>\n`
+
+	//2 tag list
+	result+=`<select onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
+
+	function sortByNumGames_tagVary(tag_a,tag_b){
+		var n_a = getGameCount(platformToFilter,tag_a);
+		var n_b = getGameCount(platformToFilter,tag_b);
+
+	  if( n_a > n_b){
+	      return -1;
+	  }else if( n_a < n_b ){
+	      return 1;
+	  }
+	  return 0;
+	}
+
+	tagList.sort();
+	tagList.stableSort(sortByNumGames_tagVary);
+
+	var entryCount = getGameCount(platformToFilter,"")
+	var path = getPath(platformToFilter,"");
+	result += `<option value="${path}">Engine (${entryCount})</option>\n`
+	for (tag of tagList) {
+		entryCount = getGameCount(platformToFilter,tag)
+		var sel = (tag===tagToFilter) ? "selected ='selected'":"";
+		var disabled = entryCount===0?"disabled":""
+		result += `<option value="${getPath(platformToFilter, tag)}" ${sel} ${disabled}>${tag} (${entryCount})</option>\n`
+	}
+	result+=`</select>\n`
+
+	return result;
+}
+
 
 function doGrid(){
 	var s = ""
+	var prefix=getPrefix();
+	var filteredtable = filterTable(table,platformToFilter,tagToFilter);
 
-	for (var i=0;i<table.length;i++){
-		var r = table[i];
+
+	for (var i=0;i<filteredtable.length;i++){
+		var r = filteredtable[i];
 
 		var title = r[0]
 		var date = r[1]
@@ -240,8 +471,8 @@ function doGrid(){
 
 		var cardTemplate = `
     <div class="card">
-		<a href="game/${pageName}">
-			<img class="thumb" alt="" width="250" height="250" src="icos/${icon}">
+		<a href="${prefix}game/${pageName}">
+			<img class="thumb" alt="" width="250" height="250" src="${prefix}icos/${icon}">
 			<div class="date">${niceDate}</div >
 			<div class="gamename">${title}</div>
 		</a>`;
@@ -252,7 +483,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${html}" title="Play Now (HTML5)" >
-            	<img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="symbols/html5.svg" >        
+            	<img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="${prefix}symbols/html5.svg" >        
             	<div class="overlay">
                 	<div class="text">HTML5</div>
              	</div>
@@ -265,7 +496,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${win}" title="Download for Windows" >
-              	<img alt="Download for Windows" width="50" height="50" class="icon" src="symbols/windows.svg">        
+              	<img alt="Download for Windows" width="50" height="50" class="icon" src="${prefix}symbols/windows.svg">        
               	<div class="overlay">
                 	<div class="text">WIN</div>
               	</div>
@@ -279,7 +510,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${mac}" title="Download for macOS" >
-				<img alt="Download for macOS" width="50" height="50" class="icon" src="symbols/apple.svg">        
+				<img alt="Download for macOS" width="50" height="50" class="icon" src="${prefix}symbols/apple.svg">        
 				<div class="overlay">
 					<div class="text">MAC</div>
 				</div>
@@ -293,7 +524,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${linux}" title="Download for Linux" >
-			<img alt="Download for Linux" width="50" height="50" class="icon" src="symbols/linux.svg">        
+			<img alt="Download for Linux" width="50" height="50" class="icon" src="${prefix}symbols/linux.svg">        
 			<div class="overlay">
 				<div class="text">LINUX</div>
 			</div>
@@ -306,7 +537,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${flash}"  title="Play Online Now (Flash)" >
-				<img alt="Play Online Now (Flash)" width="50" height="50" class="icon" src="symbols/flash.svg">        
+				<img alt="Play Online Now (Flash)" width="50" height="50" class="icon" src="${prefix}symbols/flash.svg">        
 				<div class="overlay">
 					<div class="text">FLASH</div>
 				</div>
@@ -319,7 +550,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${zip}" title="Download Zip File" >
-				<img alt="Download Zip File"  width="50" height="50" class="icon"  src="symbols/zip.svg">        
+				<img alt="Download Zip File"  width="50" height="50" class="icon"  src="${prefix}symbols/zip.svg">        
 				<div class="overlay">
 					<div class="text">ZIP</div>
 				</div>
@@ -332,7 +563,7 @@ function doGrid(){
         	cardTemplate += `
     	<div class="container">
             <a href="${unity}" title="Play Online Now (Unity Web Player)">
-				<img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="symbols/unity.svg" >        
+				<img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="${prefix}symbols/unity.svg" >        
 				<div class="overlay">
                 	<div class="text">UNITY</div>
 				</div>
@@ -342,10 +573,11 @@ function doGrid(){
 
         if (src!=""){
         	someico=true;
+        	tag = src_desc_to_tag(src_desc)
         	cardTemplate += `
     	<div class="container">
-            <a href="${src}" title="Download Source Code (${src_desc})">
-				<img width="50" height="50" class="icon" alt="Download Source Code (${src_desc})" src="symbols/source.svg">        
+            <a href="${src}" title="Download Source Code">
+				<img width="50" height="50" class="icon" alt="Download Source Code (${src_desc})" src="${prefix}symbols/source.svg">        
 				<div class="overlay">
 					<div class="text">SOURCE</div>
 				</div>
@@ -357,7 +589,7 @@ function doGrid(){
 
         	cardTemplate += `
     	<div class="container">
-            	<img width="50" height="50" class="icon" alt="" src="symbols/blank.svg">        
+            	<img width="50" height="50" class="icon" alt="" src="${prefix}symbols/blank.svg">        
 
     	</div>`
       	}
@@ -368,8 +600,36 @@ function doGrid(){
 	return s;
 }
 
+
+
+
+function generatePage(){
+	var filteredPage=eval(indexTemplate)
+	var filteredPageMinified = minify(filteredPage,minifyOptions)
+
+	var pageName="";
+	pageName+=platformToFilter
+	if (tagToFilter!==""){
+		if (pageName.length>0){
+			pageName+="-";
+		}
+		pageName+=tagToFilter;
+	}
+
+	var categoryPagePath = `output/categories/${pageName}.html`
+	function t(temp){
+	fs.writeFile(temp,filteredPageMinified, function(err) {
+	        if(err) return console.log(err);
+	        gzipFile(temp)
+	    })}
+	t(categoryPagePath)
+
+	console.log("filtered page : "+tagToFilter+"\t"+platformToFilter)
+}
+
 var page=eval(indexTemplate)
 var pageMinified = minify(page,minifyOptions)
+console.log("index.html")
 
 fs.writeFile("output/index.html",pageMinified, function(err) {
         if(err) return console.log(err);
@@ -377,6 +637,26 @@ fs.writeFile("output/index.html",pageMinified, function(err) {
 
     })
 
+for (tag of tagList){
+	tagToFilter = tag
+	platformToFilter="";
+	generatePage();
+}
+
+for (platform of platformList){
+	platformToFilter = platform
+	tagToFilter="";
+	generatePage();
+}
+
+
+for (tag of tagList){
+	tagToFilter = tag
+	for (platform of platformList){
+		platformToFilter = platform
+		generatePage();
+	}
+}
 
 var feedOptions = {
 	title:"increpare games",

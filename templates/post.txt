@@ -21,6 +21,9 @@ body {
   width: 600px;
   margin: auto;
 }
+.taglink {
+  font-style: italic;
+}
 img {
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: auto;
@@ -92,7 +95,7 @@ img {
     </ul>
     <p>
           <hr>
-      If you want to talk to me about this, drop me a mail at <a href="mailto:analytic@gmail.com">analytic@gmail.com</a>.
+      Feel welcome to drop me a line at <a href="mailto:analytic@gmail.com">analytic@gmail.com</a> if you've questions/comments :)
       <p>
       </div>
         <p>
