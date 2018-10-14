@@ -91,10 +91,29 @@ hr {
   margin: 8px;
   position: relative;
 }
-.icon {
+
+
+.smcontainer {
+  height: 50px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
   display: inline;
   opacity: 0.4;
 }
+
+
 .overlay, .text {
   position: absolute;
 }
@@ -107,12 +126,33 @@ hr {
   top: 0;
   width: 50px;
 }
-.container:hover .icon {
+.container:hover .icon, .container:hover .smicon{
   opacity: 0.25;
 }
 .container:hover .overlay {
   opacity: 1;
 }
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
 .text {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -147,6 +187,7 @@ select {
         Filter by : ${doFilterLists()}
     </div>
   ${doGrid()}
+
 </body>
 
 </html>

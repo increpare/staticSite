@@ -357,6 +357,9 @@ function doFilterLists(){
 	var indexpath = (platformToFilter.length>0 || tagToFilter.length>0)?"../index.html":"index.html"
 
 	function getPath(plat,tag){
+		if (plat===platformToFilter && tag===tagToFilter){
+			return "#";
+		}
 		var currentlyIndex = platformToFilter==="" && tagToFilter===""
 		var targetIsIndex = (plat===""||plat==="platform")&&(tag===""||tag==="engine");
 		tag = tag_to_urlsafe(tag);
@@ -389,7 +392,7 @@ function doFilterLists(){
 
 
 	//1 platofrm list
-	result+=`<select onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
+	result+=`<select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
 
 	function sortByNumGames_platformVary(plat_a,plat_b){
 		var n_a = getGameCount(plat_a,tagToFilter);
@@ -418,7 +421,7 @@ function doFilterLists(){
 	result+=`</select>\n`
 
 	//2 tag list
-	result+=`<select onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
+	result+=`<select id="tag_select" onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
 
 	function sortByNumGames_tagVary(tag_a,tag_b){
 		var n_a = getGameCount(platformToFilter,tag_a);
@@ -446,6 +449,13 @@ function doFilterLists(){
 	}
 	result+=`</select>\n`
 
+
+	result += `<script>
+window.addEventListener('pageshow', function(event) {
+     tag_select.value = "#"
+     plat_select.value = "#"
+});
+	</script>\n`
 	return result;
 }
 
@@ -477,6 +487,12 @@ function doGrid(){
 		var pageName = r[15]
 		var niceDate = r[16]
 
+		var icocount = ((html!="")?1:0)+((win!="")?1:0)+((mac!="")?1:0)+((linux!="")?1:0)+((flash!="")?1:0)+((zip!="")?1:0)+((unity!="")?1:0)+((src!="")?1:0);
+		var containertype = icocount<5?"container":"smcontainer";
+		var overlaytype = icocount<5?"overlay":"smoverlay";
+		var icontype = icocount<5?"icon":"smicon";
+		var iconsize = icocount<5?"50":"30";
+
 		var cardTemplate = `
     <div class="card">
 		<a href="${prefix}game/${pageName}">
@@ -489,10 +505,10 @@ function doGrid(){
         if (html!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${html}" title="Play Now (HTML5)" >
-            	<img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="${prefix}symbols/html5.svg" >        
-            	<div class="overlay">
+            	<img alt="Play Now (HTML5)" width="${iconsize}" height="${iconsize}" class="${icontype}" src="${prefix}symbols/html5.svg" >        
+            	<div class="${overlaytype}">
                 	<div class="text">HTML5</div>
              	</div>
             </a>
@@ -502,10 +518,10 @@ function doGrid(){
         if (win!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${win}" title="Download for Windows" >
-              	<img alt="Download for Windows" width="50" height="50" class="icon" src="${prefix}symbols/windows.svg">        
-              	<div class="overlay">
+              	<img alt="Download for Windows" width="${iconsize}" height="${iconsize}" class="${icontype}" src="${prefix}symbols/windows.svg">        
+              	<div class="${overlaytype}">
                 	<div class="text">WIN</div>
               	</div>
             </a>
@@ -516,10 +532,10 @@ function doGrid(){
         if (mac!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${mac}" title="Download for macOS" >
-				<img alt="Download for macOS" width="50" height="50" class="icon" src="${prefix}symbols/apple.svg">        
-				<div class="overlay">
+				<img alt="Download for macOS" width="${iconsize}" height="${iconsize}" class="${icontype}" src="${prefix}symbols/apple.svg">        
+				<div class="${overlaytype}">
 					<div class="text">MAC</div>
 				</div>
             </a>
@@ -530,10 +546,10 @@ function doGrid(){
         if (linux!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${linux}" title="Download for Linux" >
-			<img alt="Download for Linux" width="50" height="50" class="icon" src="${prefix}symbols/linux.svg">        
-			<div class="overlay">
+			<img alt="Download for Linux" width="${iconsize}" height="${iconsize}" class="${icontype}" src="${prefix}symbols/linux.svg">        
+			<div class="${overlaytype}">
 				<div class="text">LINUX</div>
 			</div>
             </a>
@@ -543,10 +559,10 @@ function doGrid(){
         if (flash!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${flash}"  title="Play Online Now (Flash)" >
-				<img alt="Play Online Now (Flash)" width="50" height="50" class="icon" src="${prefix}symbols/flash.svg">        
-				<div class="overlay">
+				<img alt="Play Online Now (Flash)" width="${iconsize}" height="${iconsize}" class="${icontype}" src="${prefix}symbols/flash.svg">        
+				<div class="${overlaytype}">
 					<div class="text">FLASH</div>
 				</div>
             </a>
@@ -556,10 +572,10 @@ function doGrid(){
         if (zip!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${zip}" title="Download Zip File" >
-				<img alt="Download Zip File"  width="50" height="50" class="icon"  src="${prefix}symbols/zip.svg">        
-				<div class="overlay">
+				<img alt="Download Zip File"  width="${iconsize}" height="${iconsize}" class="${icontype}"  src="${prefix}symbols/zip.svg">        
+				<div class="${overlaytype}">
 					<div class="text">ZIP</div>
 				</div>
             </a>
@@ -569,10 +585,10 @@ function doGrid(){
         if (unity!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${unity}" title="Play Online Now (Unity Web Player)">
-				<img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="${prefix}symbols/unity.svg" >        
-				<div class="overlay">
+				<img width="${iconsize}" height="${iconsize}" class="${icontype}" alt="Play Online Now (Unity Web Player)"  src="${prefix}symbols/unity.svg" >        
+				<div class="${overlaytype}">
                 	<div class="text">UNITY</div>
 				</div>
             </a>
@@ -582,10 +598,10 @@ function doGrid(){
         if (src!=""){
         	someico=true;
         	cardTemplate += `
-    	<div class="container">
+    	<div class="${containertype}">
             <a href="${src}" title="Download Source Code">
-				<img width="50" height="50" class="icon" alt="Download Source Code (${src_desc})" src="${prefix}symbols/source.svg">        
-				<div class="overlay">
+				<img width="${iconsize}" height="${iconsize}" class="${icontype}" alt="Download Source Code (${src_desc})" src="${prefix}symbols/source.svg">        
+				<div class="${overlaytype}">
 					<div class="text">SOURCE</div>
 				</div>
             </a>
@@ -595,8 +611,8 @@ function doGrid(){
       	if (someico===false){
 
         	cardTemplate += `
-    	<div class="container">
-            	<img width="50" height="50" class="icon" alt="" src="${prefix}symbols/blank.svg">        
+    	<div class="${containertype}">
+            	<img width="${iconsize}" height="${iconsize}" class="${icontype}" alt="" src="${prefix}symbols/blank.svg">        
 
     	</div>`
       	}
@@ -625,7 +641,6 @@ function generatePage(plat,tag){
 	}
 
 	var categoryPagePath = `output/categories/${pageName}.html`
-	console.log(categoryPagePath);
 	fs.writeFile(categoryPagePath,filteredPageMinified, function(err) {
 	        if(err) return console.log(err);
 	        gzipFile(categoryPagePath)
@@ -702,7 +717,7 @@ var feed_str = `<?xml version="1.0" encoding="UTF-8" ?>
 `
 
 
-for (var i=0;i<Math.min(20,table.length);i++){
+for (var i=0;i<Math.min(50,table.length);i++){
 	var r = table[i];
 
 	var title = r[0]

@@ -9,13 +9,175 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Wed, 20 Jun 2018 16:00:54 GMT</pubDate>
-  <lastBuildDate>Wed, 20 Jun 2018 16:00:54 GMT</lastBuildDate>
+  <pubDate>Sun, 14 Oct 2018 00:42:45 GMT</pubDate>
+  <lastBuildDate>Sun, 14 Oct 2018 00:42:45 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
 
+  <item>
+    <title>Fahnenstange / Flagstaff</title>
+    <pubDate>Sat, 13 Oct 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/fahnenstange-flagstaff.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/fahnenstange-flagstaff.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Drehspiel / Rotgame</title>
+    <pubDate>Thu, 11 Oct 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/drehspiel-rotgame.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/drehspiel-rotgame.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>The Purpose of Water</title>
+    <pubDate>Sat, 29 Sep 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/the-purpose-of-water.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>Thanks to @undefdev for giving some feedback about the german translation (which leaves a lot to be desired, but that's my fault, not his -_- ), font by @managore</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/the-purpose-of-water.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Make way!</title>
+    <pubDate>Sat, 11 Aug 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/make-way.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/make-way.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Slide Pull</title>
+    <pubDate>Sat, 11 Aug 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/slide-pull.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/slide-pull.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Push Pull</title>
+    <pubDate>Sat, 11 Aug 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/push-pull.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/push-pull.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>alternatey</title>
+    <pubDate>Sat, 11 Aug 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/alternatey.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/alternatey.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>car crash</title>
+    <pubDate>Sat, 11 Aug 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/car-crash.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/car-crash.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Kindertotenlieder</title>
+    <pubDate>Sun, 15 Jul 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/kindertotenlieder.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/kindertotenlieder.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Unclean Residues</title>
+    <pubDate>Fri, 13 Jul 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/unclean-residues.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>thanks to https://dragonlab.de and https://twitter.com/adamstreck for testing : )</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/unclean-residues.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>an OK multiban level</title>
+    <pubDate>Fri, 13 Jul 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/an-ok-multiban-level.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/an-ok-multiban-level.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>two</title>
+    <pubDate>Thu, 28 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/two.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/two.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Seize the flag!</title>
+    <pubDate>Sun, 24 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/seize-the-flag.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/seize-the-flag.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>a distant sunset</title>
+    <pubDate>Sun, 24 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/a-distant-sunset.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/a-distant-sunset.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Shy Snake</title>
+    <pubDate>Fri, 22 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/shy-snake.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/shy-snake.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Sokogoban</title>
+    <pubDate>Thu, 21 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/sokogoban.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/sokogoban.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Separate the Lines</title>
+    <pubDate>Wed, 20 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/separate-the-lines.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/separate-the-lines.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>bedtime</title>
+    <pubDate>Wed, 20 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/bedtime.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/bedtime.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
   <item>
     <title>No heroes necessary</title>
     <pubDate>Tue, 19 Jun 2018 22:00:00 GMT</pubDate>
@@ -194,6 +356,114 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/b-a-b-a.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Flag Quiz</title>
+    <pubDate>Sat, 16 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/flag-quiz.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/flag-quiz.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Flickgame Privacy Policy</title>
+    <pubDate>Sat, 16 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/flickgame-privacy-policy.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/flickgame-privacy-policy.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Walking The Dog</title>
+    <pubDate>Sat, 16 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/walking-the-dog.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/walking-the-dog.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Slot Machine</title>
+    <pubDate>Sun, 10 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/slot-machine.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/slot-machine.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Gabelstapler</title>
+    <pubDate>Sat, 09 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/gabelstapler.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/gabelstapler.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>I am a gust of wind</title>
+    <pubDate>Fri, 08 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/i-am-a-gust-of-wind.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/i-am-a-gust-of-wind.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Karamell</title>
+    <pubDate>Thu, 07 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/karamell.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/karamell.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>I want to grind myself into dust</title>
+    <pubDate>Wed, 06 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/i-want-to-grind-myself-into-dust.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/i-want-to-grind-myself-into-dust.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>die schoene Steinmetzin</title>
+    <pubDate>Wed, 06 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/die-schoene-steinmetzin.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/die-schoene-steinmetzin.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>der Hydra Krypta</title>
+    <pubDate>Tue, 05 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/der-hydra-krypta.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>bifurceyshionssssss</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/der-hydra-krypta.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Bring the ice cube to the goal without exposing it to heat.</title>
+    <pubDate>Mon, 04 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>should I 've made the icecube slippery? -_-</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Des Poseidons Dreizack</title>
+    <pubDate>Sun, 03 Jun 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/des-poseidons-dreizack.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/des-poseidons-dreizack.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>

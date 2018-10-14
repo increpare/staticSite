@@ -803,9 +803,9 @@ untitled flickgame 2;2015/05/03;untitled2.png;focus target;;http://flickgame.org
 untitled flickgame;2015/05/03;untitled.png;gretting sumk;;http://www.flickgame.org/play.html?p=18b375321ac369969694;;;;http://www.flickgame.org/play.html?p=18b375321ac369969694;flickgame;;;
 Dignity of manner;2015/05/05;savoureverymoment.png;sliiide;;http://www.flickgame.org/play.html?p=4879118a55097f1deeff;;;;http://www.flickgame.org/play.html?p=4879118a55097f1deeff;flickgame;;;
 plingpling;2015/05/08;plingpling.png;pling;;http://www.plingpling.org;;;;https://github.com/increpare/plingpling;HTML5;;;
-body paint;2015/05/26;bodypaint_img.png;make beautiful art;;http://ded.increpare.com/~locus/bodypaint;;;;http://ded.increpare.com/~locus/bodypaint_src.zip;Haxe;;;
-hair game;2015/05/26;hairgame_img.png;pa;;http://ded.increpare.com/~locus/hairgame;;;;http://ded.increpare.com/~locus/hairgame_src.zip;Haxe;;;
-night;2015/05/26;night_img.png;ba;;http://ded.increpare.com/~locus/night;;;;http://ded.increpare.com/~locus/night_src.zip;Haxe;;;
+body paint;2015/05/26;bodypaint_img.png;make beautiful art;;http://ded.increpare.com/~locus/bodypaint;;;;http://ded.increpare.com/~locus/bodypaint_src.zip;Haxegon;;;
+hair game;2015/05/26;hairgame_img.png;pa;;http://ded.increpare.com/~locus/hairgame;;;;http://ded.increpare.com/~locus/hairgame_src.zip;Haxegon;;;
+night;2015/05/26;night_img.png;ba;;http://ded.increpare.com/~locus/night;;;;http://ded.increpare.com/~locus/night_src.zip;Haxegon;;;
 ticket game;2015/06/16;ticketgame.png;000000000;;http://ded.increpare.com/~locus/ticketgame;;;;;HTML5;;;
 Shower Game;2015/06/18;showergame.png;"thanks to <a href=""http://distractionware.com"">terry</a>, <a href=""http://ludomancy.com"">daniel</a>, and <a href=""http://www.draknek.org"">alan</a> for testing";"
 <p><a href=""http://ded.increpare.com/~locus/ShowerGame_win32_2.zip"">Download for Windows (32 bit)</a><br>
@@ -815,7 +815,7 @@ Shower Game;2015/06/18;showergame.png;"thanks to <a href=""http://distractionwar
 <p><a href=""http://ded.increpare.com/~locus/ShowerGame_src_2.zip"">Download Source</a> (Unity 5.1)</p>
 
 				";;http://ded.increpare.com/~locus/ShowerGame_osx.zip;http://ded.increpare.com/~locus/ShowerGame_win64_2.zip;http://ded.increpare.com/~locus/ShowerGame_linux_2.zip;http://ded.increpare.com/~locus/ShowerGame_src_2.zip;Unity 5.1;;;
-Blackness and Stars;2015/06/20;glowstars.png;light on light;;http://ded.increpare.com/~locus/blackness_and_stars;;;;http://ded.increpare.com/~locus/Blackness_and_Stars_src.zip;Haxe;;;
+Blackness and Stars;2015/06/20;glowstars.png;light on light;;http://ded.increpare.com/~locus/blackness_and_stars;;;;http://ded.increpare.com/~locus/Blackness_and_Stars_src.zip;Haxegon;;;
 Trip;2015/06/20;tripico.png;the path to;"
 <p><a href=""http://ded.increpare.com/~locus/Trip_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Trip_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -824,7 +824,7 @@ Trip;2015/06/20;tripico.png;the path to;"
 <p><a href=""http://ded.increpare.com/~locus/Trip_src.zip"">Download Source</a> (Unity 5.1)</p>
 
 				";;http://ded.increpare.com/~locus/Trip_osx.zip;http://ded.increpare.com/~locus/Trip_win64.zip;http://ded.increpare.com/~locus/Trip_linux.zip;http://ded.increpare.com/~locus/Trip_src.zip;Unity 5.1;;;
-Cookie Game;2015/06/21;cookiegame.png;nom;;http://ded.increpare.com/~locus/cookiegame/;;;;http://ded.increpare.com/~locus/cookiegame_src.zip;Haxe;;;
+Cookie Game;2015/06/21;cookiegame.png;nom;;http://ded.increpare.com/~locus/cookiegame/;;;;http://ded.increpare.com/~locus/cookiegame_src.zip;Haxegon;;;
 Door Game;2015/06/22;doorgame.png;*** ***** ** ******;"
 <p><a href=""http://ded.increpare.com/~locus/DoorGame_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/DoorGame_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -833,7 +833,7 @@ Door Game;2015/06/22;doorgame.png;*** ***** ** ******;"
 <p><a href=""http://ded.increpare.com/~locus/DoorGame_src.zip"">Download Source</a> (Unity 5.1 – slow connection where I am right now – haven’t uploaded the source yet)</p>
 
 				";;http://ded.increpare.com/~locus/DoorGame_osx.zip;http://ded.increpare.com/~locus/DoorGame_osx.zip;http://ded.increpare.com/~locus/DoorGame_linux.zip;http://ded.increpare.com/~locus/DoorGame_src.zip;Unity 5.1;;;
-Carriage Game;2015/06/23;carriagegame.png;choo choo;;http://ded.increpare.com/~locus/carriagegame/;;;;http://ded.increpare.com/~locus/carriagegame.zip;Haxe;;;
+Carriage Game;2015/06/23;carriagegame.png;choo choo;;http://ded.increpare.com/~locus/carriagegame/;;;;http://ded.increpare.com/~locus/carriagegame.zip;Haxegon;;;
 Bedrooms;2015/07/01;bedrooms.png;7;"
 <p><a href=""http://ded.increpare.com/~locus/Bedrooms_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/Bedrooms_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -842,7 +842,7 @@ Bedrooms;2015/07/01;bedrooms.png;7;"
 <p><a href=""http://ded.increpare.com/~locus/Bedrooms_src.zip"">Download Source</a> (Unity 5.1 )</p>
 
 				";;http://ded.increpare.com/~locus/Bedrooms_osx.zip;http://ded.increpare.com/~locus/Bedrooms_win64.zip;;http://ded.increpare.com/~locus/Bedrooms_src.zip;Unity 5.1;;;
-Forgetris;2015/08/22;forgetris.png;. ;;http://ded.increpare.com/~locus/forgetris;;;;http://ded.increpare.com/~locus/forgetris.zip;Haxe;;;
+Forgetris;2015/08/22;forgetris.png;. ;;http://ded.increpare.com/~locus/forgetris;;;;http://ded.increpare.com/~locus/forgetris.zip;Haxegon;;;
 Subway Adventure;2015/08/22;subwayadventure.png;"thanks to terry for adding some hacks to <a href=""http://boscaceoil.net"">Bosca Ceoil</a> for me :D";"
 <p><a href=""http://ded.increpare.com/~locus/subway%20adventure_win32.zip"">Download for Windows (32 bit)</a><br>
 <a href=""http://ded.increpare.com/~locus/subway%20adventure_win64.zip"">Download for Windows (64 bit)</a><br>
@@ -864,12 +864,12 @@ one of the worst things I have done;2015/08/24;worstthings.png;hourglass with fl
 clone avoid;2015/09/02;cloneavoid.png;bloop bloop;"<p>(notice: engine is in alpha, all crash feedback welcome – use the engine at your own risk. It’ll appear in a more documented/less broken form in the future, quite likely)</p>
 
 				";http://ded.increpare.com/~locus/clone_avoid;;;;;Zeedonk;;;
-an hour outside of time;2015/10/22;outsideoftime.png;outsideoftime.png;;http://ded.increpare.com/~locus/AnHourOutsideOfTime/;;;;https://github.com/increpare/AnHourOutsideOfTime;Haxe;;;
+an hour outside of time;2015/10/22;outsideoftime.png;outsideoftime.png;;http://ded.increpare.com/~locus/AnHourOutsideOfTime/;;;;https://github.com/increpare/AnHourOutsideOfTime;Haxegon;;;
 On learning that the night will soon be over;2015/10/22;hearingnews.png;aaah;;http://ded.increpare.com/~locus/sunrise;;;;;HTML5;;;
-i love tomatoes;2015/10/23;tomatolover.png;do i?;;http://ded.increpare.com/~locus/ilovetomatoes;;;;http://ded.increpare.com/~locus/tomato_src.zip;Haxe;;;
-Who do you love?;2015/10/24;whodoyoulove.png;Who do you love?;;http://ded.increpare.com/~locus/whodoyoulove;;;;https://github.com/increpare/whodoyoulove;Haxe;;;
-untitled flickgame 3;2015/10/26;deserving.png;to;;http://ded.increpare.com/~locus/untitledflickgame3.html;;;;;Flickgame;;;
-vampire;2015/11/03;vampire.png;umpire;;http://ded.increpare.com/~locus/vampire/;;;;http://ded.increpare.com/~locus/vampire_src.zip;Haxe;;;
+i love tomatoes;2015/10/23;tomatolover.png;do i?;;http://ded.increpare.com/~locus/ilovetomatoes;;;;http://ded.increpare.com/~locus/tomato_src.zip;Haxegon;;;
+Who do you love?;2015/10/24;whodoyoulove.png;Who do you love?;;http://ded.increpare.com/~locus/whodoyoulove;;;;https://github.com/increpare/whodoyoulove;Haxegon;;;
+untitled flickgame 3;2015/10/26;deserving.png;to;;http://ded.increpare.com/~locus/untitledflickgame3.html;;;;;flickgame;;;
+vampire;2015/11/03;vampire.png;umpire;;http://ded.increpare.com/~locus/vampire/;;;;http://ded.increpare.com/~locus/vampire_src.zip;Haxegon;;;
 snortal;2015/11/04;snortal.png;"via a conversation with <a href=""http://www.twitter.com/danielben"">@danielben</a>. testing courtesy of <a href=""http://www.twitter.com/robin_b"">@robin_b</a>";;http://www.puzzlescript.net/play.html?p=85124d44f37835d0bcbf;;;;http://www.puzzlescript.net/editor.html?hack=85124d44f37835d0bcbf;PuzzleScript;;;
 2plus3;2015/11/05;2plus3.png;+;"
 <p><a href=""http://ded.increpare.com/~locus/2plus3_win32.zip"">Download for Windows (32 bit)</a><br>
@@ -879,13 +879,13 @@ snortal;2015/11/04;snortal.png;"via a conversation with <a href=""http://www.twi
 <p><a href=""http://ded.increpare.com/~locus/2plus3_src.zip"">Download Source</a> (Unity 5.2)</p>
 
 				";;http://ded.increpare.com/~locus/2plus3_osx.zip;http://ded.increpare.com/~locus/2plus3_win64.zip;http://ded.increpare.com/~locus/2plus3_linux.zip;http://ded.increpare.com/~locus/2plus3_src.zip;Unity 5.2;;;
-anesthesia;2015/11/13;anesthesia.png;ººº;;http://ded.increpare.com/~locus/anesthesia;;;;http://ded.increpare.com/~locus/anesthesia_src.zip;Haxe;;;
-paaaaaarty;2015/11/19;paaarty.png;pa+rty;;http://ded.increpare.com/~locus/paaaarty/;;;;http://ded.increpare.com/~locus/paaaarty_src.zip;Haxe;;;
+anesthesia;2015/11/13;anesthesia.png;ººº;;http://ded.increpare.com/~locus/anesthesia;;;;http://ded.increpare.com/~locus/anesthesia_src.zip;Haxegon;;;
+paaaaaarty;2015/11/19;paaarty.png;pa+rty;;http://ded.increpare.com/~locus/paaaarty/;;;;http://ded.increpare.com/~locus/paaaarty_src.zip;Haxegon;;;
 what follows;2015/11/19;whatfollows.png;:;;http://ded.increpare.com/~locus/whatfollows/;;;;;HTML;;;
 you complete me;2015/12/23;youcompleteme.png;*;;http://www.puzzlescript.net/play.html?p=caed4b1b41c6366464f7;;;;http://www.puzzlescript.net/editor.html?hack=caed4b1b41c6366464f7;PuzzleScript;;;
-writing;2016/01/03;writing.png;;;https://ded.increpare.com/~locus/writing/;;;;https://github.com/increpare/writing-game;Haxe;;;
+writing;2016/01/03;writing.png;;;https://ded.increpare.com/~locus/writing/;;;;https://github.com/increpare/writing-game;Haxegon;;;
 routine;2016/01/04;routine.png;bring bring, bring bring;;http://ded.increpare.com/~locus/routine;;;;;HTML;;;
-perfect club;2016/01/24;perfectclub.png;doop doop doop;;http://ded.increpare.com/~locus/perfectclub;;;;http://ded.increpare.com/~locus/dancegame_src.zip;Haxe;;;
+perfect club;2016/01/24;perfectclub.png;doop doop doop;;http://ded.increpare.com/~locus/perfectclub;;;;http://ded.increpare.com/~locus/dancegame_src.zip;Haxegon;;;
 your name;2016/01/24;yourname.png;just pretend you're called bob;;https://ded.increpare.com/~locus/yourname.html;;;;;HTML;;;
 Stephen’s Sausage Roll;2016/04/18;increpareicon.png;Many years work...;"
 <p><a href=""http://www.stephenssausageroll.com"">website</a> (I get a 90% cut, includes drm-free version + steam key)<br>
@@ -894,11 +894,11 @@ Stephen’s Sausage Roll;2016/04/18;increpareicon.png;Many years work...;"
 
 				";;http://www.stephenssausageroll.com;http://www.stephenssausageroll.com;http://www.stephenssausageroll.com;;Unity;;;
 dream borer;2016/04/21;dreamborer.png;. ^ .;;https://ded.increpare.com/~locus/dreamborer/;;;;https://ded.increpare.com/~locus/dreamborer/DreamBorer.zip;Haxegon;;;
-geometry construction set;2016/05/01;gcs.png;wxyz;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;;;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;Flickgame;;;
-Paint Anything;2016/05/01;paintperson.png;paint anything;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;;;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;Flickgame;;;
-sleepy person;2016/05/01;sleepyperson.png;cruelty;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;;;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;Flickgame;;;
+geometry construction set;2016/05/01;gcs.png;wxyz;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;;;;http://www.flickgame.org/play.html?p=7fa908d6f8353d20df93ee78e16c4c6f;flickgame;;;
+Paint Anything;2016/05/01;paintperson.png;paint anything;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;;;;http://www.flickgame.org/play.html?p=3c1ab7fc5b9fedc2625876830fe0f40a;flickgame;;;
+sleepy person;2016/05/01;sleepyperson.png;cruelty;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;;;;http://www.flickgame.org/play.html?p=ce51e76623cae7dd4effcc0ab93c42fb;flickgame;;;
 I Can Write;2016/05/03;icanwrite.png;baaaah;;http://ded.increpare.com/~locus/icanwrite;;;;;HTML;;;
-Invariance;2016/06/22;invariance.png;tempora mutantur;;http://ded.increpare.com/~locus/Invariance;;;;http://ded.increpare.com/~locus/invariance.zip;Haxe;;;
+Invariance;2016/06/22;invariance.png;tempora mutantur;;http://ded.increpare.com/~locus/Invariance;;;;http://ded.increpare.com/~locus/invariance.zip;Haxegon;;;
 Reminders;2016/08/03;reminder.png;sfss.png;"
 <p><a href=""https://ded.increpare.com/~locus/reminders/"">play online now</a> (html)</p>
 <p><a href=""https://ded.increpare.com/~locus/reminders.zip"">download source</a></p>
@@ -911,30 +911,30 @@ The Word;2017/06/12;the_word.png;everyone likes a goodly collaboration;"
 <p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" > source code (unity 5.6)</a></p><a href=""http://ded.increpare.com/~locus/theword_src.zip"" >
 </a><p>(Collaboration with the wonderful </a><a href=""https://www.terrycavanaghgames.com"">terry</a> )</p>
 
-				";https://ded.increpare.com/~locus/the_word/;;;;http://ded.increpare.com/~locus/theword_src.zip;Haxe;;;
-To the couple two rows in front of us;2017/06/12;the_couple.png;foreground and background;;https://ded.increpare.com/~locus/the_couple_two_rows_in_front_of_us.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;Flickgame;;;
-Waiting Game;2017/06/12;waiting_game.png;i should've dilated the time intervals a bit probably;;http://ded.increpare.com/~locus/waiting_game.html;;;;http://www.flickgame.org/play.html?p=664a5a4a984e27ed1d433988fe30095a;Flickgame;;;
-Walking Home;2017/06/12;walking_home.png;walking_home.jpg;;http://ded.increpare.com/~locus/walking_home.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;Flickgame;;;
-press space to select;2017/06/14;presspacetoselect.png;i don't know!;;http://ded.increpare.com/~locus/arrowkeystoselectspacetoselect.html;;;;http://www.flickgame.org/flickuplay.html?p=933f5f79d5c9309917c15009a126aa53;Flickgame;;;
-Let’s go to the beach!;2017/06/19;thebeach.png;nasty!;;https://ded.increpare.com/~locus/thebeach.html;;;;http://www.flickgame.org/play.html?p=fae30becd8e1e3dcedf9c6db1fcecbe4;Flickgame;;;
+				";https://ded.increpare.com/~locus/the_word/;;;;http://ded.increpare.com/~locus/theword_src.zip;Haxegon;;;
+To the couple two rows in front of us;2017/06/12;the_couple.png;foreground and background;;https://ded.increpare.com/~locus/the_couple_two_rows_in_front_of_us.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;flickgame;;;
+Waiting Game;2017/06/12;waiting_game.png;i should've dilated the time intervals a bit probably;;http://ded.increpare.com/~locus/waiting_game.html;;;;http://www.flickgame.org/play.html?p=664a5a4a984e27ed1d433988fe30095a;flickgame;;;
+Walking Home;2017/06/12;walking_home.png;walking_home.jpg;;http://ded.increpare.com/~locus/walking_home.html;;;;http://www.flickgame.org/play.html?p=7ddfc8319e9ec389d5f7d739fda4b002;flickgame;;;
+press space to select;2017/06/14;presspacetoselect.png;i don't know!;;http://ded.increpare.com/~locus/arrowkeystoselectspacetoselect.html;;;;http://www.flickgame.org/flickuplay.html?p=933f5f79d5c9309917c15009a126aa53;flickgame;;;
+Let’s go to the beach!;2017/06/19;thebeach.png;nasty!;;https://ded.increpare.com/~locus/thebeach.html;;;;http://www.flickgame.org/play.html?p=fae30becd8e1e3dcedf9c6db1fcecbe4;flickgame;;;
 Questionnaire;2017/06/20;questionnaire.png;hmmm;;http://ded.increpare.com/~locus/questionnaire.html;;;;http://ded.increpare.com/~locus/questionnaire.tws;Twine;;;
-The Londoner’s Calendar;2017/06/20;calendar.png;cyclic;;http://ded.increpare.com/~locus/The_Londoners_Calendar.html;;;;http://www.flickgame.org/play.html?p=1a6644489c353d3b44d8536a0703eb4a;Flickgame;;;
-avocado;2017/06/22;3avocado.png;all art comes from autobiography.  nothing is more treacherous than an overripe black avocado.;;http://ded.increpare.com/~locus/avocado.html;;;;http://www.flickgame.org/play.html?p=136433b9363b6d64edc041241ec1e45f;Flickgame;;;
-battlegrounds;2017/06/22;5battlegrounds.png;pew pew;;http://ded.increpare.com/~locus/battlegrounds.html;;;;http://www.flickgame.org/play.html?p=d42340694dca3e3777a8ef7a77143d1f;Flickgame;;;
-body parts;2017/06/22;10bodyparts.png;head hand foot arm leg;;http://ded.increpare.com/~locus/bodyparts.html;;;;http://www.flickgame.org/play.html?p=21ebee5e3b224165708b70d19c0dd11a;Flickgame;;;
-cheironomy;2017/06/22;6cheironomy.png;keeping time;;http://ded.increpare.com/~locus/cheironomy.html;;;;http://www.flickgame.org/play.html?p=2bc4b199aff057c8dccfcaf38c547500;Flickgame;;;
-chinese calligraphy tutorial;2017/06/22;4chinesecalligraphy.png;INK STONE;;http://ded.increpare.com/~locus/chinesecalligraphy.html;;;;http://www.flickgame.org/play.html?p=76f1e819ac580f85357746c922dad08a;Flickgame;;;
-cotton buds;2017/06/22;1cottonbuds.png;bilateral;;http://ded.increpare.com/~locus/cottonbuds.html;;;;http://www.flickgame.org/play.html?p=a6281e2e7e019b3ad2d5b1e47b8a7a1b;Flickgame;;;
-counting;2017/06/22;15counting.png;delish;;http://ded.increpare.com/~locus/counting.html;;;;http://www.flickgame.org/play.html?p=42e157b1f566abf41bc2e7d18cfb1a57;Flickgame;;;
-drumkit;2017/06/22;16drumkit.png;soundless bol;;http://ded.increpare.com/~locus/drumkit.html;;;;http://www.flickgame.org/play.html?p=b9f5511730e1629a9e10dbadbafaeb1c;Flickgame;;;
-find the butthole;2017/06/22;11findthebutthole.png;some people are supernaturally talented at this;;http://ded.increpare.com/~locus/findthebutthole.html;;;;http://www.flickgame.org/play.html?p=fec97f3aff7147eb384019439ed628a6;Flickgame;;;
-find your butthole;2017/06/22;12findyourbutthole.png;a rare proprioception;;http://ded.increpare.com/~locus/findyourbutthole.html;;;;http://www.flickgame.org/play.html?p=5ca46924379814794f8cf32e36453229;Flickgame;;;
-getting dressed;2017/06/22;2gettingdressed.png;non-commutative actions required, but brain is still out of order;;http://ded.increpare.com/~locus/gettingdressed.html;;;;http://www.flickgame.org/play.html?p=0dfc5ab46315146647c1aebcc545bd87;Flickgame;;;
-mango;2017/06/22;14mango.png;1 2 3;;http://ded.increpare.com/~locus/mango.html;;;;http://www.flickgame.org/play.html?p=0977545ed619ba35059ed902a3300726;Flickgame;;;
-people what get naked easily;2017/06/22;8peoplewhatgetnakedeasily.png;you know who you are;;http://ded.increpare.com/~locus/peoplewhatgetnakedeasily.html;;;;http://www.flickgame.org/play.html?p=ffcecae6adb4753fef0a8a36346cb26b;Flickgame;;;
-physio;2017/06/22;9physio.png;45 second holds! 45 SECONDS;;http://ded.increpare.com/~locus/physio.html;;;;http://www.flickgame.org/play.html?p=82b15fb90846d2f003be7cb948629d55;Flickgame;;;
-squirrel;2017/06/22;7squirrel.png;so that's where it goes!;;http://ded.increpare.com/~locus/squirrel.html;;;;http://www.flickgame.org/play.html?p=4d2df7cf3b8d2989a6f4da67bbdbb970;Flickgame;;;
-summer garden;2017/06/22;13summergarden.png;every night for several months;;http://ded.increpare.com/~locus/summergarden.html;;;;http://www.flickgame.org/play.html?p=432e888ac85e8d65cd04c5b88ca463ab;Flickgame;;;
+The Londoner’s Calendar;2017/06/20;calendar.png;cyclic;;http://ded.increpare.com/~locus/The_Londoners_Calendar.html;;;;http://www.flickgame.org/play.html?p=1a6644489c353d3b44d8536a0703eb4a;flickgame;;;
+avocado;2017/06/22;3avocado.png;all art comes from autobiography.  nothing is more treacherous than an overripe black avocado.;;http://ded.increpare.com/~locus/avocado.html;;;;http://www.flickgame.org/play.html?p=136433b9363b6d64edc041241ec1e45f;flickgame;;;
+battlegrounds;2017/06/22;5battlegrounds.png;pew pew;;http://ded.increpare.com/~locus/battlegrounds.html;;;;http://www.flickgame.org/play.html?p=d42340694dca3e3777a8ef7a77143d1f;flickgame;;;
+body parts;2017/06/22;10bodyparts.png;head hand foot arm leg;;http://ded.increpare.com/~locus/bodyparts.html;;;;http://www.flickgame.org/play.html?p=21ebee5e3b224165708b70d19c0dd11a;flickgame;;;
+cheironomy;2017/06/22;6cheironomy.png;keeping time;;http://ded.increpare.com/~locus/cheironomy.html;;;;http://www.flickgame.org/play.html?p=2bc4b199aff057c8dccfcaf38c547500;flickgame;;;
+chinese calligraphy tutorial;2017/06/22;4chinesecalligraphy.png;INK STONE;;http://ded.increpare.com/~locus/chinesecalligraphy.html;;;;http://www.flickgame.org/play.html?p=76f1e819ac580f85357746c922dad08a;flickgame;;;
+cotton buds;2017/06/22;1cottonbuds.png;bilateral;;http://ded.increpare.com/~locus/cottonbuds.html;;;;http://www.flickgame.org/play.html?p=a6281e2e7e019b3ad2d5b1e47b8a7a1b;flickgame;;;
+counting;2017/06/22;15counting.png;delish;;http://ded.increpare.com/~locus/counting.html;;;;http://www.flickgame.org/play.html?p=42e157b1f566abf41bc2e7d18cfb1a57;flickgame;;;
+drumkit;2017/06/22;16drumkit.png;soundless bol;;http://ded.increpare.com/~locus/drumkit.html;;;;http://www.flickgame.org/play.html?p=b9f5511730e1629a9e10dbadbafaeb1c;flickgame;;;
+find the butthole;2017/06/22;11findthebutthole.png;some people are supernaturally talented at this;;http://ded.increpare.com/~locus/findthebutthole.html;;;;http://www.flickgame.org/play.html?p=fec97f3aff7147eb384019439ed628a6;flickgame;;;
+find your butthole;2017/06/22;12findyourbutthole.png;a rare proprioception;;http://ded.increpare.com/~locus/findyourbutthole.html;;;;http://www.flickgame.org/play.html?p=5ca46924379814794f8cf32e36453229;flickgame;;;
+getting dressed;2017/06/22;2gettingdressed.png;non-commutative actions required, but brain is still out of order;;http://ded.increpare.com/~locus/gettingdressed.html;;;;http://www.flickgame.org/play.html?p=0dfc5ab46315146647c1aebcc545bd87;flickgame;;;
+mango;2017/06/22;14mango.png;1 2 3;;http://ded.increpare.com/~locus/mango.html;;;;http://www.flickgame.org/play.html?p=0977545ed619ba35059ed902a3300726;flickgame;;;
+people what get naked easily;2017/06/22;8peoplewhatgetnakedeasily.png;you know who you are;;http://ded.increpare.com/~locus/peoplewhatgetnakedeasily.html;;;;http://www.flickgame.org/play.html?p=ffcecae6adb4753fef0a8a36346cb26b;flickgame;;;
+physio;2017/06/22;9physio.png;45 second holds! 45 SECONDS;;http://ded.increpare.com/~locus/physio.html;;;;http://www.flickgame.org/play.html?p=82b15fb90846d2f003be7cb948629d55;flickgame;;;
+squirrel;2017/06/22;7squirrel.png;so that's where it goes!;;http://ded.increpare.com/~locus/squirrel.html;;;;http://www.flickgame.org/play.html?p=4d2df7cf3b8d2989a6f4da67bbdbb970;flickgame;;;
+summer garden;2017/06/22;13summergarden.png;every night for several months;;http://ded.increpare.com/~locus/summergarden.html;;;;http://www.flickgame.org/play.html?p=432e888ac85e8d65cd04c5b88ca463ab;flickgame;;;
 a story about a cat;2017/07/31;catbutt.png;thanks to terry for testing and holly for half the story;"
 <p><a href=""http://ded.increpare.com/~locus/cat_story_win32.zip"">Download for Win 32</a><br>
 <a href=""http://ded.increpare.com/~locus/cat_story_win64.zip"">Download for Win 64</a><br>
@@ -979,14 +979,14 @@ glances;2017/11/12;glances.png;"made at the lovely <a href=""http://www.berlinmi
 8 Happy Snakes;2017/12/03;happysnakes.png;nek nek nek;;https://www.puzzlescript.net/play.html?p=dab71718821751f64cd4dc9c6374d7c1;;;;https://www.puzzlescript.net/editor.html?hack=dab71718821751f64cd4dc9c6374d7c1;PuzzleScript;;;
 Hungry Kraken;2017/12/03;octothumb.png;nom nom nom;;https://www.puzzlescript.net/play.html?p=108de5a6080a5f0fcf5a7d427da73641;;;;https://www.puzzlescript.net/editor.html?hack=108de5a6080a5f0fcf5a7d427da73641;PuzzleScript;;;
 match three billiards;2018/01/02;matchthreebilliards.png;axis-aligned walls are in the game but do precisely nothing;;https://www.puzzlescript.net/play.html?p=d728ee501c17bc9b5ffc0605b7c4182f;;;;https://www.puzzlescript.net/editor.html?hack=d728ee501c17bc9b5ffc0605b7c4182f;PuzzleScript;;;
-newton;2018/01/02;newton.png;#insomniajam;;https://www.puzzlescript.net/play.html?p=6ef7fd748452f35467a895bff518c83b;;;;https://www.puzzlescript.net/editor.html?hack=6ef7fd748452f35467a895bff518c83b;Puzzlescript;;;
-unewton;2018/01/02;unewton.png;unewton;;https://www.puzzlescript.net/play.html?p=39ddc6c874c3881f2662870a7980bf86;;;;https://www.puzzlescript.net/editor.html?hack=39ddc6c874c3881f2662870a7980bf86;Puzzlescript;;;
-tinybox;2018/01/12;tinybox.png;thanks to terry cavanagh for haxegon + bosca ceoil (this is a demake of that);;http://www.tiny-box.net;;;;https://github.com/increpare/tinybox;Haxe;;;
+newton;2018/01/02;newton.png;#insomniajam;;https://www.puzzlescript.net/play.html?p=6ef7fd748452f35467a895bff518c83b;;;;https://www.puzzlescript.net/editor.html?hack=6ef7fd748452f35467a895bff518c83b;PuzzleScript;;;
+unewton;2018/01/02;unewton.png;unewton;;https://www.puzzlescript.net/play.html?p=39ddc6c874c3881f2662870a7980bf86;;;;https://www.puzzlescript.net/editor.html?hack=39ddc6c874c3881f2662870a7980bf86;PuzzleScript;;;
+tinybox;2018/01/12;tinybox.png;thanks to terry cavanagh for haxegon + bosca ceoil (this is a demake of that);;http://www.tiny-box.net;;;;https://github.com/increpare/tinybox;Haxegon;;;
 match two two by twos;2018/01/13;twbytwos.png;"abab
 cdcd";;https://www.puzzlescript.net/play.html?p=1ab15caec306c212db29113253905874;;;;https://www.puzzlescript.net/editor.html?hack=1ab15caec306c212db29113253905874;PuzzleScript;;;
 superfluous letters;2018/01/14;superfluousletters.png;wot a happy misunderstanding;"
-<p>a collaboration with <a href=""https://twitter.com/noa_cubestudio"">noa hoffmann</a> based on <a href=""https://twitter.com/noa_cubestudio/status/952328608219099140"">a misunderstanding</a></p>";https://ded.increpare.com/~locus/superfluousletters/;;;;https://github.com/increpare/superfluousletters/;Haxe;;;
-dreamings;2018/02/06;nazca.png;zzzz;;https://ded.increpare.com/~locus/dreamings;;;;http://ded.increpare.com/~locus/dreamings.zip;Haxe;;;
+<p>a collaboration with <a href=""https://twitter.com/noa_cubestudio"">noa hoffmann</a> based on <a href=""https://twitter.com/noa_cubestudio/status/952328608219099140"">a misunderstanding</a></p>";https://ded.increpare.com/~locus/superfluousletters/;;;;https://github.com/increpare/superfluousletters/;Haxegon;;;
+dreamings;2018/02/06;nazca.png;zzzz;;https://ded.increpare.com/~locus/dreamings;;;;http://ded.increpare.com/~locus/dreamings.zip;Haxegon;;;
 Gavel;2018/02/27;gavel.png;;;https://ded.increpare.com/~locus/gavel/;;;;https://ded.increpare.com/~locus/gavel/;Monogatari;;;
 Giraff;2018/02/27;giraff.png;"-
 |
@@ -994,10 +994,10 @@ Giraff;2018/02/27;giraff.png;"-
 |
 /\ /\";;https://ded.increpare.com/~locus/giraff.html;;;;https://www.flickgame.org/index.html?p=21e1342bc4c77e6e4d6cb4d970711953;flickgame;;;
 I am Me;2018/02/27;iamme.png;bzzz;;http://ded.increpare.com/~locus/iamme.html;;;;https://www.flickgame.org/index.html?p=7d1f97807ca6304bdabec93dde6d7e6e;flickgame;;;
-10 Second Sprint;2018/03/10;lauf.png;ßßß;;https://ded.increpare.com/~locus/10SekundenSprint/;;;;https://github.com/increpare/lauf;Haxe;;;
-Snow Game;2018/03/21;schneespiel.png;:snowflake:;;https://ded.increpare.com/~locus/schneespiel/;;;;https://github.com/increpare/SchneeSpiel;Haxe;;;
-5 Lap Challange;2018/04/29;5runden.png;vrum;;https://ded.increpare.com/~locus/5runden/;;;;https://github.com/increpare/5-lap-challange;Haxe;;;
-Schwung;2018/05/26;Schwung.png;woop;;https://ded.increpare.com/~locus/Schwung/;;;;https://github.com/increpare/Schwung;Haxe;;;
+10 Second Sprint;2018/03/10;lauf.png;ßßß;;https://ded.increpare.com/~locus/10SekundenSprint/;;;;https://github.com/increpare/lauf;Haxegon;;;
+Snow Game;2018/03/21;schneespiel.png;:snowflake:;;https://ded.increpare.com/~locus/schneespiel/;;;;https://github.com/increpare/SchneeSpiel;Haxegon;;;
+5 Lap Challange;2018/04/29;5runden.png;"vrum (game idea suggested by <a href=""http://twitter.com/robin_b"">@robin_b</a> . Thanks, robin!)";;https://ded.increpare.com/~locus/5runden/;;;;https://github.com/increpare/5-lap-challange;Haxegon;;;
+Schwung;2018/05/26;Schwung.png;woop;;https://ded.increpare.com/~locus/Schwung/;;;;https://github.com/increpare/Schwung;Haxegon;;;
 Garten der Medusen;2018/05/27;medusen.png;hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss hsss;;https://www.puzzlescript.net/play.html?p=a4829564ab394e720a82cf25d6c9cd91;;;;https://www.puzzlescript.net/editor.html?hack=a4829564ab394e720a82cf25d6c9cd91;PuzzleScript;;;
 Kreiseln;2018/06/03;kreislern.png;schwip schwip schwip;;https://www.puzzlescript.net/play.html?p=f5edfbbec44f7e1f43ca501b13fd67d7;;;;https://www.puzzlescript.net/editor.html?hack=f5edfbbec44f7e1f43ca501b13fd67d7;PuzzleScript;;;
 Des Poseidons Dreizack;2018/06/04;dreizack.png;;"thanks to <a href=""http://lafaceobscuredupixel.fr/pzSprt/"">Narkhos</a> for the puzzlescript sprite editor :D";https://www.puzzlescript.net/play.html?p=0d4197f327009914b72c65e16f9875f6;;;;https://www.puzzlescript.net/editor.html?hack=0d4197f327009914b72c65e16f9875f6;PuzzleScript;;;
@@ -1031,4 +1031,22 @@ the exit is under my left foot;2018/06/19;the_exit_is.png;;"thanks to <a href=""
 I SURE LOOK TASTY!;2018/06/19;isurelook.png;;;https://www.puzzlescript.net/play.html?p=072b6a248e58f8da9131769defe62dd2;;;;https://www.puzzlescript.net/editor.html?hack=072b6a248e58f8da9131769defe62dd2;PuzzleScript;;;
 Oh no I accidentally swallowed myself!;2018/06/19;ohno_i_just.png;;;https://www.puzzlescript.net/play.html?p=4e8e05148359781e153d82bde37b77dd;;;;https://www.puzzlescript.net/editor.html?hack=4e8e05148359781e153d82bde37b77dd;PuzzleScript;;;
 A cliche before bedtime;2018/06/19;acliche.png;;;https://www.puzzlescript.net/play.html?p=f2f5f7a2bd297ac0d48c68fe9cbf2a6a;;;;https://www.puzzlescript.net/editor.html?hack=f2f5f7a2bd297ac0d48c68fe9cbf2a6a;PuzzleScript;;;
-No heroes necessary;2018/06/20;noheroesnecessary.png;;;https://t.co/aWj0wNQzgm;;;;https://www.puzzlescript.net/editor.html?hack=03558e378d03bea8f074823e3b50e686;PuzzleScript;;;
+No heroes necessary;2018/06/20;noheroesnecessary.png;;;https://www.puzzlescript.net/play.html?p=03558e378d03bea8f074823e3b50e686;;;;https://www.puzzlescript.net/editor.html?hack=03558e378d03bea8f074823e3b50e686;PuzzleScript;;;
+bedtime;2018/06/21;bedtime.png;;;https://www.flickgame.org/play.html?p=03fcce19b31253e3799267a0174be703;;;;https://www.flickgame.org/index.html?p=03fcce19b31253e3799267a0174be703;flickgame;;;
+Separate the Lines;2018/06/21;separate_the_lines.png;;collab with Paco Criado;https://ded.increpare.com/~locus/separate_the_lines/;;;;https://github.com/increpare/separate_the_lines;Haxegon;;;
+Sokogoban;2018/06/22;sokogoban.png;;"thanks to <a href=""https://twitter.com/undefdev"">@undefdev</a> for testing + feedback";https://www.puzzlescript.net/play.html?p=8726ac1f3addfe42cc527c2217b848e8;;;;https://www.puzzlescript.net/editor.html?hack=8726ac1f3addfe42cc527c2217b848e8;PuzzleScript;;;
+Shy Snake;2018/06/23;shysnake.png;;"a collaboration with <a href=""http://twitter.com/freerdan"">@freerdan</a>";https://www.puzzlescript.net/play.html?p=60876d7d67b051725fea658cb67de06a;;;;https://www.puzzlescript.net/editor.html?hack=60876d7d67b051725fea658cb67de06a;PuzzleScript;;;
+a distant sunset;2018/06/25;adistantsunset.png;;;https://www.puzzlescript.net/play.html?p=50be8fcdeeec2f8d7f4a2f03e2d927e8;;;;https://www.puzzlescript.net/editor.html?hack=50be8fcdeeec2f8d7f4a2f03e2d927e8;PuzzleScript;;;
+Seize the flag!;2018/06/25;seizetheflag.png;;;https://www.puzzlescript.net/play.html?p=c4b133f966b448779e855f4b661ec15b;;;;https://www.puzzlescript.net/editor.html?hack=c4b133f966b448779e855f4b661ec15b;PuzzleScript;;;
+two;2018/06/29;two.png;;;https://ded.increpare.com/~locus/two.html;;;;https://www.flickgame.org/layers_beta.html?p=247077a2f45671b47033792657dffc75;flickgame;;;
+an OK multiban level;2018/07/14;okmultiban.png;;;https://www.puzzlescript.net/play.html?p=24e9730db668eb1b335f8154ce58d085;;;;https://www.puzzlescript.net/editor.html?hack=24e9730db668eb1b335f8154ce58d085;PuzzleScript;;;
+Unclean Residues;2018/07/14;uncleanresidues.png;thanks to https://dragonlab.de and https://twitter.com/adamstreck for testing : );;https://www.puzzlescript.net/play.html?p=f47cd8a5cb9288f6f2792d37e44c0bfc;;;;https://www.puzzlescript.net/editor.html?hack=f47cd8a5cb9288f6f2792d37e44c0bfc;PuzzleScript;;;
+Kindertotenlieder;2018/07/16;kindertotenlieder.png;;;https://ded.increpare.com/~locus/kindertotenlieder/;;;;https://github.com/increpare/Ru-ckert;translation;;;
+car crash;2018/08/12;car_crash.png;;;https://www.puzzlescript.net/play.html?p=a4a1c0b2927b6a9807ea1e80c4b5dc85;;;;https://www.puzzlescript.net/editor.html?hack=a4a1c0b2927b6a9807ea1e80c4b5dc85;PuzzleScript;;;
+alternatey;2018/08/12;alternatey.png;;;https://www.puzzlescript.net/play.html?p=24b22ced6f0eaec88a92a71e429e6f62;;;;https://www.puzzlescript.net/editor.html?hack=24b22ced6f0eaec88a92a71e429e6f62;PuzzleScript;;;
+Push Pull;2018/08/12;pushpull.png;;;https://www.puzzlescript.net/play.html?p=58a0c9341d2b6570670dd140dad52e54;;;;https://www.puzzlescript.net/editor.html?hack=58a0c9341d2b6570670dd140dad52e54;PuzzleScript;;;
+Slide Pull;2018/08/12;slidepull.png;;;https://www.puzzlescript.net/play.html?p=dafd6ddeac213fbcbfa64463e4ebc9d0;;;;https://www.puzzlescript.net/editor.html?hack=dafd6ddeac213fbcbfa64463e4ebc9d0;PuzzleScript;;;
+Make way!;2018/08/12;makeway.png;;;https://www.puzzlescript.net/play.html?p=530fb257ebc4fce66575e15a00117938;;;;https://www.puzzlescript.net/editor.html?hack=530fb257ebc4fce66575e15a00117938;PuzzleScript;;;
+The Purpose of Water;2018/09/30;derzweck.png;"Thanks to <a href=""http://twitter.com/undefdev"">@undefdev</a> for giving some feedback about the german translation (which leaves a lot to be desired, but that's my fault, not his -_- ), font by <a href=""http://twitter.com/managore"">@managore</a>";;https://ded.increpare.com/~locus/ZweckDesWassers/;;;;https://github.com/increpare/ZweckDesWassers;Haxegon;;;
+Drehspiel / Rotgame;2018/10/12;drehspiel.png;;;https://ded.increpare.com/~locus/drehspiel/;;;;https://github.com/increpare/drehspiel;Haxegon;;;
+Fahnenstange / Flagstaff;2018/10/14;fahnenstange.png;;;https://ded.increpare.com/~locus/Fahnenstange/;https://ded.increpare.com/~locus/Fahnenstange_osx.zip;https://ded.increpare.com/~locus/Fahnenstange_win64.zip;https://ded.increpare.com/~locus/Fahnenstange_linux.tar.gz;https://ded.increpare.com/~locus/Fahnenstange_src.zip;Unity 2018.2.12f1;;;
