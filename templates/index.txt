@@ -94,7 +94,8 @@ hr {
 
 
 .smcontainer {
-  height: 50px;
+  padding-top: 20px;
+  height:30px;
   width: 30px;
 }
 
