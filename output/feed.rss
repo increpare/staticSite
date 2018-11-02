@@ -9,8 +9,8 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Tue, 30 Oct 2018 15:40:51 GMT</pubDate>
-  <lastBuildDate>Tue, 30 Oct 2018 15:40:51 GMT</lastBuildDate>
+  <pubDate>Fri, 02 Nov 2018 22:26:52 GMT</pubDate>
+  <lastBuildDate>Fri, 02 Nov 2018 22:26:52 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -32,6 +32,15 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/drehspiel-rotgame.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Let yourself be guided by the stars / Lassen sie sich von den Sternen leiten</title>
+    <pubDate>Mon, 01 Oct 2018 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>inspired by mind wall</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
   <item>
@@ -455,15 +464,6 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description>should I 've made the icecube slippery? -_-</description>
     <guid isPermaLink="true">https://www.increpare.com/game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Des Poseidons Dreizack</title>
-    <pubDate>Sun, 03 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/des-poseidons-dreizack.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/des-poseidons-dreizack.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>
