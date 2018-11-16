@@ -1,4 +1,5 @@
 cd icos
-gifsicle --batch --optimize=3 *.gif
-find . -iname '*png' -exec pngcrush -ow -brute {} {}.crush \;
+optipng -o7 *.png
+#gifsicle --batch --optimize=3 *.gif
+#find . -iname '*png' -exec pngcrush -ow -brute {} {}.crush \;
 cd ..

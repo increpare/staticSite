@@ -9,13 +9,31 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Fri, 02 Nov 2018 22:26:52 GMT</pubDate>
-  <lastBuildDate>Fri, 02 Nov 2018 22:26:52 GMT</lastBuildDate>
+  <pubDate>Fri, 16 Nov 2018 13:33:17 GMT</pubDate>
+  <lastBuildDate>Fri, 16 Nov 2018 13:33:17 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
 
+  <item>
+    <title>Parallanagram</title>
+    <pubDate>Wed, 14 Nov 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/parallanagram.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/parallanagram.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Let yourself be guided by the stars / Lassen sie sich von den Sternen leiten</title>
+    <pubDate>Thu, 01 Nov 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description>inspired by mind wall</description>
+    <guid isPermaLink="true">https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
   <item>
     <title>Fahnenstange / Flagstaff</title>
     <pubDate>Sat, 13 Oct 2018 22:00:00 GMT</pubDate>
@@ -32,15 +50,6 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/drehspiel-rotgame.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Let yourself be guided by the stars / Lassen sie sich von den Sternen leiten</title>
-    <pubDate>Mon, 01 Oct 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description>inspired by mind wall</description>
-    <guid isPermaLink="true">https://www.increpare.com/game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
   <item>
@@ -455,15 +464,6 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description>bifurceyshionssssss</description>
     <guid isPermaLink="true">https://www.increpare.com/game/der-hydra-krypta.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Bring the ice cube to the goal without exposing it to heat.</title>
-    <pubDate>Mon, 04 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description>should I 've made the icecube slippery? -_-</description>
-    <guid isPermaLink="true">https://www.increpare.com/game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>
