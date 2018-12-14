@@ -9,13 +9,58 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Fri, 16 Nov 2018 13:33:17 GMT</pubDate>
-  <lastBuildDate>Fri, 16 Nov 2018 13:33:17 GMT</lastBuildDate>
+  <pubDate>Fri, 14 Dec 2018 11:10:18 GMT</pubDate>
+  <lastBuildDate>Fri, 14 Dec 2018 11:10:18 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
 
+  <item>
+    <title>Dice Repair Apparat / Würfelreparaturgerät</title>
+    <pubDate>Thu, 13 Dec 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/dice-repair-apparat-wuerfelreparaturgeraet.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/dice-repair-apparat-wuerfelreparaturgeraet.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Dice Goblin</title>
+    <pubDate>Mon, 03 Dec 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/dice-goblin.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/dice-goblin.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Galactic Center for Etymological Research (Galaktisches Etymologieforschungsinstitut)</title>
+    <pubDate>Sun, 02 Dec 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/galactic-center-for-etymological-research-galaktisches-etymologieforschungsinstitut.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/galactic-center-for-etymological-research-galaktisches-etymologieforschungsinstitut.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>ABC2</title>
+    <pubDate>Sat, 01 Dec 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/abc2.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/abc2.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>ABC</title>
+    <pubDate>Fri, 30 Nov 2018 23:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/abc.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/abc.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
   <item>
     <title>Parallanagram</title>
     <pubDate>Wed, 14 Nov 2018 23:00:00 GMT</pubDate>
@@ -419,51 +464,6 @@
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/gabelstapler.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>I am a gust of wind</title>
-    <pubDate>Fri, 08 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/i-am-a-gust-of-wind.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/i-am-a-gust-of-wind.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Karamell</title>
-    <pubDate>Thu, 07 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/karamell.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/karamell.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>I want to grind myself into dust</title>
-    <pubDate>Wed, 06 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/i-want-to-grind-myself-into-dust.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/i-want-to-grind-myself-into-dust.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>die schoene Steinmetzin</title>
-    <pubDate>Wed, 06 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/die-schoene-steinmetzin.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/die-schoene-steinmetzin.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>der Hydra Krypta</title>
-    <pubDate>Tue, 05 Jun 2018 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/der-hydra-krypta.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description>bifurceyshionssssss</description>
-    <guid isPermaLink="true">https://www.increpare.com/game/der-hydra-krypta.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>
