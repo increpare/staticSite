@@ -103,12 +103,13 @@ img {
       If you like what I do, consider supporting my freeware work via
       <ul>
         <li><a href="https://www.patreon.com/increpare">patreon</a>
-          <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=flickgame&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal</a>
+          <!--
+          <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RF7ZTG7FEU7YN&lc=GB&item_name=flickgame&item_number=increpare%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">paypal</a> -->
       </ul> 
       <p>
       <hr>
       <div id="footer"> 
-        <a href="https://twitter.com/increpare">twitter</a> | <a href="http://github.com/increpare">github</a> | <a href="../privacy.html">privacy policy</a>
+        <a href="https://twitter.com/increpare">twitter</a> | <a href="https://github.com/increpare/">github</a> | <a href="../privacy.html">privacy policy</a>
       </div>
      <p>
   </body>

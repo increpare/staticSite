@@ -63,10 +63,14 @@ exec("mkdir output")
 exec("mkdir output/game")
 exec("mkdir output/icos")
 exec("mkdir output/categories")
+exec("mkdir output/feed")
 exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
 
 exec("cp templates/privacy.html output/privacy.html")
 gzipFile("output/privacy.html")
+
+exec("cp templates/404.html output/404.html")
+gzipFile("output/404.html")
 
 exec("cp -r symbols output/symbols")
 execAsync("cp templates/.htaccess_images output/icos/.htaccess")
@@ -772,5 +776,9 @@ feed_str+=	`
 
 
 fs.writeFile('output/feed.rss',feed_str, function(err) {
+        if(err) return console.log(err);
+    })
+
+fs.writeFile('output/feed/index.html',feed_str, function(err) {
         if(err) return console.log(err);
     })
