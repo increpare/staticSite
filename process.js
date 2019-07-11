@@ -782,3 +782,5 @@ fs.writeFile('output/feed.rss',feed_str, function(err) {
 fs.writeFile('output/feed/index.html',feed_str, function(err) {
         if(err) return console.log(err);
     })
+
+console.log(new Date(Date.now()).toLocaleString() + ": finished");
