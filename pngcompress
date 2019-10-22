@@ -1,3 +1,0 @@
-cd icos
-pngquant --verbose --skip-if-larger --force --speed 1 --strip --ext .png *.png
-cd ..
