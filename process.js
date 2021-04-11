@@ -64,7 +64,7 @@ exec("mkdir output/game")
 exec("mkdir output/icos")
 exec("mkdir output/categories")
 exec("mkdir output/feed")
-exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
+//exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
 
 exec("cp templates/privacy.html output/privacy.html")
 gzipFile("output/privacy.html")
@@ -98,7 +98,6 @@ function htmlToMarkdown(s_html){
 }
 
 var content = fs.readFileSync('database/table.csv','utf8')
-
 var postTemplate = '`'+fs.readFileSync('templates/post.txt')+'`';
 var indexTemplate = '`'+fs.readFileSync('templates/index.txt')+'`';
 var rows =  content.split("\r")
