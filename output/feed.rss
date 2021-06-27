@@ -9,13 +9,31 @@
   <copyright>2018 Stephen Lavelle</copyright>
   <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
   <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-  <pubDate>Sun, 11 Apr 2021 20:30:20 GMT</pubDate>
-  <lastBuildDate>Sun, 11 Apr 2021 20:30:20 GMT</lastBuildDate>
+  <pubDate>Sun, 27 Jun 2021 17:43:35 GMT</pubDate>
+  <lastBuildDate>Sun, 27 Jun 2021 17:43:35 GMT</lastBuildDate>
   <category>games</category>
   <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
 
+  <item>
+    <title>Xorro the Chaos Warden</title>
+    <pubDate>Sat, 26 Jun 2021 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/xorro-the-chaos-warden.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/xorro-the-chaos-warden.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
+  <item>
+    <title>Legend of Swixero</title>
+    <pubDate>Sat, 26 Jun 2021 22:00:00 GMT</pubDate>
+    <link>https://www.increpare.com/game/legend-of-swixero.html</link>
+    <author>analytic@gmail.com (Stephen Lavelle)</author>    
+    <description></description>
+    <guid isPermaLink="true">https://www.increpare.com/game/legend-of-swixero.html</guid>
+    <source url="https://www.increpare.com/feed.rss">increpare games</source>
+  </item>
   <item>
     <title>Heaven on Earth</title>
     <pubDate>Thu, 30 Jan 2020 23:00:00 GMT</pubDate>
@@ -448,24 +466,6 @@ SOULLESS ACTION SWINGER</title>
     <author>analytic@gmail.com (Stephen Lavelle)</author>    
     <description></description>
     <guid isPermaLink="true">https://www.increpare.com/game/seelenloser-aktionschaukler-soulless-action-swinger.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Hirnfluch Braincurse</title>
-    <pubDate>Wed, 22 May 2019 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/hirnfluch-braincurse.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/hirnfluch-braincurse.html</guid>
-    <source url="https://www.increpare.com/feed.rss">increpare games</source>
-  </item>
-  <item>
-    <title>Pupush</title>
-    <pubDate>Wed, 15 May 2019 22:00:00 GMT</pubDate>
-    <link>https://www.increpare.com/game/pupush.html</link>
-    <author>analytic@gmail.com (Stephen Lavelle)</author>    
-    <description></description>
-    <guid isPermaLink="true">https://www.increpare.com/game/pupush.html</guid>
     <source url="https://www.increpare.com/feed.rss">increpare games</source>
   </item>
 </channel>
