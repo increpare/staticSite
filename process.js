@@ -1,11 +1,17 @@
 #! /usr/bin/env node
 
+async function all(){
 var fs = require('fs')
 var path = require('path')
 var RSS = require('rss')
 var striptags = require('striptags');
 var getSlug = require('speakingurl');
 var colorConvert = require('color-convert');
+
+const del = require('del');
+const mkdirp = require('mkdirp')
+const compressing = require('compressing');
+var copy = require('recursive-copy');
 
 var minify = require('html-minifier').minify;
 var minifyOptions =  {
@@ -54,28 +60,46 @@ useShortDoctype:true,
 // STEP 1 : generate folders
 
 function gzipFile(path){
-	execAsync(`gzip -cf  --best ${path} > ${path}.gz`)
+	compressing.gzip.compressFile(P(path),P(path+".gz"))
 }
 var exec = require('child_process').execSync
 var execAsync = require('child_process').exec
-exec("rm -rf output")
-exec("mkdir output")
-exec("mkdir output/game")
-exec("mkdir output/icos")
-exec("mkdir output/categories")
-exec("mkdir output/feed")
+
+
+del.sync("output")
+
+mkdirp.sync("output")
+mkdirp.sync("output/game")
+mkdirp.sync("output/icos")
+mkdirp.sync("output/categories")
+mkdirp.sync("output/feed")
+
+function P(a){
+	return path.normalize("./"+a);
+}
+
+function copyFile(a,b){
+	a = P(a)
+	b = P(b)
+	if (!fs.existsSync(a)){
+		console.log(a + " NOT FOUND")
+	}
+	fs.copyFileSync(a,b);
+}
 //exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
 
-exec("cp templates/privacy.html output/privacy.html")
+copyFile("templates/privacy.html","output/privacy.html")
+
 gzipFile("output/privacy.html")
 
-exec("cp templates/404.html output/404.html")
+copyFile("templates/404.html","output/404.html")
 gzipFile("output/404.html")
 
-exec("cp -r symbols output/symbols")
-execAsync("cp templates/.htaccess_images output/icos/.htaccess")
-execAsync("cp templates/.htaccess_images output/symbols/.htaccess")
-execAsync("cp templates/.htaccess_root output/.htaccess")
+await copy('symbols', P('output/symbols'))
+
+copyFile("templates/.htaccess_images","output/icos/.htaccess")
+copyFile("templates/.htaccess_images","output/symbols/.htaccess")
+copyFile("templates/.htaccess_root","output/.htaccess")
 
 
 
@@ -97,9 +121,9 @@ function htmlToMarkdown(s_html){
 	return markdown;
 }
 
-var content = fs.readFileSync('database/table.csv','utf8')
-var postTemplate = '`'+fs.readFileSync('templates/post.txt')+'`';
-var indexTemplate = '`'+fs.readFileSync('templates/index.txt')+'`';
+var content = fs.readFileSync(P('database/table.csv'),'utf8')
+var postTemplate = '`'+fs.readFileSync(P('templates/post.txt'))+'`';
+var indexTemplate = '`'+fs.readFileSync(P('templates/index.txt'))+'`';
 var rows =  content.split("\r")
 
 var table = rows.map( r => r.split(";").map( s => s.trim().replace(/±/gi,';')).map( s => removeOuterQuotes(s) )  )
@@ -158,11 +182,11 @@ for (var i=0;i<table.length;i++){
 
 	if (icon==""){
 		icon = date+"-"+safeName+".png";
-		execAsync(`./generateicon.js ${safeName} output/icos/${icon}`)
+		execAsync(`npm generateicon.js ${safeName} output/icos/${icon}`)
 		r[2] = icon
 	} else {
 		// -interpolate Nearest -filter point
-		execAsync(`cp icos/${icon} output/icos/${icon}`)				
+		copyFile(`icos/${icon}`,`output/icos/${icon}`)
 	}
 
 	bodyMarkdown = htmlToMarkdown(desc)
@@ -206,7 +230,7 @@ for (var i=0;i<table.length;i++){
 	console.log(title)
 	var pageMinified=minify(page,minifyOptions)
 
-	let fpath = "output/game/"+pageName;
+	let fpath = P("output/game/"+pageName);
 	fs.writeFile(fpath,pageMinified, function(err) {
         if(err) return console.log(err);
         gzipFile( fpath )
@@ -785,3 +809,8 @@ fs.writeFile('output/feed/index.html',feed_str, function(err) {
     })
 
 console.log(new Date(Date.now()).toLocaleString() + ": finished");
+
+
+}
+
+all()
