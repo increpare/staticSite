@@ -72,6 +72,7 @@ mkdirp.sync("output")
 mkdirp.sync("output/game")
 mkdirp.sync("output/icos")
 mkdirp.sync("output/categories")
+mkdirp.sync("output/engine")
 mkdirp.sync("output/feed")
 
 function P(a){
@@ -134,7 +135,7 @@ var pageNames=[];
 
 var tagList=[]
 
-var platformList = ["flash","html","linux","macos","windows","other"]
+var platformList = ["flash-player","web-browser","linux","macos","windows","other"]
 
 // STEP 3 : generate sub files
 for (var i=0;i<table.length;i++){
@@ -350,10 +351,10 @@ function filterTable(table,plat,tag){
 	if (plat!==""){
 		var filterIndex=0;
 		switch(plat){
-			case "flash":
+			case "flash-player":
 				filterIndex=11;
 				break;
-			case "html":
+			case "web-browser":
 				filterIndex=5;
 				break;
 			case "linux":
