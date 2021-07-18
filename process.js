@@ -383,7 +383,7 @@ function doFilterLists(){
 	var prefix=getPrefix();
 	var indexpath = (platformToFilter.length>0 || tagToFilter.length>0)?"../index.html":"index.html"
 
-	function getPath(plat,tag,category){
+	function getPath(plat,tag){
 		if (plat===platformToFilter && tag===tagToFilter){
 			return "#";
 		}
@@ -658,18 +658,16 @@ function generatePage(plat,tag){
 	var filteredPage=eval(indexTemplate)
 	var filteredPageMinified = minify(filteredPage,minifyOptions)
 
-	var subdir ="platform";
 	var pageName="";
 	pageName+=plat
 	if (tag!==""){
-		subdir="tag";
 		if (pageName.length>0){
 			pageName+="-";
 		}
 		pageName+= tag_to_urlsafe(tag);
 	}
 
-	var categoryPagePath = `output/${subdir}/${pageName}.html`
+	var categoryPagePath = `output/categories/${pageName}.html`
 	fs.writeFile(categoryPagePath,filteredPageMinified, function(err) {
 	        if(err) return console.log(err);
 	        gzipFile(categoryPagePath)
