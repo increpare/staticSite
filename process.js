@@ -183,7 +183,7 @@ for (var i=0;i<table.length;i++){
 
 	if (icon==""){
 		icon = date+"-"+safeName+".png";
-		execAsync(`npm generateicon.js ${safeName} output/icos/${icon}`)
+		execAsync(`./generateicon.js ${safeName} output/icos/${icon}`)
 		r[2] = icon
 	} else {
 		// -interpolate Nearest -filter point
