@@ -109,7 +109,7 @@ img {
       <p>
       <hr>
       <div id="footer"> 
-        <a href="https://twitter.com/increpare">twitter</a>&emsp13;|&emsp13;<a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+        <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
       </div>
      <p>
   </body>
