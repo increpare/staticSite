@@ -1,20 +1,22 @@
 #! /usr/bin/env node
 
+const fs = require("fs");
+const path = require("path");
+const striptags = require("striptags");
+const getSlug = require("speakingurl");
+const compressing = require("compressing");
+const copy = require("recursive-copy");
+const minify = require("html-minifier").minify;
+const execAsync = require("child_process").exec;
+const TurndownService = require("turndown");
+
+const turndownService = new TurndownService();
+
+console.time("timer");
+
 async function all(){
-    var fs = require('fs')
-    var path = require('path')
-    var RSS = require('rss')
-    var striptags = require('striptags');
-    var getSlug = require('speakingurl');
-    var colorConvert = require('color-convert');
-    
-    const del = require('del');
-    const mkdirp = require('mkdirp')
-    const compressing = require('compressing');
-    var copy = require('recursive-copy');
-    
-    var minify = require('html-minifier').minify;
-    var minifyOptions =  {
+
+    const minifyOptions =  {
     caseSensitive:true,
     collapseBooleanAttributes:true,
     collapseInlineTagWhitespace:true,
@@ -51,132 +53,127 @@ async function all(){
     sortAttributes:true,
     sortClassName:true,
     // trimCustomFragments:true,
-    useShortDoctype:true,
-    }
-    
+    useShortDoctype:true
+    };
+
+    //memoize slugs
+    let slugs=JSON.parse(fs.readFileSync("slugs_cache.json",{encoding:"utf8"}));
+
     //for debug
     // minifyOptions={}
-    
+
     // STEP 1 : generate folders
-    
+
     function gzipFile(path){
-        compressing.gzip.compressFile(P(path),P(path+".gz"))
+        compressing.gzip.compressFile(P(path),P(path+".gz"));
     }
-    var exec = require('child_process').execSync
-    var execAsync = require('child_process').exec
-    
-    
-    del.sync("output")
-    
-    mkdirp.sync("output")
-    mkdirp.sync("output/game")
-    mkdirp.sync("output/icos")
-    mkdirp.sync("output/categories")
-    mkdirp.sync("output/engine")
-    mkdirp.sync("output/feed")
+
+    if (fs.existsSync("output")){
+        fs.renameSync("output","output2");
+        fs.rmdir("output2",{recursive:true},function(){});
+    }
+
+    fs.mkdirSync("output");
+    fs.mkdirSync("output/game");
+    fs.mkdirSync("output/icos");
+    fs.mkdirSync("output/categories");
+    fs.mkdirSync("output/engine");
+    fs.mkdirSync("output/feed");
     
     function P(a){
         return path.normalize("./"+a);
     }
     
     function copyFile(a,b){
-        a = P(a)
-        b = P(b)
-        if (!fs.existsSync(a)){
-            console.log(a + " NOT FOUND")
-        }
-        fs.copyFileSync(a,b);
+        a = P(a);
+        b = P(b);
+        fs.exists(a,function(exists){
+            if (exists){
+                fs.copyFile(a,b,function(){
+                    if (a.indexOf(".html")>=0){
+                        gzipFile(b);
+                    }
+                });
+            } else {
+                console.log(a + " NOT FOUND");
+            }
+        });
     }
-    //exec("SpreadsheetExportToCSV database/table.numbers ~/Documents/staticSiteGenerator/database/table.csv; sleep 2")
     
-    copyFile("templates/privacy.html","output/privacy.html")
+    copyFile("templates/privacy.html","output/privacy.html");
     
-    gzipFile("output/privacy.html")
+    copyFile("templates/404.html","output/404.html");
     
-    copyFile("templates/404.html","output/404.html")
-    gzipFile("output/404.html")
+    await copy('symbols', P('output/symbols'));
     
-    await copy('symbols', P('output/symbols'))
-    
-    copyFile("templates/.htaccess_images","output/icos/.htaccess")
-    copyFile("templates/.htaccess_images","output/symbols/.htaccess")
-    copyFile("templates/.htaccess_root","output/.htaccess")
+    copyFile("templates/.htaccess_images","output/icos/.htaccess");
+    copyFile("templates/.htaccess_images","output/symbols/.htaccess");
+    copyFile("templates/.htaccess_root","output/.htaccess");
     
     
     
     // STEP 2 : read in CSV
-    
-    function removeOuterQuotes(s){
-        s=s.trim();
-        if (s[0]==='"' && s[s.length-1]==='"') {
-            s = s.substring(1, s.length-1);
-            s = s.replace(/""/g,'"');
-        }
-        return s;
-    }
+
     function htmlToMarkdown(s_html){
         s_html = s_html.replace(/\n\n/gi,'<p><p>\n');
-        var TurndownService = require('turndown')
-        var turndownService = new TurndownService()
-        var markdown = turndownService.turndown(s_html);
+        let markdown = turndownService.turndown(s_html);
         return markdown;
     }
     
-    var postTemplate = '`'+fs.readFileSync(P('templates/post.txt'))+'`';
-	postTemplate=minify(postTemplate,minifyOptions)
+    let postTemplate = '`'+fs.readFileSync(P('templates/post.txt'))+'`';
+	postTemplate=minify(postTemplate,minifyOptions);
 
 
-    var indexTemplate = '`'+fs.readFileSync(P('templates/index.txt'))+'`';
-	
-	indexTemplate = minify(indexTemplate,minifyOptions)
+    let indexTemplate = '`'+fs.readFileSync(P('templates/index.txt'))+'`';
+	indexTemplate = minify(indexTemplate,minifyOptions);
     
-    var table = JSON.parse(fs.readFileSync("database.json",{encoding:"utf8"}));
+    let table = JSON.parse(fs.readFileSync("database.json",{encoding:"utf8"}));
     
-    var pageNames=[];
+    let pageNames=[];
     
-    var tagList=[]
+    let tagList=[];
     
-    var platformList = ["flash-player","web-browser","linux","macos","windows","other"]
+    let platformList = ["flash-player","web-browser","linux","macos","windows","other"];
     
     // STEP 3 : generate sub files
-    for (var i=0;i<table.length;i++){
-        var r = table[i]
-        var title = r.TITLE;
+    for (let i=0;i<table.length;i++){
+        let r = table[i]
+        let title = r.TITLE;
     
-        var niceDate=r.DATE;
+        let niceDate=r.DATE;
         r.DATE = r.DATE.replace(/"/gi,'-').replace(/\//gi,'-').trim()
-        var date = r.DATE
+        let date = r.DATE
     
-        var icon = r.ICON
+        let icon = r.ICON
     
-        var caption = r.CAPTION
-        var desc = r.DESC
-        var html = r["WEB-BROWSER"]
-        var mac = r.MAC
-        var win = r.WIN
-        var linux = r.LINUX
-        var src = r.SRC
-        var src_desc = r["SRC-DESC"]
-        var flash = r["FLASH-PLAYER"]
-        var zip = r.ZIP
-        var unity = r["UNITY PLAYER"]
+        let caption = r.CAPTION
+        let desc = r.DESC
+        let html = r["WEB-BROWSER"]
+        let mac = r.MAC
+        let win = r.WIN
+        let linux = r.LINUX
+        let src = r.SRC
+        let src_desc = r["SRC-DESC"]
+        let flash = r["FLASH-PLAYER"]
+        let zip = r.ZIP
+        let unity = r["UNITY PLAYER"]
     
-        var tag = src_desc_to_tag(src_desc);
+        let tag = src_desc_to_tag(src_desc);
         if (tagList.indexOf(tag)===-1){
             tagList.push(tag);
         }
     
-        var datesplit = date.split('-')
+        let datesplit = date.split('-')
         // console.log(date);
         // console.log(datesplit);
-        var datenum = parseInt(datesplit[0])*10000+parseInt(datesplit[1])*100+parseInt(datesplit[2]);
+        let datenum = parseInt(datesplit[0])*10000+parseInt(datesplit[1])*100+parseInt(datesplit[2]);
         r.DATENUM=datenum; 
     
-        var safeName = getSlug(title)
-        var pageName = tag_to_urlsafe(safeName)+".html";
+        let safeName = getSlug(title)
+        let pageName = tag_to_urlsafe(safeName)+".html";
     
         if (pageNames.indexOf(pageName)>=0){
-            var c = 2;	
+            let c = 2;	
             while (pageNames.indexOf(pageName)>=0){
                 pageName = safeName+"_"+c+".html";
                 c++;
@@ -197,8 +194,8 @@ async function all(){
     
         captionMarkdown = htmlToMarkdown(caption)
     
-        var linkList = function(pre,presrc,post){
-            var result="";
+        let linkList = function(pre,presrc,post){
+            let result="";
             if (html!=""){
                 result += `${pre} <a href="${html}">Play Now</a> ${post} (HTML5) \n`
             }
@@ -230,7 +227,7 @@ async function all(){
         r.PAGENAME = pageName //[15]
         r.NICEDATE = niceDate //[16]
     
-        var page=eval(postTemplate)
+        let page=eval(postTemplate)
         console.log(title)
     
         let fpath = P("output/game/"+pageName);
@@ -274,21 +271,32 @@ async function all(){
     table.stableSort(sortByDate).reverse()
     
     function src_desc_to_tag(desc){
-        return getSlug(desc.split(" ")[0].toLowerCase(),{
+        if (desc in slugs){
+            return slugs[desc];
+        }
+        let slug = getSlug(desc.split(" ")[0].toLowerCase(),{
             custom: ['#']
         });
+        slugs[desc]=slug;
+        return slug;
     }
     
     function tag_to_urlsafe(desc){
-        return getSlug(desc.split(" ")[0].toLowerCase(),{
+        var key = desc+"_SHARP#"
+        if (key in slugs){
+            return slugs[key];
+        }
+        let slug = getSlug(desc.split(" ")[0].toLowerCase(),{
             custom: {'#':"sharp"}
         });
+        slugs[key]=slug;
+        return slug;
     }
     
-    var tagToFilter="";
-    var platformToFilter="";
+    let tagToFilter="";
+    let platformToFilter="";
     function doTitle(){
-        var title = "increpare games";
+        let title = "increpare games";
         if (tagToFilter.length>0){
             title = tagToFilter+" - "+title
         }
@@ -310,7 +318,7 @@ async function all(){
     }
     
     function getPrefix(){
-        var prefix="";
+        let prefix="";
         if (tagToFilter!==""){
             prefix="../"
         }
@@ -321,21 +329,21 @@ async function all(){
     }
     
     
-    var cachedgamecount = {};
+    let cachedgamecount = {};
     function getGameCount(plat,tag){
-        var key = plat+"_"+tag;
+        let key = plat+"_"+tag;
         if (cachedgamecount.hasOwnProperty(key)){
             return cachedgamecount[key];
         }
     
-        var result = filterTable(table,plat,tag).length;
+        let result = filterTable(table,plat,tag).length;
         cachedgamecount[key]=result;
         return result;
     }
     
-    var cachedtables={};
+    let cachedtables={};
     function filterTable(table,plat,tag){
-        var key = plat+"_"+tag;
+        let key = plat+"_"+tag;
         if (cachedtables.hasOwnProperty(key)){
             return cachedtables[key];
         }
@@ -346,12 +354,12 @@ async function all(){
         if (tag==="engine"){
             tag="";
         }
-        var filteredtable = table;
+        let filteredtable = table;
         if (tag!==""){
             filteredtable = filteredtable.filter( r => src_desc_to_tag(r["SRC-DESC"])===tag)
         }
         if (plat!==""){
-            var filterIndex=0;
+            let filterIndex=0;
             switch(plat){
                 case "flash-player":
                     filterIndex="FLASH-PLAYER";
@@ -380,20 +388,20 @@ async function all(){
     }
     
     function doFilterLists(){
-        var result="";
+        let result="";
     
-        var s = ""
-        var prefix=getPrefix();
-        var indexpath = (platformToFilter.length>0 || tagToFilter.length>0)?"../index.html":"index.html"
+        let s = ""
+        let prefix=getPrefix();
+        let indexpath = (platformToFilter.length>0 || tagToFilter.length>0)?"../index.html":"index.html"
     
         function getPath(plat,tag){
             if (plat===platformToFilter && tag===tagToFilter){
                 return "#";
             }
-            var currentlyIndex = platformToFilter==="" && tagToFilter===""
-            var targetIsIndex = (plat===""||plat==="platform")&&(tag===""||tag==="engine");
+            let currentlyIndex = platformToFilter==="" && tagToFilter===""
+            let targetIsIndex = (plat===""||plat==="platform")&&(tag===""||tag==="engine");
             tag = tag_to_urlsafe(tag);
-            var prefix="";
+            let prefix="";
             if (currentlyIndex===targetIsIndex){
     
             } else if (currentlyIndex==true){
@@ -403,7 +411,7 @@ async function all(){
             }
     
     
-            var fileName = "";
+            let fileName = "";
     
             if (plat===""&&tag===""){
                 fileName="index"
@@ -425,8 +433,8 @@ async function all(){
         result+=`<select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
     
         function sortByNumGames_platformVary(plat_a,plat_b){
-            var n_a = getGameCount(plat_a,tagToFilter);
-            var n_b = getGameCount(plat_b,tagToFilter);
+            let n_a = getGameCount(plat_a,tagToFilter);
+            let n_b = getGameCount(plat_b,tagToFilter);
     
           if( n_a > n_b){
               return -1;
@@ -439,13 +447,13 @@ async function all(){
         platformList.sort();
         platformList.stableSort(sortByNumGames_platformVary);
     
-        var entryCount = getGameCount("",tagToFilter)
-        var path = getPath("",tagToFilter);
+        let entryCount = getGameCount("",tagToFilter)
+        let path = getPath("",tagToFilter);
         result += `<option value="${path}">platform (${entryCount})</option>\n`
         for (plat of platformList) {
             entryCount = getGameCount(plat,tagToFilter)
-            var sel = (plat===platformToFilter) ? "selected ='selected'":"";
-            var disabled = entryCount===0?"disabled":""
+            let sel = (plat===platformToFilter) ? "selected ='selected'":"";
+            let disabled = entryCount===0?"disabled":""
             result += `<option value="${getPath(plat,tagToFilter)}" ${sel} ${disabled}>${plat} (${entryCount})</option>\n`
         }
         result+=`</select>\n`
@@ -454,8 +462,8 @@ async function all(){
         result+=`<select id="tag_select" onchange="window.location.href = this.options[this.selectedIndex].value;">\n`
     
         function sortByNumGames_tagVary(tag_a,tag_b){
-            var n_a = getGameCount(platformToFilter,tag_a);
-            var n_b = getGameCount(platformToFilter,tag_b);
+            let n_a = getGameCount(platformToFilter,tag_a);
+            let n_b = getGameCount(platformToFilter,tag_b);
     
           if( n_a > n_b){
               return -1;
@@ -468,13 +476,13 @@ async function all(){
         tagList.sort();
         tagList.stableSort(sortByNumGames_tagVary);
     
-        var entryCount = getGameCount(platformToFilter,"")
-        var path = getPath(platformToFilter,"");
+        entryCount = getGameCount(platformToFilter,"")
+        path = getPath(platformToFilter,"");
         result += `<option value="${path}">engine (${entryCount})</option>\n`
         for (tag of tagList) {
             entryCount = getGameCount(platformToFilter,tag)
-            var sel = (tag===tagToFilter) ? "selected ='selected'":"";
-            var disabled = entryCount===0?"disabled":""
+            let sel = (tag===tagToFilter) ? "selected ='selected'":"";
+            let disabled = entryCount===0?"disabled":""
             result += `<option value="${getPath(platformToFilter, tag)}" ${sel} ${disabled}>${tag} (${entryCount})</option>\n`
         }
         result+=`</select>\n`
@@ -491,39 +499,39 @@ async function all(){
     
     
     function doGrid(){
-        var s = ""
-        var prefix=getPrefix();
-        var filteredtable = filterTable(table,platformToFilter,tagToFilter);
+        let s = ""
+        let prefix=getPrefix();
+        let filteredtable = filterTable(table,platformToFilter,tagToFilter);
     
     
-        for (var i=0;i<filteredtable.length;i++){
-            var r = filteredtable[i];
+        for (let i=0;i<filteredtable.length;i++){
+            const r = filteredtable[i];
     
-            var title = r.TITLE
-            var date = r.DATE
-            var icon = r.ICON
-            var caption = r.CAPTION
-            var desc = r.DESC
-            var html = r["WEB-BROWSER"]
-            var mac = r.MAC
-            var win = r.WIN
-            var linux = r.LINUX
-            var src = r.SRC
-            var src_desc = r["SRC-DESC"]
-            var flash = r["FLASH-PLAYER"]
-            var zip = r.ZIP
-            var unity = r["UNITY PLAYER"]
-            var datenum = r.DATENUM
-            var pageName = r.PAGENAME
-            var niceDate = r.NICEDATE
+            const title = r.TITLE
+            const date = r.DATE
+            const icon = r.ICON
+            const caption = r.CAPTION
+            const desc = r.DESC
+            const html = r["WEB-BROWSER"]
+            const mac = r.MAC
+            const win = r.WIN
+            const linux = r.LINUX
+            const src = r.SRC
+            const src_desc = r["SRC-DESC"]
+            const flash = r["FLASH-PLAYER"]
+            const zip = r.ZIP
+            const unity = r["UNITY PLAYER"]
+            const datenum = r.DATENUM
+            const pageName = r.PAGENAME
+            const niceDate = r.NICEDATE
     
-            var icocount = ((html!="")?1:0)+((win!="")?1:0)+((mac!="")?1:0)+((linux!="")?1:0)+((flash!="")?1:0)+((zip!="")?1:0)+((unity!="")?1:0)+((src!="")?1:0);
-            var containertype = icocount<5?"container":"smcontainer";
-            var overlaytype = icocount<5?"overlay":"smoverlay";
-            var icontype = icocount<5?"icon":"smicon";
-            var iconsize = icocount<5?"50":"30";
+            const icocount = ((html!="")?1:0)+((win!="")?1:0)+((mac!="")?1:0)+((linux!="")?1:0)+((flash!="")?1:0)+((zip!="")?1:0)+((unity!="")?1:0)+((src!="")?1:0);
+            const containertype = icocount<5?"container":"smcontainer";
+            const overlaytype = icocount<5?"overlay":"smoverlay";
+            const icontype = icocount<5?"icon":"smicon";
+            const iconsize = icocount<5?"50":"30";
     
-            var cardTemplate = `
+            let cardTemplate = `
         <div class="card">
             <a href="${prefix}game/${pageName}">
                 <img class="thumb" alt="" width="250" height="250" src="${prefix}icos/${icon}">
@@ -531,7 +539,7 @@ async function all(){
                 <div class="gamename">${title}</div>
             </a>`;
     
-            var someico=false;
+            let someico=false;
             if (html!=""){
                 someico=true;
                 cardTemplate += `
@@ -658,9 +666,9 @@ async function all(){
     
     function generatePage(plat,tag){
         console.log("filtered page : "+tag+"\t"+plat)
-        var filteredPage=eval(indexTemplate)
+        const filteredPage=eval(indexTemplate)
     
-        var pageName="";
+        let pageName="";
         pageName+=plat
         if (tag!==""){
             if (pageName.length>0){
@@ -669,7 +677,7 @@ async function all(){
             pageName+= tag_to_urlsafe(tag);
         }
     
-        var categoryPagePath = `output/categories/${pageName}.html`
+        const categoryPagePath = `output/categories/${pageName}.html`
         fs.writeFile(categoryPagePath,filteredPage, function(err) {
                 if(err) return console.log(err);
                 gzipFile(categoryPagePath)
@@ -677,7 +685,7 @@ async function all(){
     
     }
     
-    var page=eval(indexTemplate)
+    let page=eval(indexTemplate)
     console.log("index.html")
     
     fs.writeFile("output/index.html",page, function(err) {
@@ -686,8 +694,8 @@ async function all(){
     
         })
     
-    var tags = tagList.slice();
-    var plats = platformList.slice();
+    const tags = tagList.slice();
+    const plats = platformList.slice();
     for (tag of tags){
         tagToFilter = tag
         platformToFilter="";
@@ -709,7 +717,7 @@ async function all(){
         }
     }
     
-    var feedOptions = {
+    const feedOptions = {
         title:"increpare games",
         description:"a feed of games and other things made by increpare",
         feed_url:"https://www.increpare.com/feed.rss",
@@ -723,7 +731,7 @@ async function all(){
         language: 'en'
     };
     
-    var date_now = new Date().toUTCString();
+    const date_now = new Date().toUTCString();
     
     var feed_str = `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
@@ -745,33 +753,33 @@ async function all(){
     `
     
     
-    for (var i=0;i<Math.min(50,table.length);i++){
-        var r = table[i];
-        var title = r.TITLE
-        var date = r.DATE
-        var icon = r.ICON
-        var caption = r.CAPTION
-        var desc = r.DESC
-        var html = r["WEB-BROWSER"]
-        var mac = r.MAC
-        var win = r.WIN
-        var linux = r.LINUX
-        var src = r.SRC
-        var src_desc = r["SRC-DESC"]
-        var flash = r["FLASH-PLAYER"]
-        var zip = r.ZIP
-        var unity = r["UNITY PLAYER"]
-        var datenum = r.DATENUM
-        var pageName = r.PAGENAME
-        var niceDate = r.NICEDATE
+    for (let i=0;i<Math.min(50,table.length);i++){
+        const r = table[i];
+        const title = r.TITLE
+        // let date = r.DATE
+        const icon = r.ICON
+        const caption = r.CAPTION
+        const desc = r.DESC
+        const html = r["WEB-BROWSER"]
+        const mac = r.MAC
+        const win = r.WIN
+        const linux = r.LINUX
+        const src = r.SRC
+        const src_desc = r["SRC-DESC"]
+        const flash = r["FLASH-PLAYER"]
+        const zip = r.ZIP
+        const unity = r["UNITY PLAYER"]
+        const datenum = r.DATENUM
+        const pageName = r.PAGENAME
+        const niceDate = r.NICEDATE
     
-        var splitDate = niceDate.split('/');
-        var year = splitDate[0];
-        var month = splitDate[1];
-        var day = splitDate[2];
-        var date = new Date(year,month-1,day)
+        const splitDate = niceDate.split('/');
+        const year = splitDate[0];
+        const month = splitDate[1];
+        const day = splitDate[2];
+        const date = new Date(year,month-1,day)
     
-        var itemOptions = {
+        let itemOptions = {
             title:title,
             author:'analytic@gmail.com (Stephen Lavelle)',
             description:striptags(caption),
@@ -800,15 +808,19 @@ async function all(){
     
     fs.writeFile('output/feed.rss',feed_str, function(err) {
             if(err) return console.log(err);
+            gzipFile( 'output/feed.rss' )
         })
     
     fs.writeFile('output/feed/index.html',feed_str, function(err) {
             if(err) return console.log(err);
+            gzipFile( 'output/feed/index.html' )
         })
     
     console.log(new Date(Date.now()).toLocaleString() + ": finished");
     
+    fs.writeFile("slugs_cache.json",JSON.stringify(slugs),function(){});
     
+    console.timeEnd('timer')
     }
     
     all()
