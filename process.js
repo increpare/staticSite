@@ -52,15 +52,41 @@ async function all() {
         useShortDoctype: true,
     };
 
+    //for debug
+    // minifyOptions={}
+    
     //memoize slugs
     let slugs = JSON.parse(
         fs.readFileSync("slugs_cache.json", {
             encoding: "utf8",
         })
     );
+    function src_desc_to_tag(desc) {
+        if (desc in slugs) {
+            return slugs[desc];
+        }
+        let slug = getSlug(desc.split(" ")[0].toLowerCase(), {
+            custom: ["#"],
+        });
+        slugs[desc] = slug;
+        return slug;
+    }
 
-    //for debug
-    // minifyOptions={}
+    function tag_to_urlsafe(desc) {
+        var key = desc + "_SHARP#";
+        if (key in slugs) {
+            return slugs[key];
+        }
+        let slug = getSlug(desc.split(" ")[0].toLowerCase(), {
+            custom: {
+                "#": "sharp",
+            },
+        });
+        slugs[key] = slug;
+        return slug;
+    }
+
+    
 
     // STEP 1 : generate folders
 
@@ -290,30 +316,6 @@ async function all() {
 
     table.stableSort(sortByDate).reverse();
 
-    function src_desc_to_tag(desc) {
-        if (desc in slugs) {
-            return slugs[desc];
-        }
-        let slug = getSlug(desc.split(" ")[0].toLowerCase(), {
-            custom: ["#"],
-        });
-        slugs[desc] = slug;
-        return slug;
-    }
-
-    function tag_to_urlsafe(desc) {
-        var key = desc + "_SHARP#";
-        if (key in slugs) {
-            return slugs[key];
-        }
-        let slug = getSlug(desc.split(" ")[0].toLowerCase(), {
-            custom: {
-                "#": "sharp",
-            },
-        });
-        slugs[key] = slug;
-        return slug;
-    }
 
     let tagToFilter = "";
     let platformToFilter = "";
