@@ -9,13 +9,22 @@
       <copyright>2018 Stephen Lavelle</copyright>
       <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
       <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-      <pubDate>Fri, 27 Aug 2021 19:48:04 GMT</pubDate>
-      <lastBuildDate>Fri, 27 Aug 2021 19:48:04 GMT</lastBuildDate>
+      <pubDate>Sun, 29 Aug 2021 19:44:48 GMT</pubDate>
+      <lastBuildDate>Sun, 29 Aug 2021 19:44:48 GMT</lastBuildDate>
       <category>games</category>
       <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
       <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
       <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
     
+      <item>
+        <title>Eyeball-watching flowers bloom</title>
+        <pubDate>Sat, 28 Aug 2021 22:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/eyeball-watching-flowers-bloom.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description></description>
+        <guid isPermaLink="true">https://www.increpare.com/game/eyeball-watching-flowers-bloom.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
       <item>
         <title>Don't let your goals slip away</title>
         <pubDate>Thu, 26 Aug 2021 22:00:00 GMT</pubDate>
@@ -455,15 +464,6 @@
         <author>analytic@gmail.com (Stephen Lavelle)</author>    
         <description></description>
         <guid isPermaLink="true">https://www.increpare.com/game/legend-of-swixero.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>Heaven on Earth</title>
-        <pubDate>Thu, 30 Jan 2020 23:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/heaven-on-earth.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/heaven-on-earth.html</guid>
         <source url="https://www.increpare.com/feed.rss">increpare games</source>
       </item>
     </channel>
