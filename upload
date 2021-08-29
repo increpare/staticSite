@@ -1,1 +1,2 @@
-scp -r output/* r3okadmin_increpare@ssh.phx.nearlyfreespeech.net:/home/public/
+#scp -r output/* r3okadmin_increpare@ssh.phx.nearlyfreespeech.net:/home/public/
+rsync -avW -e ssh output/ remote_server:/home/public/
