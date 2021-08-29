@@ -9,13 +9,22 @@
       <copyright>2018 Stephen Lavelle</copyright>
       <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
       <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-      <pubDate>Sun, 29 Aug 2021 19:44:48 GMT</pubDate>
-      <lastBuildDate>Sun, 29 Aug 2021 19:44:48 GMT</lastBuildDate>
+      <pubDate>Sun, 29 Aug 2021 22:50:37 GMT</pubDate>
+      <lastBuildDate>Sun, 29 Aug 2021 22:50:37 GMT</lastBuildDate>
       <category>games</category>
       <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
       <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
       <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
     
+      <item>
+        <title>Subway upholstry snot smearing championship</title>
+        <pubDate>Sun, 29 Aug 2021 22:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/subway-upholstry-snot-smearing-championship.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description>This is pure fantasy and not based on real life happenings.  I don't mean to defame public transport.</description>
+        <guid isPermaLink="true">https://www.increpare.com/game/subway-upholstry-snot-smearing-championship.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
       <item>
         <title>Eyeball-watching flowers bloom</title>
         <pubDate>Sat, 28 Aug 2021 22:00:00 GMT</pubDate>
@@ -455,15 +464,6 @@
         <author>analytic@gmail.com (Stephen Lavelle)</author>    
         <description></description>
         <guid isPermaLink="true">https://www.increpare.com/game/xorro-the-chaos-warden.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>Legend of Swixero</title>
-        <pubDate>Sat, 26 Jun 2021 22:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/legend-of-swixero.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/legend-of-swixero.html</guid>
         <source url="https://www.increpare.com/feed.rss">increpare games</source>
       </item>
     </channel>
