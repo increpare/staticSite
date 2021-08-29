@@ -1,2 +1,2 @@
-#scp -r output/* r3okadmin_increpare@ssh.phx.nearlyfreespeech.net:/home/public/
+node process.js
 rsync -avW -e ssh output/ r3okadmin_increpare@ssh.phx.nearlyfreespeech.net:/home/public/
