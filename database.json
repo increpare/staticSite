@@ -5780,7 +5780,7 @@
   "DATE": "2018/12/03",
   "ICON": "gefi.png",
   "CAPTION": "",
-  "DESC": "I am indebted to the following people for their most gracious testing of and feedback on the game (especially help with the german version):  Alex Fink, Mike Lazer-Walker, Felix Niklas, Jazz Mickle, Jonah Ostroff, Guilherme Töws, Jannik Schleder, Marcos Donnantuoni, Ian Snyder, Julius Jacobsen, Bennett Foddy, Terry Cavanagh, Ruari O'Sullivan, Christian Zachau, Marcus Richter.",
+  "DESC": "I am indebted to the following people for their most gracious testing of and feedback on the game (especially help with the german version):Alex Fink, Mike Lazer-Walker, Felix Niklas, Jazz Mickle, Jonah Ostroff, Guilherme Töws, Jannik Schleder, Marcos Donnantuoni, Ian Snyder, Julius Jacobsen, Bennett Foddy, Terry Cavanagh, Ruari O'Sullivan, Christian Zachau, Marcus Richter.",
   "WEB-BROWSER": "https://games.increpare.com/Galaktisches_Etymologieforschungsinstitut/",
   "MAC": "",
   "WIN": "",
@@ -7610,6 +7610,22 @@
   "WIN": "",
   "LINUX": "",
   "SRC": "https://www.puzzlescript.net/editor.html?hack=26fa8397aae6e653a9555caf0fa345c5",
+  "SRC-DESC": "Puzzlescript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Double-Entry Bookkeeping Simulator",
+  "DATE": "2021/09/01",
+  "ICON": "accounting.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://www.puzzlescript.net/play.html?p=2424a19a3a5ac848c5489afea323be48",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.puzzlescript.net/editor.html?hack=2424a19a3a5ac848c5489afea323be48",
   "SRC-DESC": "Puzzlescript",
   "FLASH-PLAYER": "",
   "ZIP": "",
