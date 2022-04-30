@@ -1,11 +1,11 @@
-var fs = require('fs');
-const {execFile} = require('child_process');
-const optipng = require('optipng-bin');
+import * as fs from 'fs';
+import {execFile} from 'node:child_process';
+import optipng from 'optipng-bin';
 
 
 var files = fs.readdirSync('./icos');
 
-for (i in files){
+for (var i in files){
     var fn = files[i];
     var fullname = `./icos/${fn}`;
     (async (fn) => {

@@ -7678,5 +7678,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Cheesey Sponge",
+  "DATE": "2022/04/30",
+  "ICON": "cheesey_sponge.png",
+  "CAPTION": "Do the right thing!",
+  "DESC": "",
+  "WEB-BROWSER": "https://www.flickgame.org/play.html?p=d572a459e1949c1675f27cc2d3c493f7",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.flickgame.org/index.html?p=d572a459e1949c1675f27cc2d3c493f7",
+  "SRC-DESC": "flickgame",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
