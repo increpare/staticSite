@@ -9,13 +9,49 @@
       <copyright>2018 Stephen Lavelle</copyright>
       <managingEditor>analytic@gmail.com (Stephen Lavelle)</managingEditor>
       <webMaster>analytic@gmail.com (Stephen Lavelle)</webMaster>
-      <pubDate>Sun, 29 Aug 2021 22:50:37 GMT</pubDate>
-      <lastBuildDate>Sun, 29 Aug 2021 22:50:37 GMT</lastBuildDate>
+      <pubDate>Thu, 31 Mar 2022 19:12:56 GMT</pubDate>
+      <lastBuildDate>Thu, 31 Mar 2022 19:12:56 GMT</lastBuildDate>
       <category>games</category>
       <generator>https://github.com/increpare/staticSite/blob/master/process.js</generator>
       <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
       <atom:link href="https://www.increpare.com/feed.rss" rel="self" type="application/rss+xml" />
     
+      <item>
+        <title>Pachingo</title>
+        <pubDate>Wed, 30 Mar 2022 22:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/pachingo.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description>Pachinko and Go together for the first time</description>
+        <guid isPermaLink="true">https://www.increpare.com/game/pachingo.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
+      <item>
+        <title>Phonorium</title>
+        <pubDate>Sun, 20 Mar 2022 23:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/phonorium.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description>A joke game inspired by the witness + sensorium</description>
+        <guid isPermaLink="true">https://www.increpare.com/game/phonorium.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
+      <item>
+        <title>short adventure in sticky wall land</title>
+        <pubDate>Tue, 05 Oct 2021 22:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/short-adventure-in-sticky-wall-land.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description></description>
+        <guid isPermaLink="true">https://www.increpare.com/game/short-adventure-in-sticky-wall-land.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
+      <item>
+        <title>Double-Entry Bookkeeping Simulator</title>
+        <pubDate>Tue, 31 Aug 2021 22:00:00 GMT</pubDate>
+        <link>https://www.increpare.com/game/double-entry-bookkeeping-simulator.html</link>
+        <author>analytic@gmail.com (Stephen Lavelle)</author>    
+        <description></description>
+        <guid isPermaLink="true">https://www.increpare.com/game/double-entry-bookkeeping-simulator.html</guid>
+        <source url="https://www.increpare.com/feed.rss">increpare games</source>
+      </item>
       <item>
         <title>Subway upholstry snot smearing championship</title>
         <pubDate>Sun, 29 Aug 2021 22:00:00 GMT</pubDate>
@@ -428,42 +464,6 @@
         <author>analytic@gmail.com (Stephen Lavelle)</author>    
         <description></description>
         <guid isPermaLink="true">https://www.increpare.com/game/it-gets-its-feet-wet.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>North Wind Simple Sailboat Buoy Collection</title>
-        <pubDate>Mon, 28 Jun 2021 22:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/north-wind-simple-sailboat-buoy-collection.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/north-wind-simple-sailboat-buoy-collection.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>Pocket Gopher: Root-Shoot Nibbler</title>
-        <pubDate>Mon, 28 Jun 2021 22:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/pocket-gopher-root-shoot-nibbler.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/pocket-gopher-root-shoot-nibbler.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>Put the logs in the water, elephant!</title>
-        <pubDate>Sun, 27 Jun 2021 22:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/put-the-logs-in-the-water-elephant.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/put-the-logs-in-the-water-elephant.html</guid>
-        <source url="https://www.increpare.com/feed.rss">increpare games</source>
-      </item>
-      <item>
-        <title>Xorro the Chaos Warden</title>
-        <pubDate>Sat, 26 Jun 2021 22:00:00 GMT</pubDate>
-        <link>https://www.increpare.com/game/xorro-the-chaos-warden.html</link>
-        <author>analytic@gmail.com (Stephen Lavelle)</author>    
-        <description></description>
-        <guid isPermaLink="true">https://www.increpare.com/game/xorro-the-chaos-warden.html</guid>
         <source url="https://www.increpare.com/feed.rss">increpare games</source>
       </item>
     </channel>
