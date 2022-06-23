@@ -7726,5 +7726,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
- }
+ },
+ {
+  "TITLE": "Phonorium Mini",
+  "DATE": "2022/06/23",
+  "ICON": "phonorium_mini.png",
+  "CAPTION": "",
+  "DESC": "Made with the wonderful mouth sound recordings and expertise of <a href='https://www.linkedin.com/in/michael-lefkowitz-46765966'>Michael Lefkowitz</a>.",
+  "WEB-BROWSER": "http://games.increpare.com/Phonorium_mini/",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://github.com/increpare/phonorium_mini",
+  "SRC-DESC": "HTML5",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
+ },
 ]
