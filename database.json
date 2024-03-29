@@ -2,7 +2,7 @@
  {
   "TITLE": "MathCIV",
   "DATE": "2004/05/13",
-  "ICON": "",
+  "ICON": "mathciv.png",
   "CAPTION": "",
   "DESC": "Freeciv never seemed mathematically accurate enough for me .. i mean it’s all well and good to just discover gravity and have newton’s workshop, but to do gravity you really do need to have a basic knowledge of synthetic infinitesimal geometry, and to know that you have to know geometry … but on the other hand you should have the opportunity to learn functional analysis and algebra and category theory as your civilisation progresses. You can also not just specify to build a university in your city, but you can also specify what departments you want to build :)<p>\nSo I took freeciv and added those features to the game :)<p>\nMathCIV, as I call it (there’s not much too it really … though it does have a brothel :) ) lurks in the computers section. it’s not terribly well documented, especially re. installation, but if you’ve installed any other mods it shouldn’t be very hard at all to install. If you are having trouble installing it just give me a buzz.<p>\nI hope i included all the files (my freeciv directories are a bit of a mess *heh*).<p>\nPlease though, give it a try and tell me what you think!",
   "WEB-BROWSER": "",
@@ -18,7 +18,7 @@
  {
   "TITLE": "Trinity MUD",
   "DATE": "2005/10/03",
-  "ICON": "",
+  "ICON": "trinity_mud.png",
   "CAPTION": "",
   "DESC": "Here‘s a MUD set in Trinity College that I wrote in freepascal.  (Norgg did a more up to date build that builds with more modern versions of freepascal here - http://norgg.org/files/increparemud.zip - thanks, Norgg!)",
   "WEB-BROWSER": "",
@@ -98,7 +98,7 @@
  {
   "TITLE": "Endless Cavern",
   "DATE": "2008/11/15",
-  "ICON": "",
+  "ICON": "endless_cavern.png",
   "CAPTION": "",
   "DESC": "<img src=\"https://i272.photobucket.com/albums/jj200/increpatio/endlesscavern.png\"/>\n<p>\n<blockquote><em>Strange well in Arkham country—water gives out (or was never struck —hole kept tightly covered by a stone ever since dug)—no bottom—shunned and feared—what lay beneath (either unholy temple or other very ancient thing, or great cave-world).</em></blockquote>\n<p>\n\nAn entry for the <a href=\"https://forums.tigsource.com/index.php?topic=3286.0\">TIGsource Commonplace Book competition</a>.\n<p>\nThe source is, on the whole, a bit gross, owing partly to my inability to wrap the fmod library properly.  If there's any interest <em>at all</em>, I can easily make an easy-to-compile soundless and generally tidied-up version of the game available.\n<p>\n<b>CONTROLS:</b>\n<p>\nspace - to progress through title menus<br>\nleft/right - to move left/right<br>\nup/down - to turn off/on 'thrust'<br>\n<p>\n<b>PREMISE:</b>\n<p>\nProcedurally-generated tessellated-cavern flying game of sorts.\n<p>\n<b>SCREENSHOTS:</b>\n<p>\n<img src=\"https://i272.photobucket.com/albums/jj200/increpatio/Picture54.png\"/>",
   "WEB-BROWSER": "",
@@ -178,7 +178,7 @@
  {
   "TITLE": "Defez",
   "DATE": "2008/12/15",
-  "ICON": "",
+  "ICON": "defez.png",
   "CAPTION": "",
   "DESC": "Fascinated by the efforts of Terry, in his game <a href=\"https://distractionware.com/blog/?p=254\">\nsquish</a>, a retro demake of <a href=\"https://www.gamespot.com/psp/action/crush/\">crush</a>, as well as <a href=\"https://www.kokoromi.org/\">fez</a>, I started off on a small series of studies on 1/2-dimensional variations of the mechanic common to those games.  I have four done so far; I tend to put one out whenever I'm having a particularly idle evening.   The control system in them is a bit deficient, and the graphics are very basic: the point was to explore the mechanic rather than produce something polished.<p>\n\n<img src=\"https://i272.photobucket.com/albums/jj200/increpatio/Picture58.png\" alt=\"defez1\" /><p>\n\nThe basic prototype, blocks prohibit movement when squished.\n<p>\n(<a href=\"https://forums.tigsource.com/index.php?topic=2992.0\">tigsource thread </a>)\n",
   "WEB-BROWSER": "",
@@ -194,7 +194,7 @@
  {
   "TITLE": "Defez 2: Refez",
   "DATE": "2008/12/16",
-  "ICON": "",
+  "ICON": "defez2.png",
   "CAPTION": "",
   "DESC": "<img src=\"https://games.increpare.com/defez2.png\" alt=\"defez1\" />\n<p>\nBased on Defez, but with blocks that have 'insets'.  This broadens the mechanic somewhat, but was still ultimately limited (though less limited than the first...).  Made a level editor for this one as well, which helped with design a lot.\n<p>\n(<a href=\"https://forums.tigsource.com/index.php?topic=3036.0\">tigsource thread </a>)\n",
   "WEB-BROWSER": "",
@@ -210,7 +210,7 @@
  {
   "TITLE": "Defez 3: Mortar",
   "DATE": "2008/12/17",
-  "ICON": "",
+  "ICON": "defez3.png",
   "CAPTION": "",
   "DESC": "<img src=\"https://i272.photobucket.com/albums/jj200/increpatio/defez3.gif\" alt=\"defez1\" />\n<p>\n\nA different approach, more open but local: squishes down things either side of one of horizontal/vertical you are on.\n<p>\n\n(<a href=\"https://forums.tigsource.com/index.php?topic=3150.0\">tigsource thread </a>)\n",
   "WEB-BROWSER": "",
@@ -226,7 +226,7 @@
  {
   "TITLE": "Defez 4: Das Kapital",
   "DATE": "2008/12/18",
-  "ICON": "",
+  "ICON": "defez4.png",
   "CAPTION": "",
   "DESC": "<img src=\"https://i272.photobucket.com/albums/jj200/increpatio/Picture140.png\" alt=\"defez1\" />\n<p>\n\nAn observer-dependent one: squishes from either the top/bottom/left/right of the screen.  More limited in many ways, but would be simpler for people to grasp I think (could be implemented as a rotation, like in crush).\n<p>\n(<a href=\"https://forums.tigsource.com/index.php?topic=3805.0\">tigsource thread </a>)\n<p>\n I have a list of about five other mechanics that're awaiting implementation, but I seem to have lost some interest in pursuing this much further <em>for the moment</em>.",
   "WEB-BROWSER": "",

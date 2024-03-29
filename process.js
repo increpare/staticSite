@@ -169,7 +169,7 @@ async function all() {
     let tagList = [];
 
     let platformList = [
-        "flash-player",
+        // "flash-player",
         "web-browser",
         "linux",
         "macos",
@@ -197,6 +197,11 @@ async function all() {
         let src = r.SRC;
         let src_desc = r["SRC-DESC"];
         let flash = r["FLASH-PLAYER"];
+        //if flash is set, but not html, set html to point to it
+        if (flash !== "" && html === "") {
+            html = flash;
+            r["WEB-BROWSER"] = flash;
+        }
         let zip = r.ZIP;
         let unity = r["UNITY PLAYER"];
 
