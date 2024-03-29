@@ -299,7 +299,7 @@
   "LINUX": "",
   "SRC": "https://games.increpare.com/burnsrc.zip",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://www.increpare.com/burn",
+  "FLASH-PLAYER": "https://games.increpare.com/burn/",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
@@ -347,7 +347,7 @@
   "LINUX": "",
   "SRC": "",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://www.kongregate.com/games/increpare/transplatform",
+  "FLASH-PLAYER": "https://games.increpare.com/transplatform/",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
@@ -363,7 +363,7 @@
   "LINUX": "",
   "SRC": "https://games.increpare.com/blackyeti_src.zip",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://www.kongregate.com/games/increpare/the-black-yeti",
+  "FLASH-PLAYER": "https://games.increpare.com/blackyeti",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
@@ -667,7 +667,7 @@
   "LINUX": "",
   "SRC": "",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://www.newgrounds.com/portal/view/505708",
+  "FLASH-PLAYER": "https://games.increpare.com/volcanoparty/",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
@@ -843,7 +843,7 @@
   "LINUX": "",
   "SRC": "",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://www.kongregate.com/games/TerryCavanagh_B/deterministica",
+  "FLASH-PLAYER": "https://games.increpare.com/deterministica/distractionware.com/",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
@@ -3355,7 +3355,7 @@
   "LINUX": "",
   "SRC": "https://www.terrycavanaghgames.com/moving/movingstories_src.zip",
   "SRC-DESC": "Flash",
-  "FLASH-PLAYER": "https://terrycavanaghgames.com/moving/",
+  "FLASH-PLAYER": "https://games.increpare.com/PackingGame/movingstories.html",
   "ZIP": "",
   "UNITY PLAYER": ""
  },
