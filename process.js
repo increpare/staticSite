@@ -1,5 +1,7 @@
 #! /usr/bin/env node
 
+// npm install striptags speakingurl compressing recursive-copy html-minifier
+
 const fs = require("fs");
 const path = require("path");
 const striptags = require("striptags");
