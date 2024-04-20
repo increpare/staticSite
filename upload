@@ -1,2 +1,2 @@
 node process.js
-rsync -avW -e ssh output/ r3okadmin_increpare@ssh.phx.nearlyfreespeech.net:/home/public/
+rsync -avW -e ssh output/ r3okadmin_increpare@ssh.nyc1.nearlyfreespeech.net:/home/public/

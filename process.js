@@ -201,6 +201,8 @@ async function all() {
         if (flash !== "" && html === "") {
             html = flash;
             r["WEB-BROWSER"] = flash;
+            flash="";
+            r["FLASH-PLAYER"] = "";
         }
         let zip = r.ZIP;
         let unity = r["UNITY PLAYER"];
