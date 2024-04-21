@@ -7806,5 +7806,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Fickle Fred",
+  "DATE": "2024/04/21",
+  "ICON": "ficklefred.png",
+  "CAPTION": "",
+  "DESC": "(new mechanic riffing off <a href=\"www.sneezingtiger.com/sokoban/levels/microbanText.html\">David Skinner's microban levels</a> used <a href=\"https://marcosdon.github.io/PuzzleScriptWithSolver/src/editor.html\">marcosdon's solver</a> to play around/tweak levels.",
+  "WEB-BROWSER": "https://www.puzzlescript.net/play.html?p=9b0f6761dc347ede2f33df4e056c5f33",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.puzzlescript.net/editor.html?hack=9b0f6761dc347ede2f33df4e056c5f33",
+  "SRC-DESC": "PuzzleScript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
