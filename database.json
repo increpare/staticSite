@@ -7854,5 +7854,37 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Head Skuller",
+  "DATE": "2024/04/24",
+  "ICON": "headskuller.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://www.puzzlescript.net/play.html?p=6af6790e4393ee9c3975dcc318f97726",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.puzzlescript.net/editor.html?hack=6af6790e4393ee9c3975dcc318f97726",
+  "SRC-DESC": "PuzzleScript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "The Monsterous Autoshove",
+  "DATE": "2024/04/24",
+  "ICON": "autoshove.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://www.puzzlescript.net/play.html?p=a9c7e7bdab2cb7975d2a9cf3d13eaacf",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.puzzlescript.net/editor.html?hack=a9c7e7bdab2cb7975d2a9cf3d13eaacf",
+  "SRC-DESC": "PuzzleScript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
