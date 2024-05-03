@@ -7934,5 +7934,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Hedgehog Stimulator",
+  "DATE": "2024/05/03",
+  "ICON": "hedgehog.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://www.puzzlescript.net/play.html?p=71f85378ccf80ea2bd3f95087cc5f582",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://www.puzzlescript.net/editor.html?hack=71f85378ccf80ea2bd3f95087cc5f582",
+  "SRC-DESC": "PuzzleScript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
