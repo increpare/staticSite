@@ -7966,5 +7966,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Bombogramm",
+  "DATE": "2025/05/06",
+  "ICON": "bombogramm.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://games.increpare.com/bombogramm/",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://github.com/increpare/bombogramm",
+  "SRC-DESC": "HTML",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
