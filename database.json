@@ -7982,5 +7982,21 @@
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Tetrarch",
+  "DATE": "2025/05/10",
+  "ICON": "tetrarch.png",
+  "CAPTION": "",
+  "DESC": "",
+  "WEB-BROWSER": "https://games.increpare.com/tetrarch/",
+  "MAC": "",
+  "WIN": "",
+  "LINUX": "",
+  "SRC": "https://github.com/increpare/tetratch-fouromino",
+  "SRC-DESC": "HaxeFlixel",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
  }
 ]
