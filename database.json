@@ -4000,7 +4000,7 @@
   "UNITY PLAYER": ""
  },
  {
-  "TITLE": "Stephen’s Sausage Roll",
+  "TITLE": "Stephen's Sausage Roll",
   "DATE": "2016/04/18",
   "ICON": "increpareicon.png",
   "CAPTION": "Many years work...",
@@ -8027,6 +8027,22 @@
   "LINUX": "",
   "SRC": "https://www.puzzlescript.net/editor.html?hack=024ddd5878b0dfae91d0d10bdf3c3016",
   "SRC-DESC": "PuzzleScript",
+  "FLASH-PLAYER": "",
+  "ZIP": "",
+  "UNITY PLAYER": ""
+ },
+ {
+  "TITLE": "Mask Quest",
+  "DATE": "2024/10/17",
+  "ICON": "maskquest.png",
+  "CAPTION": "Many years work...",
+  "DESC": "\n<p><a href=\"https://store.steampowered.com/app/1127660/Mask_Quest/\">Steam Storepage</a> ",
+  "WEB-BROWSER": "",
+  "MAC": "https://store.steampowered.com/app/1127660/Mask_Quest/",
+  "WIN": "https://store.steampowered.com/app/1127660/Mask_Quest/",
+  "LINUX": "https://store.steampowered.com/app/1127660/Mask_Quest/",
+  "SRC": "",
+  "SRC-DESC": "HaxeFlixel",
   "FLASH-PLAYER": "",
   "ZIP": "",
   "UNITY PLAYER": ""
