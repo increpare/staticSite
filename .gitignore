@@ -6,7 +6,7 @@ oldsite/www.increpare.com
 */*.html.gz
 */*/*.html.gz
 */*/*/*.html.gz
-
+node_modules
 *.gz
 
 *.gz
