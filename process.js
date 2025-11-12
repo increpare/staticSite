@@ -152,6 +152,8 @@ async function all() {
         return markdown;
     }
 
+    let linklistTemplate = fs.readFileSync(P("templates/linklist.html"));
+
     let styleSheet = fs.readFileSync(P("templates/style.css"));
 
     let postTemplate = "`" + fs.readFileSync(P("templates/post.html")) + "`";
@@ -369,7 +371,7 @@ async function all() {
     }
 
     function doLinkList() {
-        return `<a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>`;
+        return linklistTemplate;
     }
 
     let cachedgamecount = {};

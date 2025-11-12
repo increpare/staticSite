@@ -160,8 +160,14 @@ select {
 }
 
 .filterbar {
+  padding-bottom: 10px;
 }
 
+.privacyfooter {
+  text-align: center;
+  font-size:150%;
+  padding: 20px;
+}
 
 /* from post.html */
 .cardbody {
@@ -235,4 +241,21 @@ html {
   /*align left*/
   text-align: left;
   display:block;
+}
+
+
+.linklistbar {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linklistbar li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.linklistbar img {
+  width: 20px;
+  height: 20px;
 }
