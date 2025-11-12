@@ -9,80 +9,16 @@
     <title>${title} - increpare games</title>
 
     <style>
-html {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: auto;
-}
-body {
-  background-color: beige;
-  padding: 20px 0 50px;
-  vertical-align: top;
-  width: 600px;
-  margin: auto;
-}
-.taglink {
-  font-style: italic;
-}
-img {
-  -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px #000;
-  margin: 10px;
-  padding: 30px 30px 10px;
-}
-@media all and (max-width: 350px) {
-  .card, body {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-}
-#description, ul {
-  text-align: left;
-}
-hr {
-  border-top: 1px solid #000;
-  left: -30px;
-  right: -30px;
-}
-#footer, .docenter {
-  text-align: center;
-}
-#quote {
-  color: gray;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-#date {
-  color: gray;
-  float: right;
-  padding-right: 30px;
-  right: 0;
-  text-align: right;
-}
-.li_src {
-  margin-top: 20px;
-}
-img {
-  border: 1px solid #000;
-  height: 250px;
-  width: 250px;
-}
-
+      ${insertStyle()}
 
     </style>
   </head>
 
-  <body>
+  <body class="cardbody">
+    <span class="date_and_back">
     <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <span id="date">${date}</span>
+  </span>
     <div class="card">
     <div class="docenter">
     	<img alt="" width="250" height="250" src="../icos/${icon}">
@@ -109,7 +45,7 @@ img {
       <p>
       <hr>
       <div id="footer"> 
-        <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+        ${doLinkList()}
       </div>
      <p>
   </body>

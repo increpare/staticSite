@@ -1,4 +1,265 @@
-<!doctype html> <html lang=en> <head> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content="text/html; charset=utf-8" http-equiv=Content-Type /> <meta content="Makes small mostly free games and tools :)" name=description> <meta content="" name=author> <link href=feed.rss rel=alternate title="RSS feed for increpare.com" type=application/rss+xml /> <title>flash - increpare games</title> <style>body{background-color:beige;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;margin:30px auto 70px;max-width:1400px;padding-left:0;padding-right:0}@media all and (min-width:75pc){body{padding-left:50px;padding-right:50px}}img{-ms-interpolation-mode:nearest-neighbor;image-rendering:auto;image-rendering:crisp-edges;image-rendering:pixelated}td{vertical-align:top;width:100%}hr{border-top:1px solid #000;left:-30px;right:-30px}#header,.card,body,html{text-align:center}#header{font-size:120%;padding-bottom:20px}.card{background-color:#fff;border-radius:5px;box-shadow:0 0 0 1px #000;display:inline-block;margin:10px;padding:20px 0 25px;width:290px}.card a{text-decoration:none}.card a .gamename{text-decoration:underline}.gamename{font-size:150%;overflow:hidden;padding-bottom:10px;padding-left:10px;padding-right:10px;text-overflow:ellipsis;white-space:nowrap}.date{color:#757575;padding-bottom:3px}.thumb{border:1px solid #000;margin-bottom:5px}.leftcol{width:300px}.container,.icon{height:50px;width:50px}.container{display:inline-block;margin:8px;position:relative}.smcontainer{padding-top:20px;height:30px;width:30px}.smicon{height:30px;width:30px}.smcontainer{display:inline-block;margin:8px;position:relative}.icon,.smicon{display:inline;opacity:.4}.overlay,.text{position:absolute}.overlay{bottom:0;height:50px;left:0;opacity:0;right:0;top:0;width:50px}.container:hover .icon,.container:hover .smicon{opacity:.25}.container:hover .overlay{opacity:1}.smoverlay,.text{position:absolute}.smoverlay{bottom:0;height:60px;left:0;opacity:0;right:0;top:0;width:100%}.smcontainer:hover .smicon{opacity:.25}.smcontainer:hover .smoverlay{opacity:1}.text{-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);color:#000;font-size:20px;left:50%;text-align:center;top:50%;transform:translate(-50%,-50%)}select{display:inline}</style> </head> <body> <h1><a href="../index.html">increpare games</a> / web-browser - flash</h1> <div id=header> <a href=https://github.com/increpare/ >github</a> | <a href=https://www.patreon.com/increpare>patreon</a> | <a href=https://www.paypal.me/increparegames>paypal</a> | <a href=privacy.html>privacy policy</a> | <a href=mailto:analytic@gmail.com>analytic@gmail.com</a> </div> <div id=filterbar> Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>flash - increpare games</title>
+
+    <style>
+ 
+.indexbody {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .titlecard, .indexbody {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+}
+
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+}
+
+#quote {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#date {
+  color: gray;
+  float: right;
+  padding-right: 30px;
+  right: 0;
+  text-align: right;
+}
+
+.li_src {
+  margin-top: 20px;
+}
+
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
+}
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    <h1><a href="../index.html">increpare games</a> / web-browser - flash</h1>
+
+    <div id="header">
+        <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+    </div>
+    <div id="filterbar">
+        Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
 <option value="flash.html">platform (94)</option>
 <option value="#" selected ='selected' >web-browser (93)</option>
 <option value="windows-flash.html"  >windows (1)</option>
@@ -39,8 +300,10 @@
          plat_select.value = "#"
     });
         </script>
- </div> 
-        <div class="card">
+
+    </div>
+  
+        <div class="titlecard">
             <a href="../game/moving-stories.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/movingstories.png">
                 <div class="date">2014/12/31</div >
@@ -63,7 +326,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/songs-of-travel.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/dreamoftravel.png">
                 <div class="date">2013/01/27</div >
@@ -86,7 +349,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/two-levels.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/twolevels.png">
                 <div class="date">2012/07/23</div >
@@ -109,7 +372,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/mmmmmm.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/mmmmmm123.png">
                 <div class="date">2012/04/14</div >
@@ -132,7 +395,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/crab-planet.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/crabplanet.png">
                 <div class="date">2012/04/09</div >
@@ -155,7 +418,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/coca-t.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cocat_shot.png">
                 <div class="date">2012/04/09</div >
@@ -178,7 +441,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/rapidfie.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/rapidfie.png">
                 <div class="date">2012/02/25</div >
@@ -201,7 +464,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/woodrow-wilson.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ss5.png">
                 <div class="date">2012/02/21</div >
@@ -224,7 +487,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-good-sister.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ss1.png">
                 <div class="date">2012/02/21</div >
@@ -247,7 +510,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/recross.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ss4.png">
                 <div class="date">2012/02/21</div >
@@ -270,7 +533,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/promises.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ss6.png">
                 <div class="date">2012/02/21</div >
@@ -293,7 +556,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/negative-shape.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ss2.png">
                 <div class="date">2012/02/21</div >
@@ -316,7 +579,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/puppy-shelter.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/puppyshelter.png">
                 <div class="date">2011/12/19</div >
@@ -339,7 +602,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/oiche-mhaith.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/oichemhaith.png">
                 <div class="date">2011/12/17</div >
@@ -354,7 +617,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/pirouette.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/pirouette.png">
                 <div class="date">2011/12/11</div >
@@ -377,7 +640,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/travelling.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/travelling_ico.png">
                 <div class="date">2011/07/18</div >
@@ -400,7 +663,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/kompression.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/kompression_ico.png">
                 <div class="date">2011/07/18</div >
@@ -423,7 +686,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/bastard.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/catbastard_ico.png">
                 <div class="date">2011/07/18</div >
@@ -446,7 +709,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/line-bender.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/linebender_ico.png">
                 <div class="date">2011/07/17</div >
@@ -469,7 +732,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/untris.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/untris_ico.png">
                 <div class="date">2011/07/16</div >
@@ -492,7 +755,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/so-and-lt-o0.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/soo0icon.png">
                 <div class="date">2011/05/12</div >
@@ -515,7 +778,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/block-push-championship.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/stepdykeshot.png">
                 <div class="date">2011/05/01</div >
@@ -538,7 +801,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/nawnco.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/nawnco.png">
                 <div class="date">2011/04/10</div >
@@ -561,7 +824,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/bfxr.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/sfxrimg.png">
                 <div class="date">2011/02/24</div >
@@ -584,7 +847,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/a-history-of-democratic-process-in-eire.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/history_of_democracy.png">
                 <div class="date">2011/02/20</div >
@@ -607,7 +870,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/american-dream.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/american_dream_ico.png">
                 <div class="date">2011/02/10</div >
@@ -630,7 +893,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/catalan.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/catalan_ico.png">
                 <div class="date">2011/01/20</div >
@@ -653,7 +916,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/typesphere.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/wordgame_ico.png">
                 <div class="date">2011/01/16</div >
@@ -676,7 +939,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/octat.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/octat_ico.png">
                 <div class="date">2011/01/01</div >
@@ -699,7 +962,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/tyndall.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tyndallpic.png">
                 <div class="date">2010/12/22</div >
@@ -722,7 +985,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/mother-robot.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/motherrobot.png">
                 <div class="date">2010/12/20</div >
@@ -745,7 +1008,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/kettle.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/kettle_sshot.png">
                 <div class="date">2010/11/28</div >
@@ -768,7 +1031,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/powahpaint.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/powahpaint.png">
                 <div class="date">2010/11/10</div >
@@ -791,7 +1054,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/ditheroid.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ditheroid.png">
                 <div class="date">2010/11/10</div >
@@ -814,7 +1077,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/pautomata.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/pautomata.png">
                 <div class="date">2010/11/09</div >
@@ -837,7 +1100,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/i-miss-you.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/imissyou.png">
                 <div class="date">2010/11/03</div >
@@ -860,7 +1123,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/treatise.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/treatiseico.png">
                 <div class="date">2010/11/02</div >
@@ -883,7 +1146,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/primitive-pattern.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/primitive_pattern.png">
                 <div class="date">2010/10/17</div >
@@ -906,7 +1169,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/box.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/boxico.png">
                 <div class="date">2010/10/07</div >
@@ -929,7 +1192,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/cascode.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cascode.png">
                 <div class="date">2010/09/15</div >
@@ -952,7 +1215,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-conspiracy-of-tzetek.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/conspiracytzet.png">
                 <div class="date">2010/08/22</div >
@@ -975,7 +1238,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/fierljeppen.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/fierljeppen.png">
                 <div class="date">2010/08/15</div >
@@ -998,7 +1261,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-rose-garden.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/rosegarden.png">
                 <div class="date">2010/08/14</div >
@@ -1021,7 +1284,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/serenade.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/serenader.png">
                 <div class="date">2010/08/14</div >
@@ -1044,7 +1307,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/lion-love.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/oberholz.png">
                 <div class="date">2010/08/14</div >
@@ -1067,7 +1330,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/epicurus.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/epicurus.png">
                 <div class="date">2010/08/14</div >
@@ -1090,7 +1353,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/ndueiwd.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ndueiwd.png">
                 <div class="date">2010/07/20</div >
@@ -1113,7 +1376,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/whale-of-noise.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/whale.png">
                 <div class="date">2010/07/05</div >
@@ -1136,7 +1399,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/bababada.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/bababada.png">
                 <div class="date">2010/06/19</div >
@@ -1151,7 +1414,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/sad-forest.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk9.png">
                 <div class="date">2010/06/08</div >
@@ -1174,7 +1437,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/parot.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk8.png">
                 <div class="date">2010/06/08</div >
@@ -1197,7 +1460,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/garden-of-delights.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk6.png">
                 <div class="date">2010/06/08</div >
@@ -1220,7 +1483,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/fishing-game.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk5.png">
                 <div class="date">2010/06/08</div >
@@ -1243,7 +1506,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/constellation-z.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk4.png">
                 <div class="date">2010/06/08</div >
@@ -1266,7 +1529,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/computer-aided-design.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk3.png">
                 <div class="date">2010/06/08</div >
@@ -1289,7 +1552,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/calcibrush.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk2.png">
                 <div class="date">2010/06/08</div >
@@ -1312,7 +1575,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/brittle-paint.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk7.png">
                 <div class="date">2010/06/08</div >
@@ -1335,7 +1598,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/beat-blob-universe.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tiguk1.png">
                 <div class="date">2010/06/08</div >
@@ -1358,7 +1621,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/100-names.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/stalin.png">
                 <div class="date">2010/05/21</div >
@@ -1381,7 +1644,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/paddle-game.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/paddlegame.png">
                 <div class="date">2010/05/17</div >
@@ -1404,7 +1667,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/beatification.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/paintshot.png">
                 <div class="date">2010/05/16</div >
@@ -1427,7 +1690,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/monopoint.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cursor.png">
                 <div class="date">2010/05/03</div >
@@ -1450,7 +1713,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/islands.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/island.png">
                 <div class="date">2010/04/26</div >
@@ -1473,7 +1736,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-terrible-whiteness-of-appalachian-nights.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/nightterror.png">
                 <div class="date">2010/04/19</div >
@@ -1496,7 +1759,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/six-minutes-of-broken-promises.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/sixminutes.png">
                 <div class="date">2010/03/21</div >
@@ -1519,7 +1782,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/holohoax.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/holohoax.png">
                 <div class="date">2010/03/14</div >
@@ -1542,7 +1805,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/beating-off.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/beatingoff.png">
                 <div class="date">2010/02/28</div >
@@ -1565,7 +1828,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/crush-fetish-trilogy-part-3.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/crushfoot.png">
                 <div class="date">2010/02/27</div >
@@ -1580,7 +1843,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/crush-fetish-trilogy-part-2.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/crushfoot.png">
                 <div class="date">2010/02/27</div >
@@ -1595,7 +1858,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/crush-fetish-trilogy-part-1.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/crushfoot.png">
                 <div class="date">2010/02/27</div >
@@ -1610,7 +1873,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/queue.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/queue.png">
                 <div class="date">2010/02/21</div >
@@ -1633,7 +1896,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-combinatorial-genesis-of-narrative.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tcgon.png">
                 <div class="date">2010/02/10</div >
@@ -1656,7 +1919,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/legende.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/legende.png">
                 <div class="date">2010/02/09</div >
@@ -1679,7 +1942,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/starfeld.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/asdfasdf.png">
                 <div class="date">2010/02/07</div >
@@ -1702,7 +1965,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/sound-sound.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/fadpic2.png">
                 <div class="date">2010/01/20</div >
@@ -1725,7 +1988,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/comatease.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/fadpic1.png">
                 <div class="date">2010/01/20</div >
@@ -1748,7 +2011,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/modernauts.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/modernauts.png">
                 <div class="date">2010/01/14</div >
@@ -1771,7 +2034,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/aesop.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/aesopimg.png">
                 <div class="date">2010/01/14</div >
@@ -1794,7 +2057,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/math-land.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/mathland.png">
                 <div class="date">2010/01/09</div >
@@ -1817,7 +2080,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/grave.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/gravepic.png">
                 <div class="date">2010/01/07</div >
@@ -1840,7 +2103,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/frig.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/frigimg.png">
                 <div class="date">2009/12/30</div >
@@ -1863,7 +2126,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/version-control.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/versioncontrol.png">
                 <div class="date">2009/12/08</div >
@@ -1886,7 +2149,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/therapy-game.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/therapygame.png">
                 <div class="date">2009/11/30</div >
@@ -1909,7 +2172,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/platonic-archetypes-of-dice.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/oflightpng.png">
                 <div class="date">2009/11/23</div >
@@ -1932,7 +2195,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/theatrics.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/theatr.png">
                 <div class="date">2009/11/17</div >
@@ -1955,7 +2218,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/missing.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/missingico.png">
                 <div class="date">2009/11/03</div >
@@ -1978,7 +2241,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/puppy-drome.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/puppytronico.png">
                 <div class="date">2009/10/27</div >
@@ -2001,7 +2264,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/cat-got-lost.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cat250.png">
                 <div class="date">2009/10/25</div >
@@ -2024,7 +2287,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/deterministica.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/determin.png">
                 <div class="date">2009/08/06</div >
@@ -2039,7 +2302,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-baron-s-volcano-party.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/baron.png">
                 <div class="date">2009/08/01</div >
@@ -2054,7 +2317,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-black-yeti.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/yetiicon.png">
                 <div class="date">2009/02/09</div >
@@ -2077,7 +2340,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/transplatform.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/transplatform.png">
                 <div class="date">2009/01/30</div >
@@ -2092,7 +2355,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/burn.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/burn.png">
                 <div class="date">2009/01/11</div >
@@ -2122,4 +2385,8 @@
                     </div>
                 </a>
             </div>
-          </div>  
+          </div>
+
+</body>
+
+</html>

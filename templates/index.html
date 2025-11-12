@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>${doTitle()}</title>
+
+    <style>
+ ${insertStyle()}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    ${doHeading()}
+
+    <div id="header">
+        ${doLinkList()}
+    </div>
+    <div id="filterbar">
+        Filter by : ${doFilterLists()}
+    </div>
+  ${doGrid()}
+
+</body>
+
+</html>

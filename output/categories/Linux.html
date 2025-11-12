@@ -1,4 +1,265 @@
-<!doctype html> <html lang=en> <head> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content="text/html; charset=utf-8" http-equiv=Content-Type /> <meta content="Makes small mostly free games and tools :)" name=description> <meta content="" name=author> <link href=feed.rss rel=alternate title="RSS feed for increpare.com" type=application/rss+xml /> <title>increpare games</title> <style>body{background-color:beige;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;margin:30px auto 70px;max-width:1400px;padding-left:0;padding-right:0}@media all and (min-width:75pc){body{padding-left:50px;padding-right:50px}}img{-ms-interpolation-mode:nearest-neighbor;image-rendering:auto;image-rendering:crisp-edges;image-rendering:pixelated}td{vertical-align:top;width:100%}hr{border-top:1px solid #000;left:-30px;right:-30px}#header,.card,body,html{text-align:center}#header{font-size:120%;padding-bottom:20px}.card{background-color:#fff;border-radius:5px;box-shadow:0 0 0 1px #000;display:inline-block;margin:10px;padding:20px 0 25px;width:290px}.card a{text-decoration:none}.card a .gamename{text-decoration:underline}.gamename{font-size:150%;overflow:hidden;padding-bottom:10px;padding-left:10px;padding-right:10px;text-overflow:ellipsis;white-space:nowrap}.date{color:#757575;padding-bottom:3px}.thumb{border:1px solid #000;margin-bottom:5px}.leftcol{width:300px}.container,.icon{height:50px;width:50px}.container{display:inline-block;margin:8px;position:relative}.smcontainer{padding-top:20px;height:30px;width:30px}.smicon{height:30px;width:30px}.smcontainer{display:inline-block;margin:8px;position:relative}.icon,.smicon{display:inline;opacity:.4}.overlay,.text{position:absolute}.overlay{bottom:0;height:50px;left:0;opacity:0;right:0;top:0;width:50px}.container:hover .icon,.container:hover .smicon{opacity:.25}.container:hover .overlay{opacity:1}.smoverlay,.text{position:absolute}.smoverlay{bottom:0;height:60px;left:0;opacity:0;right:0;top:0;width:100%}.smcontainer:hover .smicon{opacity:.25}.smcontainer:hover .smoverlay{opacity:1}.text{-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);color:#000;font-size:20px;left:50%;text-align:center;top:50%;transform:translate(-50%,-50%)}select{display:inline}</style> </head> <body> <h1><a href="../index.html">increpare games</a> / linux</h1> <div id=header> <a href=https://github.com/increpare/ >github</a> | <a href=https://www.patreon.com/increpare>patreon</a> | <a href=https://www.paypal.me/increparegames>paypal</a> | <a href=privacy.html>privacy policy</a> | <a href=mailto:analytic@gmail.com>analytic@gmail.com</a> </div> <div id=filterbar> Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>increpare games</title>
+
+    <style>
+ 
+.indexbody {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .titlecard, .indexbody {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+}
+
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+}
+
+#quote {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#date {
+  color: gray;
+  float: right;
+  padding-right: 30px;
+  right: 0;
+  text-align: right;
+}
+
+.li_src {
+  margin-top: 20px;
+}
+
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
+}
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    <h1><a href="../index.html">increpare games</a> / linux</h1>
+
+    <div id="header">
+        <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+    </div>
+    <div id="filterbar">
+        Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
 <option value="../index.html">platform (506)</option>
 <option value="web-browser.html"  >web-browser (389)</option>
 <option value="windows.html"  >windows (128)</option>
@@ -39,8 +300,10 @@
          plat_select.value = "#"
     });
         </script>
- </div> 
-        <div class="card">
+
+    </div>
+  
+        <div class="titlecard">
             <a href="../game/mask-quest.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/maskquest.png">
                 <div class="date">2024/10/17</div >
@@ -71,7 +334,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/anonymous-statue-egg-throw.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/eggtoss.png">
                 <div class="date">2022/05/16</div >
@@ -110,7 +373,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/pachingo.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/pachingo.png">
                 <div class="date">2022/03/31</div >
@@ -157,7 +420,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/phonorium.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/phonorium.png">
                 <div class="date">2022/03/21</div >
@@ -204,7 +467,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/touching-moments.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/touchingmoments.png">
                 <div class="date">2019/12/26</div >
@@ -251,7 +514,7 @@
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/seelenloser-aktionschaukler-soulless-action-swinger.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/schaukeler.png">
                 <div class="date">2019/06/09</div >
@@ -299,7 +562,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/hirnfluch-braincurse.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/brainfluch.png">
                 <div class="date">2019/05/23</div >
@@ -346,7 +609,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/automobilelektrodefekt.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/elektrodefekt.png">
                 <div class="date">2019/05/02</div >
@@ -393,7 +656,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/lassensiesich.png">
                 <div class="date">2018/11/02</div >
@@ -432,7 +695,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/fahnenstange-flagstaff.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/fahnenstange.png">
                 <div class="date">2018/10/14</div >
@@ -479,7 +742,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/quiet-city.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/quietcity.png">
                 <div class="date">2017/11/10</div >
@@ -518,7 +781,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/worst-guest.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/worstguest.png">
                 <div class="date">2017/09/01</div >
@@ -557,7 +820,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/running-memories.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/running_memories.png">
                 <div class="date">2017/08/23</div >
@@ -596,7 +859,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/a-story-about-a-cat.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/catbutt.png">
                 <div class="date">2017/07/31</div >
@@ -635,7 +898,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/stephen-s-sausage-roll.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/increpareicon.png">
                 <div class="date">2016/04/18</div >
@@ -666,7 +929,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/2plus3.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/2plus3.png">
                 <div class="date">2015/11/05</div >
@@ -705,7 +968,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/shine-bright-a-little-longer.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/shinebright.png">
                 <div class="date">2015/08/23</div >
@@ -744,7 +1007,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/subway-adventure.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/subwayadventure.png">
                 <div class="date">2015/08/22</div >
@@ -783,7 +1046,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/door-game.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/doorgame.png">
                 <div class="date">2015/06/22</div >
@@ -822,7 +1085,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/trip.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/tripico.png">
                 <div class="date">2015/06/20</div >
@@ -861,7 +1124,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/shower-game.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/showergame.png">
                 <div class="date">2015/06/18</div >
@@ -900,7 +1163,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/so-as-to-not-disturb.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/soasot.png">
                 <div class="date">2014/11/22</div >
@@ -939,7 +1202,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/all-that-i-have-to-give.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/allthatihavetogive.png">
                 <div class="date">2014/11/22</div >
@@ -978,7 +1241,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/problems-and-solutions.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/problemsandsolutions.png">
                 <div class="date">2014/11/20</div >
@@ -1017,7 +1280,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/cooking-for-lovers.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cookingforlovers.png">
                 <div class="date">2014/11/09</div >
@@ -1056,7 +1319,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-shadow.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/theshadowicon.png">
                 <div class="date">2014/11/08</div >
@@ -1095,7 +1358,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/away.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/awayicon.png">
                 <div class="date">2014/11/08</div >
@@ -1134,7 +1397,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/waking-up.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/lilyicon.png">
                 <div class="date">2014/11/05</div >
@@ -1173,7 +1436,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/on-the-passage-of-time.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/passagetimeicon.png">
                 <div class="date">2014/11/03</div >
@@ -1212,7 +1475,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/on-beauty.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/onbeauty.png">
                 <div class="date">2014/11/02</div >
@@ -1251,7 +1514,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/wear-and-tear.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/wearandtear.png">
                 <div class="date">2014/10/31</div >
@@ -1290,7 +1553,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/vigil.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/vigil.png">
                 <div class="date">2014/10/31</div >
@@ -1329,7 +1592,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/happy.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/happymemories.png">
                 <div class="date">2014/10/27</div >
@@ -1368,7 +1631,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/having-said-goodbye.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/saidgoodbye.png">
                 <div class="date">2014/10/26</div >
@@ -1407,7 +1670,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/gesture.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/gesturesico.png">
                 <div class="date">2014/10/20</div >
@@ -1446,7 +1709,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/let-your-mind-fall-to-rest.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/torest.png">
                 <div class="date">2014/10/06</div >
@@ -1485,7 +1748,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-serpent.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/lips.png">
                 <div class="date">2014/04/30</div >
@@ -1524,7 +1787,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/universal-history-of-light.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/historyoflight.png">
                 <div class="date">2014/02/09</div >
@@ -1563,7 +1826,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/english-country-tune.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/ect.png">
                 <div class="date">2011/11/26</div >
@@ -1594,7 +1857,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/could-i-but-express-in-song.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/cibeis.png">
                 <div class="date">2010/02/21</div >
@@ -1633,7 +1896,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/wilde-jagd.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/asdfasdf2.png">
                 <div class="date">2010/02/07</div >
@@ -1672,7 +1935,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/impotence.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/gradsmallimp.png">
                 <div class="date">2009/12/20</div >
@@ -1711,7 +1974,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/avast.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/peppper250.png">
                 <div class="date">2009/10/25</div >
@@ -1750,7 +2013,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/sleeping-beauty.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/sleepingb.png">
                 <div class="date">2009/10/18</div >
@@ -1789,7 +2052,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/vows.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/vowssm.png">
                 <div class="date">2009/08/01</div >
@@ -1828,7 +2091,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/punch-or-kiss.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/snap.png">
                 <div class="date">2009/06/21</div >
@@ -1867,7 +2130,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/the-lua-puppet.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/luapuppet.png">
                 <div class="date">2009/01/26</div >
@@ -1898,7 +2161,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/infidelidad.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/infidelidad.png">
                 <div class="date">2009/01/07</div >
@@ -1937,7 +2200,7 @@ SOULLESS ACTION SWINGER</div>
                 </a>
             </div>
           </div>
-        <div class="card">
+        <div class="titlecard">
             <a href="../game/lightcone-prototype-1.html">
                 <img class="thumb" alt="" width="250" height="250" src="../icos/lightconetitle.png">
                 <div class="date">2008/10/05</div >
@@ -1967,4 +2230,8 @@ SOULLESS ACTION SWINGER</div>
                     </div>
                 </a>
             </div>
-          </div>  
+          </div>
+
+</body>
+
+</html>

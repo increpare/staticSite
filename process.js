@@ -98,7 +98,7 @@ async function all() {
 
     if (fs.existsSync("output")) {
         fs.renameSync("output", "output2");
-        fs.rmdir(
+        fs.rm(
             "output2",
             {
                 recursive: true,
@@ -152,11 +152,12 @@ async function all() {
         return markdown;
     }
 
-    let postTemplate = "`" + fs.readFileSync(P("templates/post.txt")) + "`";
-    postTemplate = minify(postTemplate, minifyOptions);
+    let styleSheet = fs.readFileSync(P("templates/style.css"));
 
-    let indexTemplate = "`" + fs.readFileSync(P("templates/index.txt")) + "`";
-    indexTemplate = minify(indexTemplate, minifyOptions);
+    let postTemplate = "`" + fs.readFileSync(P("templates/post.html")) + "`";
+
+    let indexTemplate = "`" + fs.readFileSync(P("templates/index.html")) + "`";
+
 
     let table = JSON.parse(
         fs.readFileSync("database.json", {
@@ -282,7 +283,8 @@ async function all() {
         r.NICEDATE = niceDate; //[16]
 
         let page = eval(postTemplate);
-        console.log(title);
+        page = minify(page, minifyOptions);
+        // console.log(title);
 
         let fpath = P("output/game/" + pageName);
         fs.writeFile(fpath, page, function (err) {
@@ -337,6 +339,10 @@ async function all() {
         return title;
     }
 
+    function insertStyle() {
+        return styleSheet;
+    }
+
     function doHeading() {
         if (tagToFilter !== "") {
             if (platformToFilter !== "") {
@@ -360,6 +366,10 @@ async function all() {
             prefix = "../";
         }
         return prefix;
+    }
+
+    function doLinkList() {
+        return `<a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>`;
     }
 
     let cachedgamecount = {};
@@ -578,7 +588,7 @@ async function all() {
             const iconsize = icocount < 5 ? "50" : "30";
 
             let cardTemplate = `
-        <div class="card">
+        <div class="titlecard">
             <a href="${prefix}game/${pageName}">
                 <img class="thumb" alt="" width="250" height="250" src="${prefix}icos/${icon}">
                 <div class="date">${niceDate}</div >
@@ -705,7 +715,7 @@ async function all() {
     }
 
     function generatePage(plat, tag) {
-        console.log("filtered page : " + tag + "\t" + plat);
+        // console.log("filtered page : " + tag + "\t" + plat);
         const filteredPage = eval(indexTemplate);
 
         let pageName = "";
