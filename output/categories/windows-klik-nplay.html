@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>klik-nplay - increpare games</title>
+
+    <style>
+ 
+.indexbody {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .titlecard, .indexbody {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+  padding-bottom: 10px;
+}
+
+.privacyfooter {
+  text-align: center;
+  font-size:150%;
+  padding: 20px;
+}
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+}
+
+#quote {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#date {
+  color: gray;
+  float: right;
+  padding-right: 30px;
+  right: 0;
+  text-align: right;
+}
+
+.li_src {
+  margin-top: 20px;
+}
+
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
+}
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+
+
+.linklistbar {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linklistbar li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.linklistbar img {
+  width: 20px;
+  height: 20px;
+}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    <h1><a href="../index.html">increpare games</a> / windows - klik-nplay</h1>
+
+    <div id="header">
+        <ul class="linklistbar">
+<li><a href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.png"/></a></li>
+<li><a href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.png"/></a></li>
+<li><a href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.png"/></a></li>
+<li><a href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.png"/></a></li>
+<li><a href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.png"/></a></li>
+<li><a href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.png"/></a></li>
+<li><a href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.png"/></a></li>
+<li><a href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.png"/></A></li>
+<li><a href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.png"/></a></li>
+<li><a href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.png"/></a></li>
+<li><a href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.png"/></a></li>
+</ul>
+    </div>
+    <div id="filterbar">
+        Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="klik-nplay.html">platform (1)</option>
+<option value="#" selected ='selected' >windows (1)</option>
+<option value="linux-klik-nplay.html"  disabled>linux (0)</option>
+<option value="macos-klik-nplay.html"  disabled>macos (0)</option>
+<option value="other-klik-nplay.html"  disabled>other (0)</option>
+<option value="web-browser-klik-nplay.html"  disabled>web-browser (0)</option>
+</select>
+<select id="tag_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="windows.html">engine (129)</option>
+<option value="windows-unity.html"  >unity (64)</option>
+<option value="windows-c.html"  >c (43)</option>
+<option value="windows-ren-py.html"  >ren-py (7)</option>
+<option value="windows-godot.html"  >godot (4)</option>
+<option value="windows-tads.html"  >tads (2)</option>
+<option value="windows-flash.html"  >flash (1)</option>
+<option value="windows-haskell.html"  >haskell (1)</option>
+<option value="windows-haxeflixel.html"  >haxeflixel (1)</option>
+<option value="windows-haxegon.html"  >haxegon (1)</option>
+<option value="windows-html5.html"  >html5 (1)</option>
+<option value="#" selected ='selected' >klik-nplay (1)</option>
+<option value="windows-love.html"  >love (1)</option>
+<option value="windows-lua.html"  >lua (1)</option>
+<option value="windows-roblox.html"  >roblox (1)</option>
+<option value="windows-csharp.html"  disabled>c# (0)</option>
+<option value="windows-flickgame.html"  disabled>flickgame (0)</option>
+<option value="windows-html.html"  disabled>html (0)</option>
+<option value="windows-mod.html"  disabled>mod (0)</option>
+<option value="windows-monogatari.html"  disabled>monogatari (0)</option>
+<option value="windows-pascal.html"  disabled>pascal (0)</option>
+<option value="windows-puzzlescript.html"  disabled>puzzlescript (0)</option>
+<option value="windows-translation.html"  disabled>translation (0)</option>
+<option value="windows-twine.html"  disabled>twine (0)</option>
+<option value="windows-zeedonk.html"  disabled>zeedonk (0)</option>
+</select>
+<script>
+    window.addEventListener('pageshow', function(event) {
+         tag_select.value = "#"
+         plat_select.value = "#"
+    });
+        </script>
+
+    </div>
+  
+        <div class="titlecard">
+            <a href="../game/unattended-luggage.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/u_a.png">
+                <div class="date">2008/12/07</div >
+                <div class="gamename">Unattended Luggage</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/unattended%20luggage.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/unattended%20luggage.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Klik'nPlay)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+  
+<div class="privacyfooter">
+    <a href="/privacy.html">privacy policy</a>
+</div>
+</body>
+
+</html>
