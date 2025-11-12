@@ -1,0 +1,3338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>puzzlescript - increpare games</title>
+
+    <style>
+ 
+.indexbody {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .titlecard, .indexbody {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+  padding-bottom: 10px;
+}
+
+.privacyfooter {
+  text-align: center;
+  font-size:150%;
+  padding: 20px;
+}
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+}
+
+#quote {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#date {
+  color: gray;
+  float: right;
+  padding-right: 30px;
+  right: 0;
+  text-align: right;
+}
+
+.li_src {
+  margin-top: 20px;
+}
+
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
+}
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+
+
+.linklistbar {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linklistbar li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.linklistbar img {
+  width: 20px;
+  height: 20px;
+}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    <h1><a href="../index.html">increpare games</a> / puzzlescript</h1>
+
+    <div id="header">
+        <ul class="linklistbar">
+<li><a href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.png"/></a></li>
+<li><a href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.png"/></a></li>
+<li><a href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.png"/></a></li>
+<li><a href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.png"/></a></li>
+<li><a href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.png"/></a></li>
+<li><a href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.png"/></a></li>
+<li><a href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.png"/></a></li>
+<li><a href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.png"/></A></li>
+<li><a href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.png"/></a></li>
+<li><a href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.png"/></a></li>
+<li><a href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.png"/></a></li>
+</ul>
+    </div>
+    <div id="filterbar">
+        Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="#">platform (130)</option>
+<option value="web-browser-puzzlescript.html"  >web-browser (130)</option>
+<option value="linux-puzzlescript.html"  disabled>linux (0)</option>
+<option value="macos-puzzlescript.html"  disabled>macos (0)</option>
+<option value="other-puzzlescript.html"  disabled>other (0)</option>
+<option value="windows-puzzlescript.html"  disabled>windows (0)</option>
+</select>
+<select id="tag_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="../index.html">engine (507)</option>
+<option value="#" selected ='selected' >puzzlescript (130)</option>
+<option value="flash.html"  >flash (94)</option>
+<option value="flickgame.html"  >flickgame (72)</option>
+<option value="unity.html"  >unity (66)</option>
+<option value="c.html"  >c (43)</option>
+<option value="haxegon.html"  >haxegon (33)</option>
+<option value="html.html"  >html (25)</option>
+<option value="html5.html"  >html5 (13)</option>
+<option value="ren-py.html"  >ren-py (7)</option>
+<option value="godot.html"  >godot (4)</option>
+<option value="twine.html"  >twine (4)</option>
+<option value="haskell.html"  >haskell (2)</option>
+<option value="haxeflixel.html"  >haxeflixel (2)</option>
+<option value="tads.html"  >tads (2)</option>
+<option value="csharp.html"  >c# (1)</option>
+<option value="klik-nplay.html"  >klik-nplay (1)</option>
+<option value="love.html"  >love (1)</option>
+<option value="lua.html"  >lua (1)</option>
+<option value="mod.html"  >mod (1)</option>
+<option value="monogatari.html"  >monogatari (1)</option>
+<option value="pascal.html"  >pascal (1)</option>
+<option value="roblox.html"  >roblox (1)</option>
+<option value="translation.html"  >translation (1)</option>
+<option value="zeedonk.html"  >zeedonk (1)</option>
+</select>
+<script>
+    window.addEventListener('pageshow', function(event) {
+         tag_select.value = "#"
+         plat_select.value = "#"
+    });
+        </script>
+
+    </div>
+  
+        <div class="titlecard">
+            <a href="../game/talo-pipi-2.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/talopipi2.png">
+                <div class="date">2025/05/12</div >
+                <div class="gamename">talo pipi 2</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=5805437b87cc98f42e0698e40df54929" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=5805437b87cc98f42e0698e40df54929" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/dollyban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/dollyban.png">
+                <div class="date">2025/03/27</div >
+                <div class="gamename">Dollyban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9dad50f8a7a20878adaca64febc32b62" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9dad50f8a7a20878adaca64febc32b62" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-sacrament-of-the-river-god.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/rivergod.png">
+                <div class="date">2025/01/01</div >
+                <div class="gamename">The Sacrament of the River God</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6cbd698a10d85ab4cbe955dba7f2bf15" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6cbd698a10d85ab4cbe955dba7f2bf15" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/flesh-handed-hot-casserole-delivery-bot.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/casserole.png">
+                <div class="date">2024/05/10</div >
+                <div class="gamename">flesh-handed hot casserole delivery bot</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=024ddd5878b0dfae91d0d10bdf3c3016" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=024ddd5878b0dfae91d0d10bdf3c3016" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/muraphilic-monophobic-multiban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/muraphilicmonophobicmultiban.png">
+                <div class="date">2024/05/10</div >
+                <div class="gamename">Muraphilic Monophobic Multiban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8d2f0e7542ba8a51f1ded3c3fee41e86" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8d2f0e7542ba8a51f1ded3c3fee41e86" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/hedgehog-stimulator.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/hedgehog.png">
+                <div class="date">2024/05/03</div >
+                <div class="gamename">Hedgehog Stimulator</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=71f85378ccf80ea2bd3f95087cc5f582" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=71f85378ccf80ea2bd3f95087cc5f582" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/wool-clawer.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/woolclawer.png">
+                <div class="date">2024/05/01</div >
+                <div class="gamename">Wool-Clawer</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f73c79ce419996252172753c428cc7ca" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f73c79ce419996252172753c428cc7ca" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/15-push-pull-levels.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pushpull2.png">
+                <div class="date">2024/04/26</div >
+                <div class="gamename">15 push pull levels</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b8ffc76f96a7ee65caf950578c024fd1" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b8ffc76f96a7ee65caf950578c024fd1" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/big-dog-and-little-dog.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/bigdoglittledog.png">
+                <div class="date">2024/04/25</div >
+                <div class="gamename">Big Dog and Little Dog</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=72a7436847a7b27ee2436d7c2a059cc6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=72a7436847a7b27ee2436d7c2a059cc6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-monsterous-autoshove.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/autoshove.png">
+                <div class="date">2024/04/24</div >
+                <div class="gamename">The Monsterous Autoshove</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=a9c7e7bdab2cb7975d2a9cf3d13eaacf" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=a9c7e7bdab2cb7975d2a9cf3d13eaacf" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/head-skuller.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/headskuller.png">
+                <div class="date">2024/04/24</div >
+                <div class="gamename">Head Skuller</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6af6790e4393ee9c3975dcc318f97726" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6af6790e4393ee9c3975dcc318f97726" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/no-forbidden-symbols-2.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/noforbidden2.png">
+                <div class="date">2024/04/22</div >
+                <div class="gamename">NO FORBIDDEN SYMBOLS 2</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6f0b1072a5d4dc4be9f4845d9d51112a" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6f0b1072a5d4dc4be9f4845d9d51112a" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/ecosystem-generator.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ecosystemgenerator.png">
+                <div class="date">2024/04/22</div >
+                <div class="gamename">Ecosystem Generator</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7fd7fc4525cc534042be78a5bf8b0bae" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7fd7fc4525cc534042be78a5bf8b0bae" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/fickle-fred.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ficklefred.png">
+                <div class="date">2024/04/21</div >
+                <div class="gamename">Fickle Fred</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9b0f6761dc347ede2f33df4e056c5f33" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9b0f6761dc347ede2f33df4e056c5f33" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/butteater.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/butteater.png">
+                <div class="date">2024/04/21</div >
+                <div class="gamename">Butteater</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=735d0ec533b08b9dd13186bf2a6aaeb6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=735d0ec533b08b9dd13186bf2a6aaeb6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/witch-lifter.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/witchlifter.png">
+                <div class="date">2024/04/20</div >
+                <div class="gamename">Witch Lifter</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9b405f4c165349eb617779b5547cdf52" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9b405f4c165349eb617779b5547cdf52" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/red-ring-of-immortality.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/redring.png">
+                <div class="date">2022/07/15</div >
+                <div class="gamename">Red Ring of Immortality</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b239f5ce5bb5802e437afc1150e4ea93" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b239f5ce5bb5802e437afc1150e4ea93" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/short-adventure-in-sticky-wall-land.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/stickywalls.png">
+                <div class="date">2021/10/06</div >
+                <div class="gamename">short adventure in sticky wall land</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=538deac6e3a7a2632be40effab9378d3" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=538deac6e3a7a2632be40effab9378d3" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/double-entry-bookkeeping-simulator.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/accounting.png">
+                <div class="date">2021/09/01</div >
+                <div class="gamename">Double-Entry Bookkeeping Simulator</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=2424a19a3a5ac848c5489afea323be48" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=2424a19a3a5ac848c5489afea323be48" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/subway-upholstry-snot-smearing-championship.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/subway.png">
+                <div class="date">2021/08/30</div >
+                <div class="gamename">Subway upholstry snot smearing championship</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=26fa8397aae6e653a9555caf0fa345c5" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=26fa8397aae6e653a9555caf0fa345c5" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/eyeball-watching-flowers-bloom.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/blooming.png">
+                <div class="date">2021/08/29</div >
+                <div class="gamename">Eyeball-watching flowers bloom</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=2cdb4270c11a54827d2f3a98978c1b45" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=2cdb4270c11a54827d2f3a98978c1b45" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/don-t-let-your-goals-slip-away.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/slipaway.png">
+                <div class="date">2021/08/27</div >
+                <div class="gamename">Don't let your goals slip away</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f34a4aa089260bfbdcf04b6b01c32b72" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f34a4aa089260bfbdcf04b6b01c32b72" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/crate-guardian.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/crateguardian.png">
+                <div class="date">2021/08/24</div >
+                <div class="gamename">crate guardian</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=65abb4166e7b99122f0bc04a09cfc1aa" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=65abb4166e7b99122f0bc04a09cfc1aa" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/pipe-puffer.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pipepuffer.png">
+                <div class="date">2021/08/20</div >
+                <div class="gamename">pipe puffer</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=57ba9f77bb7fd28b3f4401973ec7ef3b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=57ba9f77bb7fd28b3f4401973ec7ef3b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/resin-caster.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/resin.png">
+                <div class="date">2021/08/17</div >
+                <div class="gamename">Resin-Caster</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=386e5d6f3de0a16e2b79782d8e49e207" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=386e5d6f3de0a16e2b79782d8e49e207" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/crates-move-when-you-move.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/cratesmove.png">
+                <div class="date">2021/08/17</div >
+                <div class="gamename">Crates move when you move</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b8f93072878708ce91fb3e5126a02b0b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b8f93072878708ce91fb3e5126a02b0b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/pushy-v-pully-h.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pushypully.png">
+                <div class="date">2021/08/16</div >
+                <div class="gamename">Pushy-V Pully-H</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=47bb12909e13a1f9170114505813a5d1" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=47bb12909e13a1f9170114505813a5d1" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/match-maker.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/matchmaker.png">
+                <div class="date">2021/08/15</div >
+                <div class="gamename">Match-Maker</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=a9c815a9d48ff978b18a3b5b3b98e5b8" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=a9c815a9d48ff978b18a3b5b3b98e5b8" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/acorn-scorchery-paradise.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/acorn.png">
+                <div class="date">2021/08/10</div >
+                <div class="gamename">Acorn Scorchery Paradise</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=ee04bacbe5c2a031b02d89a03f692490" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=ee04bacbe5c2a031b02d89a03f692490" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/wand-spinner.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/wandspinner.png">
+                <div class="date">2021/08/10</div >
+                <div class="gamename">Wand Spinner</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=635cc283114b367d8fce1310eb0d6f53" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=635cc283114b367d8fce1310eb0d6f53" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/hole-stuffer.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/stuffer.png">
+                <div class="date">2021/08/09</div >
+                <div class="gamename">Hole-Stuffer</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7a0ac66fca334ff2c0ddabe35e47a9b3" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7a0ac66fca334ff2c0ddabe35e47a9b3" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/two-tone-tango.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/tango.png">
+                <div class="date">2021/08/09</div >
+                <div class="gamename">Two-Tone Tango</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=3b33f85dd2322878885a06b76a70061a" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=3b33f85dd2322878885a06b76a70061a" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/chevron-lodger.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/chevron.png">
+                <div class="date">2021/08/06</div >
+                <div class="gamename">Chevron Lodger</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=85e6acb3750ba6499e935ccb0c5de184" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=85e6acb3750ba6499e935ccb0c5de184" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/any-hole-is-a-goal.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/anyhole.png">
+                <div class="date">2021/08/05</div >
+                <div class="gamename">Any hole is a goal</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c847a980b5e8a6d576b4dad3749755ba" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c847a980b5e8a6d576b4dad3749755ba" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/cucumber-surprise.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/cucumbersurprise.png">
+                <div class="date">2021/08/02</div >
+                <div class="gamename">Cucumber Surprise</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8f3d3fce534eaaa12ea21971348a943b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8f3d3fce534eaaa12ea21971348a943b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/varifocal-nightmare.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/varifocal.png">
+                <div class="date">2021/07/16</div >
+                <div class="gamename">Varifocal Nightmare</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=aec909c6b258d0f3ed0768c83a89b213" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=aec909c6b258d0f3ed0768c83a89b213" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sokoban-sokoban-sokoban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sok3.png">
+                <div class="date">2021/07/16</div >
+                <div class="gamename">Sokoban[Sokoban[Sokoban]]]</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=efe47d5471e9ef533a664a66c31eb66d" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=efe47d5471e9ef533a664a66c31eb66d" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/yellow-box.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/yellowbox.png">
+                <div class="date">2021/07/16</div >
+                <div class="gamename">Yellow Box</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f2ba464f661a7a51bdc1f32320d04810" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f2ba464f661a7a51bdc1f32320d04810" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/attractor-net.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/attractor.png">
+                <div class="date">2021/07/16</div >
+                <div class="gamename">Attractor Net</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=daee9cc0ba467577c232bf5526ac097c" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=daee9cc0ba467577c232bf5526ac097c" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sexual-intercourse.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sperm.png">
+                <div class="date">2021/07/15</div >
+                <div class="gamename">Sexual Intercourse</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6db35fb9d71be4690b029fff02579653" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6db35fb9d71be4690b029fff02579653" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-sponge-what-lights-up-the-seafloor.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sponge.png">
+                <div class="date">2021/07/15</div >
+                <div class="gamename">The sponge what lights up the seafloor</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=33d42cc9f33cd58f74fa2ee31b494314" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=33d42cc9f33cd58f74fa2ee31b494314" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/van-to-mobile-living-space-conversion-window-frame-installation.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/campervan.png">
+                <div class="date">2021/07/14</div >
+                <div class="gamename">Van-to-Mobile-Living-Space-Conversion Window-Frame-Installation</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=2401b16304fa80ff5e176183eaaa0a66" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=2401b16304fa80ff5e176183eaaa0a66" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/bicycle-kick-football.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/bicyclekick.png">
+                <div class="date">2021/07/13</div >
+                <div class="gamename">Bicycle-Kick Football</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=3b0a5996c2647a4fb76c8a9dc3be08fe" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=3b0a5996c2647a4fb76c8a9dc3be08fe" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/explodoban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/explodoban.png">
+                <div class="date">2021/07/13</div >
+                <div class="gamename">Explodoban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=08e343d25a15ad264003fdcb16f05763" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=08e343d25a15ad264003fdcb16f05763" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/you-can-t-make-this-up.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/youcant.png">
+                <div class="date">2021/07/12</div >
+                <div class="gamename">You can't make this up!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=60305a6c4f7b666ea17373d6d602b541" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=60305a6c4f7b666ea17373d6d602b541" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/realtime-dog-mountain-rescue.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/rescuedog.png">
+                <div class="date">2021/07/12</div >
+                <div class="gamename">REALTIME DOG MOUNTAIN RESCUE</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b9369bcca585481aeae0e10257a5ce79" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b9369bcca585481aeae0e10257a5ce79" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/tugging-a-trapped-pubic-hair-out-from-under-one-s-foreskin.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/yanking.png">
+                <div class="date">2021/07/12</div >
+                <div class="gamename">Tugging a trapped pubic hair out from under one's foreskin</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=701d31633f338eba70f74c3f1ef780d6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=701d31633f338eba70f74c3f1ef780d6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/swimming-time.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/swimming.png">
+                <div class="date">2021/07/11</div >
+                <div class="gamename">SWIMMING TIME!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=cb270b8b222dfcc8a0b3ba5ecbab0161" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=cb270b8b222dfcc8a0b3ba5ecbab0161" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/no-forbidden-symbols.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/noforbidden.png">
+                <div class="date">2021/07/10</div >
+                <div class="gamename">NO FORBIDDEN SYMBOLS</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=452b832232d525cc864a4452dc858b0e" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=452b832232d525cc864a4452dc858b0e" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/gem-socketeer.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/socketeer.png">
+                <div class="date">2021/07/10</div >
+                <div class="gamename">Gem Socketeer</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=1ff423f753999334991e2f39b29efff1" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=1ff423f753999334991e2f39b29efff1" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/crate-swarp.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/schwap.png">
+                <div class="date">2021/07/08</div >
+                <div class="gamename">Crate Swarp</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=cc1e479d230fe00a076af94247a7f582" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=cc1e479d230fe00a076af94247a7f582" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/recondite-star-sector-sigma.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/recondite.png">
+                <div class="date">2021/07/07</div >
+                <div class="gamename">Recondite Star Sector Sigma</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=0fb52426c22640c5538e2ffa521ce8b6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=0fb52426c22640c5538e2ffa521ce8b6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/no-don-t-eat-that.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/fresserbaby.png">
+                <div class="date">2021/07/07</div >
+                <div class="gamename">No! Don't eat that!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=cc7b491135dec942c3d45a94cd2233cd" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=cc7b491135dec942c3d45a94cd2233cd" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/putting-bicycle-helmets-on-young-children.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/haircut.png">
+                <div class="date">2021/07/07</div >
+                <div class="gamename">Putting Bicycle Helmets on Young Children</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c50906badf7248a1ca14bae8da3374ba" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c50906badf7248a1ca14bae8da3374ba" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/paint-everything-everywhere.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/painteverything.png">
+                <div class="date">2021/07/06</div >
+                <div class="gamename">paint everything everywhere!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6a412035f6f1999cc773ddcb071de6e6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6a412035f6f1999cc773ddcb071de6e6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/oh-no-my-dog-is-about-to-swallow-a-piece-of-chocolate.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/hundefresser.png">
+                <div class="date">2021/07/06</div >
+                <div class="gamename">Oh No My Dog Is About To Swallow A Piece Of Chocolate</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=5e17ca1ee4599211d349d4af8c987498" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=5e17ca1ee4599211d349d4af8c987498" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/c-dex-lubricus.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lubicrus.png">
+                <div class="date">2021/07/04</div >
+                <div class="gamename">CŌDEX·LŪBRICUS</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8b63a15e053fd7f3dee04bc08fe1da5e" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8b63a15e053fd7f3dee04bc08fe1da5e" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-far-away-danish-pastry-is-always-deliciouser.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/danish.png">
+                <div class="date">2021/07/02</div >
+                <div class="gamename">The Far Away Danish Pastry is always Deliciouser.</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6c15e48f75255190c6ddc56bed0d5748" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6c15e48f75255190c6ddc56bed0d5748" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/microban-x-10.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/microbanx10.png">
+                <div class="date">2021/07/02</div >
+                <div class="gamename">Microban x 10</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7694c6c072d0784b69dc6271ffd3650e" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7694c6c072d0784b69dc6271ffd3650e" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/two-step-pete.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/twosteppete.png">
+                <div class="date">2021/07/02</div >
+                <div class="gamename">Two-Step Pete</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8422f59043f87ae7356510334134c107" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8422f59043f87ae7356510334134c107" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/place-the-crate-on-the-targets.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/crateontarget.png">
+                <div class="date">2021/07/01</div >
+                <div class="gamename">Place the crate on the targets</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7f3af3bb2f92b94dce2a56971ffde8e2" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7f3af3bb2f92b94dce2a56971ffde8e2" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/moved-by-leaves-of-grass.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/movedbygrass.png">
+                <div class="date">2021/07/01</div >
+                <div class="gamename">Moved by leaves of grass</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7c050ca5c9180f8d35d2427e28de7f9b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7c050ca5c9180f8d35d2427e28de7f9b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/neoprenanzieher.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/neopren.png">
+                <div class="date">2021/07/01</div >
+                <div class="gamename">Neoprenanzieher</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=0e9a234d0e5f66d308f64f6b9e1c1fdb" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=0e9a234d0e5f66d308f64f6b9e1c1fdb" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/it-gets-its-feet-wet.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/gondola.png">
+                <div class="date">2021/06/30</div >
+                <div class="gamename">It gets its Feet Wet</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=55721f9f663844578feb343acd65f314" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=55721f9f663844578feb343acd65f314" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/north-wind-simple-sailboat-buoy-collection.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/jolle.png">
+                <div class="date">2021/06/29</div >
+                <div class="gamename">North Wind Simple Sailboat Buoy Collection</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=70dfe58323088d74905201bdf1356fa4" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=70dfe58323088d74905201bdf1356fa4" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/pocket-gopher-root-shoot-nibbler.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/gophershoots.png">
+                <div class="date">2021/06/29</div >
+                <div class="gamename">Pocket Gopher: Root-Shoot Nibbler</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=4f9fa271f2de143c040ae9aaeb964726" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=4f9fa271f2de143c040ae9aaeb964726" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/put-the-logs-in-the-water-elephant.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/elephant.png">
+                <div class="date">2021/06/28</div >
+                <div class="gamename">Put the logs in the water, elephant!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c75c21d481107aa5cb78dc91378f8d9b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c75c21d481107aa5cb78dc91378f8d9b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/xorro-the-chaos-warden.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/xorro.png">
+                <div class="date">2021/06/27</div >
+                <div class="gamename">Xorro the Chaos Warden</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=2ec54c32af77b2b1e7645c2aa5020b47" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=2ec54c32af77b2b1e7645c2aa5020b47" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/legend-of-swixero.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/swixero.png">
+                <div class="date">2021/06/27</div >
+                <div class="gamename">Legend of Swixero</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f13829fb6c5b9af9c18bbcaf6b4c741d" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f13829fb6c5b9af9c18bbcaf6b4c741d" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/schleimban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/schleimban.png">
+                <div class="date">2019/12/20</div >
+                <div class="gamename">Schleimban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=7e591e438ab29ce2e421f481f17f58be" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=7e591e438ab29ce2e421f481f17f58be" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sum-three-horizontally-to-8.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sum328.png">
+                <div class="date">2019/12/19</div >
+                <div class="gamename">sum three horizontally to 8!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=dbb6b8075558e85fa14eac2dceefbe19" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=dbb6b8075558e85fa14eac2dceefbe19" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Puzzlescript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/biaxial-invasion-of-saturn.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/biaxial.png">
+                <div class="date">2019/07/30</div >
+                <div class="gamename">BIAXIAL INVASION OF SATURN</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9ddf4872249860e02ef2295b03498f3d" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9ddf4872249860e02ef2295b03498f3d" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/a-clear-view-of-the-sky.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/aclearview.png">
+                <div class="date">2019/07/15</div >
+                <div class="gamename">A CLEAR VIEW OF THE SKY</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b6020a515c32a33ad309fbd5a63f3588" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b6020a515c32a33ad309fbd5a63f3588" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/slime-vat-filler.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/slimevat.png">
+                <div class="date">2019/07/13</div >
+                <div class="gamename">Slime Vat Filler</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9cdc201537d09be139cfedca7789a29c" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9cdc201537d09be139cfedca7789a29c" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/vexatious-match-3.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/vexatiousm3.png">
+                <div class="date">2019/07/12</div >
+                <div class="gamename">Vexatious Match 3</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=ae47a4fbc17a1f8ab6987d419d0cdebb" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=ae47a4fbc17a1f8ab6987d419d0cdebb" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/scalesoban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/balanceoban.png">
+                <div class="date">2019/07/11</div >
+                <div class="gamename">Scalesoban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=0e8d097c183abae53c788320f198941a" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=0e8d097c183abae53c788320f198941a" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/nightmarecroban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/nightmarecro.png">
+                <div class="date">2019/07/11</div >
+                <div class="gamename">NIGHTMARECROBAN</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c41ccbf2468bd74a9d3ad58071b5429b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c41ccbf2468bd74a9d3ad58071b5429b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/5-junctions-maker-5kreuzungenmacher.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/kreuzungen.png">
+                <div class="date">2019/07/11</div >
+                <div class="gamename">5-junctions-maker / 5kreuzungenmacher</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=1c9d05884a6222b73da7f90efe0626e1" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=1c9d05884a6222b73da7f90efe0626e1" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/all-green-to-blue.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/alltoblue.png">
+                <div class="date">2019/07/11</div >
+                <div class="gamename">All Green to Blue</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=783283dd7b8c0dbb17a7b5f969e46a26" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=783283dd7b8c0dbb17a7b5f969e46a26" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/all-green-and-blue-on-yellow.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/alltogelb.png">
+                <div class="date">2019/07/11</div >
+                <div class="gamename">All Green and Blue on Yellow</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=bfd4162502345829f31d8ea7da8d7cbf" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=bfd4162502345829f31d8ea7da8d7cbf" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/voitex-rasteriser-2-harder-raster.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/spielnu2.png">
+                <div class="date">2019/06/20</div >
+                <div class="gamename">Voitex Rasteriser 2 : Harder Raster</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c626d10ddc5d246da8013550f546a4c0" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c626d10ddc5d246da8013550f546a4c0" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/voitex-rasteriser.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/voitexrasterizer.png">
+                <div class="date">2019/06/20</div >
+                <div class="gamename">Voitex Rasteriser
+</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=783073d1c5e512b878ac6f0d56df8eb9" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=783073d1c5e512b878ac6f0d56df8eb9" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/snakey-makes-a-sixy.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/snakeysnakey.png">
+                <div class="date">2019/06/20</div >
+                <div class="gamename">Snakey Makes A Sixy</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c4fee04a4260c404c3c6fd0a66a2c997" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c4fee04a4260c404c3c6fd0a66a2c997" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/autohurdler.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/autohurdle.png">
+                <div class="date">2019/06/20</div >
+                <div class="gamename">Autohurdler</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=1c8430a7e31555344630d6317751186f" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=1c8430a7e31555344630d6317751186f" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/pushit.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pushit.png">
+                <div class="date">2019/06/19</div >
+                <div class="gamename">pushit</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=12d97e584dd55ad9870c248b021ad580" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=12d97e584dd55ad9870c248b021ad580" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/gapfiller-lueckefueller.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lueckenfueller.png">
+                <div class="date">2019/06/19</div >
+                <div class="gamename">GAPFILLER / LUECKEFUELLER</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9d54d405b82f9224d0b6dd98aebfb47e" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9d54d405b82f9224d0b6dd98aebfb47e" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/pupush.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pupush.png">
+                <div class="date">2019/05/16</div >
+                <div class="gamename">Pupush</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=d13afa3d4caa357f8b65d6b18da21f25" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=d13afa3d4caa357f8b65d6b18da21f25" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/expand-avoid-the-flames-also-it-s-not-always-solvable.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/expand_2.png">
+                <div class="date">2019/04/26</div >
+                <div class="gamename">Expand, avoid the flames [also it's not always solvable]</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8df06690e2ce8a325966ea288850ecb2" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8df06690e2ce8a325966ea288850ecb2" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/konsum.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/konsum.png">
+                <div class="date">2019/04/26</div >
+                <div class="gamename">KONSUM</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=b3aea2741be1fd5ea1287dc9178c5972" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=b3aea2741be1fd5ea1287dc9178c5972" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/dice-goblin.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/dicegoblin.png">
+                <div class="date">2018/12/04</div >
+                <div class="gamename">Dice Goblin</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=608081501867c7e448675d65c9b16bf0" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=608081501867c7e448675d65c9b16bf0" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/make-way.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/makeway.png">
+                <div class="date">2018/08/12</div >
+                <div class="gamename">Make way!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=530fb257ebc4fce66575e15a00117938" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=530fb257ebc4fce66575e15a00117938" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/slide-pull.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/slidepull.png">
+                <div class="date">2018/08/12</div >
+                <div class="gamename">Slide Pull</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=dafd6ddeac213fbcbfa64463e4ebc9d0" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=dafd6ddeac213fbcbfa64463e4ebc9d0" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/push-pull.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/pushpull.png">
+                <div class="date">2018/08/12</div >
+                <div class="gamename">Push Pull</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=58a0c9341d2b6570670dd140dad52e54" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=58a0c9341d2b6570670dd140dad52e54" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/alternatey.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/alternatey.png">
+                <div class="date">2018/08/12</div >
+                <div class="gamename">alternatey</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=24b22ced6f0eaec88a92a71e429e6f62" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=24b22ced6f0eaec88a92a71e429e6f62" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/car-crash.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/car_crash.png">
+                <div class="date">2018/08/12</div >
+                <div class="gamename">car crash</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=a4a1c0b2927b6a9807ea1e80c4b5dc85" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=a4a1c0b2927b6a9807ea1e80c4b5dc85" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/unclean-residues.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/uncleanresidues.png">
+                <div class="date">2018/07/14</div >
+                <div class="gamename">Unclean Residues</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f47cd8a5cb9288f6f2792d37e44c0bfc" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f47cd8a5cb9288f6f2792d37e44c0bfc" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/an-ok-multiban-level.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/okmultiban.png">
+                <div class="date">2018/07/14</div >
+                <div class="gamename">an OK multiban level</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=24e9730db668eb1b335f8154ce58d085" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=24e9730db668eb1b335f8154ce58d085" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/seize-the-flag.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/seizetheflag.png">
+                <div class="date">2018/06/25</div >
+                <div class="gamename">Seize the flag!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=c4b133f966b448779e855f4b661ec15b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=c4b133f966b448779e855f4b661ec15b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/a-distant-sunset.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/adistantsunset.png">
+                <div class="date">2018/06/25</div >
+                <div class="gamename">a distant sunset</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=50be8fcdeeec2f8d7f4a2f03e2d927e8" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=50be8fcdeeec2f8d7f4a2f03e2d927e8" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/shy-snake.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/shysnake.png">
+                <div class="date">2018/06/23</div >
+                <div class="gamename">Shy Snake</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=60876d7d67b051725fea658cb67de06a" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=60876d7d67b051725fea658cb67de06a" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sokogoban.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sokogoban.png">
+                <div class="date">2018/06/22</div >
+                <div class="gamename">Sokogoban</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=8726ac1f3addfe42cc527c2217b848e8" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=8726ac1f3addfe42cc527c2217b848e8" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/no-heroes-necessary.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/noheroesnecessary.png">
+                <div class="date">2018/06/20</div >
+                <div class="gamename">No heroes necessary</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=03558e378d03bea8f074823e3b50e686" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=03558e378d03bea8f074823e3b50e686" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/a-cliche-before-bedtime.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/acliche.png">
+                <div class="date">2018/06/19</div >
+                <div class="gamename">A cliche before bedtime</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f2f5f7a2bd297ac0d48c68fe9cbf2a6a" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f2f5f7a2bd297ac0d48c68fe9cbf2a6a" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/oh-no-i-accidentally-swallowed-myself.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ohno_i_just.png">
+                <div class="date">2018/06/19</div >
+                <div class="gamename">Oh no I accidentally swallowed myself!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=4e8e05148359781e153d82bde37b77dd" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=4e8e05148359781e153d82bde37b77dd" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/i-sure-look-tasty.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/isurelook.png">
+                <div class="date">2018/06/19</div >
+                <div class="gamename">I SURE LOOK TASTY!</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=072b6a248e58f8da9131769defe62dd2" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=072b6a248e58f8da9131769defe62dd2" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-exit-is-under-my-left-foot.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/the_exit_is.png">
+                <div class="date">2018/06/19</div >
+                <div class="gamename">the exit is under my left foot</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9c325a57a4184d9fac4091d65dcecaf6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9c325a57a4184d9fac4091d65dcecaf6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/individuals-can-produce-a-society-but-can-a-society-produce-individuals.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/individuals_can.png">
+                <div class="date">2018/06/18</div >
+                <div class="gamename">Individuals can produce a society, but can a society produce individuals?</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f0b35f6cd223a86bb4efd0d27dec9299" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f0b35f6cd223a86bb4efd0d27dec9299" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/participating-in-society.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/participating_in_society.png">
+                <div class="date">2018/06/18</div >
+                <div class="gamename">Participating in Society</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=74010f89d7e3ccf5519e10ef91cd6d2b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=74010f89d7e3ccf5519e10ef91cd6d2b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/slot-machine.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/slotmachine.png">
+                <div class="date">2018/06/11</div >
+                <div class="gamename">Slot Machine</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=a1214ec1ea27e00a3693a08d740a2f45" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=a1214ec1ea27e00a3693a08d740a2f45" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/gabelstapler.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/gabelstapler.png">
+                <div class="date">2018/06/10</div >
+                <div class="gamename">Gabelstapler</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=eb25814937cc9fcd417d713cf49d6d16" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=eb25814937cc9fcd417d713cf49d6d16" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/i-am-a-gust-of-wind.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/gustofwind.png">
+                <div class="date">2018/06/09</div >
+                <div class="gamename">I am a gust of wind</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=0a368d331a4b854d87437d194dd0ecf8" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=0a368d331a4b854d87437d194dd0ecf8" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/karamell.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/karamell.png">
+                <div class="date">2018/06/08</div >
+                <div class="gamename">Karamell</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=1f22424c2178d3e64c33c2e25203365b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=1f22424c2178d3e64c33c2e25203365b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/i-want-to-grind-myself-into-dust.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/grindtodust.png">
+                <div class="date">2018/06/07</div >
+                <div class="gamename">I want to grind myself into dust</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=28babc7df7de64573f735b3927a82cad" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=28babc7df7de64573f735b3927a82cad" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/die-schoene-steinmetzin.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/stonesmith.png">
+                <div class="date">2018/06/07</div >
+                <div class="gamename">die schoene Steinmetzin</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=35e499a6e4124454f24b8b0a78d6aafb" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=35e499a6e4124454f24b8b0a78d6aafb" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/der-hydra-krypta.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/hydra.png">
+                <div class="date">2018/06/06</div >
+                <div class="gamename">der Hydra Krypta</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=44a1edea6e207f36a777af7f4e8a951d" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=44a1edea6e207f36a777af7f4e8a951d" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/bring-the-ice-cube-to-the-goal-without-exposing-it-to-heat.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/candleicecube.png">
+                <div class="date">2018/06/05</div >
+                <div class="gamename">Bring the ice cube to the goal without exposing it to heat.</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=bf3272fd7b73c43acb4f835478fb25ee" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=bf3272fd7b73c43acb4f835478fb25ee" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/des-poseidons-dreizack.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/dreizack.png">
+                <div class="date">2018/06/04</div >
+                <div class="gamename">Des Poseidons Dreizack</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=0d4197f327009914b72c65e16f9875f6" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=0d4197f327009914b72c65e16f9875f6" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/kreiseln.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/kreislern.png">
+                <div class="date">2018/06/03</div >
+                <div class="gamename">Kreiseln</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=f5edfbbec44f7e1f43ca501b13fd67d7" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=f5edfbbec44f7e1f43ca501b13fd67d7" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/garten-der-medusen.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/medusen.png">
+                <div class="date">2018/05/27</div >
+                <div class="gamename">Garten der Medusen</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=a4829564ab394e720a82cf25d6c9cd91" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=a4829564ab394e720a82cf25d6c9cd91" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/match-two-two-by-twos.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/twbytwos.png">
+                <div class="date">2018/01/13</div >
+                <div class="gamename">match two two by twos</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=1ab15caec306c212db29113253905874" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=1ab15caec306c212db29113253905874" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/unewton.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/unewton.png">
+                <div class="date">2018/01/02</div >
+                <div class="gamename">unewton</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=39ddc6c874c3881f2662870a7980bf86" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=39ddc6c874c3881f2662870a7980bf86" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/newton.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/newton.png">
+                <div class="date">2018/01/02</div >
+                <div class="gamename">newton</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=6ef7fd748452f35467a895bff518c83b" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=6ef7fd748452f35467a895bff518c83b" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/match-three-billiards.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/matchthreebilliards.png">
+                <div class="date">2018/01/02</div >
+                <div class="gamename">match three billiards</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=d728ee501c17bc9b5ffc0605b7c4182f" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=d728ee501c17bc9b5ffc0605b7c4182f" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/hungry-kraken.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/octothumb.png">
+                <div class="date">2017/12/03</div >
+                <div class="gamename">Hungry Kraken</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=108de5a6080a5f0fcf5a7d427da73641" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=108de5a6080a5f0fcf5a7d427da73641" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/8-happy-snakes.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/happysnakes.png">
+                <div class="date">2017/12/03</div >
+                <div class="gamename">8 Happy Snakes</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=dab71718821751f64cd4dc9c6374d7c1" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=dab71718821751f64cd4dc9c6374d7c1" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/you-complete-me.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/youcompleteme.png">
+                <div class="date">2015/12/23</div >
+                <div class="gamename">you complete me</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=caed4b1b41c6366464f7" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=caed4b1b41c6366464f7" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/snortal.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/snortal.png">
+                <div class="date">2015/11/04</div >
+                <div class="gamename">snortal</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=85124d44f37835d0bcbf" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=85124d44f37835d0bcbf" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/robot-arm.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/armgame.png">
+                <div class="date">2014/04/17</div >
+                <div class="gamename">Robot Arm</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=10947157" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=10947157" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/led-challenge.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ledgame.png">
+                <div class="date">2014/04/17</div >
+                <div class="gamename">LED Challenge</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=10946947" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=10946947" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/cooperacing.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/cooperacing.png">
+                <div class="date">2013/12/16</div >
+                <div class="gamename">Cooperacing</div>
+            </a>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/play.html?p=9bb80c2dc2d048393ebd77ee20f4f39f" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.puzzlescript.net/editor.html?hack=9bb80c2dc2d048393ebd77ee20f4f39f" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (PuzzleScript)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+  
+<div class="privacyfooter">
+    <a href="privacy.html">privacy policy</a>
+</div>
+</body>
+
+</html>

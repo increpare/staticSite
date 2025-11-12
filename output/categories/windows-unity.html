@@ -1,0 +1,2764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Makes small mostly free games and tools :)">
+    <meta name="author" content=""> 
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for increpare.com" href="feed.rss" />
+    <title>unity - increpare games</title>
+
+    <style>
+ 
+.indexbody {
+  background-color: beige;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+td {
+  vertical-align: top;
+  width: 100%;
+}
+hr {
+  border-top: 1px solid #000;
+  left: -30px;
+  right: -30px;
+}
+#header, .titlecard, .indexbody {
+  text-align: center;
+}
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+  padding-bottom: 10px;
+}
+
+.privacyfooter {
+  text-align: center;
+  font-size:150%;
+  padding: 20px;
+}
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+}
+
+#quote {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#date {
+  color: gray;
+  float: right;
+  padding-right: 30px;
+  right: 0;
+  text-align: right;
+}
+
+.li_src {
+  margin-top: 20px;
+}
+
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
+}
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+
+
+.linklistbar {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linklistbar li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.linklistbar img {
+  width: 20px;
+  height: 20px;
+}
+    </style>
+</head>
+
+<body class="indexbody">
+
+    <h1><a href="../index.html">increpare games</a> / windows - unity</h1>
+
+    <div id="header">
+        <ul class="linklistbar">
+<li><a href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.png"/></a></li>
+<li><a href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.png"/></a></li>
+<li><a href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.png"/></a></li>
+<li><a href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.png"/></a></li>
+<li><a href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.png"/></a></li>
+<li><a href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.png"/></a></li>
+<li><a href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.png"/></a></li>
+<li><a href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.png"/></A></li>
+<li><a href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.png"/></a></li>
+<li><a href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.png"/></a></li>
+<li><a href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.png"/></a></li>
+</ul>
+    </div>
+    <div id="filterbar">
+        Filter by : <select id="plat_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="unity.html">platform (66)</option>
+<option value="macos-unity.html"  >macos (64)</option>
+<option value="#" selected ='selected' >windows (64)</option>
+<option value="linux-unity.html"  >linux (34)</option>
+<option value="web-browser-unity.html"  >web-browser (12)</option>
+<option value="other-unity.html"  disabled>other (0)</option>
+</select>
+<select id="tag_select" onchange="window.location.href = this.options[this.selectedIndex].value;">
+<option value="windows.html">engine (129)</option>
+<option value="#" selected ='selected' >unity (64)</option>
+<option value="windows-c.html"  >c (43)</option>
+<option value="windows-ren-py.html"  >ren-py (7)</option>
+<option value="windows-godot.html"  >godot (4)</option>
+<option value="windows-tads.html"  >tads (2)</option>
+<option value="windows-flash.html"  >flash (1)</option>
+<option value="windows-haskell.html"  >haskell (1)</option>
+<option value="windows-haxeflixel.html"  >haxeflixel (1)</option>
+<option value="windows-haxegon.html"  >haxegon (1)</option>
+<option value="windows-html5.html"  >html5 (1)</option>
+<option value="windows-klik-nplay.html"  >klik-nplay (1)</option>
+<option value="windows-love.html"  >love (1)</option>
+<option value="windows-lua.html"  >lua (1)</option>
+<option value="windows-roblox.html"  >roblox (1)</option>
+<option value="windows-csharp.html"  disabled>c# (0)</option>
+<option value="windows-flickgame.html"  disabled>flickgame (0)</option>
+<option value="windows-html.html"  disabled>html (0)</option>
+<option value="windows-mod.html"  disabled>mod (0)</option>
+<option value="windows-monogatari.html"  disabled>monogatari (0)</option>
+<option value="windows-pascal.html"  disabled>pascal (0)</option>
+<option value="windows-puzzlescript.html"  disabled>puzzlescript (0)</option>
+<option value="windows-translation.html"  disabled>translation (0)</option>
+<option value="windows-twine.html"  disabled>twine (0)</option>
+<option value="windows-zeedonk.html"  disabled>zeedonk (0)</option>
+</select>
+<script>
+    window.addEventListener('pageshow', function(event) {
+         tag_select.value = "#"
+         plat_select.value = "#"
+    });
+        </script>
+
+    </div>
+  
+        <div class="titlecard">
+            <a href="../game/selbstfinder-find-yourself.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/selbstfinder.png">
+                <div class="date">2019/11/30</div >
+                <div class="gamename">selbstfinder / Find yourself</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/findyourself/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/FIND_YOURSELF_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/FIND_YOURSELF_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/FIND_YOURSELF_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2019.3.0b12)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/asterooker.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/asterooker.png">
+                <div class="date">2019/11/30</div >
+                <div class="gamename">asterooker</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/asterooker/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/asterooker_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/asterooker_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/asterooker_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2019.3.0b12)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/seelenloser-aktionschaukler-soulless-action-swinger.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/schaukeler.png">
+                <div class="date">2019/06/09</div >
+                <div class="gamename">SEELENLOSER AKTIONSCHAUKLER /
+SOULLESS ACTION SWINGER</div>
+            </a>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/SEELENLOSERAKTIONSCHAUKLER/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="30" height="30" class="smicon" src="../symbols/html5.svg" >        
+                    <div class="smoverlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/SEELENLOSERAKTIONSCHAUKLER_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="30" height="30" class="smicon" src="../symbols/windows.svg">        
+                      <div class="smoverlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/SEELENLOSERAKTIONSCHAUKLER_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="30" height="30" class="smicon" src="../symbols/apple.svg">        
+                    <div class="smoverlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/SEELENLOSERAKTIONSCHAUKLER_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="30" height="30" class="smicon" src="../symbols/linux.svg">        
+                <div class="smoverlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/SEELENLOSERAKTIONSCHAUKLER_src.zip" title="Download Source Code">
+                    <img width="30" height="30" class="smicon" alt="Download Source Code (Unity 2019.1.5f1)" src="../symbols/source.svg">        
+                    <div class="smoverlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/hirnfluch-braincurse.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/brainfluch.png">
+                <div class="date">2019/05/23</div >
+                <div class="gamename">Hirnfluch Braincurse</div>
+            </a>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Hirnfluch" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="30" height="30" class="smicon" src="../symbols/html5.svg" >        
+                    <div class="smoverlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://ded.increpare.com/~locus/Hirnfluch/HIRNFLUCH_BRAINCURSE_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="30" height="30" class="smicon" src="../symbols/windows.svg">        
+                      <div class="smoverlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Hirnfluch/HIRNFLUCH_BRAINCURSE_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="30" height="30" class="smicon" src="../symbols/apple.svg">        
+                    <div class="smoverlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Hirnfluch/HIRNFLUCH_BRAINCURSE_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="30" height="30" class="smicon" src="../symbols/linux.svg">        
+                <div class="smoverlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Hirnfluch/HIRNFLUCH_BRAINCURSE_src.zip" title="Download Source Code">
+                    <img width="30" height="30" class="smicon" alt="Download Source Code (Unity 2019.1.3f1)" src="../symbols/source.svg">        
+                    <div class="smoverlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/automobilelektrodefekt.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/elektrodefekt.png">
+                <div class="date">2019/05/02</div >
+                <div class="gamename">AUTOMOBILELEKTRODEFEKT</div>
+            </a>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/AUTOMOBILELEKTRODEFEKT/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="30" height="30" class="smicon" src="../symbols/html5.svg" >        
+                    <div class="smoverlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/AUTOMOBILELEKTRODEFEKT%20_osx.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="30" height="30" class="smicon" src="../symbols/windows.svg">        
+                      <div class="smoverlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/AUTOMOBILELEKTRODEFEKT%20_win64.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="30" height="30" class="smicon" src="../symbols/apple.svg">        
+                    <div class="smoverlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/AUTOMOBILELEKTRODEFEKT%20_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="30" height="30" class="smicon" src="../symbols/linux.svg">        
+                <div class="smoverlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/AUTOMOBILELEKTRODEFEKT%20_src.zip" title="Download Source Code">
+                    <img width="30" height="30" class="smicon" alt="Download Source Code (Unity 2019.1.0f2)" src="../symbols/source.svg">        
+                    <div class="smoverlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/let-yourself-be-guided-by-the-stars-lassen-sie-sich-von-den-sternen-leiten.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lassensiesich.png">
+                <div class="date">2018/11/02</div >
+                <div class="gamename">Let yourself be guided by the stars / Lassen sie sich von den Sternen leiten</div>
+            </a>
+            <div class="container">
+                <a href="http://games.increpare.com/higherlower/von_den_Sternen_leiten_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="http://games.increpare.com/higherlower/von_den_Sternen_leiten_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="http://games.increpare.com/higherlower/von_den_Sternen_leiten_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://github.com/increpare/HIGHERLOWER/" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2018.2.14f1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/fahnenstange-flagstaff.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/fahnenstange.png">
+                <div class="date">2018/10/14</div >
+                <div class="gamename">Fahnenstange / Flagstaff</div>
+            </a>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Fahnenstange/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="30" height="30" class="smicon" src="../symbols/html5.svg" >        
+                    <div class="smoverlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Fahnenstange_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="30" height="30" class="smicon" src="../symbols/windows.svg">        
+                      <div class="smoverlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Fahnenstange_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="30" height="30" class="smicon" src="../symbols/apple.svg">        
+                    <div class="smoverlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Fahnenstange_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="30" height="30" class="smicon" src="../symbols/linux.svg">        
+                <div class="smoverlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="smcontainer">
+                <a href="https://games.increpare.com/Fahnenstange_src.zip" title="Download Source Code">
+                    <img width="30" height="30" class="smicon" alt="Download Source Code (Unity 2018.2.12f1)" src="../symbols/source.svg">        
+                    <div class="smoverlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/glances.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/glances.png">
+                <div class="date">2017/11/12</div >
+                <div class="gamename">glances</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/glances" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/glances_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/glances_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/glances_src.tar.gz" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2017.2)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/quiet-city.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/quietcity.png">
+                <div class="date">2017/11/10</div >
+                <div class="gamename">Quiet City</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/quietcity/quiet%20city_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/quietcity/quiet%20city_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/quietcity/quiet%20city_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/quietcity/quiet%20city_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2017)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/worst-guest.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/worstguest.png">
+                <div class="date">2017/09/01</div >
+                <div class="gamename">worst guest</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/worst_guest_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/worst_guest_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/worst_guest_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/worst_guest_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2017.1p4)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/running-memories.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/running_memories.png">
+                <div class="date">2017/08/23</div >
+                <div class="gamename">running memories</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/running_memories_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/running_memories_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/running_memories_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/running_memories_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2017.1p4)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/a-story-about-a-cat.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/catbutt.png">
+                <div class="date">2017/07/31</div >
+                <div class="gamename">a story about a cat</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/cat_story_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/cat_story_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/cat_story_linux.tar.gz" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/cat_story_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 2017.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/stephen-s-sausage-roll.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/increpareicon.png">
+                <div class="date">2016/04/18</div >
+                <div class="gamename">Stephen's Sausage Roll</div>
+            </a>
+            <div class="container">
+                <a href="https://www.stephenssausageroll.com" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.stephenssausageroll.com" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.stephenssausageroll.com" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/2plus3.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/2plus3.png">
+                <div class="date">2015/11/05</div >
+                <div class="gamename">2plus3</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/2plus3_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/2plus3_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/2plus3_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/2plus3_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.2)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/shine-bright-a-little-longer.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/shinebright.png">
+                <div class="date">2015/08/23</div >
+                <div class="gamename">shine bright a little longer</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/shine%20bright%20a%20little%20longer_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/shine%20bright%20a%20little%20longer_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/shine%20bright%20a%20little%20longer_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/shine%20bright%20a%20little%20longer_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/subway-adventure.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/subwayadventure.png">
+                <div class="date">2015/08/22</div >
+                <div class="gamename">Subway Adventure</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/subway%20adventure_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/subway%20adventure_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/subway%20adventure_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/subway%20adventure_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/bedrooms.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/bedrooms.png">
+                <div class="date">2015/07/01</div >
+                <div class="gamename">Bedrooms</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Bedrooms_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Bedrooms_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Bedrooms_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/door-game.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/doorgame.png">
+                <div class="date">2015/06/22</div >
+                <div class="gamename">Door Game</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/DoorGame_osx.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/DoorGame_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/DoorGame_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/DoorGame_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/trip.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/tripico.png">
+                <div class="date">2015/06/20</div >
+                <div class="gamename">Trip</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Trip_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Trip_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Trip_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Trip_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/shower-game.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/showergame.png">
+                <div class="date">2015/06/18</div >
+                <div class="gamename">Shower Game</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/ShowerGame_win64_2.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ShowerGame_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ShowerGame_linux_2.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ShowerGame_src_2.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/so-as-to-not-disturb.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/soasot.png">
+                <div class="date">2014/11/22</div >
+                <div class="gamename">So as to not disturb</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/SoAsToNotDisturb_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/SoAsToNotDisturb_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/SoAsToNotDisturb_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/SoAsToNotDisturb_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/all-that-i-have-to-give.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/allthatihavetogive.png">
+                <div class="date">2014/11/22</div >
+                <div class="gamename">All that I have to give</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/AllThatIHaveToGive_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/AllThatIHaveToGive_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/AllThatIHaveToGive_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/AllThatIHaveToGive_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/problems-and-solutions.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/problemsandsolutions.png">
+                <div class="date">2014/11/20</div >
+                <div class="gamename">Problems and Solutions</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/ProblemsAndSolutions_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ProblemsAndSolutions_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ProblemsAndSolutions_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ProblemsAndSolutions_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/cooking-for-lovers.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/cookingforlovers.png">
+                <div class="date">2014/11/09</div >
+                <div class="gamename">Cooking, for lovers</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/CookingForLovers_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/CookingForLovers_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/CookingForLovers_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/CookingForLovers_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-shadow.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/theshadowicon.png">
+                <div class="date">2014/11/08</div >
+                <div class="gamename">The Shadow</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/TheShadow_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/TheShadow_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/TheShadow_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/TheShadow_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/away.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/awayicon.png">
+                <div class="date">2014/11/08</div >
+                <div class="gamename">Away</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Away_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Away_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Away_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Away_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/waking-up.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lilyicon.png">
+                <div class="date">2014/11/05</div >
+                <div class="gamename">Waking Up</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/WakingUp_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WakingUp_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WakingUp_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WakingUp_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/on-the-passage-of-time.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/passagetimeicon.png">
+                <div class="date">2014/11/03</div >
+                <div class="gamename">On The Passage of Time</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/OnThePassageOfTime_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnThePassageOfTime_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnThePassageOfTime_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnThePassageOfTime_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/on-beauty.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/onbeauty.png">
+                <div class="date">2014/11/02</div >
+                <div class="gamename">On Beauty</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/OnBeauty_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnBeauty_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnBeauty_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OnBeauty_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/wear-and-tear.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/wearandtear.png">
+                <div class="date">2014/10/31</div >
+                <div class="gamename">wear & tear</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/WearAndTear_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WearAndTear_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WearAndTear_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/WearAndTear_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/vigil.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/vigil.png">
+                <div class="date">2014/10/31</div >
+                <div class="gamename">Vigil</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Vigil_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Vigil_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Vigil_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Vigil_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/happy.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/happymemories.png">
+                <div class="date">2014/10/27</div >
+                <div class="gamename">happy</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/HappyMemories_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/HappyMemories_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/HappyMemories_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/HappyMemories_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/having-said-goodbye.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/saidgoodbye.png">
+                <div class="date">2014/10/26</div >
+                <div class="gamename">having said goodbye</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Having%20Said%20Goodbye_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Having%20Said%20Goodbye_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Having%20Said%20Goodbye_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Having%20Said%20Goodbye_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/gesture.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/gesturesico.png">
+                <div class="date">2014/10/20</div >
+                <div class="gamename">Gesture</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Gestures_win64.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Gestures_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Gestures_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Gestures_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/let-your-mind-fall-to-rest.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/torest.png">
+                <div class="date">2014/10/06</div >
+                <div class="gamename">Let your mind fall to rest</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/LYMFTR_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/LYMFTR_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/LYMFTR_linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/LRMFTR_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-serpent.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lips.png">
+                <div class="date">2014/04/30</div >
+                <div class="gamename">The Serpent</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Serpent_Win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Serpent_Mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Serpent_Linux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Serpent_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/universal-history-of-light.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/historyoflight.png">
+                <div class="date">2014/02/09</div >
+                <div class="gamename">Universal History of Light</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/UniversalHistoryWin.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/UniversalHistoryMac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/UniversalHistoryLinux.zip" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/UniversalHistorySrc.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.something)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/untitled.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/untitled_game.png">
+                <div class="date">2013/06/29</div >
+                <div class="gamename">Untitled</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Untitled/Win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Untitled/Mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Untitled/untitled_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 4.1)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/to-my-first-born-son.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/lettertoson.png">
+                <div class="date">2013/01/21</div >
+                <div class="gamename">To my first born son</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/To%20my%20first%20born%20son%20(win).zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/To%20my%20first%20born%20son%20(mac).zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/firstborn_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sleeping-scared.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sleepingscared.png">
+                <div class="date">2013/01/20</div >
+                <div class="gamename">Sleeping Scared</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/SleepingScared_Win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/SleepingScared_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/SleepingScared_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/ollam-house.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ollam.png">
+                <div class="date">2013/01/07</div >
+                <div class="gamename">Ollam House</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/ollam_house_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ollam_house_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ollam_house_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/slave-of-god.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/slaveofgod.png">
+                <div class="date">2012/12/30</div >
+                <div class="gamename">Slave Of God</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/slaveofgod_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/slaveofgod_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/slaveofgod_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5 Pro)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/puzzles.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/puzzle_pic.png">
+                <div class="date">2012/06/22</div >
+                <div class="gamename">Puzzles</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/puzzles_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/puzzles_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/puzzles" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/puzzles_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/one-lap-challange.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/onetrackracer.png">
+                <div class="date">2012/02/26</div >
+                <div class="gamename">ONE LAP CHALLANGE</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/OneLapChallange_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OneLapChallange_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OneLapChallange" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/OneLapChallange_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/clicktagon.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/clicktagon.png">
+                <div class="date">2012/02/25</div >
+                <div class="gamename">Clicktagon</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Clicktagon/" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/clicktagon_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/clicktagon_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/clicktagon_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/can-you-jump-it-3d.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/canyoujumpit3d.png">
+                <div class="date">2012/02/25</div >
+                <div class="gamename">Can You Jump It 3D</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Can%20You%20Jump%20It%203D%20Win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Can%20You%20Jump%20It%203D%20Mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Can%20You%20Jump%20It%203D/" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Can%20You%20Jump%20It%203D%20Source.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/3nake.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/3nake.png">
+                <div class="date">2012/02/25</div >
+                <div class="gamename">3nake</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/3nake_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/3nake_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/3nake" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/3nake_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/spiders-and-cubes.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ss3.png">
+                <div class="date">2012/02/21</div >
+                <div class="gamename">Spiders and Cubes</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Spiders_And_Cubes_Flash" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Spiders_And_Cubes_Win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Spiders_And_Cubes_Mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Spiders_And_Cubes_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/microtone.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/microtone_game.png">
+                <div class="date">2011/12/30</div >
+                <div class="gamename">Microtone</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Microtone" title="Play Now (HTML5)" >
+                    <img alt="Play Now (HTML5)" width="50" height="50" class="icon" src="../symbols/html5.svg" >        
+                    <div class="overlay">
+                        <div class="text">HTML5</div>
+                     </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/microtone_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/microtone_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/microtone_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.5 beta)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/english-country-tune.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/ect.png">
+                <div class="date">2011/11/26</div >
+                <div class="gamename">English Country Tune</div>
+            </a>
+            <div class="container">
+                <a href="https://www.englishcountrytune.com/" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.englishcountrytune.com/" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.englishcountrytune.com/" title="Download for Linux" >
+                <img alt="Download for Linux" width="50" height="50" class="icon" src="../symbols/linux.svg">        
+                <div class="overlay">
+                    <div class="text">LINUX</div>
+                </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sliff.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sliff_ico.png">
+                <div class="date">2011/07/18</div >
+                <div class="gamename">sliff</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/sliff/sliff_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/sliff/sliff_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/sliff/silff_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/salome.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/salome_ico.png">
+                <div class="date">2011/07/18</div >
+                <div class="gamename">salome</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/salome/salome_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/salome/salome_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/tguk5/salome/salome_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/in-a-single-breath.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/singlebreath.png">
+                <div class="date">2011/06/12</div >
+                <div class="gamename">In A Single Breath</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/singlebreath/InASingleBreath_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/singlebreath/InASingleBreath_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/singlebreath/web" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/singlebreath/InASingleBreath_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3.3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/snowman-s-day-out.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/snowman_img.png">
+                <div class="date">2010/12/06</div >
+                <div class="gamename">Snowman’s Day Out</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/Snowman_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Snowman_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Snowman_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/cities-of-day-and-night.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/citiesofdayandnight_shot.png">
+                <div class="date">2010/11/26</div >
+                <div class="gamename">Cities of Day and Night</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/cities_of_day_and_night_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/cities_of_day_and_night_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/cities_of_day_and_night_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/rush-to-find.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/rushtofindshot.png">
+                <div class="date">2010/11/21</div >
+                <div class="gamename">rush to find</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/rushtofind_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/rushtofind_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/rushtofind.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3 Indie)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/snip.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/snipshot.png">
+                <div class="date">2010/11/17</div >
+                <div class="gamename">Snip</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/snip_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snip_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snip" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snip_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/activate-the-three-artefacts-and-then-leave.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/activatethethreeartefactsandthenleave.png">
+                <div class="date">2010/11/15</div >
+                <div class="gamename">Activate the Three Artefacts and then Leave</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/activatethethreeartefactsandthenleave_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/activatethethreeartefactsandthenleave_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/activatethethreeartefactsandthenleave_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity 3 Pro)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/sunlight.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/sunlightico.png">
+                <div class="date">2010/11/07</div >
+                <div class="gamename">Sunlight</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/sunlight_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/sunlight_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/sunlight" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/sunlight_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/increpare-arcade.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/compilationgame.png">
+                <div class="date">2010/09/01</div >
+                <div class="gamename">Increpare Arcade</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/compilation_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/compilation_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/Compilation/" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/compilation_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/fish-fry.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/fishfry.png">
+                <div class="date">2010/08/15</div >
+                <div class="gamename">Fish Fry</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/fishfry_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/fishfry_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/fishfry/" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/fishfry_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/the-clotted-island.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/clottedislandpic.png">
+                <div class="date">2010/07/31</div >
+                <div class="gamename">The Clotted Island</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/theclottedisland_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/theclottedisland_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/theclottedisland" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/theclottedisland_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/via-dolorosa.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/dolorosa.png">
+                <div class="date">2010/07/19</div >
+                <div class="gamename">Via Dolorosa</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/viadolorosa_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/viadolorosa_mac.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/ViaDolorosa" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/viadolorosa_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="titlecard">
+            <a href="../game/snowdrift.html">
+                <img class="thumb" alt="" width="250" height="250" src="../icos/snowdriftpng.png">
+                <div class="date">2010/07/05</div >
+                <div class="gamename">Snowdrift</div>
+            </a>
+            <div class="container">
+                <a href="https://games.increpare.com/snowdrift_win.zip" title="Download for Windows" >
+                      <img alt="Download for Windows" width="50" height="50" class="icon" src="../symbols/windows.svg">        
+                      <div class="overlay">
+                        <div class="text">WIN</div>
+                      </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snowdrift_osx.zip" title="Download for macOS" >
+                    <img alt="Download for macOS" width="50" height="50" class="icon" src="../symbols/apple.svg">        
+                    <div class="overlay">
+                        <div class="text">MAC</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snowdrift/" title="Play Online Now (Unity Web Player)">
+                    <img width="50" height="50" class="icon" alt="Play Online Now (Unity Web Player)"  src="../symbols/unity.svg" >        
+                    <div class="overlay">
+                        <div class="text">UNITY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://games.increpare.com/snowdrift_src.zip" title="Download Source Code">
+                    <img width="50" height="50" class="icon" alt="Download Source Code (Unity)" src="../symbols/source.svg">        
+                    <div class="overlay">
+                        <div class="text">SOURCE</div>
+                    </div>
+                </a>
+            </div>
+          </div>
+  
+<div class="privacyfooter">
+    <a href="privacy.html">privacy policy</a>
+</div>
+</body>
+
+</html>
