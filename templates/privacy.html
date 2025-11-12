@@ -8,75 +8,15 @@
     <title>Privacy Policy - Increpare Games</title>
 
     <style>
-html {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: auto;
-}
-body {
-  background-color: beige;
-  padding: 20px 0 50px;
-  vertical-align: top;
-  width: 600px;
-  margin: auto;
-}
-img {
-  -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px #000;
-  margin: 10px;
-  padding: 1px 30px 10px;
-}
-#description, ul {
-  text-align: left;
-}
-hr {
-  border-top: 1px solid #000;
-  left: -30px;
-  right: -30px;
-}
-#footer, .docenter {
-  text-align: center;
-}
-#quote {
-  color: gray;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-#date {
-  color: gray;
-  float: right;
-  padding-right: 30px;
-  right: 0;
-  text-align: right;
-}
-.li_src {
-  margin-top: 20px;
-}
-@media all and (max-width: 350px) {
-  .card {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  body {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-}
+${insertStyle()}
     </style>
   </head>
 
-  <body>
+  <body class="cardbody">
+    <span class="date_and_back">
     <a href="../index.html">&lt;&lt; back to increpare.com </a>
-    <div id="date">2018/05/20</div>
+    <span id="date">2018/05/20</span>
+  </span>
     <div class="card">
       <div class="docenter">
        	<h1>Privacy Policy for Increpare Games</h1>
@@ -90,7 +30,7 @@ hr {
           <p>
             <a href="https://ded.increpare.com/~locus/primitive_pattern/">Primitive Pattern</a> keeps a list of IP addresses (not timestamped) to prevent repeat 'voting'.  I made this project a long time before GDPR was on the horizon and I don't know if it's compliant or not.
           <p>
-            For games made with <a href="https://unity3d.com">unity</a>, unfortunately there's no guarantee that they're not storing personally identifiable information about you.  I've spoken with someone at unity and they said provided I link to the <a href="https://unity3d.com/de/legal/privacy-policy">privacy policy</a> here (that explains that they might send your hardware data back to unity HQ) everything'll be ok. There is an option to disable stat collection in projects, but it's enabled by default, and it's possible I sometimes forgot disable it. :/
+            For games made with <a href="https://unity3d.com">unity</a>, unfortunately there's no guarantee that they're not storing personally identifiable information about you.  I've spoken with someone at unity and they said provided I link to the <a href="https://unity3d.com/de/legal/privacy-policy">privacy policy</a> here (that explains that they might send your hardware data back to unity HQ) everything'll be ok. There is an option to disable stat collection in projects, but it's enabled by default, and it's possible I sometimes forgot to disable it. :/
           <p>
             A couple of games, like puzzlescript games, will store savegame locally on your computer (via local storage, or in the case of Flash games, flash local storage) - I don't do anything with this data, it remains on your computer and only the game that made it will ever access it.
           <p>
@@ -103,7 +43,7 @@ hr {
       </div>
 
         <div id="footer"> 
-          <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+          ${doLinkList()}
         </div>
      <p>
   </body>

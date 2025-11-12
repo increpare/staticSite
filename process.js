@@ -96,15 +96,13 @@ async function all() {
         compressing.gzip.compressFile(P(path), P(path + ".gz"));
     }
 
+    if (fs.existsSync("output2")) {
+        fs.rmSync("output2", { recursive: true });
+    }
+
     if (fs.existsSync("output")) {
         fs.renameSync("output", "output2");
-        fs.rm(
-            "output2",
-            {
-                recursive: true,
-            },
-            function () {}
-        );
+        fs.rmSync("output2", { recursive: true });
     }
 
     fs.mkdirSync("output");
@@ -134,7 +132,6 @@ async function all() {
         });
     }
 
-    copyFile("templates/privacy.html", "output/privacy.html");
 
     copyFile("templates/404.html", "output/404.html");
 
@@ -160,6 +157,11 @@ async function all() {
 
     let indexTemplate = "`" + fs.readFileSync(P("templates/index.html")) + "`";
 
+    
+    var privacyTemplate = fs.readFileSync(P("templates/privacy.html"));
+    privacyTemplate = eval("`"+privacyTemplate+"`");
+    // privacyTemplate = minify(privacyTemplate, minifyOptions);
+    fs.writeFileSync("output/privacy.html", privacyTemplate);
 
     let table = JSON.parse(
         fs.readFileSync("database.json", {
