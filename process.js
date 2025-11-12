@@ -350,7 +350,7 @@ async function all() {
     function doHeading() {
         if (tagToFilter !== "") {
             if (platformToFilter !== "") {
-                return `<h1><a href="../index.html">increpare games</a> / ${platformToFilter} - ${tagToFilter}</h1>`;
+                return `<h1><a href="../index.html">increpare games</a> / ${platformToFilter} / ${tagToFilter}</h1>`;
             } else {
                 return `<h1><a href="../index.html">increpare games</a> / ${tagToFilter}</h1>`;
             }
