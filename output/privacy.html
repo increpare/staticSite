@@ -220,6 +220,7 @@ html {
 
 #footer, .docenter {
   text-align: center;
+  padding-top: 10px;
 }
 
 #quote {
@@ -261,7 +262,9 @@ html {
   margin: 0;
 }
 .linklistbar li {
-  display: inline;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -269,6 +272,44 @@ html {
   width: 20px;
   height: 20px;
 }
+.linklistbar .linkname {
+  display: block;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/*declare css variables for shadow*/
+:root {
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-x: 2px;
+  --shadow-y: 2px;
+  --shadow-blur: 5px;
+}
+/*animate transition on hover, and cast a shadow on hover*/
+.toolbarlink {
+  /*no underline*/
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in-out;
+  text-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-color);
+}
+.toolbarlink:hover {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  /*animate text-shadow away*/
+  text-shadow: 0 0 0 #000;
+}
+.toolbarlink{
+  /*text should be transformed to compensate for shadow*/
+  transform: translate(calc(-1 * var(--shadow-x)), calc(-1 * var(--shadow-y)));
+  transition: transform 0.1s ease-in-out;
+}
+.toolbarlink:hover{
+  transform: translate(0, 0);
+  transition: transform 0.1s ease-in-out;
+}
+
     </style>
   </head>
 
@@ -304,17 +345,17 @@ html {
 
         <div id="footer"> 
           <ul class="linklistbar">
-<li><a href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.png"/></a></li>
-<li><a href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.png"/></a></li>
-<li><a href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.png"/></a></li>
-<li><a href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.png"/></a></li>
-<li><a href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.png"/></a></li>
-<li><a href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.png"/></a></li>
-<li><a href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.png"/></a></li>
-<li><a href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.png"/></A></li>
-<li><a href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.png"/></a></li>
-<li><a href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.png"/></a></li>
-<li><a href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.png"/></a></li>
+<li><a class="toolbarlink" href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.svg"/><span class="linkname">x</span></a></li>
+<li><a class="toolbarlink" href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.svg"/><span class="linkname">bsky</span></a></li>
+<li><a class="toolbarlink" href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.svg"/><span class="linkname">email</span></a></li>
+<li><a class="toolbarlink" href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.svg"/><span class="linkname">github</span></a></li>
+<li><a class="toolbarlink" href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.svg"/><span class="linkname">twitch</span></a></li>
+<li><a class="toolbarlink" href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.svg"/><span class="linkname">paypal</span></a></li>
+<li><a class="toolbarlink" href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.svg"/><span class="linkname">youtube</span></a></li>
+<li><a class="toolbarlink" href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.svg"/><span class="linkname">steam</span></a></li>
+<li><a class="toolbarlink" href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.svg"/><span class="linkname">patreon</span></a></li>
+<li><a class="toolbarlink" href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.svg"/><span class="linkname">bandcamp</span></a></li>
+<li><a class="toolbarlink" href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.svg"/><span class="linkname">tiktok</span></a></li>
 </ul>
         </div>
      <p>

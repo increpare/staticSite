@@ -133,7 +133,6 @@ async function all() {
     }
 
 
-    copyFile("templates/404.html", "output/404.html");
 
     await copy("symbols", P("output/symbols"));
 
@@ -161,7 +160,18 @@ async function all() {
     var privacyTemplate = fs.readFileSync(P("templates/privacy.html"));
     privacyTemplate = eval("`"+privacyTemplate+"`");
     // privacyTemplate = minify(privacyTemplate, minifyOptions);
-    fs.writeFileSync("output/privacy.html", privacyTemplate);
+    fs.writeFile("output/privacy.html", privacyTemplate, function (err) {
+        if (err) return console.log(err);
+        gzipFile("output/privacy.html");
+    });
+
+
+    let template404 = fs.readFileSync(P("templates/404.html"));
+    template404 = eval("`"+template404+"`");
+    fs.writeFile("output/404.html", template404, function (err) {
+        if (err) return console.log(err);
+        gzipFile("output/404.html");
+    });
 
     let table = JSON.parse(
         fs.readFileSync("database.json", {

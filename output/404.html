@@ -1,24 +1,19 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>404 - Page not found</title>
-
-    <style>
-html {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: auto;
-}
-body {
+<style>
+ 
+.indexbody {
   background-color: beige;
-  padding: 20px 0 50px;
-  vertical-align: top;
-  width: 600px;
-  margin: auto;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 30px auto 70px;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media all and (min-width: 75pc) {
+ .indexbody {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 }
 img {
   -ms-interpolation-mode: nearest-neighbor;
@@ -26,24 +21,199 @@ img {
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px #000;
-  margin: 10px;
-  padding: 1px 30px 10px;
-}
-#description, ul {
-  text-align: left;
+td {
+  vertical-align: top;
+  width: 100%;
 }
 hr {
   border-top: 1px solid #000;
   left: -30px;
   right: -30px;
 }
-#footer, .docenter {
+#header, .titlecard, .indexbody {
   text-align: center;
 }
+#header {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+.titlecard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 0 25px;
+  width: 290px;
+}
+.titlecard a {
+  text-decoration: none;
+}
+.titlecard a .gamename {
+  text-decoration: underline;
+}
+.gamename {
+  font-size: 150%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date {
+  color: #757575;
+  padding-bottom: 3px;
+}
+.thumb {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+.leftcol {
+  width: 300px;
+}
+.container, .icon {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+
+.smcontainer {
+  padding-top: 20px;
+  height:30px;
+  width: 30px;
+}
+
+.smicon {
+  height: 30px;
+  width: 30px;
+}
+.smcontainer {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+}
+
+.icon, .smicon {
+  display: inline;
+  opacity: 0.4;
+}
+
+
+.overlay, .text {
+  position: absolute;
+}
+.overlay {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.container:hover .icon, .container:hover .smicon{
+  opacity: 0.25;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.smoverlay, .text {
+  position: absolute;
+}
+.smoverlay {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.smcontainer:hover .smicon {
+  opacity: 0.25;
+}
+.smcontainer:hover .smoverlay {
+  opacity: 1;
+}
+
+.text {
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 20px;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select {
+  display: inline;
+}
+
+.filterbar {
+  padding-bottom: 10px;
+}
+
+.privacyfooter {
+  text-align: center;
+  font-size:150%;
+  padding: 20px;
+}
+
+/* from post.html */
+.cardbody {
+  background-color: beige;
+  padding: 20px 0 50px;
+  vertical-align: top;
+  width: 600px;
+  margin: auto;
+}
+
+.taglink {
+  font-style: italic;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #000;
+  margin: 10px;
+  padding: 30px 30px 10px;
+}
+@media all and (max-width: 350px) {
+  .card, body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#description, ul {
+  text-align: left;
+}
+
+
+
+#footer, .docenter {
+  text-align: center;
+  padding-top: 10px;
+}
+
 #quote {
   color: gray;
   font-style: italic;
@@ -56,25 +226,85 @@ hr {
   right: 0;
   text-align: right;
 }
+
 .li_src {
   margin-top: 20px;
 }
-@media all and (max-width: 350px) {
-  .card {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
-  body {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
+/* if img is inside a .card, tweak it */
+.card img {
+  border: 1px solid #000;
+  height: 250px;
+  width: 250px;
 }
+
+
+.date_and_back {
+  /*align left*/
+  text-align: left;
+  display:block;
+}
+
+
+.linklistbar {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linklistbar li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.linklistbar img {
+  width: 20px;
+  height: 20px;
+}
+.linklistbar .linkname {
+  display: block;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/*declare css variables for shadow*/
+:root {
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-x: 2px;
+  --shadow-y: 2px;
+  --shadow-blur: 5px;
+}
+/*animate transition on hover, and cast a shadow on hover*/
+.toolbarlink {
+  /*no underline*/
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in-out;
+  text-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-color);
+}
+.toolbarlink:hover {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  /*animate text-shadow away*/
+  text-shadow: 0 0 0 #000;
+}
+.toolbarlink{
+  /*text should be transformed to compensate for shadow*/
+  transform: translate(calc(-1 * var(--shadow-x)), calc(-1 * var(--shadow-y)));
+  transition: transform 0.1s ease-in-out;
+}
+.toolbarlink:hover{
+  transform: translate(0, 0);
+  transition: transform 0.1s ease-in-out;
+}
+
     </style>
   </head>
 
-  <body>
+  <body class="cardbody">
     <a href="../index.html">&lt;&lt; back to increpare.com </a>
     <div id="date">2018/12/18</div>
     <div class="card">
@@ -95,7 +325,19 @@ hr {
       </div>
 
         <div id="footer"> 
-          <a href="https://github.com/increpare/">github</a>&emsp13;|&emsp13;<a href="https://www.patreon.com/increpare">patreon</a>&emsp13;|&emsp13;<a href="https://www.paypal.me/increparegames">paypal</a>&emsp13;|&emsp13;<a href="/privacy.html">privacy policy</a>&emsp13;|&emsp13;<a href="mailto:analytic@gmail.com">analytic@gmail.com</a>
+          <ul class="linklistbar">
+<li><a class="toolbarlink" href="https://x.com/increpare" title="x.com/increpare"><img src="/symbols/websiteicons/x.svg"/><span class="linkname">x</span></a></li>
+<li><a class="toolbarlink" href="https://bsky.app/profile/increpare.bsky.social" title="increpare.bsky.social"><img src="/symbols/websiteicons/bsky.svg"/><span class="linkname">bsky</span></a></li>
+<li><a class="toolbarlink" href="mailto:analytic@gmail.com" title="analytic@gmail.com"><img src="/symbols/websiteicons/email.svg"/><span class="linkname">email</span></a></li>
+<li><a class="toolbarlink" href="https://github.com/increpare/" title="github.com/increpare"><img src="/symbols/websiteicons/github.svg"/><span class="linkname">github</span></a></li>
+<li><a class="toolbarlink" href="https://twitch.tv/increpare" title="twitch.tv/increpare"><img src="/symbols/websiteicons/twitch.svg"/><span class="linkname">twitch</span></a></li>
+<li><a class="toolbarlink" href="https://www.paypal.me/increparegames" title="paypal.me/increparegames"><img src="/symbols/websiteicons/paypal.svg"/><span class="linkname">paypal</span></a></li>
+<li><a class="toolbarlink" href="https://www.youtube.com/@increpare_games" title="youtube.com/@increpare_games"><img src="/symbols/websiteicons/youtube.svg"/><span class="linkname">youtube</span></a></li>
+<li><a class="toolbarlink" href="https://steamcommunity.com/profiles/76561198021110186/" title="steam store:increpare"><img src="/symbols/websiteicons/steam.svg"/><span class="linkname">steam</span></a></li>
+<li><a class="toolbarlink" href="https://www.patreon.com/increpare" title="patreon.com/increpare"><img src="/symbols/websiteicons/patreon.svg"/><span class="linkname">patreon</span></a></li>
+<li><a class="toolbarlink" href="https://increpare.bandcamp.com/" title="increpare.bandcamp.com"><img src="/symbols/websiteicons/bandcamp.svg"/><span class="linkname">bandcamp</span></a></li>
+<li><a class="toolbarlink" href="https://www.tiktok.com/@increpare" title="tiktok.com/increpare"><img src="/symbols/websiteicons/tiktok.svg"/><span class="linkname">tiktok</span></a></li>
+</ul>
         </div>
      <p>
   </body>
